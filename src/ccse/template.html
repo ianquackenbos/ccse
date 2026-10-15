@@ -1,0 +1,607 @@
+<title>Repaso CCSE 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: an official answer sheet — narrow reading column, ruled cards, a/b/c bubbles as the core motif, one rubber stamp for results */
+:root{
+  --paper:#f5f6f8; --sheet:#ffffff; --ink:#18213a; --ink-2:#4a5570; --ink-3:#7c869e;
+  --rule:#dde1ea; --rule-2:#c6ccd9; --tint:#eceff5;
+  --accent:#a8202d; --accent-ink:#ffffff; --accent-soft:#f7e3e5;
+  --gold:#c99a17; --gold-soft:#fbf1d3;
+  --ok:#1f7a4d; --ok-soft:#e1f2e8; --bad:#b3261e; --bad-soft:#fbe4e2;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f1424; --sheet:#171d31; --ink:#e7eaf3; --ink-2:#aab2c8; --ink-3:#7a849d;
+  --rule:#273050; --rule-2:#37416a; --tint:#1e2540;
+  --accent:#e0566a; --accent-ink:#1a0d10; --accent-soft:#3a1b24;
+  --gold:#e3b73f; --gold-soft:#3a3018;
+  --ok:#4cc58a; --ok-soft:#173528; --bad:#f07168; --bad-soft:#3d1c1d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f1424; --sheet:#171d31; --ink:#e7eaf3; --ink-2:#aab2c8; --ink-3:#7a849d;
+  --rule:#273050; --rule-2:#37416a; --tint:#1e2540;
+  --accent:#e0566a; --accent-ink:#1a0d10; --accent-soft:#3a1b24;
+  --gold:#e3b73f; --gold-soft:#3a3018;
+  --ok:#4cc58a; --ok-soft:#173528; --bad:#f07168; --bad-soft:#3d1c1d; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{background:var(--paper)}
+body{color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding-inline:16px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--rule)}
+.brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px 8px}
+.brand{display:flex;align-items:baseline;gap:10px;min-width:0}
+.brand b{white-space:nowrap;font-family:var(--display);font-stretch:78%;font-weight:800;font-size:22px;letter-spacing:.01em;text-transform:uppercase}
+.brand b i{font-style:normal;color:var(--accent)}
+.brand span{font-family:var(--mono);font-size:11px;color:var(--ink-3);white-space:nowrap}
+@media (max-width:520px){.brand span{display:none}}
+.langbtn{border:1px solid var(--rule-2);background:var(--sheet);border-radius:999px;padding:4px 10px;font-size:12px;font-family:var(--mono);cursor:pointer;flex:none}
+nav.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-bottom:-1px}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs button{background:none;border:0;border-bottom:3px solid transparent;padding:8px 12px 9px;font-weight:600;font-size:14px;color:var(--ink-2);cursor:pointer;white-space:nowrap}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+nav.tabs a.navlink{margin-left:auto;padding:8px 4px 9px 12px;font-weight:600;font-size:14px;color:var(--accent);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent}
+nav.tabs a.navlink:hover{text-decoration:underline}
+main{padding-block:22px 64px}
+h1,h2,h3{font-family:var(--display);font-stretch:85%;text-wrap:balance;margin:0}
+h1{font-size:30px;font-weight:800;line-height:1.1}
+h2{font-size:21px;font-weight:750}
+h3{font-size:16px;font-weight:700}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.muted{color:var(--ink-2)}
+.stack{display:flex;flex-direction:column;gap:16px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--r);padding:10px 16px;font-weight:650;cursor:pointer;border:1px solid var(--rule-2);background:var(--sheet);min-height:42px}
+.btn:hover{border-color:var(--ink-3)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{filter:brightness(1.07)}
+.btn.ghost{background:transparent;border-color:transparent;color:var(--ink-2)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.chip{border:1px solid var(--rule-2);border-radius:999px;padding:6px 12px;background:var(--sheet);cursor:pointer;font-size:13px;font-weight:600;color:var(--ink-2)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* home */
+.hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:16px}
+@media (max-width:680px){.hero{grid-template-columns:1fr}}
+.ready{display:flex;align-items:flex-end;gap:14px;margin-top:10px}
+.ready .big{font-family:var(--display);font-stretch:75%;font-weight:800;font-size:64px;line-height:.9}
+.ready .of{color:var(--ink-3);font-size:14px;padding-bottom:6px}
+.format dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:10px 0 0}
+.format dt{font-family:var(--mono);font-size:12px;color:var(--ink-3);padding-top:2px}
+.format dd{margin:0;font-weight:600}
+.tareas{display:flex;flex-direction:column}
+.trow{display:grid;grid-template-columns:28px minmax(0,1fr) 120px 64px;gap:12px;align-items:center;padding:12px 0;border-top:1px solid var(--rule);cursor:pointer;background:none;border-left:0;border-right:0;border-bottom:0;text-align:left;width:100%}
+.trow:first-child{border-top:0}
+.trow:hover .tname{text-decoration:underline;text-decoration-color:var(--rule-2)}
+.tbadge{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font-family:var(--mono);font-weight:600;font-size:13px}
+.tname{font-weight:600;min-width:0}
+.tname small{display:block;font-weight:400;color:var(--ink-3);font-size:12px}
+.bar{height:8px;border-radius:4px;background:var(--tint);display:flex;overflow:hidden}
+.bar i{display:block;height:100%}
+.bar .m{background:var(--ok)}.bar .w{background:var(--gold)}
+.tpct{text-align:right;font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+@media (max-width:520px){.trow{grid-template-columns:28px minmax(0,1fr) 54px}.trow .bar{grid-column:2/4;grid-row:2}}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-3)}
+.legend span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+.actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:600px){.actions{grid-template-columns:1fr}}
+.action{text-align:left;display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid var(--rule);background:var(--sheet);border-radius:var(--r);cursor:pointer}
+.action:hover{border-color:var(--ink-3)}
+.action b{font-family:var(--display);font-stretch:85%;font-size:17px}
+.action span{font-size:13px;color:var(--ink-2)}
+.action.main{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.action.main span{color:inherit;opacity:.75}
+.history{width:100%;border-collapse:collapse;font-size:14px}
+.history td,.history th{padding:8px 6px;border-top:1px solid var(--rule);text-align:left}
+.history th{font-family:var(--mono);font-size:11px;font-weight:400;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;border-top:0}
+.pill{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;letter-spacing:.04em}
+.pill.ok{background:var(--ok-soft);color:var(--ok)}.pill.bad{background:var(--bad-soft);color:var(--bad)}
+
+/* study */
+.tsel{display:flex;gap:6px;flex-wrap:wrap}
+.factsec{border-top:1px solid var(--rule);padding-top:14px}
+.factsec:first-child{border-top:0;padding-top:0}
+.facts{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.facts li{padding-left:18px;position:relative;max-width:68ch}
+.facts li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:50%;border:1.5px solid var(--accent)}
+.facts strong{font-weight:700}
+
+/* question */
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.progress{height:4px;background:var(--tint);border-radius:2px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.qtext{font-size:20px;font-weight:600;line-height:1.35;margin:6px 0 4px;max-width:60ch;text-wrap:pretty}
+.opts{display:flex;flex-direction:column;gap:8px;margin-top:14px}
+.opt{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;padding:12px 14px;border:1px solid var(--rule-2);border-radius:var(--r);background:var(--sheet);cursor:pointer;font-size:16px;line-height:1.35}
+.opt:hover:not([disabled]){border-color:var(--ink)}
+.opt .bub{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--ink-2);display:grid;place-items:center;font-family:var(--mono);font-weight:600;font-size:14px;color:var(--ink-2)}
+.opt .mark{font-family:var(--mono);font-size:12px;font-weight:600}
+.opt.sel .bub{background:var(--ink);border-color:var(--ink);color:var(--sheet)}
+.opt.sel{border-color:var(--ink)}
+.opt.ok{border-color:var(--ok);background:var(--ok-soft)}
+.opt.ok .bub{background:var(--ok);border-color:var(--ok);color:var(--sheet)}
+.opt.ok .mark{color:var(--ok)}
+.opt.bad{border-color:var(--bad);background:var(--bad-soft)}
+.opt.bad .bub{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.opt.bad .mark{color:var(--bad)}
+.opt[disabled]{cursor:default}
+.feedback{margin-top:14px;padding:12px 14px;border-radius:var(--r);font-weight:600;display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.feedback.ok{background:var(--ok-soft);color:var(--ok)}
+.feedback.bad{background:var(--bad-soft);color:var(--bad)}
+.kbd{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+@media (hover:none){.kbd{display:none}}
+.setup label.lab{display:block;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);margin-bottom:8px}
+.toggle{display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px}
+.toggle input{width:18px;height:18px;accent-color:var(--accent)}
+
+/* exam */
+.examtop{position:sticky;top:calc(env(safe-area-inset-top,0px) + 92px);z-index:5;background:var(--paper);padding-block:8px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.timer{font-family:var(--mono);font-size:20px;font-weight:600;padding:4px 12px;border:1.5px solid var(--ink);border-radius:var(--r)}
+.timer.low{border-color:var(--accent);color:var(--accent)}
+.grid25{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:6px}
+.cell{aspect-ratio:1;max-width:100%;border-radius:50%;border:1.5px solid var(--rule-2);background:var(--sheet);font-family:var(--mono);font-size:12px;cursor:pointer;display:grid;place-items:center;color:var(--ink-2)}
+.cell.ans{background:var(--ink);border-color:var(--ink);color:var(--sheet)}
+.cell.cur{outline:2px solid var(--accent);outline-offset:2px}
+.cell.ok{background:var(--ok);border-color:var(--ok);color:var(--sheet)}
+.cell.bad{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.confirm{border:1px solid var(--gold);background:var(--gold-soft);border-radius:var(--r);padding:12px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.stampwrap{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.stamp{font-family:var(--display);font-stretch:75%;font-weight:800;font-size:44px;letter-spacing:.06em;padding:4px 18px;border:4px double currentColor;border-radius:8px;transform:rotate(-6deg);text-transform:uppercase;line-height:1.1}
+.stamp.ok{color:var(--ok)}.stamp.bad{color:var(--bad)}
+@media (prefers-reduced-motion:no-preference){.stamp{animation:thud .35s cubic-bezier(.2,1.6,.4,1) both}@keyframes thud{from{transform:rotate(-6deg) scale(1.8);opacity:0}to{transform:rotate(-6deg) scale(1);opacity:1}}}
+.score{font-family:var(--display);font-stretch:75%;font-weight:800;font-size:56px;line-height:1}
+.score small{font-size:22px;color:var(--ink-3)}
+.breakdown{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+@media (max-width:520px){.breakdown{gap:5px}.bd{padding:8px 2px}.bd b{font-size:15px}}
+.bd{border:1px solid var(--rule);border-radius:var(--r);padding:10px;text-align:center}
+.bd b{display:block;font-family:var(--mono);font-size:18px}
+.bd span{font-size:11px;color:var(--ink-3)}
+.review{display:flex;flex-direction:column;gap:0}
+.rv{padding:12px 0;border-top:1px solid var(--rule)}
+.rv .rq{font-weight:600}
+.rv{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 110px);border-radius:var(--r)}
+.rvn{display:flex;align-items:center;gap:8px}
+.rvn b{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:11px;color:var(--sheet)}
+.rvn b.ok{background:var(--ok)}.rvn b.bad{background:var(--bad)}
+@keyframes flash{from{background:var(--gold-soft)}to{background:transparent}}
+.rv.flash{animation:flash 1.6s ease-out}
+@media (prefers-reduced-motion:reduce){.rv.flash{animation:none;outline:2px solid var(--gold)}}
+button.cell.ok,button.cell.bad{cursor:pointer}
+.rv .ra{font-size:14px;margin-top:4px;display:flex;flex-direction:column;gap:2px}
+.rv .yours{color:var(--bad)} .rv .right{color:var(--ok)}
+
+/* bank */
+.search{width:100%;padding:11px 14px;border:1px solid var(--rule-2);border-radius:var(--r);background:var(--sheet);font:inherit;color:var(--ink)}
+.bank{display:flex;flex-direction:column}
+.bq{padding:14px 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:54px minmax(0,1fr);gap:10px}
+.bq .id{font-family:var(--mono);font-size:12px;color:var(--ink-3);padding-top:3px;display:flex;flex-direction:column;gap:6px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--rule-2)}
+.dot.m{background:var(--ok)}.dot.w{background:var(--gold)}
+.bq ol{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:3px;font-size:14px;color:var(--ink-2)}
+.bq li.c{color:var(--ok);font-weight:650}
+.bq li.c.hide{color:var(--ink-2);font-weight:400}
+.bq li b{font-family:var(--mono);font-weight:600;margin-right:6px}
+.reveal{background:none;border:0;padding:0;color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;margin-top:6px}
+.empty{padding:30px 0;text-align:center;color:var(--ink-3)}
+.foot{font-size:12px;color:var(--ink-3);border-top:1px solid var(--rule);padding-top:14px;margin-top:30px}
+.foot a{color:inherit}
+.danger{color:var(--bad)}
+details.why{margin-top:8px;border:1px solid var(--rule);border-radius:var(--r);background:var(--tint)}
+details.why summary{cursor:pointer;padding:7px 12px;font-size:13px;font-weight:650;color:var(--ink-2);list-style:none;display:flex;align-items:center;gap:8px}
+details.why summary::-webkit-details-marker{display:none}
+details.why summary::before{content:"";width:0;height:0;border-left:5px solid currentColor;border-top:4px solid transparent;border-bottom:4px solid transparent;transition:transform .15s}
+details.why[open] summary::before{transform:rotate(90deg)}
+details.why p{margin:0;padding:0 12px 10px 25px;font-size:14px;line-height:1.5;color:var(--ink);max-width:70ch}
+.feedback+details.why{background:var(--sheet)}
+.note{font-size:13px;color:var(--ink-2)}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brandrow">
+      <div class="brand"><b>Repaso <i>CCSE</i></b><span>Manual 2026 · 300 preguntas</span></div>
+      <button class="langbtn" id="langbtn" type="button" aria-label="Language">EN</button>
+    </div>
+    <nav class="tabs" id="tabs" role="tablist"></nav>
+  </div>
+</header>
+<main class="wrap" id="app"></main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+__EXPL__
+__FACTS__
+const RAW = __DATA__;
+const TAREAS = {
+  1:{es:"Gobierno, legislación y participación ciudadana",en:"Government, legislation and civic participation",exam:10},
+  2:{es:"Derechos y deberes fundamentales",en:"Fundamental rights and duties",exam:3},
+  3:{es:"Organización territorial. Geografía física y política",en:"Territorial organisation and geography",exam:2},
+  4:{es:"Cultura e historia de España",en:"Spanish culture and history",exam:3},
+  5:{es:"Sociedad española",en:"Spanish society",exam:7}
+};
+const Q = RAW.map(([id,q,o,a])=>({id,q,o,a,t:Math.floor(id/1000)}));
+const QBY = Object.fromEntries(Q.map(x=>[x.id,x]));
+const EXAM_SECONDS = 45*60, PASS = 15;
+
+const I18N = {
+ es:{home:"Inicio",study:"Estudiar",practice:"Practicar",exam:"Simulacro",bank:"Preguntas",
+  readiness:"Preguntas dominadas",of:"de 300",mastered:"Dominada",weak:"Por repasar",unseen:"Sin ver",
+  format:"El examen real",fq:"Preguntas",fq2:"25 de opción múltiple o verdadero/falso",ft:"Tiempo",ft2:"45 minutos",fp:"Para aprobar",fp2:"15 aciertos (60 %)",fd:"Reparto",
+  byTarea:"Progreso por tarea",cont:"Seguir practicando",contD:"Preguntas que aún no has visto",errs:"Repasar errores",errsD:n=>`${n} preguntas falladas la última vez`,errsNone:"Aún no hay errores",
+  sim:"Hacer un simulacro",simD:"25 preguntas, 45 minutos, como el examen",hist:"Simulacros anteriores",date:"Fecha",result:"Resultado",time:"Tiempo",
+  noHist:"Todavía no has hecho ningún simulacro.",pass:"APTO",fail:"NO APTO",
+  studyIntro:"Datos clave del manual, resumidos por tarea. Repásalos y después practica.",practiceTarea:"Practicar esta tarea",
+  setup:"Configura la práctica",which:"Tareas",source:"Preguntas",all:"Todas",new:"Sin ver",wrong:"Falladas",notm:"No dominadas",
+  howmany:"Cuántas",shuffle:"Mezclar el orden de las respuestas",start:"Empezar",avail:n=>`${n} disponibles`,none:"No hay preguntas con estos filtros.",
+  q:"Pregunta",correct:"¡Correcto!",incorrect:"Incorrecto. La respuesta es",next:"Siguiente",finish:"Ver resultado",quit:"Salir",
+  done:"Práctica terminada",again:"Repetir las falladas",newSet:"Nueva práctica",missed:"Falladas en esta ronda",perfect:"Sin fallos. Muy bien.",
+  examIntro:"Mismo formato que la prueba del Instituto Cervantes: 25 preguntas elegidas al azar del manual, en la proporción oficial por tarea. Puedes moverte entre preguntas y cambiar respuestas hasta entregar.",
+  begin:"Empezar el simulacro",resume:"Continuar el simulacro",prev:"Anterior",submit:"Entregar",unans:n=>`Te quedan ${n} sin responder. ¿Entregar igualmente?`,yes:"Sí, entregar",no:"Seguir",
+  answered:n=>`${n}/25 respondidas`,timeUp:"Se acabó el tiempo",yourAns:"Tu respuesta",rightAns:"Correcta",blank:"Sin responder",reviewAll:"Revisión",onlyWrong:"Solo errores",showAll:"Todas",
+  newExam:"Otro simulacro",need:n=>`Necesitas ${PASS}. Te faltaron ${n}.`,passed:n=>`${n} por encima del mínimo.`,
+  search:"Buscar en las 300 preguntas…",showAns:"Mostrar respuestas",reveal:"Ver respuesta",results:n=>`${n} preguntas`,
+  reset:"Borrar mi progreso",resetQ:"Se borrará todo tu progreso y el historial de simulacros.",resetYes:"Borrar",resetNo:"Cancelar",
+  foot:"Preguntas y respuestas del «Manual de preparación de la prueba CCSE 2026» del Instituto Cervantes. Los resúmenes de estudio son un extracto. Tu progreso se guarda solo en este navegador.",
+  keys:"Teclas: 1-3 o A-C para responder, Intro para seguir",tf:"V/F",why:"¿Por qué?",pdf:"Descargar revisión en PDF",pdfBusy:"Generando PDF…",pdfOk:"PDF listo.",pdfNo:"La descarga no está disponible en esta vista. Abre la página en claude.ai.",pdfDecl:"Descarga cancelada.",pdfErr:"No se pudo generar el PDF. Inténtalo de nuevo."},
+ en:{home:"Home",study:"Study",practice:"Practice",exam:"Mock exam",bank:"Questions",
+  readiness:"Questions mastered",of:"of 300",mastered:"Mastered",weak:"Needs review",unseen:"Not seen",
+  format:"The real exam",fq:"Questions",fq2:"25 multiple choice or true/false",ft:"Time",ft2:"45 minutes",fp:"To pass",fp2:"15 correct (60%)",fd:"Split",
+  byTarea:"Progress by section",cont:"Keep practising",contD:"Questions you haven't seen yet",errs:"Review mistakes",errsD:n=>`${n} questions you got wrong last time`,errsNone:"No mistakes yet",
+  sim:"Take a mock exam",simD:"25 questions, 45 minutes, like the real test",hist:"Past mock exams",date:"Date",result:"Result",time:"Time",
+  noHist:"You haven't taken a mock exam yet.",pass:"PASS",fail:"FAIL",
+  studyIntro:"Key facts from the manual, summarised by section (in Spanish, like the exam). Review them, then practise.",practiceTarea:"Practise this section",
+  setup:"Set up practice",which:"Sections",source:"Questions",all:"All",new:"Not seen",wrong:"Got wrong",notm:"Not mastered",
+  howmany:"How many",shuffle:"Shuffle answer order",start:"Start",avail:n=>`${n} available`,none:"No questions match these filters.",
+  q:"Question",correct:"Correct!",incorrect:"Wrong. The answer is",next:"Next",finish:"See results",quit:"Quit",
+  done:"Practice complete",again:"Retry the missed ones",newSet:"New practice",missed:"Missed this round",perfect:"No mistakes. Well done.",
+  examIntro:"Same format as the Instituto Cervantes test: 25 questions drawn at random from the manual in the official proportion per section. You can move between questions and change answers until you submit.",
+  begin:"Start mock exam",resume:"Resume mock exam",prev:"Previous",submit:"Submit",unans:n=>`${n} still unanswered. Submit anyway?`,yes:"Yes, submit",no:"Keep going",
+  answered:n=>`${n}/25 answered`,timeUp:"Time's up",yourAns:"Your answer",rightAns:"Correct",blank:"Not answered",reviewAll:"Review",onlyWrong:"Mistakes only",showAll:"All",
+  newExam:"Another mock exam",need:n=>`You need ${PASS}. You were ${n} short.`,passed:n=>`${n} above the minimum.`,
+  search:"Search all 300 questions…",showAns:"Show answers",reveal:"Show answer",results:n=>`${n} questions`,
+  reset:"Clear my progress",resetQ:"This deletes all your progress and mock exam history.",resetYes:"Clear",resetNo:"Cancel",
+  foot:"Questions and answers from the Instituto Cervantes “Manual de preparación de la prueba CCSE 2026”. Study summaries are condensed. Your progress is saved only in this browser.",
+  keys:"Keys: 1-3 or A-C to answer, Enter to continue",tf:"T/F",why:"Why?",pdf:"Download review as PDF",pdfBusy:"Building PDF…",pdfOk:"PDF ready.",pdfNo:"Downloads aren't available in this view. Open the page on claude.ai.",pdfDecl:"Download cancelled.",pdfErr:"Couldn't build the PDF. Try again."}
+};
+
+/* ---------- storage ---------- */
+const LS="ccse2026:v1";
+function load(){try{return JSON.parse(localStorage.getItem(LS))||{}}catch(e){return {}}}
+let S=Object.assign({lang:"es",shuffle:true,prog:{},hist:[],exam:null,tab:"home",studyT:1},load());
+function save(){try{localStorage.setItem(LS,JSON.stringify(S))}catch(e){}}
+const L=()=>I18N[S.lang];
+const tn=t=>TAREAS[t][S.lang];
+
+function status(id){const p=S.prog[id];if(!p)return"u";if(p.s>=2)return"m";if(p.l===false)return"w";return p.s>=1?"s":"w"}
+function record(id,ok){const p=S.prog[id]||{n:0,c:0,s:0};p.n++;if(ok){p.c++;p.s++;}else{p.s=0;}p.l=ok;S.prog[id]=p;}
+
+/* ---------- helpers ---------- */
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const md=s=>esc(s).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>");
+const why=id=>EXPL[id]?`<details class="why"><summary>${L().why}</summary><p>${esc(EXPL[id])}</p></details>`:"";
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const isTF=q=>q.o.length===2;
+function order(q){return (S.shuffle&&!isTF(q))?shuffle(q.o.map((_,i)=>i)):q.o.map((_,i)=>i)}
+const LET="abc";
+const fmtT=s=>`${String(Math.floor(s/60)).padStart(2,"0")}:${String(s%60).padStart(2,"0")}`;
+const $=s=>document.querySelector(s);
+const app=$("#app");
+
+/* ---------- tabs ---------- */
+const TABS=["home","study","practice","exam","bank"];
+function renderTabs(){
+  $("#tabs").innerHTML=TABS.map(t=>`<button role="tab" type="button" data-tab="${t}" aria-selected="${S.tab===t}">${L()[t]}</button>`).join("")+(window.claude?"":`<a class="navlink" href="dele-a2/">DELE A2 →</a>`);
+  $("#langbtn").textContent=S.lang==="es"?"EN":"ES";
+  document.documentElement.lang=S.lang;
+}
+$("#tabs").addEventListener("click",e=>{const b=e.target.closest("[data-tab]");if(b)go(b.dataset.tab)});
+$("#langbtn").addEventListener("click",()=>{S.lang=S.lang==="es"?"en":"es";save();render()});
+function go(tab){S.tab=tab;save();render();window.scrollTo({top:0})}
+
+/* ---------- home ---------- */
+function counts(t){const qs=Q.filter(q=>!t||q.t===t);let m=0,w=0,u=0;qs.forEach(q=>{const s=status(q.id);if(s==="m")m++;else if(s==="u")u++;else w++});return{m,w,u,n:qs.length}}
+function renderHome(){
+  const l=L(),all=counts(),wrongN=Q.filter(q=>S.prog[q.id]&&S.prog[q.id].l===false).length;
+  const rows=[1,2,3,4,5].map(t=>{const c=counts(t);return `<button class="trow" type="button" data-study="${t}">
+    <span class="tbadge">${t}</span><span class="tname">${esc(tn(t))}<small>${c.n} ${S.lang==="es"?"preguntas":"questions"} · ${TAREAS[t].exam} ${S.lang==="es"?"en el examen":"in the exam"}</small></span>
+    <span class="bar"><i class="m" style="width:${c.m/c.n*100}%"></i><i class="w" style="width:${c.w/c.n*100}%"></i></span>
+    <span class="tpct">${Math.round(c.m/c.n*100)} %</span></button>`}).join("");
+  const hist=S.hist.slice(-8).reverse();
+  app.innerHTML=`<div class="stack">
+   <div class="hero">
+    <section class="sheet"><div class="eyebrow">${l.readiness}</div>
+      <div class="ready"><span class="big num">${all.m}</span><span class="of">${l.of}</span></div>
+      <div class="bar" style="margin-top:14px;height:10px"><i class="m" style="width:${all.m/3}%"></i><i class="w" style="width:${all.w/3}%"></i></div>
+      <div class="legend" style="margin-top:10px"><span style="--c:var(--ok)">${l.mastered} · ${all.m}</span><span style="--c:var(--gold)">${l.weak} · ${all.w}</span><span style="--c:var(--tint)">${l.unseen} · ${all.u}</span></div>
+    </section>
+    <section class="sheet format"><div class="eyebrow">${l.format}</div>
+      <dl><dt>${l.fq}</dt><dd>${l.fq2}</dd><dt>${l.ft}</dt><dd>${l.ft2}</dd><dt>${l.fp}</dt><dd>${l.fp2}</dd>
+      <dt>${l.fd}</dt><dd class="num" style="font-weight:500;font-size:13px">T1·10 T2·3 T3·2 T4·3 T5·7</dd></dl>
+    </section>
+   </div>
+   <div class="actions">
+    <button class="action main" type="button" data-act="exam"><b>${l.sim}</b><span>${l.simD}</span></button>
+    <button class="action" type="button" data-act="new"><b>${l.cont}</b><span>${l.contD} (${all.u})</span></button>
+    <button class="action" type="button" data-act="wrong" ${wrongN?"":"disabled"}><b>${l.errs}</b><span>${wrongN?l.errsD(wrongN):l.errsNone}</span></button>
+   </div>
+   <section class="sheet"><h2>${l.byTarea}</h2><div class="tareas" style="margin-top:6px">${rows}</div></section>
+   <section class="sheet"><h2>${l.hist}</h2>${hist.length?`<div style="overflow-x:auto;margin-top:8px"><table class="history"><thead><tr><th>${l.date}</th><th>${l.result}</th><th></th><th>${l.time}</th></tr></thead><tbody>${hist.map(h=>`<tr><td class="num">${new Date(h.d).toLocaleDateString(S.lang==="es"?"es-ES":"en-GB",{day:"2-digit",month:"short"})}</td><td class="num">${h.s}/25</td><td><span class="pill ${h.s>=PASS?"ok":"bad"}">${h.s>=PASS?l.pass:l.fail}</span></td><td class="num">${fmtT(h.t)}</td></tr>`).join("")}</tbody></table></div>`:`<p class="muted">${l.noHist}</p>`}</section>
+   ${footer()}
+  </div>`;
+}
+app.addEventListener("click",e=>{
+  const s=e.target.closest("[data-study]");if(s){S.studyT=+s.dataset.study;go("study");return}
+  const a=e.target.closest("[data-act]");if(!a)return;
+  const act=a.dataset.act;
+  if(act==="exam"){if(S.exam&&S.exam.res)S.exam=null;go("exam");}
+  if(act==="new"){P.setup={ts:[1,2,3,4,5],src:"new",n:20};startPractice();}
+  if(act==="wrong"){P.setup={ts:[1,2,3,4,5],src:"wrong",n:0};startPractice();}
+  if(act==="reset"){R.ask=true;render()}
+  if(act==="resetNo"){R.ask=false;render()}
+  if(act==="resetYes"){S.prog={};S.hist=[];S.exam=null;R.ask=false;save();render()}
+});
+const R={ask:false};
+function footer(){const l=L();return `<div class="foot stack" style="gap:10px"><div>${l.foot}</div>
+ ${R.ask?`<div class="confirm"><span>${l.resetQ}</span><span class="row"><button class="btn" type="button" data-act="resetNo">${l.resetNo}</button><button class="btn primary" type="button" data-act="resetYes">${l.resetYes}</button></span></div>`:`<div><button class="btn ghost danger" type="button" data-act="reset" style="padding-inline:0">${l.reset}</button></div>`}</div>`}
+
+/* ---------- study ---------- */
+function renderStudy(){
+  const l=L(),t=S.studyT,c=counts(t);
+  app.innerHTML=`<div class="stack">
+   <div><div class="eyebrow">${l.study}</div><h1 style="margin-top:4px">Tarea ${t}. ${esc(TAREAS[t].es)}</h1><p class="muted" style="margin:8px 0 0">${l.studyIntro}</p></div>
+   <div class="tsel">${[1,2,3,4,5].map(x=>`<button class="chip" type="button" aria-pressed="${x===t}" data-st="${x}">Tarea ${x}</button>`).join("")}</div>
+   <section class="sheet stack">${FACTS[t].map(sec=>`<div class="factsec"><h3>${esc(sec.h)}</h3><ul class="facts">${sec.i.map(i=>`<li>${md(i)}</li>`).join("")}</ul></div>`).join("")}</section>
+   <div class="row"><button class="btn primary" type="button" data-pt="${t}">${l.practiceTarea} · ${c.n}</button><span class="muted" style="font-size:13px">${l.mastered}: ${c.m} · ${l.weak}: ${c.w} · ${l.unseen}: ${c.u}</span></div>
+  </div>`;
+  app.querySelectorAll("[data-st]").forEach(b=>b.onclick=()=>{S.studyT=+b.dataset.st;save();renderStudy();window.scrollTo({top:0})});
+  app.querySelector("[data-pt]").onclick=()=>{P.setup={ts:[t],src:"notm",n:20};startPractice()};
+}
+
+/* ---------- practice ---------- */
+const P={setup:{ts:[1,2,3,4,5],src:"all",n:20},run:null};
+function pool(st){return Q.filter(q=>st.ts.includes(q.t)&&(
+  st.src==="all"||(st.src==="new"&&!S.prog[q.id])||(st.src==="wrong"&&S.prog[q.id]&&S.prog[q.id].l===false)||(st.src==="notm"&&status(q.id)!=="m")))}
+function startPractice(ids){
+  let list=ids?ids.map(i=>QBY[i]):shuffle(pool(P.setup));
+  if(!ids&&P.setup.n)list=list.slice(0,P.setup.n);
+  if(!list.length){P.run=null;S.tab="practice";render();return}
+  P.run={list:list.map(q=>({id:q.id,ord:order(q),pick:null})),i:0,done:false};
+  S.tab="practice";save();render();window.scrollTo({top:0});
+}
+function renderPractice(){
+  const l=L();
+  if(!P.run){
+    const st=P.setup,n=pool(st).length;
+    app.innerHTML=`<div class="stack"><div><div class="eyebrow">${l.practice}</div><h1 style="margin-top:4px">${l.setup}</h1></div>
+     <section class="sheet setup stack">
+      <div><label class="lab">${l.which}</label><div class="row">${[1,2,3,4,5].map(t=>`<button class="chip" type="button" data-t="${t}" aria-pressed="${st.ts.includes(t)}" title="${esc(tn(t))}">Tarea ${t}</button>`).join("")}</div></div>
+      <div><label class="lab">${l.source}</label><div class="row">${["all","new","notm","wrong"].map(s=>`<button class="chip" type="button" data-src="${s}" aria-pressed="${st.src===s}">${l[s]}</button>`).join("")}</div></div>
+      <div><label class="lab">${l.howmany}</label><div class="row">${[10,20,50,0].map(k=>`<button class="chip" type="button" data-n="${k}" aria-pressed="${st.n===k}">${k||l.all}</button>`).join("")}</div></div>
+      <label class="toggle"><input type="checkbox" id="shuf" ${S.shuffle?"checked":""}> ${l.shuffle}</label>
+      <div class="row"><button class="btn primary" type="button" id="go" ${n?"":"disabled"}>${l.start}</button><span class="muted num" style="font-size:13px">${n?l.avail(n):l.none}</span></div>
+     </section>${footer()}</div>`;
+    app.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>{const t=+b.dataset.t;st.ts=st.ts.includes(t)?st.ts.filter(x=>x!==t):[...st.ts,t].sort();if(!st.ts.length)st.ts=[t];renderPractice()});
+    app.querySelectorAll("[data-src]").forEach(b=>b.onclick=()=>{st.src=b.dataset.src;renderPractice()});
+    app.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{st.n=+b.dataset.n;renderPractice()});
+    $("#shuf").onchange=e=>{S.shuffle=e.target.checked;save()};
+    $("#go").onclick=()=>startPractice();
+    return;
+  }
+  const r=P.run;
+  if(r.done){
+    const ok=r.list.filter(x=>x.pick===QBY[x.id].a).length,miss=r.list.filter(x=>x.pick!==QBY[x.id].a);
+    app.innerHTML=`<div class="stack"><div class="eyebrow">${l.practice}</div>
+     <section class="sheet stack"><h1>${l.done}</h1><div class="score num">${ok}<small> / ${r.list.length}</small></div>
+      <div class="row">${miss.length?`<button class="btn primary" type="button" id="again">${l.again} · ${miss.length}</button>`:""}<button class="btn" type="button" id="newset">${l.newSet}</button><button class="btn" type="button" id="pdfp">${l.pdf}</button></div><div class="note" id="pdfmsg" aria-live="polite"></div></section>
+     <section class="sheet"><h2>${l.reviewAll}</h2>${miss.length?"":`<p class="muted">${l.perfect}</p>`}<div class="review" style="margin-top:6px">${r.list.map((x,k)=>reviewItem(x,k)).join("")}</div></section></div>`;
+    if(miss.length)$("#again").onclick=()=>startPractice(miss.map(x=>x.id));
+    $("#newset").onclick=()=>{P.run=null;renderPractice()};
+    $("#pdfp").onclick=()=>exportPdf({kind:"practice",items:r.list,score:ok,total:r.list.length});
+    return;
+  }
+  const it=r.list[r.i],q=QBY[it.id],answered=it.pick!==null;
+  app.innerHTML=`<div class="stack">
+   <div class="qhead"><span class="eyebrow">${l.q} ${r.i+1} / ${r.list.length}</span><button class="btn ghost" type="button" id="quit" style="min-height:0;padding:4px 0">${l.quit}</button></div>
+   <div class="progress"><i style="width:${(r.i+(answered?1:0))/r.list.length*100}%"></i></div>
+   <section class="sheet">${qBlock(q,it,answered,true)}
+    ${answered?`<div class="feedback ${it.pick===q.a?"ok":"bad"}"><span>${it.pick===q.a?l.correct:`${l.incorrect} ${LET[it.ord.indexOf(q.a)]}. ${esc(q.o[q.a])}`}</span>
+      <button class="btn primary" type="button" id="next">${r.i+1<r.list.length?l.next:l.finish}</button></div>${why(q.id)}`:""}
+   </section>
+   <div class="kbd">${l.keys}</div></div>`;
+  bindOpts(idx=>{if(it.pick!==null)return;it.pick=idx;record(q.id,idx===q.a);save();renderPractice();const n=$("#next");n&&n.focus({preventScroll:true})});
+  $("#quit").onclick=()=>{P.run=null;renderPractice()};
+  const nx=$("#next");if(nx)nx.onclick=nextQ;
+}
+function nextQ(){const r=P.run;if(r.i+1<r.list.length)r.i++;else r.done=true;renderPractice();window.scrollTo({top:0})}
+function qBlock(q,it,locked,reveal){
+  return `<div class="row" style="justify-content:space-between"><span class="eyebrow">Tarea ${q.t} · ${esc(tn(q.t))}</span><span class="num" style="font-size:12px;color:var(--ink-3)">Nº ${q.id}</span></div>
+   <div class="qtext">${esc(q.q)}</div>
+   <div class="opts">${it.ord.map((oi,pos)=>{
+     let cls="",mark="";
+     if(reveal&&locked){if(oi===q.a){cls="ok";mark="✓"}else if(oi===it.pick){cls="bad";mark="✗"}}
+     else if(it.pick===oi)cls="sel";
+     return `<button class="opt ${cls}" type="button" data-o="${oi}" ${reveal&&locked?"disabled":""}><span class="bub">${LET[pos]}</span><span>${esc(q.o[oi])}</span><span class="mark">${mark}</span></button>`}).join("")}</div>`;
+}
+let optHandler=null;
+function bindOpts(fn){optHandler=fn;app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>fn(+b.dataset.o))}
+document.addEventListener("keydown",e=>{
+  if(e.target.matches("input,textarea")||e.metaKey||e.ctrlKey||e.altKey)return;
+  const opts=[...app.querySelectorAll(".opt:not([disabled])")];
+  const k=e.key.toLowerCase(),map={"1":0,"2":1,"3":2,a:0,b:1,c:2};
+  if(k in map&&opts[map[k]]&&optHandler){e.preventDefault();optHandler(+opts[map[k]].dataset.o);return}
+  if(S.tab==="practice"&&P.run&&!P.run.done&&(e.key==="Enter"||e.key==="ArrowRight")){const it=P.run.list[P.run.i];if(it.pick!==null&&document.activeElement?.id!=="next"){e.preventDefault();nextQ()}}
+  if(S.tab==="exam"&&S.exam&&!S.exam.res){if(e.key==="ArrowRight"){E.move(1)}if(e.key==="ArrowLeft"){E.move(-1)}}
+});
+function reviewItem(x,k){
+  const q=QBY[x.id],l=L(),ok=x.pick===q.a;
+  return `<div class="rv" id="rv-${k}"><div class="row" style="justify-content:space-between"><span class="rvn"><b class="${ok?"ok":"bad"}">${k+1}</b><span class="eyebrow">${l.q} ${k+1} · Tarea ${q.t}</span></span><span class="num" style="font-size:12px;color:var(--ink-3)">Nº ${q.id}</span></div>
+   <div class="rq">${esc(q.q)}</div><div class="ra">
+   ${ok?`<span class="right">✓ ${esc(q.o[q.a])}</span>`:`<span class="yours">✗ ${l.yourAns}: ${x.pick===null?l.blank:esc(q.o[x.pick])}</span><span class="right">✓ ${l.rightAns}: ${esc(q.o[q.a])}</span>`}</div>${why(q.id)}</div>`;
+}
+
+/* ---------- exam ---------- */
+let tick=null;
+const E={
+  start(){
+    const picks=[];[1,2,3,4,5].forEach(t=>{shuffle(Q.filter(q=>q.t===t)).slice(0,TAREAS[t].exam).forEach(q=>picks.push(q))});
+    S.exam={start:Date.now(),i:0,list:picks.map(q=>({id:q.id,ord:order(q),pick:null})),res:null,confirm:false};save();renderExam();
+  },
+  left(){return Math.max(0,EXAM_SECONDS-Math.floor((Date.now()-S.exam.start)/1000))},
+  move(d){const x=S.exam;x.i=Math.min(24,Math.max(0,x.i+d));x.confirm=false;save();renderExam()},
+  submit(){
+    const x=S.exam;if(x.res)return;
+    const used=Math.min(EXAM_SECONDS,Math.floor((Date.now()-x.start)/1000));
+    let s=0;const per={};x.list.forEach(it=>{const q=QBY[it.id],ok=it.pick===q.a;if(ok)s++;per[q.t]=per[q.t]||[0,0];per[q.t][1]++;if(ok)per[q.t][0]++;record(q.id,ok)});
+    x.res={s,per,t:used,only:false};S.hist.push({d:Date.now(),s,t:used});save();clearInterval(tick);renderExam();window.scrollTo({top:0});
+  }
+};
+function renderExam(){
+  const l=L(),x=S.exam;clearInterval(tick);
+  if(!x){
+    app.innerHTML=`<div class="stack"><div><div class="eyebrow">${l.exam}</div><h1 style="margin-top:4px">${l.sim}</h1></div>
+     <section class="sheet stack"><p style="margin:0;max-width:62ch">${l.examIntro}</p>
+      <div class="breakdown">${[1,2,3,4,5].map(t=>`<div class="bd"><b>${TAREAS[t].exam}</b><span>Tarea ${t}</span></div>`).join("")}</div>
+      <div class="row"><button class="btn primary" type="button" id="begin">${l.begin}</button><span class="muted num">45:00 · ${PASS}/25</span></div></section>${footer()}</div>`;
+    $("#begin").onclick=()=>E.start();return;
+  }
+  if(!x.res&&E.left()<=0){E.submit();return}
+  if(x.res){
+    const r=x.res,passed=r.s>=PASS,items=r.only?x.list.filter(it=>it.pick!==QBY[it.id].a):x.list;
+    app.innerHTML=`<div class="stack"><div class="eyebrow">${l.exam}</div>
+     <section class="sheet stack"><div class="stampwrap"><div class="score num">${r.s}<small> / 25</small></div><div class="stamp ${passed?"ok":"bad"}">${passed?l.pass:l.fail}</div></div>
+      <p class="muted" style="margin:0">${passed?l.passed(r.s-PASS):l.need(PASS-r.s)} · ${l.time} ${fmtT(r.t)}</p>
+      <div class="breakdown">${[1,2,3,4,5].map(t=>`<div class="bd"><b>${r.per[t][0]}/${r.per[t][1]}</b><span>Tarea ${t}</span></div>`).join("")}</div>
+      <div class="grid25">${x.list.map((it,k)=>`<button type="button" class="cell ${it.pick===QBY[it.id].a?"ok":"bad"}" data-jump="${k}" aria-label="${l.q} ${k+1}">${k+1}</button>`).join("")}</div>
+      <div class="row"><button class="btn primary" type="button" id="again">${l.newExam}</button>${x.list.some(it=>it.pick!==QBY[it.id].a)?`<button class="btn" type="button" id="drill">${l.again}</button>`:""}<button class="btn" type="button" id="pdfe">${l.pdf}</button></div><div class="note" id="pdfmsg" aria-live="polite"></div></section>
+     <section class="sheet"><div class="row" style="justify-content:space-between"><h2>${l.reviewAll}</h2><div class="row"><button class="chip" type="button" id="fall" aria-pressed="${!r.only}">${l.showAll}</button><button class="chip" type="button" id="fwrong" aria-pressed="${r.only}">${l.onlyWrong}</button></div></div>
+      <div class="review" style="margin-top:6px">${items.map(it=>reviewItem(it,x.list.indexOf(it))).join("")}</div></section></div>`;
+    $("#again").onclick=()=>E.start();
+    const d=$("#drill");if(d)d.onclick=()=>{const ids=x.list.filter(it=>it.pick!==QBY[it.id].a).map(it=>it.id);startPractice(ids)};
+    $("#pdfe").onclick=()=>exportPdf({kind:"exam",items:x.list,score:r.s,total:25,per:r.per,time:r.t,date:x.start});
+    app.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{
+      const k=+b.dataset.jump,it=x.list[k];
+      if(r.only&&it.pick===QBY[it.id].a){r.only=false;save();renderExam()}
+      const el=document.getElementById("rv-"+k);if(!el)return;
+      el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
+      el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash");
+      const d=el.querySelector("details.why");if(d)d.open=true;});
+    $("#fall").onclick=()=>{r.only=false;save();renderExam()};$("#fwrong").onclick=()=>{r.only=true;save();renderExam()};
+    return;
+  }
+  const it=x.list[x.i],q=QBY[it.id],n=x.list.filter(z=>z.pick!==null).length,left=E.left();
+  app.innerHTML=`<div class="stack">
+   <div class="examtop"><span class="eyebrow num">${l.answered(n)}</span><span class="timer ${left<300?"low":""}" id="timer" aria-live="off">${fmtT(left)}</span></div>
+   <section class="sheet">${qBlock(q,it,false,false)}
+    <div class="row" style="justify-content:space-between;margin-top:16px"><button class="btn" type="button" id="prev" ${x.i===0?"disabled":""}>← ${l.prev}</button>
+     ${x.i<24?`<button class="btn primary" type="button" id="nxt">${l.next} →</button>`:`<button class="btn primary" type="button" id="sub">${l.submit}</button>`}</div>
+   </section>
+   ${x.confirm?`<div class="confirm"><span>${l.unans(25-n)}</span><span class="row"><button class="btn" type="button" id="cno">${l.no}</button><button class="btn primary" type="button" id="cyes">${l.yes}</button></span></div>`:""}
+   <section class="sheet"><div class="grid25">${x.list.map((z,k)=>`<button type="button" class="cell ${z.pick!==null?"ans":""} ${k===x.i?"cur":""}" data-go="${k}" aria-label="${l.q} ${k+1}">${k+1}</button>`).join("")}</div>
+    <div class="row" style="margin-top:14px;justify-content:space-between"><span class="kbd">${l.keys}</span><button class="btn" type="button" id="sub2">${l.submit}</button></div></section>
+  </div>`;
+  bindOpts(idx=>{it.pick=idx;save();if(x.i<24){x.i++;}renderExam()});
+  $("#prev").onclick=()=>E.move(-1);
+  const nx=$("#nxt");if(nx)nx.onclick=()=>E.move(1);
+  const trySub=()=>{if(n<25&&!x.confirm){x.confirm=true;renderExam()}else E.submit()};
+  const sb=$("#sub");if(sb)sb.onclick=trySub;$("#sub2").onclick=trySub;
+  const cy=$("#cyes");if(cy){cy.onclick=()=>E.submit();$("#cno").onclick=()=>{x.confirm=false;renderExam()}}
+  app.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{x.i=+b.dataset.go;x.confirm=false;save();renderExam()});
+  tick=setInterval(()=>{const s=E.left(),el=$("#timer");if(s<=0){E.submit();return}if(el){el.textContent=fmtT(s);el.classList.toggle("low",s<300)}},1000);
+}
+
+/* ---------- bank ---------- */
+const B={q:"",t:0,show:false,open:new Set()};
+const norm=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+function renderBank(){
+  const l=L();
+  app.innerHTML=`<div class="stack"><div><div class="eyebrow">${l.bank}</div><h1 style="margin-top:4px">${S.lang==="es"?"Banco de preguntas":"Question bank"}</h1></div>
+   <input class="search" id="bs" type="search" placeholder="${l.search}" value="${esc(B.q)}" autocomplete="off">
+   <div class="row" style="justify-content:space-between"><div class="row">${[0,1,2,3,4,5].map(t=>`<button class="chip" type="button" data-bt="${t}" aria-pressed="${B.t===t}">${t?"T"+t:l.all}</button>`).join("")}</div>
+    <label class="toggle"><input type="checkbox" id="bshow" ${B.show?"checked":""}> ${l.showAns}</label></div>
+   <div class="muted num" id="bcount" style="font-size:13px"></div>
+   <section class="sheet" style="padding-block:4px"><div class="bank" id="blist"></div></section>${footer()}</div>`;
+  const draw=()=>{
+    const term=norm(B.q.trim());
+    const list=Q.filter(q=>(!B.t||q.t===B.t)&&(!term||norm(q.q+" "+q.o.join(" ")+" "+q.id).includes(term)));
+    $("#bcount").textContent=l.results(list.length);
+    $("#blist").innerHTML=list.length?list.map(q=>{const st=status(q.id),vis=B.show||B.open.has(q.id);
+      return `<div class="bq"><div class="id"><span>${q.id}</span><span class="dot ${st==="m"?"m":st==="u"?"":"w"}" title="${st==="m"?l.mastered:st==="u"?l.unseen:l.weak}"></span></div>
+      <div style="min-width:0"><div style="font-weight:600">${esc(q.q)}</div><ol>${q.o.map((o,i)=>`<li class="${i===q.a?"c"+(vis?"":" hide"):""}"><b>${LET[i]}</b>${esc(o)}${i===q.a&&vis?" ✓":""}</li>`).join("")}</ol>
+      ${vis?why(q.id):`<button class="reveal" type="button" data-rv="${q.id}">${l.reveal}</button>`}</div></div>`}).join(""):`<div class="empty">${l.none}</div>`;
+  };
+  draw();
+  $("#bs").oninput=e=>{B.q=e.target.value;draw()};
+  $("#bshow").onchange=e=>{B.show=e.target.checked;draw()};
+  app.querySelectorAll("[data-bt]").forEach(b=>b.onclick=()=>{B.t=+b.dataset.bt;renderBank()});
+  $("#blist").addEventListener("click",e=>{const r=e.target.closest("[data-rv]");if(r){B.open.add(+r.dataset.rv);draw()}});
+}
+
+/* ---------- pdf export ---------- */
+const pdfTxt=s=>String(s).replace(/[…]/g,"...").replace(/[‘’]/g,"'").replace(/[“”]/g,'"').replace(/[–—]/g,"-").replace(/[^\x20-\x7E -ÿ\n]/g,"");
+async function exportPdf(o){
+  const l=L(),msg=$("#pdfmsg"),say=t=>{if(msg)msg.textContent=t};
+  if(!window.jspdf){say(l.pdfErr);return}
+  say(l.pdfBusy);
+  let blob;
+  try{
+    const {jsPDF}=window.jspdf,doc=new jsPDF({unit:"mm",format:"a4"}),W=210,M=16,CW=W-2*M,BOT=284;
+    let y=M;
+    const ink=[24,33,58],grey=[110,118,140],ok=[31,122,77],bad=[179,38,30],red=[168,32,45];
+    const need=h=>{if(y+h>BOT){doc.addPage();y=M}};
+    const write=(txt,{size=10,style="normal",color=ink,indent=0,gap=1.2}={})=>{
+      doc.setFont("helvetica",style);doc.setFontSize(size);doc.setTextColor(...color);
+      const lines=doc.splitTextToSize(pdfTxt(txt),CW-indent),lh=size*0.42;
+      lines.forEach(ln=>{need(lh);doc.text(ln,M+indent,y+lh*0.8);y+=lh});y+=gap;};
+    const es=S.lang==="es";
+    write(es?"Repaso CCSE 2026":"CCSE 2026 review",{size:9,color:red,style:"bold",gap:0.5});
+    write(o.kind==="exam"?(es?"Revisión del simulacro":"Mock exam review"):(es?"Revisión de la práctica":"Practice review"),{size:18,style:"bold",gap:2});
+    const d=new Date(o.date||Date.now()).toLocaleString(es?"es-ES":"en-GB",{dateStyle:"long",timeStyle:"short"});
+    const passed=o.kind==="exam"?o.score>=PASS:null;
+    write(`${es?"Resultado":"Score"}: ${o.score} / ${o.total}${passed===null?"":"  -  "+(passed?l.pass:l.fail)}${o.time!=null?"   ·   "+l.time+" "+fmtT(o.time):""}   ·   ${d}`,{size:10.5,style:"bold",color:passed===false?bad:passed?ok:ink,gap:1});
+    if(o.per)write([1,2,3,4,5].map(t=>`Tarea ${t}: ${o.per[t][0]}/${o.per[t][1]}`).join("    "),{size:9.5,color:grey,gap:1});
+    if(o.kind==="exam")write(es?`Para aprobar hacen falta ${PASS} aciertos de 25.`:`You need ${PASS} of 25 to pass.`,{size:9,color:grey,gap:3});
+    doc.setDrawColor(200,205,218);doc.line(M,y,W-M,y);y+=5;
+    o.items.forEach((it,k)=>{
+      const q=QBY[it.id],right=it.pick===q.a;
+      need(26);
+      write(`${k+1}.  Tarea ${q.t}  ·  Nº ${q.id}   ${right?(es?"CORRECTA":"CORRECT"):it.pick===null?(es?"SIN RESPONDER":"NOT ANSWERED"):(es?"INCORRECTA":"WRONG")}`,{size:8.5,style:"bold",color:right?ok:bad,gap:0.6});
+      write(q.q,{size:11,style:"bold",gap:1.2});
+      q.o.forEach((opt,i)=>{
+        const isR=i===q.a,isP=i===it.pick;
+        let tag="";if(isR&&isP)tag=es?"   <- tu respuesta (correcta)":"   <- your answer (correct)";else if(isR)tag=es?"   <- respuesta correcta":"   <- correct answer";else if(isP)tag=es?"   <- tu respuesta":"   <- your answer";
+        write(`${LET[i]})  ${opt}${tag}`,{size:10,indent:4,style:isR||isP?"bold":"normal",color:isR?ok:isP?bad:ink,gap:0.4});
+      });
+      if(EXPL[q.id]){y+=0.8;write(`${l.why} ${EXPL[q.id]}`,{size:9.3,indent:4,color:grey,gap:0});}
+      y+=3;need(4);doc.setDrawColor(225,229,236);doc.line(M,y,W-M,y);y+=4;
+    });
+    const n=doc.getNumberOfPages();
+    for(let p=1;p<=n;p++){doc.setPage(p);doc.setFont("helvetica","normal");doc.setFontSize(8);doc.setTextColor(...grey);doc.text(pdfTxt(es?"Preguntas del Manual CCSE 2026 del Instituto Cervantes":"Questions from the Instituto Cervantes CCSE 2026 manual"),M,292);doc.text(`${p} / ${n}`,W-M,292,{align:"right"});}
+    blob=doc.output("blob");
+  }catch(e){say(l.pdfErr);return}
+  const stamp=new Date(o.date||Date.now()).toISOString().slice(0,10);
+  const filename=`ccse-${o.kind==="exam"?(S.lang==="es"?"simulacro":"mock-exam"):(S.lang==="es"?"practica":"practice")}-${stamp}.pdf`;
+  const dl=window.claude&&window.claude.use?await window.claude.use("downloads").catch(()=>null):null;
+  if(!dl){
+    if(window.claude){say(l.pdfNo);return}
+    try{const u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000);say(l.pdfOk)}catch(e){say(l.pdfErr)}
+    return}
+  try{await dl.save({filename,data:blob});say(l.pdfOk)}
+  catch(e){say(e&&e.code==="declined"?l.pdfDecl:e&&e.code==="rate_limited"?l.pdfBusy:l.pdfErr)}
+}
+
+/* ---------- root ---------- */
+function render(){
+  clearInterval(tick);optHandler=null;renderTabs();
+  ({home:renderHome,study:renderStudy,practice:renderPractice,exam:renderExam,bank:renderBank})[S.tab]();
+}
+const h=(location.hash||"").slice(1);if(TABS.includes(h))S.tab=h;
+render();
+</script>

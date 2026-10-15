@@ -1,0 +1,314 @@
+{
+ "id": "R3",
+ "title": "Tiempo libre y ciudad",
+ "tasks": [
+  {
+   "t": 1,
+   "texts": [
+    {
+     "h": "Correo de Sara a la familia Martín",
+     "b": "Asunto: ¡Muchas gracias por todo!\n\nQueridos Pilar y Antonio:\n\nYa estoy otra vez en Lyon. El viaje de vuelta fue largo, porque el avión salió con tres horas de retraso, pero llegué bien. Mi madre os manda muchos saludos y os da las gracias por cuidarme tan bien durante estos tres meses.\n\nOs echo mucho de menos. Echo de menos los desayunos con churros los domingos, los paseos por la Plaza Mayor y, sobre todo, nuestras conversaciones en la cena. Cuando llegué a Salamanca casi no entendía nada, ¿os acordáis? Y ahora mi profesora de aquí dice que hablo español mucho mejor. Creo que aprendí más en vuestra casa que en la academia.\n\nAyer empecé otra vez la universidad. Este año tengo muchas asignaturas y tengo que estudiar bastante, pero he decidido seguir con el español: voy a clases dos veces por semana y he encontrado un intercambio con un chico de Bilbao que estudia aquí. Nos vemos los viernes en una cafetería y hablamos una hora en español y otra en francés.\n\nPor cierto, me olvidé en el armario de mi habitación una chaqueta azul. No es importante, no os preocupéis. Si viene alguien de vuestra familia a Francia, me la puede traer; si no, la recojo la próxima vez.\n\nPorque voy a volver, ¡seguro! Quiero ir en Semana Santa, si tenéis sitio en casa. Y quiero que vengáis a Lyon en verano: os puedo enseñar la ciudad y mi padre cocina muy bien.\n\nUn abrazo muy fuerte a los dos y a Lola, la gata.\n\nSara"
+    }
+   ],
+   "items": [
+    {
+     "q": "Sara escribe a la familia Martín para…",
+     "o": [
+      "darles las gracias.",
+      "pedirles dinero.",
+      "explicarles un problema en el viaje."
+     ],
+     "a": 0,
+     "w": "El correo empieza y termina dando las gracias por los tres meses en su casa. El retraso del avión es solo un detalle."
+    },
+    {
+     "q": "Según Sara, aprendió mucho español…",
+     "o": [
+      "en la academia de Salamanca.",
+      "hablando con la familia.",
+      "con su profesora de Lyon."
+     ],
+     "a": 1,
+     "w": "«Creo que aprendí más en vuestra casa que en la academia»."
+    },
+    {
+     "q": "Ahora, en Lyon, Sara…",
+     "o": [
+      "ha dejado de estudiar español.",
+      "practica español con un chico español.",
+      "trabaja en una cafetería."
+     ],
+     "a": 1,
+     "w": "Hace un intercambio con un chico de Bilbao en una cafetería los viernes."
+    },
+    {
+     "q": "Sobre la chaqueta, Sara dice que…",
+     "o": [
+      "la necesita urgentemente.",
+      "se la pueden enviar por correo.",
+      "la puede recoger más adelante."
+     ],
+     "a": 2,
+     "w": "«No es importante… si no, la recojo la próxima vez»."
+    },
+    {
+     "q": "Sara quiere que la familia…",
+     "o": [
+      "la visite en Francia.",
+      "vaya a Lyon en Semana Santa.",
+      "cuide de su gata."
+     ],
+     "a": 0,
+     "w": "Ella vuelve a Salamanca en Semana Santa e invita a la familia a Lyon en verano. Lola es la gata de la familia Martín."
+    }
+   ]
+  },
+  {
+   "t": 2,
+   "texts": [
+    {
+     "h": "Ayuntamiento",
+     "b": "AYUNTAMIENTO DE SAN ROQUE. Para empadronarse es necesario pedir cita previa en la web municipal. Debe traer su documento de identidad o pasaporte y el contrato de alquiler o las escrituras de la vivienda. La oficina atiende de lunes a viernes de 8:30 a 14:00. En agosto, solo martes y jueves. El empadronamiento es gratuito y el certificado se entrega en el mismo momento."
+    },
+    {
+     "h": "Mercadillo",
+     "b": "MERCADILLO DE SEGUNDA MANO. Todos los primeros domingos de mes, en el parque de la Alameda, de 10:00 a 14:00. Puedes vender ropa, libros, juguetes y muebles pequeños. Para tener un puesto, inscríbete antes del jueves. El puesto es gratis para los vecinos del barrio. Habrá también música en directo y una zona con juegos para niños. ¡Ven a pasar un buen rato!"
+    },
+    {
+     "h": "Teatro",
+     "b": "TEATRO PRINCIPAL presenta «La casa de las flores», una comedia para toda la familia. Del 3 al 20 de marzo, de miércoles a domingo a las 20:00. Entradas desde 12 euros. Los miércoles, día del espectador: todas las entradas a 8 euros. Venta en taquilla y en internet. La obra dura una hora y media, sin descanso. Las puertas se cierran cinco minutos antes de empezar."
+    },
+    {
+     "h": "Natación infantil",
+     "b": "CURSOS DE NATACIÓN para niños de 4 a 10 años. Grupos según la edad y el nivel. Dos días por semana, lunes y miércoles o martes y jueves, de 17:30 a 18:15. El primer día, los niños hacen una prueba para conocer su nivel. Los padres no pueden entrar en la zona de la piscina. El precio es de 35 euros al mes. Inscripciones en la recepción del polideportivo."
+    },
+    {
+     "h": "Reparación de móviles",
+     "b": "MÓVIL EXPRESS. Reparamos tu teléfono en una hora: pantallas, baterías y cámaras. Presupuesto gratis y sin compromiso. Todas nuestras reparaciones tienen garantía de seis meses. Si no podemos arreglarlo, no pagas nada. Abierto también los sábados por la mañana. Estamos en la calle Real, 45, al lado del mercado. También vendemos fundas y cargadores."
+    },
+    {
+     "h": "Objetos perdidos",
+     "b": "AEROPUERTO. Si ha perdido algún objeto, diríjase a la oficina de objetos perdidos, en la planta 0 de la Terminal 2. Puede llamar por teléfono, pero no se dan informaciones por correo electrónico. Los objetos se guardan durante tres meses. Para recogerlos, es necesario un documento de identidad. La oficina abre todos los días de 6:00 a 23:00. El teléfono es el 913 000 000."
+    },
+    {
+     "h": "Reciclaje",
+     "b": "NUEVO HORARIO DE RECOGIDA. A partir del 1 de abril, los vecinos deben dejar la basura en los contenedores entre las 20:00 y las 23:00. El papel va en el contenedor azul, los envases en el amarillo y el vidrio en el verde. Los muebles viejos se recogen gratis llamando al 010. Si tiene dudas, consulte la web del Ayuntamiento o llame al 010. ¡Gracias por cuidar nuestro barrio!"
+    },
+    {
+     "h": "Panadería",
+     "b": "PANADERÍA LA ESPIGA. Pan recién hecho todos los días desde las 7:00. Todos nuestros productos se hacen con harina ecológica. Los domingos, roscón y bizcochos caseros por encargo: haz tu pedido antes del viernes. Cerramos los lunes por descanso del personal. Estamos en la plaza de San Juan, 2. También tenemos café para llevar."
+    }
+   ],
+   "items": [
+    {
+     "x": 0,
+     "q": "Para empadronarse en San Roque…",
+     "o": [
+      "no hace falta pedir cita.",
+      "hay que llevar el contrato de la casa.",
+      "se puede ir cualquier día de agosto."
+     ],
+     "a": 1,
+     "w": "Hay que traer «el contrato de alquiler o las escrituras de la vivienda». Se necesita cita y en agosto solo abren martes y jueves."
+    },
+    {
+     "x": 1,
+     "q": "En el mercadillo…",
+     "o": [
+      "se venden cosas usadas.",
+      "se puede vender comida.",
+      "hay que pagar siempre por el puesto."
+     ],
+     "a": 0,
+     "w": "Es un «mercadillo de segunda mano» de ropa, libros, juguetes y muebles. El puesto es gratis para los vecinos."
+    },
+    {
+     "x": 2,
+     "q": "En el Teatro Principal…",
+     "o": [
+      "la obra es solo para adultos.",
+      "los miércoles es más barato.",
+      "solo se venden entradas en taquilla."
+     ],
+     "a": 1,
+     "w": "«Los miércoles, día del espectador: todas las entradas a 8 euros»."
+    },
+    {
+     "x": 3,
+     "q": "En los cursos de natación…",
+     "o": [
+      "todos los niños están en el mismo grupo.",
+      "los padres pueden ver la clase desde la piscina.",
+      "los niños hacen una prueba al principio."
+     ],
+     "a": 2,
+     "w": "«El primer día, los niños hacen una prueba para conocer su nivel»."
+    },
+    {
+     "x": 4,
+     "q": "En Móvil Express…",
+     "o": [
+      "hay que pagar por el presupuesto.",
+      "no cobran si no pueden reparar el móvil.",
+      "no abren los fines de semana."
+     ],
+     "a": 1,
+     "w": "«Si no podemos arreglarlo, no pagas nada». El presupuesto es gratis y abren los sábados."
+    },
+    {
+     "x": 5,
+     "q": "En la oficina de objetos perdidos…",
+     "o": [
+      "puedes preguntar por correo electrónico.",
+      "guardan los objetos un año.",
+      "tienes que identificarte para recoger algo."
+     ],
+     "a": 2,
+     "w": "«Para recogerlos, es necesario un documento de identidad». Por correo no informan y los guardan tres meses."
+    },
+    {
+     "x": 6,
+     "q": "Con el nuevo horario de recogida…",
+     "o": [
+      "el vidrio va en el contenedor azul.",
+      "hay que sacar la basura por la noche.",
+      "recoger muebles cuesta dinero."
+     ],
+     "a": 1,
+     "w": "La basura se deja «entre las 20:00 y las 23:00». El vidrio va en el verde y los muebles se recogen gratis."
+    },
+    {
+     "x": 7,
+     "q": "En la panadería La Espiga…",
+     "o": [
+      "abren todos los días de la semana.",
+      "para el domingo hay que encargar los dulces.",
+      "el pan está listo a las nueve."
+     ],
+     "a": 1,
+     "w": "El roscón y los bizcochos del domingo son «por encargo: haz tu pedido antes del viernes». Cierran los lunes."
+    }
+   ]
+  },
+  {
+   "t": 3,
+   "texts": [
+    {
+     "h": "A. Curso de fotografía",
+     "b": "¿Quieres aprender a hacer fotos bonitas con tu móvil? En este curso de cuatro semanas te enseñamos a usar la luz, a elegir el mejor momento y a editar tus fotos con aplicaciones gratuitas. Las clases son los sábados por la mañana y se hacen al aire libre, en diferentes barrios de la ciudad. No necesitas una cámara profesional: solo tu teléfono. Precio: 60 euros. Plazas limitadas a doce personas. El profesor es un fotógrafo profesional que trabaja para varias revistas de viajes. Al final del curso hacemos una pequeña exposición con las mejores fotos de los alumnos en una cafetería del centro."
+    },
+    {
+     "h": "B. Taller de guitarra",
+     "b": "El centro cultural del barrio ofrece un taller de guitarra española para adultos sin conocimientos de música. Durante tres meses aprenderás a tocar canciones populares y algo de flamenco. Las clases son los lunes y miércoles de 19:00 a 20:30. Si no tienes guitarra, el centro te presta una durante el curso. El taller es gratuito para personas jubiladas y desempleadas; para los demás cuesta 30 euros al mes. Las clases las da un guitarrista que ha tocado en muchos conciertos por toda Andalucía. Al terminar el taller, los alumnos tocan juntos en la fiesta del barrio, en junio."
+    },
+    {
+     "h": "C. Club de lectura",
+     "b": "La biblioteca de Las Arenas organiza un club de lectura en inglés para practicar el idioma. Cada mes leemos un libro y el último jueves nos reunimos para comentarlo con una profesora nativa. Es necesario tener un nivel intermedio. La biblioteca presta los libros a los participantes, así que no tienes que comprarlos. La actividad es gratuita, pero hay que inscribirse en la biblioteca. Este año vamos a leer novelas cortas y algunos cuentos de autores famosos. Las reuniones duran una hora y media y después tomamos un café juntos en la sala de la biblioteca."
+    }
+   ],
+   "items": [
+    {
+     "q": "Esta actividad sirve también para aprender un idioma.",
+     "a": 2,
+     "w": "El club de lectura es «en inglés para practicar el idioma»."
+    },
+    {
+     "q": "Las clases no son en un edificio.",
+     "a": 0,
+     "w": "Las clases de fotografía «se hacen al aire libre, en diferentes barrios»."
+    },
+    {
+     "q": "Es gratis solo para algunas personas.",
+     "a": 1,
+     "w": "El taller de guitarra es gratuito solo «para personas jubiladas y desempleadas»; los demás pagan 30 euros al mes. El club de lectura es gratis para todos."
+    },
+    {
+     "q": "Si no tienes instrumento, te lo dejan.",
+     "a": 1,
+     "w": "En el taller de guitarra, «si no tienes guitarra, el centro te presta una»."
+    },
+    {
+     "q": "Es necesario tener cierto nivel antes de empezar.",
+     "a": 2,
+     "w": "En el club de lectura «es necesario tener un nivel intermedio». La guitarra es para personas sin conocimientos."
+    },
+    {
+     "q": "Hay un número máximo de alumnos.",
+     "a": 0,
+     "w": "En el curso de fotografía las «plazas [están] limitadas a doce personas»."
+    }
+   ]
+  },
+  {
+   "t": 4,
+   "texts": [
+    {
+     "h": "Guía de viaje: un fin de semana en Cuenca",
+     "b": "Cuenca es una de esas ciudades que sorprenden al visitante. Está a solo dos horas de Madrid en coche, y a menos de una hora en tren de alta velocidad, pero muchos turistas todavía no la conocen. Su casco antiguo, construido sobre una montaña entre dos ríos, el Júcar y el Huécar, es Patrimonio de la Humanidad desde 1996.\n\nEl símbolo de la ciudad son las famosas Casas Colgadas. Son casas del siglo XV construidas al borde de la roca, con balcones de madera que parecen flotar en el aire. Hoy en una de ellas está el Museo de Arte Abstracto Español, que tiene una colección muy interesante de pintores de los años cincuenta y sesenta. La entrada es gratuita, pero suele haber cola los sábados, así que es mejor ir temprano.\n\nPara tener la mejor vista de las casas, hay que cruzar el puente de San Pablo, un puente de hierro y madera de cien metros de largo. Si tienes miedo a las alturas, quizás no es buena idea: está a sesenta metros sobre el río. Desde allí también se puede bajar a pie hasta el parador, un antiguo convento convertido en hotel.\n\nDespués del paseo, es el momento de probar la gastronomía local. El plato más típico es el morteruelo, una especie de paté caliente que se come con pan. También son famosos el ajoarriero y, de postre, el alajú, un dulce de miel y almendras de origen árabe. La mayoría de los restaurantes están en la Plaza Mayor, al lado de la catedral, que es una de las primeras catedrales góticas de España.\n\nSi tienes más tiempo, merece la pena salir de la ciudad. A media hora en coche está la Ciudad Encantada, un parque natural con rocas de formas extrañas: una parece un barco, otra una cara humana… El recorrido dura una hora y media y es fácil, también para niños. Ojo: en invierno cierra a las seis de la tarde.\n\nLa mejor época para visitar Cuenca es la primavera o el otoño, cuando las temperaturas son agradables. En Semana Santa la ciudad se llena de gente por sus famosas procesiones y la música religiosa, así que, si quieres ir en esas fechas, tienes que reservar el hotel con meses de antelación."
+    }
+   ],
+   "items": [
+    {
+     "q": "Según el texto, Cuenca…",
+     "o": [
+      "está muy lejos de Madrid.",
+      "no es todavía muy conocida.",
+      "tiene un río que cruza el casco antiguo."
+     ],
+     "a": 1,
+     "w": "«Muchos turistas todavía no la conocen». El casco antiguo está entre dos ríos, no cruzado por uno."
+    },
+    {
+     "q": "En el Museo de Arte Abstracto…",
+     "o": [
+      "hay que pagar entrada.",
+      "hay pinturas del siglo XV.",
+      "puede haber mucha gente los sábados."
+     ],
+     "a": 2,
+     "w": "«Suele haber cola los sábados». La entrada es gratuita y las obras son de los años cincuenta y sesenta."
+    },
+    {
+     "q": "El puente de San Pablo…",
+     "o": [
+      "no es recomendable para todo el mundo.",
+      "es de piedra.",
+      "lleva directamente a la catedral."
+     ],
+     "a": 0,
+     "w": "Está a sesenta metros sobre el río: «si tienes miedo a las alturas, quizás no es buena idea»."
+    },
+    {
+     "q": "El alajú es…",
+     "o": [
+      "un plato caliente.",
+      "un dulce.",
+      "un tipo de pan."
+     ],
+     "a": 1,
+     "w": "Es «un dulce de miel y almendras de origen árabe». El morteruelo es el paté caliente."
+    },
+    {
+     "q": "La visita a la Ciudad Encantada…",
+     "o": [
+      "es difícil para los niños.",
+      "está en el centro de Cuenca.",
+      "tiene un horario más corto en invierno."
+     ],
+     "a": 2,
+     "w": "«En invierno cierra a las seis de la tarde». Está a media hora en coche y el recorrido es fácil."
+    },
+    {
+     "q": "Si quieres ir a Cuenca en Semana Santa…",
+     "o": [
+      "es mejor reservar con mucho tiempo.",
+      "vas a encontrar poca gente.",
+      "hace demasiado calor."
+     ],
+     "a": 0,
+     "w": "La ciudad se llena de gente, así que hay que «reservar el hotel con meses de antelación»."
+    }
+   ]
+  }
+ ]
+}

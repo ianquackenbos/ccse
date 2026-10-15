@@ -1,0 +1,314 @@
+{
+ "id": "R2",
+ "title": "Trabajo y estudios",
+ "tasks": [
+  {
+   "t": 1,
+   "texts": [
+    {
+     "h": "Correo de Javier a su prima Elena",
+     "b": "Asunto: Noticias desde Sevilla\n\nQuerida Elena:\n\nMuchas gracias por tu mensaje y por las fotos de tu boda. ¡Estabas guapísima! Siento mucho no haber podido ir, pero en esas fechas tenía los exámenes finales y no podía viajar.\n\nTe cuento: por fin he terminado el curso de cocina profesional. Fueron dos años muy duros, porque por las mañanas iba a clase y por las tardes trabajaba en una tienda de ropa. Pero valió la pena: saqué muy buenas notas y en junio empecé a trabajar en un restaurante italiano cerca de la catedral. De momento soy ayudante de cocina, así que lavo verduras, preparo salsas y, a veces, hago los postres. El horario es difícil, porque termino casi a medianoche, pero los domingos y los lunes descanso.\n\nEl chef se llama Paolo y es de Nápoles. Es un poco serio, pero enseña muy bien. Gracias a él estoy aprendiendo también algo de italiano. Mi plan es trabajar aquí un par de años y después abrir un pequeño restaurante con mi amigo Toni, que es camarero.\n\nPor cierto, mis padres me han dicho que tú y Daniel vais a buscar casa en Sevilla. Si queréis, en noviembre podéis quedaros unos días en mi piso: tengo un sofá cama bastante cómodo. Y así os preparo una cena especial. ¡Será mi regalo de boda!\n\nEscríbeme cuando sepáis las fechas.\n\nUn abrazo muy grande,\nJavier\n\nP. D.: Mamá dice que traigáis ropa de abrigo, porque en noviembre aquí ya refresca por las noches."
+    }
+   ],
+   "items": [
+    {
+     "q": "Javier no fue a la boda de Elena porque…",
+     "o": [
+      "estaba trabajando en el restaurante.",
+      "tenía que estudiar para los exámenes.",
+      "estaba de viaje en Italia."
+     ],
+     "a": 1,
+     "w": "«En esas fechas tenía los exámenes finales y no podía viajar»."
+    },
+    {
+     "q": "Mientras hacía el curso, Javier…",
+     "o": [
+      "trabajaba por las tardes.",
+      "vivía con sus padres.",
+      "estudiaba italiano."
+     ],
+     "a": 0,
+     "w": "«Por las mañanas iba a clase y por las tardes trabajaba en una tienda de ropa»."
+    },
+    {
+     "q": "En el restaurante, Javier…",
+     "o": [
+      "es el chef principal.",
+      "prepara a veces los postres.",
+      "trabaja los domingos."
+     ],
+     "a": 1,
+     "w": "Es ayudante de cocina y «a veces, hago los postres». Descansa los domingos y los lunes."
+    },
+    {
+     "q": "Sobre Paolo, Javier dice que…",
+     "o": [
+      "es muy divertido.",
+      "es un buen profesor.",
+      "quiere abrir un restaurante con él."
+     ],
+     "a": 1,
+     "w": "«Es un poco serio, pero enseña muy bien». El restaurante lo quiere abrir con Toni."
+    },
+    {
+     "q": "Javier ofrece a Elena y a Daniel…",
+     "o": [
+      "un regalo de boda caro.",
+      "ayudarles a buscar trabajo.",
+      "dormir en su casa."
+     ],
+     "a": 2,
+     "w": "Les ofrece quedarse en su piso, en el sofá cama, y prepararles una cena."
+    }
+   ]
+  },
+  {
+   "t": 2,
+   "texts": [
+    {
+     "h": "Clínica dental",
+     "b": "CLÍNICA DENTAL SONRISA. Primera visita y revisión gratuitas. Abrimos de lunes a viernes de 9:00 a 21:00 sin interrupción. Para pedir cita, llame al 954 222 333 o use nuestra aplicación. Si no puede venir, avise con 24 horas de antelación, por favor. Estamos en la avenida de la Constitución, 8, primer piso. Tenemos especialistas en ortodoncia para niños y adultos."
+    },
+    {
+     "h": "Piscina municipal",
+     "b": "NORMAS DE LA PISCINA. Es obligatorio usar gorro de baño y ducharse antes de entrar en el agua. Los menores de 12 años deben estar acompañados por un adulto. No está permitido comer en la zona de césped, solo en la cafetería. Horario de verano: de 11:00 a 20:00. La entrada cuesta 4 euros para adultos y 2 euros para niños. Hay taquillas en los vestuarios."
+    },
+    {
+     "h": "Oferta de trabajo",
+     "b": "Bar La Esquina busca camarero o camarera para los fines de semana. Horario: viernes y sábado de 19:00 a 1:00. Se valora experiencia, pero no es imprescindible. Imprescindible hablar inglés. Interesados, traer el currículum al bar de lunes a jueves por la mañana. El bar está en la plaza del Mercado, 3. Ofrecemos contrato de seis meses y buen ambiente de trabajo."
+    },
+    {
+     "h": "Concierto",
+     "b": "CONCIERTO SOLIDARIO en la plaza del Ayuntamiento, el sábado 14 a las 21:00. Actuarán tres grupos locales de rock y flamenco. La entrada es gratuita, pero se pide llevar un kilo de comida no perecedera para el Banco de Alimentos. En caso de lluvia, el concierto será en el polideportivo. Además de la música, habrá puestos de comida y bebida de varias asociaciones del barrio. ¡No faltes!"
+    },
+    {
+     "h": "Supermercado",
+     "b": "¡OFERTA DE LA SEMANA! En Supermercados Ahorra, si compras dos botellas de aceite de oliva, la tercera es gratis. Además, los martes, 10 % de descuento en fruta y verdura. Ahora también puedes hacer la compra por internet: envío gratis a partir de 50 euros. Nuestras tiendas abren de lunes a sábado de 9:00 a 21:30. Oferta válida hasta el 30 de este mes."
+    },
+    {
+     "h": "Farmacia",
+     "b": "FARMACIA LÓPEZ. Esta semana, la farmacia de guardia es la Farmacia Central, en la calle Mayor, 25, abierta las 24 horas. Nuestro horario habitual es de 9:30 a 14:00 y de 17:00 a 20:30. Sábados por la tarde y domingos, cerrado. En nuestra farmacia también puede tomarse la tensión gratis y recibir consejos sobre alimentación."
+    },
+    {
+     "h": "Alquiler de bicicletas",
+     "b": "BICI CIUDAD. Alquila una bicicleta con tu móvil en cualquiera de nuestras 40 estaciones. La primera media hora es gratis; después, 50 céntimos cada 30 minutos. Debes devolver la bicicleta en una estación antes de las 24 horas. Uso permitido para mayores de 16 años. Para usar el servicio, descarga la aplicación y regístrate con tu tarjeta de crédito. Las bicis tienen luces y una cesta."
+    },
+    {
+     "h": "Intercambio de idiomas",
+     "b": "¿Quieres practicar idiomas? Cada jueves a las 20:00 nos reunimos en la cafetería Babel para hablar en español, inglés, francés y alemán. Es gratis y no hay que inscribirse: solo tienes que venir. Cada persona paga su consumición. ¡Te esperamos! Normalmente vienen entre veinte y treinta personas de muchos países diferentes. El ambiente es muy agradable."
+    }
+   ],
+   "items": [
+    {
+     "x": 0,
+     "q": "En la clínica dental…",
+     "o": [
+      "la primera visita no cuesta nada.",
+      "cierran a mediodía.",
+      "solo se puede pedir cita por teléfono."
+     ],
+     "a": 0,
+     "w": "«Primera visita y revisión gratuitas». Abren sin interrupción y también se puede usar la aplicación."
+    },
+    {
+     "x": 1,
+     "q": "En la piscina municipal…",
+     "o": [
+      "se puede comer en el césped.",
+      "los niños pequeños no pueden ir solos.",
+      "no es necesario ducharse."
+     ],
+     "a": 1,
+     "w": "«Los menores de 12 años deben estar acompañados por un adulto»."
+    },
+    {
+     "x": 2,
+     "q": "Para trabajar en el Bar La Esquina…",
+     "o": [
+      "hay que tener experiencia.",
+      "es necesario saber inglés.",
+      "hay que enviar el currículum por correo electrónico."
+     ],
+     "a": 1,
+     "w": "«Imprescindible hablar inglés». La experiencia no es imprescindible y el currículum se lleva al bar."
+    },
+    {
+     "x": 3,
+     "q": "Para entrar al concierto…",
+     "o": [
+      "hay que comprar una entrada.",
+      "se pide llevar comida.",
+      "hay que ir al polideportivo."
+     ],
+     "a": 1,
+     "w": "La entrada es gratis, pero «se pide llevar un kilo de comida». El polideportivo es solo si llueve."
+    },
+    {
+     "x": 4,
+     "q": "En Supermercados Ahorra…",
+     "o": [
+      "el aceite tiene descuento los martes.",
+      "el envío es siempre gratuito.",
+      "puedes llevarte un aceite gratis."
+     ],
+     "a": 2,
+     "w": "Si compras dos botellas de aceite, la tercera es gratis. El descuento de los martes es en fruta y verdura."
+    },
+    {
+     "x": 5,
+     "q": "Según el anuncio, la Farmacia López…",
+     "o": [
+      "está abierta las 24 horas esta semana.",
+      "no abre los domingos.",
+      "está en la calle Mayor."
+     ],
+     "a": 1,
+     "w": "«Sábados por la tarde y domingos, cerrado». La de guardia es la Farmacia Central."
+    },
+    {
+     "x": 6,
+     "q": "Con Bici Ciudad…",
+     "o": [
+      "los primeros 30 minutos son gratis.",
+      "puedes tener la bici varios días.",
+      "pueden usar las bicis niños de 12 años."
+     ],
+     "a": 0,
+     "w": "«La primera media hora es gratis». Hay que devolverla antes de 24 horas y es para mayores de 16."
+    },
+    {
+     "x": 7,
+     "q": "Para ir al intercambio de idiomas…",
+     "o": [
+      "hay que pagar una cuota.",
+      "hay que apuntarse antes.",
+      "solo hay que presentarse en la cafetería."
+     ],
+     "a": 2,
+     "w": "«No hay que inscribirse: solo tienes que venir». Solo se paga lo que tomas."
+    }
+   ]
+  },
+  {
+   "t": 3,
+   "texts": [
+    {
+     "h": "A. Recepcionista de hotel",
+     "b": "Hotel del centro de Málaga busca recepcionista para el turno de noche, de 23:00 a 7:00. Ofrecemos contrato de un año y la posibilidad de vivir en una habitación del hotel durante los primeros meses. Buscamos una persona responsable, con buen nivel de inglés y alemán. No es necesario tener experiencia porque damos formación. Incorporación inmediata. Enviar currículum con foto a rrhh@hotelsol.es. El hotel tiene cuatro estrellas y doscientas habitaciones, y está a cinco minutos andando del puerto. Las tareas del puesto son atender a los clientes, hacer reservas y contestar al teléfono."
+    },
+    {
+     "h": "B. Monitor de campamento",
+     "b": "Campamento de verano en los Pirineos necesita monitores para el mes de julio. Trabajarás con niños de 8 a 14 años: deportes, juegos y excursiones por la montaña. Comida y alojamiento incluidos. Es necesario tener el título de monitor de tiempo libre y carné de conducir. Se valorará saber tocar algún instrumento musical. Salario: 900 euros al mes. El campamento está en un pequeño valle, cerca de un río, y recibe cada año a unos ochenta niños. Los monitores trabajan en equipos de cuatro personas y tienen un día libre a la semana."
+    },
+    {
+     "h": "C. Dependiente en librería",
+     "b": "Librería familiar en Salamanca busca dependiente a media jornada, de lunes a viernes por la tarde. Tareas: atender a los clientes, ordenar libros y llevar las redes sociales de la tienda. Pedimos experiencia mínima de un año en comercio y que te guste leer. Ofrecemos contrato indefinido y descuento del 30 % en todos los libros. Interesados, pasar por la tienda. La librería está en una calle peatonal del centro histórico y tiene más de cuarenta años. Además de libros, vendemos material de papelería y organizamos presentaciones con autores."
+    }
+   ],
+   "items": [
+    {
+     "q": "En este trabajo se trabaja por la noche.",
+     "a": 0,
+     "w": "El hotel busca recepcionista «para el turno de noche, de 23:00 a 7:00»."
+    },
+    {
+     "q": "Hay que tener carné de conducir.",
+     "a": 1,
+     "w": "El campamento pide «título de monitor de tiempo libre y carné de conducir»."
+    },
+    {
+     "q": "El trabajo es solo para unas semanas.",
+     "a": 1,
+     "w": "El campamento necesita monitores solo «para el mes de julio»."
+    },
+    {
+     "q": "Se puede trabajar sin experiencia.",
+     "a": 0,
+     "w": "En el hotel «no es necesario tener experiencia porque damos formación». La librería pide un año de experiencia."
+    },
+    {
+     "q": "Te ofrecen comprar más barato.",
+     "a": 2,
+     "w": "La librería ofrece «descuento del 30 % en todos los libros»."
+    },
+    {
+     "q": "Hay que entregar el currículum en persona.",
+     "a": 2,
+     "w": "En la librería: «Interesados, pasar por la tienda». En el hotel se envía por correo electrónico."
+    }
+   ]
+  },
+  {
+   "t": 4,
+   "texts": [
+    {
+     "h": "Carmen Ruiz, la cartera que se hizo escritora",
+     "b": "Carmen Ruiz nació en 1968 en un pequeño pueblo de Asturias. Era la mayor de cinco hermanos y, como sus padres tenían una granja de vacas, desde niña tuvo que ayudar mucho en casa. A los dieciséis años dejó el instituto y empezó a trabajar en la panadería de su tío. Siempre le gustó leer, pero en su casa había pocos libros, así que cada sábado iba en autobús a la biblioteca de Oviedo.\n\nCon veintitrés años aprobó unas oposiciones y se convirtió en cartera. Durante casi veinte años repartió cartas por los pueblos de montaña, primero a pie y después en una moto pequeña. Ella dice que fue la mejor escuela para una escritora: «La gente me contaba sus problemas, sus amores, sus secretos. Yo escuchaba y, por la noche, lo escribía todo en un cuaderno».\n\nEn 2009 su hija le regaló un ordenador portátil y la animó a escribir una novela con esas historias. Carmen escribía de cinco a siete de la mañana, antes de ir a trabajar. Tardó tres años en terminar Cartas que nunca llegaron. Doce editoriales rechazaron el libro. Por fin, una editorial pequeña de Gijón decidió publicarlo en 2013, pero solo imprimió quinientos ejemplares.\n\nEntonces pasó algo inesperado. Una periodista de radio leyó la novela durante unas vacaciones y habló de ella en su programa. En pocas semanas, el libro se vendió en toda España. Al año siguiente ganó un premio importante y hoy está traducido a quince idiomas. En 2018 se estrenó una película basada en la novela, aunque a Carmen no le gustó demasiado el final.\n\nAhora Carmen ya no reparte cartas: vive en Gijón, ha publicado otras cuatro novelas y da talleres de escritura en institutos. Pero no ha cambiado sus costumbres. Sigue escribiendo a mano en cuadernos antes de pasarlo todo al ordenador, y sigue levantándose a las cinco. «Ya no tengo que ir a trabajar», explica, «pero a esa hora la casa está en silencio y las ideas llegan solas».\n\nHoy, sus novelas se estudian en algunos institutos de Asturias."
+    }
+   ],
+   "items": [
+    {
+     "q": "Cuando era joven, Carmen…",
+     "o": [
+      "vivía en Oviedo.",
+      "tenía muchos libros en casa.",
+      "trabajó en una panadería."
+     ],
+     "a": 2,
+     "w": "A los dieciséis años «empezó a trabajar en la panadería de su tío». Iba a Oviedo solo a la biblioteca."
+    },
+    {
+     "q": "Según Carmen, su trabajo de cartera…",
+     "o": [
+      "le dio ideas para escribir.",
+      "era muy aburrido.",
+      "no le dejaba tiempo para leer."
+     ],
+     "a": 0,
+     "w": "Dice que fue «la mejor escuela para una escritora»: escuchaba las historias de la gente y las escribía."
+    },
+    {
+     "q": "Carmen escribió su primera novela…",
+     "o": [
+      "por las noches.",
+      "temprano por la mañana.",
+      "durante sus vacaciones."
+     ],
+     "a": 1,
+     "w": "«Escribía de cinco a siete de la mañana, antes de ir a trabajar»."
+    },
+    {
+     "q": "Al principio, la primera novela…",
+     "o": [
+      "tuvo mucho éxito.",
+      "la publicó una editorial grande.",
+      "tuvo problemas para publicarse."
+     ],
+     "a": 2,
+     "w": "Doce editoriales la rechazaron y la primera edición fue solo de quinientos ejemplares."
+    },
+    {
+     "q": "El libro se hizo famoso gracias a…",
+     "o": [
+      "un programa de radio.",
+      "una película.",
+      "un premio."
+     ],
+     "a": 0,
+     "w": "Una periodista habló de él en su programa de radio y entonces se vendió en toda España. El premio y la película llegaron después."
+    },
+    {
+     "q": "Hoy, Carmen…",
+     "o": [
+      "escribe directamente en el ordenador.",
+      "sigue trabajando de cartera.",
+      "mantiene su horario de escritura."
+     ],
+     "a": 2,
+     "w": "Sigue levantándose a las cinco para escribir. Escribe primero a mano y ya no reparte cartas."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,508 @@
+{
+ "id": "L4",
+ "title": "Estudios y tiempo libre",
+ "tasks": [
+  {
+   "t": 1,
+   "items": [
+    {
+     "s": [
+      [
+       "H",
+       "Hola, quería apuntarme a las clases de español."
+      ],
+      [
+       "M",
+       "Muy bien. Tenemos clases por la mañana, de nueve a once, y por la tarde, de seis a ocho."
+      ],
+      [
+       "H",
+       "Por la mañana trabajo. ¿Hay clases los sábados?"
+      ],
+      [
+       "M",
+       "No, los sábados no. Entonces, ¿por la tarde?"
+      ],
+      [
+       "H",
+       "Sí, por la tarde, perfecto."
+      ],
+      [
+       "M",
+       "Muy bien. Necesito su pasaporte y una foto. Las clases empiezan el lunes."
+      ]
+     ],
+     "q": "¿Cuándo va a tener clase el hombre?",
+     "o": [
+      "Por la mañana.",
+      "Por la tarde.",
+      "Los sábados."
+     ],
+     "a": 1,
+     "w": "Trabaja por la mañana y no hay clases los sábados, así que elige «por la tarde»."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "¿Qué quieres ver esta noche en la tele?"
+      ],
+      [
+       "H",
+       "Hay un partido de fútbol a las nueve."
+      ],
+      [
+       "M",
+       "Uf, otra vez fútbol. ¿Por qué no vemos la película de Almodóvar que ponen en La 2?"
+      ],
+      [
+       "H",
+       "Vale, pero el partido lo grabo y lo veo mañana."
+      ],
+      [
+       "M",
+       "Perfecto. Yo preparo unas palomitas."
+      ]
+     ],
+     "q": "¿Qué van a ver esta noche?",
+     "o": [
+      "Un partido de fútbol.",
+      "Una película.",
+      "Las noticias."
+     ],
+     "a": 1,
+     "w": "Él acepta ver la película y grabar el partido para mañana."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "Perdona, ¿la biblioteca abre los domingos?"
+      ],
+      [
+       "H",
+       "No, los domingos está cerrada. De lunes a viernes abre de ocho a nueve de la noche, y los sábados solo por la mañana."
+      ],
+      [
+       "M",
+       "¿Y en época de exámenes?"
+      ],
+      [
+       "H",
+       "En junio la sala de estudio abre también los domingos, hasta las dos."
+      ],
+      [
+       "M",
+       "Ah, muy bien. Muchas gracias por la información."
+      ],
+      [
+       "H",
+       "De nada. Suerte con los exámenes."
+      ]
+     ],
+     "q": "¿Cuándo abre la biblioteca normalmente?",
+     "o": [
+      "Todos los días.",
+      "De lunes a sábado.",
+      "Solo entre semana."
+     ],
+     "a": 1,
+     "w": "Abre de lunes a viernes y los sábados por la mañana; los domingos solo en junio."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "¿Cómo vas a ir a la universidad mañana?"
+      ],
+      [
+       "M",
+       "Normalmente voy en bici, pero mañana va a llover."
+      ],
+      [
+       "H",
+       "¿Y en autobús?"
+      ],
+      [
+       "M",
+       "Tarda mucho. Creo que voy a ir en metro: son quince minutos."
+      ],
+      [
+       "H",
+       "Pues si quieres, vamos juntos. Yo también voy en metro."
+      ],
+      [
+       "M",
+       "¡Genial! Nos vemos a las ocho en la estación."
+      ]
+     ],
+     "q": "¿Cómo va a ir la mujer a la universidad mañana?",
+     "o": [
+      "En bicicleta.",
+      "En autobús.",
+      "En metro."
+     ],
+     "a": 2,
+     "w": "Por la lluvia no va en bici y el autobús tarda mucho: «voy a ir en metro»."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "¿Qué tal el examen de matemáticas?"
+      ],
+      [
+       "H",
+       "Fatal. No me ha dado tiempo a terminar el último ejercicio."
+      ],
+      [
+       "M",
+       "Bueno, seguro que apruebas. ¿Y el de historia?"
+      ],
+      [
+       "H",
+       "Ese es el viernes. Hoy por la tarde voy a estudiar en la biblioteca con Marcos."
+      ],
+      [
+       "M",
+       "Muy bien. ¡Suerte! Luego me cuentas."
+      ]
+     ],
+     "q": "¿Qué va a hacer el chico esta tarde?",
+     "o": [
+      "Un examen de historia.",
+      "Estudiar con un amigo.",
+      "Repetir el examen de matemáticas."
+     ],
+     "a": 1,
+     "w": "«Hoy por la tarde voy a estudiar en la biblioteca con Marcos». El examen de historia es el viernes."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "Dos entradas para la película de las ocho, por favor."
+      ],
+      [
+       "M",
+       "Lo siento, para las ocho solo quedan asientos en la primera fila."
+      ],
+      [
+       "H",
+       "Uy, no, ahí no se ve bien. ¿Y para la de las diez y media?"
+      ],
+      [
+       "M",
+       "Para esa hay sitio en el centro."
+      ],
+      [
+       "H",
+       "Pues para las diez y media."
+      ],
+      [
+       "M",
+       "Son quince euros. ¿Quiere palomitas o bebida?"
+      ],
+      [
+       "H",
+       "No, gracias."
+      ]
+     ],
+     "q": "¿Para qué sesión compra las entradas?",
+     "o": [
+      "Para las 20:00 en la primera fila.",
+      "Para las 20:00 en el centro.",
+      "Para las 22:30."
+     ],
+     "a": 2,
+     "w": "No quiere la primera fila, así que compra «para las diez y media», con sitio en el centro."
+    }
+   ]
+  },
+  {
+   "t": 2,
+   "items": [
+    {
+     "s": [
+      [
+       "N",
+       "La Universidad de Salamanca abre el plazo de matrícula para los cursos de verano de español. Los cursos empiezan el uno de julio y duran cuatro semanas. Los estudiantes pueden alojarse en residencias universitarias o con familias de la ciudad. El precio incluye excursiones los fines de semana."
+      ]
+     ],
+     "q": "Los estudiantes de los cursos de verano…",
+     "o": [
+      "pueden vivir con una familia.",
+      "estudian durante cuatro meses.",
+      "empiezan en junio."
+     ],
+     "a": 0,
+     "w": "Pueden alojarse en residencias «o con familias de la ciudad». Los cursos duran cuatro semanas y empiezan en julio."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Este viernes, en el auditorio municipal, concierto de la orquesta joven de la ciudad. Interpretarán música de compositores españoles como Falla y Albéniz. Las entradas cuestan cinco euros y el dinero se dará a una asociación de ayuda a la infancia. El concierto empieza a las ocho de la tarde."
+      ]
+     ],
+     "q": "El dinero de las entradas del concierto…",
+     "o": [
+      "es para la orquesta.",
+      "es para una asociación.",
+      "es para el auditorio."
+     ],
+     "a": 1,
+     "w": "«El dinero se dará a una asociación de ayuda a la infancia»."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Nueva encuesta: los jóvenes españoles pasan una media de cuatro horas al día con el móvil. La actividad más común es ver vídeos, seguida de las redes sociales. Solo un quince por ciento usa el móvil para leer libros o noticias. Los expertos recomiendan no usar el móvil antes de dormir."
+      ]
+     ],
+     "q": "Según la encuesta, los jóvenes usan el móvil sobre todo para…",
+     "o": [
+      "leer noticias.",
+      "ver vídeos.",
+      "hablar por teléfono."
+     ],
+     "a": 1,
+     "w": "«La actividad más común es ver vídeos»."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "El club de ajedrez del barrio organiza un torneo para todas las edades el próximo sábado en el centro cívico. La inscripción es gratuita y los ganadores recibirán libros y material de ajedrez. Las inscripciones se cierran el jueves. El torneo empieza a las diez de la mañana."
+      ]
+     ],
+     "q": "Para participar en el torneo de ajedrez…",
+     "o": [
+      "hay que pagar una inscripción.",
+      "hay que apuntarse antes del viernes.",
+      "hay que ser menor de edad."
+     ],
+     "a": 1,
+     "w": "«Las inscripciones se cierran el jueves». Es gratuito y para todas las edades."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Desde el próximo curso, todos los colegios públicos de la región ofrecerán clases de programación informática a partir de los diez años. El objetivo es preparar a los alumnos para los trabajos del futuro. Las clases serán de una hora a la semana. Los profesores recibirán una formación especial durante el verano."
+      ]
+     ],
+     "q": "A partir del próximo curso, en los colegios públicos…",
+     "o": [
+      "habrá clases de informática.",
+      "los alumnos tendrán más vacaciones.",
+      "no se usarán ordenadores."
+     ],
+     "a": 0,
+     "w": "Ofrecerán «clases de programación informática a partir de los diez años»."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "El parque de atracciones abre su temporada el próximo sábado con una nueva montaña rusa, la más alta del país. Durante el primer fin de semana, los niños menores de doce años entrarán gratis si van acompañados por un adulto. El parque abre todos los días de diez de la mañana a nueve de la noche."
+      ]
+     ],
+     "q": "El primer fin de semana en el parque de atracciones…",
+     "o": [
+      "los niños no pagan entrada.",
+      "los adultos entran gratis.",
+      "la montaña rusa está cerrada."
+     ],
+     "a": 0,
+     "w": "Los menores de doce años «entrarán gratis si van acompañados por un adulto»."
+    }
+   ]
+  },
+  {
+   "t": 3,
+   "names": {
+    "H": "Tomás",
+    "M": "Elena"
+   },
+   "s": [
+    [
+     "H",
+     "Elena, ¿ya has decidido qué vas a estudiar el año que viene?"
+    ],
+    [
+     "M",
+     "Creo que sí, Tomás. Quiero estudiar Medicina. Me encanta la biología y quiero ayudar a la gente."
+    ],
+    [
+     "H",
+     "¡Medicina! Son muchos años. Y hay que sacar una nota muy alta en la prueba de acceso."
+    ],
+    [
+     "M",
+     "Lo sé. Por eso estudio todos los días tres o cuatro horas. Este fin de semana no voy a salir."
+    ],
+    [
+     "H",
+     "Yo no lo tengo tan claro. Mis padres quieren que estudie Derecho, como mi padre, pero a mí me gusta más el diseño gráfico."
+    ],
+    [
+     "M",
+     "Pues tienes que elegir tú. Es tu vida. Además, dibujas muy bien."
+    ],
+    [
+     "H",
+     "Gracias. Estoy pensando en hacer un ciclo de Formación Profesional de diseño. Son dos años y luego puedo trabajar o seguir estudiando."
+    ],
+    [
+     "M",
+     "Es una buena idea. Mi prima hizo un ciclo de fotografía y ahora trabaja en una revista."
+    ],
+    [
+     "H",
+     "¿Y tú vas a estudiar aquí o en otra ciudad?"
+    ],
+    [
+     "M",
+     "Me gustaría ir a Madrid, pero es muy caro vivir allí. Si no puedo, me quedo aquí y vivo con mis padres."
+    ],
+    [
+     "H",
+     "Yo sí quiero irme fuera. Necesito un poco de independencia. A lo mejor voy a Barcelona."
+    ],
+    [
+     "M",
+     "¡Qué bien! Oye, ¿vienes a la fiesta de fin de curso el viernes?"
+    ],
+    [
+     "H",
+     "Sí, claro. Voy a tocar la guitarra con mi grupo."
+    ],
+    [
+     "M",
+     "¿En serio? Entonces voy un rato, aunque después tengo que estudiar."
+    ]
+   ],
+   "items": [
+    {
+     "q": "Quiere estudiar una carrera larga.",
+     "a": 1,
+     "w": "Elena quiere estudiar Medicina; Tomás comenta que «son muchos años»."
+    },
+    {
+     "q": "Sus padres quieren que estudie lo mismo que su padre.",
+     "a": 0,
+     "w": "Los padres de Tomás quieren que estudie Derecho, «como mi padre»."
+    },
+    {
+     "q": "Ha hecho un curso de fotografía.",
+     "a": 2,
+     "w": "Quien hizo el ciclo de fotografía es la prima de Elena, no ninguno de los dos."
+    },
+    {
+     "q": "Quiere estudiar en Madrid.",
+     "a": 1,
+     "w": "Elena: «Me gustaría ir a Madrid». Tomás piensa en Barcelona."
+    },
+    {
+     "q": "Quiere vivir solo.",
+     "a": 0,
+     "w": "Tomás: «Yo sí quiero irme fuera. Necesito un poco de independencia»."
+    },
+    {
+     "q": "Va a tocar en la fiesta.",
+     "a": 0,
+     "w": "Tomás: «Voy a tocar la guitarra con mi grupo»."
+    }
+   ]
+  },
+  {
+   "t": 4,
+   "opts": [
+    "La clase es en otra aula.",
+    "Hay que traer algo para la excursión.",
+    "Se ha cancelado un examen.",
+    "Un libro está ya disponible.",
+    "Las inscripciones terminan pronto.",
+    "Hay que pagar una actividad.",
+    "El horario de la biblioteca cambia.",
+    "Le invitan a una reunión de padres.",
+    "Hay un descuento para estudiantes.",
+    "Necesitan voluntarios."
+   ],
+   "msgs": [
+    {
+     "s": [
+      [
+       "N",
+       "Hola, Luis. Te llamamos de la biblioteca. El libro que reservaste, «Cien años de soledad», ya ha llegado. Puedes venir a recogerlo durante esta semana. Recuerda traer tu carné de la biblioteca."
+      ]
+     ],
+     "a": 3,
+     "w": "El libro reservado ya se puede recoger."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Atención, alumnos de segundo: hoy la clase de inglés no será en el aula 12, sino en el aula 25, en la tercera planta, porque estamos arreglando la calefacción. Gracias."
+      ]
+     ],
+     "a": 0,
+     "w": "La clase de inglés cambia de aula."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Recordamos a las familias que mañana los alumnos de cuarto van de excursión al museo de ciencias. Deben traer comida, agua y una gorra. El autobús sale a las nueve en punto. Por favor, sean puntuales."
+      ]
+     ],
+     "a": 1,
+     "w": "Los alumnos deben traer comida, agua y gorra."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Estimados padres, el próximo miércoles a las seis de la tarde tendrá lugar la reunión del primer trimestre con los tutores. Es muy importante su asistencia. Gracias por su colaboración."
+      ]
+     ],
+     "a": 7,
+     "w": "Se convoca a los padres a una reunión con los tutores."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Último aviso: solo quedan dos días para apuntarse a los cursos de teatro y fotografía del centro cultural. Las plazas son limitadas. Inscripciones en la secretaría. No esperes al último momento."
+      ]
+     ],
+     "a": 4,
+     "w": "Quedan solo dos días para inscribirse."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Hola, soy la profesora Martínez. Os informo de que el examen de química del jueves se suspende porque estaré en un congreso. Os diré la nueva fecha la semana que viene. Mientras tanto, seguid estudiando."
+      ]
+     ],
+     "a": 2,
+     "w": "El examen de química se suspende."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Cine Capitol: todos los lunes, presentando el carné de estudiante en taquilla, la entrada cuesta solo cuatro euros. No válido para estrenos ni sesiones especiales. Disfruta del mejor cine."
+      ]
+     ],
+     "a": 8,
+     "w": "Los estudiantes tienen entrada más barata los lunes."
+    }
+   ]
+  }
+ ]
+}

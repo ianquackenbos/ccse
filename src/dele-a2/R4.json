@@ -1,0 +1,314 @@
+{
+ "id": "R4",
+ "title": "Familia y casa",
+ "tasks": [
+  {
+   "t": 1,
+   "texts": [
+    {
+     "h": "Correo de Ana a su hermano Luis",
+     "b": "Asunto: La fiesta de mamá\n\nHola, Luis:\n\nTe escribo por la fiesta sorpresa de mamá. Como sabes, el 22 de mayo cumple setenta años y papá quiere hacer algo especial. Ayer hablé con él y hemos decidido celebrarlo el sábado 24, porque el 22 es jueves y mucha gente trabaja.\n\nAl principio pensamos en hacer la fiesta en casa, pero somos casi cuarenta personas y no cabemos. Así que he reservado un salón en el restaurante El Olivo, el que está al lado del río. Tienen un menú de 35 euros por persona con entrantes, pescado o carne, postre y bebidas. Los niños menores de diez años pagan la mitad. Papá dice que él paga la comida, pero yo creo que es mejor dividirlo entre los tres hermanos. ¿Qué te parece?\n\nTengo un favor que pedirte. Tú tienes buena relación con la tía Isabel y con los primos de Bilbao. ¿Puedes llamarlos tú para invitarlos? Yo me encargo de los amigos de mamá del coro y de las vecinas. Raquel va a preparar un vídeo con fotos antiguas de la familia; si tienes fotos de cuando éramos pequeños, mándaselas antes del día 15.\n\nLo más difícil es que mamá no se entere. Papá le va a decir que van a comer los dos solos para celebrarlo, y cuando entren en el restaurante, ¡sorpresa! Por favor, no digas nada en el grupo familiar, porque mamá lo lee todo.\n\nAh, y para el regalo había pensado en un viaje a Lisboa para los dos, porque siempre ha querido ir. ¿Estás de acuerdo?\n\nLlámame esta semana y lo hablamos.\n\nBesos,\nAna"
+    }
+   ],
+   "items": [
+    {
+     "q": "La fiesta va a ser el sábado porque…",
+     "o": [
+      "es el día del cumpleaños.",
+      "el restaurante no tiene sitio otro día.",
+      "el jueves muchos invitados trabajan."
+     ],
+     "a": 2,
+     "w": "El cumpleaños es el jueves 22, «y mucha gente trabaja», por eso lo celebran el sábado 24."
+    },
+    {
+     "q": "No hacen la fiesta en casa porque…",
+     "o": [
+      "hay demasiados invitados.",
+      "es muy caro.",
+      "la madre no quiere."
+     ],
+     "a": 0,
+     "w": "«Somos casi cuarenta personas y no cabemos»."
+    },
+    {
+     "q": "Sobre el dinero de la comida, Ana piensa que…",
+     "o": [
+      "debe pagarlo el padre.",
+      "deben pagarlo los hermanos.",
+      "cada invitado debe pagar su menú."
+     ],
+     "a": 1,
+     "w": "Ana cree que «es mejor dividirlo entre los tres hermanos»."
+    },
+    {
+     "q": "Ana le pide a Luis que…",
+     "o": [
+      "prepare un vídeo.",
+      "llame a algunos familiares.",
+      "invite a las vecinas."
+     ],
+     "a": 1,
+     "w": "Le pide que llame a la tía Isabel y a los primos de Bilbao. El vídeo lo prepara Raquel y las vecinas son cosa de Ana."
+    },
+    {
+     "q": "Ana no quiere que Luis escriba en el grupo familiar porque…",
+     "o": [
+      "su madre puede leerlo.",
+      "su padre no lo usa.",
+      "es muy pronto."
+     ],
+     "a": 0,
+     "w": "«No digas nada en el grupo familiar, porque mamá lo lee todo»."
+    }
+   ]
+  },
+  {
+   "t": 2,
+   "texts": [
+    {
+     "h": "Peluquería",
+     "b": "PELUQUERÍA ESTILO. Esta semana, corte de pelo para hombre: 10 euros. Mujeres: lavado, corte y peinado por 25 euros. Los jueves, 20 % de descuento para estudiantes con carné. Atendemos sin cita de lunes a viernes; los sábados, solo con cita previa. Estamos en la calle Luna, 7. También vendemos productos para el cuidado del pelo."
+    },
+    {
+     "h": "Autobús nocturno",
+     "b": "EMPRESA MUNICIPAL DE TRANSPORTES. Desde el 1 de junio, los autobuses nocturnos (líneas N1 a N6) funcionarán todos los días, no solo los fines de semana. Salen cada 30 minutos desde la plaza de España entre las 0:00 y las 5:30. El precio del billete es el mismo que de día. Puede consultar los recorridos en la web o en las paradas."
+    },
+    {
+     "h": "Clases de baile",
+     "b": "ESCUELA RITMO. Aprende a bailar salsa, bachata y tango. Clases para adultos de todas las edades, en pareja o solos. Grupos de nivel inicial los martes y avanzado los jueves. La primera clase es de prueba y gratuita. Después, 40 euros al mes por una clase semanal. Estamos en la calle del Prado, 22, segundo piso. Las clases duran una hora."
+    },
+    {
+     "h": "Vuelos",
+     "b": "¡VUELA AHORA! Billetes a las islas Canarias desde 49 euros, ida y vuelta, para viajar entre octubre y diciembre. Oferta válida solo para compras hechas en nuestra web antes del domingo. El precio incluye una maleta pequeña de cabina. La maleta grande tiene un coste adicional. Plazas limitadas. Los vuelos salen desde Madrid, Barcelona y Bilbao."
+    },
+    {
+     "h": "Centro de salud",
+     "b": "CENTRO DE SALUD NORTE. Campaña de vacunación de la gripe para mayores de 60 años y personas con enfermedades crónicas. Del 15 de octubre al 30 de noviembre. Es necesario pedir cita por teléfono o en la aplicación. Recuerde traer su tarjeta sanitaria. El centro abre de lunes a viernes de 8:00 a 20:00. La vacuna es gratuita."
+    },
+    {
+     "h": "Tienda de muebles",
+     "b": "MUEBLES CASA BONITA cierra este establecimiento. ¡Todo con un 50 % de descuento! Sofás, mesas, camas y armarios. El transporte a domicilio es gratis en la ciudad, pero el montaje no está incluido. No se admiten devoluciones. Hasta fin de existencias. Visite nuestra tienda en el polígono industrial, abierta de lunes a sábado."
+    },
+    {
+     "h": "Zoológico",
+     "b": "ZOO AVENTURA. Nuevo horario de invierno: de 10:30 a 17:30. Los niños menores de 3 años entran gratis. Con la entrada familiar (dos adultos y dos niños) ahorras un 25 %. Se pueden llevar bocadillos, pero no se puede dar comida a los animales. Este invierno puedes ver a los nuevos osos panda en el pabellón de Asia."
+    },
+    {
+     "h": "Taller de bicicletas",
+     "b": "TALLER RUEDAS. ¿Tu bicicleta necesita una revisión? Ven a nuestro taller gratuito los sábados por la mañana y aprende a cambiar una rueda, arreglar los frenos o ajustar la cadena. Nosotros ponemos las herramientas. Imprescindible traer tu propia bicicleta. El taller está en el patio del centro cívico. Plazas para quince personas."
+    }
+   ],
+   "items": [
+    {
+     "x": 0,
+     "q": "En la Peluquería Estilo…",
+     "o": [
+      "los estudiantes tienen descuento todos los días.",
+      "no es necesario pedir cita entre semana.",
+      "el corte para hombre cuesta 25 euros."
+     ],
+     "a": 1,
+     "w": "«Atendemos sin cita de lunes a viernes». El descuento es solo los jueves y el corte de hombre cuesta 10 euros."
+    },
+    {
+     "x": 1,
+     "q": "Desde junio, los autobuses nocturnos…",
+     "o": [
+      "funcionan solo los fines de semana.",
+      "son más caros.",
+      "funcionan todos los días."
+     ],
+     "a": 2,
+     "w": "«Funcionarán todos los días, no solo los fines de semana». El precio es el mismo."
+    },
+    {
+     "x": 2,
+     "q": "En la Escuela Ritmo…",
+     "o": [
+      "se puede ir sin pareja.",
+      "solo hay clases para jóvenes.",
+      "la primera clase cuesta 40 euros."
+     ],
+     "a": 0,
+     "w": "Las clases son «en pareja o solos». Son para todas las edades y la primera es gratuita."
+    },
+    {
+     "x": 3,
+     "q": "La oferta de vuelos…",
+     "o": [
+      "es para viajar en verano.",
+      "incluye una maleta grande.",
+      "solo es válida comprando por internet."
+     ],
+     "a": 2,
+     "w": "«Oferta válida solo para compras hechas en nuestra web». Es para octubre a diciembre y solo incluye maleta de cabina."
+    },
+    {
+     "x": 4,
+     "q": "Para vacunarse de la gripe…",
+     "o": [
+      "hay que pedir una cita.",
+      "basta con ir al centro de salud.",
+      "hay que ser menor de 60 años."
+     ],
+     "a": 0,
+     "w": "«Es necesario pedir cita por teléfono o en la aplicación»."
+    },
+    {
+     "x": 5,
+     "q": "En Muebles Casa Bonita…",
+     "o": [
+      "montan los muebles gratis.",
+      "se pueden devolver los muebles.",
+      "te llevan los muebles a casa sin pagar."
+     ],
+     "a": 2,
+     "w": "«El transporte a domicilio es gratis en la ciudad». El montaje no está incluido y no hay devoluciones."
+    },
+    {
+     "x": 6,
+     "q": "En el Zoo Aventura…",
+     "o": [
+      "se puede llevar comida para los visitantes.",
+      "se puede alimentar a los animales.",
+      "los niños no pagan entrada."
+     ],
+     "a": 0,
+     "w": "«Se pueden llevar bocadillos, pero no se puede dar comida a los animales». Solo los menores de 3 años entran gratis."
+    },
+    {
+     "x": 7,
+     "q": "En el taller de bicicletas…",
+     "o": [
+      "hay que pagar las herramientas.",
+      "enseñan a reparar la bicicleta.",
+      "alquilan bicicletas los sábados."
+     ],
+     "a": 1,
+     "w": "Es un taller para aprender «a cambiar una rueda, arreglar los frenos o ajustar la cadena»."
+    }
+   ]
+  },
+  {
+   "t": 3,
+   "texts": [
+    {
+     "h": "A. Piso en el centro",
+     "b": "Alquilo piso de 60 metros en pleno centro, a cinco minutos de la estación de metro. Tiene un dormitorio, salón, cocina americana y un baño completo. Está totalmente amueblado y tiene calefacción y aire acondicionado. El edificio es antiguo, pero tiene ascensor. Precio: 850 euros al mes. Es necesario pagar dos meses de fianza. Ideal para una persona o una pareja sin hijos. No se aceptan mascotas. El piso está en una tercera planta y es exterior, con dos balcones a una calle con muchas tiendas y restaurantes. La cocina tiene lavavajillas y lavadora. Disponible a partir del 1 de septiembre."
+    },
+    {
+     "h": "B. Casa con jardín",
+     "b": "Se alquila casa de dos plantas en una urbanización tranquila, a 20 kilómetros de la ciudad. Tiene cuatro dormitorios, dos baños, garaje para dos coches y un jardín grande con piscina compartida con los vecinos. No está amueblada. Hay un colegio y un supermercado a diez minutos a pie. Perfecta para familias. Se aceptan animales. Precio: 1.100 euros al mes, gastos de comunidad incluidos. La casa es muy luminosa y tiene una cocina grande con salida directa al jardín. En la urbanización hay también pistas de tenis. Para ir a la ciudad hace falta coche, porque el autobús pasa solo cada hora."
+    },
+    {
+     "h": "C. Estudio para estudiantes",
+     "b": "Estudio de 30 metros cerca de la universidad, con cama, escritorio y una pequeña cocina. Está en un quinto piso sin ascensor, pero es muy luminoso y tiene una terraza con vistas a la ciudad. El precio, 500 euros al mes, incluye internet, agua y electricidad. Solo se alquila de septiembre a junio, durante el curso académico. Se pide una carta de la universidad. El edificio es tranquilo y en la planta baja hay una cafetería con menús baratos para estudiantes. La universidad está a diez minutos a pie. Se pide un mes de fianza al firmar el contrato."
+    }
+   ],
+   "items": [
+    {
+     "q": "Puedes vivir aquí con tu perro.",
+     "a": 1,
+     "w": "En la casa con jardín «se aceptan animales». El piso del centro no acepta mascotas."
+    },
+    {
+     "q": "Tienes que subir las escaleras a pie.",
+     "a": 2,
+     "w": "El estudio está «en un quinto piso sin ascensor»."
+    },
+    {
+     "q": "No tienes que pagar aparte las facturas de la luz.",
+     "a": 2,
+     "w": "El precio del estudio «incluye internet, agua y electricidad»."
+    },
+    {
+     "q": "Tienes que comprar los muebles.",
+     "a": 1,
+     "w": "La casa con jardín «no está amueblada». El piso del centro está totalmente amueblado."
+    },
+    {
+     "q": "No se puede alquilar todo el año.",
+     "a": 2,
+     "w": "El estudio «solo se alquila de septiembre a junio»."
+    },
+    {
+     "q": "Está muy bien comunicado con el transporte público.",
+     "a": 0,
+     "w": "El piso está «a cinco minutos de la estación de metro»."
+    }
+   ]
+  },
+  {
+   "t": 4,
+   "texts": [
+    {
+     "h": "La bicicleta azul",
+     "b": "Cuando Marina cumplió nueve años, su abuelo Ramón le regaló una bicicleta azul. No era nueva: la había encontrado en un mercadillo y la había arreglado él mismo durante semanas en el garaje. Le había cambiado las ruedas, había pintado el cuadro y había puesto una cesta delante y un timbre plateado que sonaba muy fuerte. A Marina le pareció la bicicleta más bonita del mundo.\n\nEse verano, cada tarde, cuando bajaba el calor, el abuelo y la nieta salían juntos a pasear por los caminos del pueblo. Él iba en su vieja bicicleta negra y ella, detrás, tocando el timbre cada vez que veía un gato o una vaca. A veces llegaban hasta el río y se sentaban a comer fruta debajo de un árbol. El abuelo le contaba historias de cuando era joven y trabajaba de cartero en esa misma bicicleta negra.\n\nPasaron los años. Marina se fue a estudiar a Barcelona y después encontró trabajo como ingeniera en Alemania. Volvía al pueblo solo en Navidad y algunas semanas en verano. La bicicleta azul se quedó en el garaje, cubierta de polvo, al lado de la negra del abuelo, que ya no podía montar porque le dolían las rodillas.\n\nCuando el abuelo murió, Marina tenía treinta y dos años. Volvió al pueblo para el entierro y, unos días después, su abuela le dio un sobre. Dentro había una carta del abuelo y una llave pequeña. En la carta, con su letra grande y un poco temblorosa, Ramón le pedía una cosa: «No dejes que las bicicletas se mueran en el garaje».\n\nMarina no supo qué hacer con esas palabras durante meses. Pero un día, en Berlín, vio a un grupo de jóvenes que arreglaban bicicletas viejas en un taller del barrio para regalarlas a niños sin recursos. Esa misma tarde entró a preguntar si necesitaban ayuda.\n\nHoy, cinco años después, Marina ha vuelto a vivir en el pueblo. Trabaja para su empresa desde casa y, los fines de semana, abre el antiguo garaje del abuelo, que ahora es un pequeño taller. Allí enseña a los niños de la zona a reparar bicicletas. Ya han arreglado más de doscientas. La llave pequeña era la del candado de la bicicleta negra, que ahora está colgada en la pared del taller, al lado de una foto del abuelo. La bicicleta azul la usa su hija, que acaba de cumplir nueve años."
+    }
+   ],
+   "items": [
+    {
+     "q": "La bicicleta que el abuelo regaló a Marina…",
+     "o": [
+      "la compró nueva en una tienda.",
+      "la reparó él mismo.",
+      "era la bicicleta de cuando él era joven."
+     ],
+     "a": 1,
+     "w": "La encontró en un mercadillo «y la había arreglado él mismo durante semanas». La bici de cuando era joven es la negra."
+    },
+    {
+     "q": "Durante los paseos de aquel verano…",
+     "o": [
+      "el abuelo hablaba de su trabajo de joven.",
+      "Marina iba delante del abuelo.",
+      "salían por la mañana temprano."
+     ],
+     "a": 0,
+     "w": "Le contaba historias de cuando trabajaba de cartero. Salían por la tarde y ella iba detrás."
+    },
+    {
+     "q": "Cuando Marina vivía fuera del pueblo…",
+     "o": [
+      "usaba la bicicleta azul en verano.",
+      "el abuelo seguía montando en bicicleta.",
+      "las bicicletas estaban guardadas en el garaje."
+     ],
+     "a": 2,
+     "w": "La bicicleta azul se quedó en el garaje, al lado de la negra; el abuelo ya no podía montar."
+    },
+    {
+     "q": "En su carta, el abuelo le pide a Marina que…",
+     "o": [
+      "venda las bicicletas.",
+      "dé nueva vida a las bicicletas.",
+      "cuide de la abuela."
+     ],
+     "a": 1,
+     "w": "«No dejes que las bicicletas se mueran en el garaje»: quería que se siguieran usando."
+    },
+    {
+     "q": "En Berlín, Marina…",
+     "o": [
+      "abrió su propio taller.",
+      "empezó a colaborar con un grupo de jóvenes.",
+      "compró una bicicleta para su hija."
+     ],
+     "a": 1,
+     "w": "Vio a unos jóvenes que arreglaban bicicletas para niños sin recursos y entró a preguntar si necesitaban ayuda."
+    },
+    {
+     "q": "Al final de la historia sabemos que…",
+     "o": [
+      "Marina ha dejado su trabajo de ingeniera.",
+      "la llave abría el garaje.",
+      "la hija de Marina usa la bicicleta azul."
+     ],
+     "a": 2,
+     "w": "«La bicicleta azul la usa su hija». Marina sigue trabajando desde casa y la llave era la del candado de la bici negra."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,314 @@
+{
+ "id": "R1",
+ "title": "Mudanzas y nuevos comienzos",
+ "tasks": [
+  {
+   "t": 1,
+   "texts": [
+    {
+     "h": "Correo de Lucía a Marta",
+     "b": "Asunto: ¡Ya estoy en Valencia!\n\nHola, Marta:\n\n¿Qué tal estás? Perdona por no escribirte antes, pero estas dos semanas han sido una locura. Como sabes, el día 1 empecé en mi nuevo trabajo en una agencia de viajes del centro. Mis compañeros son muy simpáticos y mi jefa, Carmen, me ayuda mucho. Trabajo de lunes a viernes de nueve a tres, así que tengo las tardes libres.\n\nEl piso es pequeño, pero muy bonito. Tiene dos habitaciones, una cocina nueva y un balcón donde desayuno todos los días. Lo malo es que está en un quinto piso y no hay ascensor, ¡pero así hago ejercicio! Está a diez minutos andando de la playa y a quince del trabajo, por eso no necesito el coche. Lo voy a vender el mes que viene.\n\nTodavía no conozco a mucha gente. Mi vecina Rosa, que es profesora de inglés, me invitó a cenar el sábado pasado con unos amigos suyos y lo pasamos muy bien. También me he apuntado a un curso de cerámica los martes y jueves por la tarde.\n\nOye, ¿por qué no vienes a visitarme en octubre? El día 9 es fiesta aquí y tengo un puente de cuatro días. La habitación pequeña es para ti. Podemos ir a la Ciudad de las Artes y las Ciencias y, por supuesto, comer una buena paella. Dime algo pronto para buscar billetes de tren, que en esas fechas suben mucho de precio.\n\nUn beso muy fuerte,\nLucía"
+    }
+   ],
+   "items": [
+    {
+     "q": "Lucía escribe a Marta para…",
+     "o": [
+      "contarle su nueva vida e invitarla.",
+      "pedirle ayuda con la mudanza.",
+      "explicarle por qué ha dejado su trabajo."
+     ],
+     "a": 0,
+     "w": "Lucía cuenta cómo es su trabajo, su piso y su vida en Valencia, y al final invita a Marta en octubre."
+    },
+    {
+     "q": "En su nuevo trabajo, Lucía…",
+     "o": [
+      "trabaja también por las tardes.",
+      "tiene una jefa que la ayuda.",
+      "no se lleva bien con los compañeros."
+     ],
+     "a": 1,
+     "w": "Dice: «mi jefa, Carmen, me ayuda mucho». Trabaja de nueve a tres, así que tiene las tardes libres."
+    },
+    {
+     "q": "Sobre su piso, Lucía dice que…",
+     "o": [
+      "está cerca de la playa.",
+      "tiene tres habitaciones.",
+      "tiene ascensor."
+     ],
+     "a": 0,
+     "w": "Está «a diez minutos andando de la playa». Tiene dos habitaciones y no hay ascensor."
+    },
+    {
+     "q": "Lucía va a vender el coche porque…",
+     "o": [
+      "es muy caro.",
+      "no lo necesita.",
+      "está estropeado."
+     ],
+     "a": 1,
+     "w": "El trabajo y la playa están cerca, «por eso no necesito el coche»."
+    },
+    {
+     "q": "Lucía quiere que Marta…",
+     "o": [
+      "compre los billetes de tren para las dos.",
+      "le conteste pronto.",
+      "vaya con ella al curso de cerámica."
+     ],
+     "a": 1,
+     "w": "«Dime algo pronto para buscar billetes»: quiere una respuesta rápida porque los billetes suben de precio."
+    }
+   ]
+  },
+  {
+   "t": 2,
+   "texts": [
+    {
+     "h": "Gimnasio",
+     "b": "GIMNASIO VITAL. ¡Este mes, sin matrícula! Abierto de lunes a sábado de 7:00 a 23:00 y domingos de 9:00 a 14:00. Clases de yoga, pilates y natación incluidas en la cuota. Primera semana gratis si vienes con un amigo. Más información en recepción. Estamos en la calle Goya, 14, a dos minutos de la parada de metro. También tenemos aparcamiento para socios."
+    },
+    {
+     "h": "Biblioteca municipal",
+     "b": "AVISO: Del 1 al 15 de agosto la biblioteca cerrará por obras. Durante esos días no se podrán devolver libros, pero no hay que pagar multa por retraso. Los préstamos por internet siguen funcionando con normalidad. Gracias por su comprensión. A partir del 16 de agosto, la biblioteca abrirá con su horario habitual, de lunes a sábado de 9:00 a 21:00."
+    },
+    {
+     "h": "Curso de cocina",
+     "b": "¿Te gusta cocinar? Escuela Sabores organiza un curso de cocina vegetariana para principiantes. Seis sesiones, los miércoles de 18:00 a 20:00. Precio: 90 euros con todos los ingredientes. Grupos de máximo diez personas. Inscripciones hasta el 20 de septiembre. Al final del curso, cada alumno recibirá un pequeño libro con todas las recetas. Escríbenos a hola@escuelasabores.es."
+    },
+    {
+     "h": "Se alquila",
+     "b": "Se alquila habitación en piso compartido con dos estudiantes, cerca de la universidad. Habitación exterior con armario y escritorio. 350 euros al mes con agua y luz incluidas. No se permiten animales. Preferiblemente chica no fumadora. Llamar por las tardes al 612 345 678. La habitación está libre desde el 1 de octubre. El piso tiene lavadora, cocina completa y un salón grande."
+    },
+    {
+     "h": "Perro perdido",
+     "b": "PERDIDO. Se busca perro pequeño, marrón, con una mancha blanca en la cabeza. Se llama Toby y lleva un collar rojo. Se perdió el domingo en el parque del Oeste. Es muy tranquilo y no muerde. Si lo ves, llama a Andrés: 699 112 233. Gratificación. Andrés y su familia están muy tristes porque Toby vive con ellos desde hace ocho años."
+    },
+    {
+     "h": "Museo de la Ciudad",
+     "b": "MUSEO DE LA CIUDAD. Horario: de martes a domingo, de 10:00 a 19:00. Lunes cerrado. Entrada general: 6 euros. Estudiantes y mayores de 65: 3 euros. Entrada gratuita los domingos por la tarde. Visitas guiadas los sábados a las 12:00, con reserva previa. El museo tiene una cafetería en la planta baja y una tienda de regalos. Está prohibido hacer fotos con flash."
+    },
+    {
+     "h": "Huelga de trenes",
+     "b": "Renfe informa: debido a la huelga convocada para el próximo viernes, se cancelarán el 50 % de los trenes de cercanías. Los viajeros con billete para ese día pueden cambiarlo gratis por otro día o pedir la devolución del dinero en las taquillas. Los trenes de media y larga distancia funcionarán con normalidad. Más información en la web y en el teléfono de atención al cliente."
+    },
+    {
+     "h": "Voluntarios",
+     "b": "La asociación Manos Amigas busca voluntarios para acompañar a personas mayores dos horas a la semana. No necesitas experiencia: te damos una formación gratuita. Solo pedimos ser mayor de 18 años y tener ganas de ayudar. Escríbenos a info@manosamigas.org. Las actividades son por las tardes o los fines de semana, en el barrio que tú prefieras. ¡Únete a nuestro equipo!"
+    }
+   ],
+   "items": [
+    {
+     "x": 0,
+     "q": "En el Gimnasio Vital…",
+     "o": [
+      "hay que pagar aparte las clases de yoga.",
+      "los domingos abren solo por la mañana.",
+      "la primera semana es gratis para todos."
+     ],
+     "a": 1,
+     "w": "Los domingos abren de 9:00 a 14:00. Las clases están incluidas y la semana gratis es solo si vas con un amigo."
+    },
+    {
+     "x": 1,
+     "q": "Durante las obras de la biblioteca…",
+     "o": [
+      "se pueden pedir libros por internet.",
+      "hay que pagar si devuelves tarde un libro.",
+      "se pueden devolver libros en la entrada."
+     ],
+     "a": 0,
+     "w": "«Los préstamos por internet siguen funcionando con normalidad»."
+    },
+    {
+     "x": 2,
+     "q": "En el curso de cocina…",
+     "o": [
+      "los alumnos traen los ingredientes.",
+      "se aprende a cocinar con carne y pescado.",
+      "no puede haber más de diez alumnos."
+     ],
+     "a": 2,
+     "w": "«Grupos de máximo diez personas». Los ingredientes están incluidos y la cocina es vegetariana."
+    },
+    {
+     "x": 3,
+     "q": "La habitación que se alquila…",
+     "o": [
+      "incluye los gastos de agua y luz.",
+      "es ideal para una persona con perro.",
+      "está en un piso con familias."
+     ],
+     "a": 0,
+     "w": "«350 euros al mes con agua y luz incluidas». No se permiten animales y se comparte con estudiantes."
+    },
+    {
+     "x": 4,
+     "q": "El perro Toby…",
+     "o": [
+      "es grande y negro.",
+      "se perdió en un parque.",
+      "es un poco peligroso."
+     ],
+     "a": 1,
+     "w": "«Se perdió el domingo en el parque del Oeste». Es pequeño, marrón, y no muerde."
+    },
+    {
+     "x": 5,
+     "q": "En el Museo de la Ciudad…",
+     "o": [
+      "los estudiantes no pagan.",
+      "se puede entrar gratis algunos días.",
+      "las visitas guiadas son sin reserva."
+     ],
+     "a": 1,
+     "w": "La entrada es gratuita los domingos por la tarde. Los estudiantes pagan 3 euros y las visitas guiadas necesitan reserva."
+    },
+    {
+     "x": 6,
+     "q": "Los viajeros afectados por la huelga…",
+     "o": [
+      "pueden recuperar el dinero del billete.",
+      "tienen que pagar para cambiar el billete.",
+      "no pueden viajar en ningún tren."
+     ],
+     "a": 0,
+     "w": "Pueden cambiar el billete gratis o «pedir la devolución del dinero». Solo se cancela la mitad de los trenes."
+    },
+    {
+     "x": 7,
+     "q": "Para ser voluntario en Manos Amigas…",
+     "o": [
+      "hay que tener experiencia.",
+      "es necesario pagar un curso.",
+      "hay que ser mayor de edad."
+     ],
+     "a": 2,
+     "w": "«Solo pedimos ser mayor de 18 años». No hace falta experiencia y la formación es gratuita."
+    }
+   ]
+  },
+  {
+   "t": 3,
+   "texts": [
+    {
+     "h": "A. Hostal La Brisa",
+     "b": "El Hostal La Brisa está en primera línea de playa, en un pueblo tranquilo de la costa. Todas las habitaciones tienen aire acondicionado y la mayoría, vistas al mar. El desayuno está incluido en el precio y se sirve en la terraza hasta las once. No tenemos aparcamiento propio, pero hay uno público a cien metros. Es un lugar perfecto para descansar: no admitimos grupos grandes ni fiestas. Ofrecemos un descuento del 15 % para estancias de más de una semana. Las habitaciones son sencillas pero cómodas, y todas tienen baño propio. Muy cerca hay un pequeño puerto, una farmacia y varios restaurantes de pescado. El hostal está abierto de abril a octubre."
+    },
+    {
+     "h": "B. Albergue Montaña Verde",
+     "b": "El Albergue Montaña Verde está en pleno parque natural, a 1.200 metros de altura. Tenemos habitaciones compartidas de cuatro y seis camas, y dos habitaciones dobles. Hay cocina para los huéspedes, así que puedes preparar tu propia comida. Organizamos rutas a pie y en bicicleta todos los fines de semana con un guía. Los animales de compañía son bienvenidos. Atención: no hay cobertura de móvil en la zona, pero sí wifi en el comedor. El albergue está a cuarenta minutos de la ciudad más cercana por una carretera de montaña. Las habitaciones compartidas tienen taquillas, y las sábanas están incluidas en el precio. Abrimos todo el año."
+    },
+    {
+     "h": "C. Hotel Plaza Mayor",
+     "b": "El Hotel Plaza Mayor está en el casco antiguo de la ciudad, al lado de los principales museos y monumentos. Las habitaciones son modernas y tienen televisión y caja fuerte. El restaurante del hotel ofrece cocina tradicional de la región. Tenemos aparcamiento privado por 15 euros al día. Es ideal para familias: los niños menores de doce años no pagan si duermen con sus padres. Recepción abierta las 24 horas. El hotel tiene ochenta habitaciones repartidas en cuatro plantas, todas con ascensor. Desde la terraza de la última planta hay unas vistas preciosas de la catedral. Se aceptan todas las tarjetas."
+    }
+   ],
+   "items": [
+    {
+     "q": "Aquí puedes hacer excursiones con un guía.",
+     "a": 1,
+     "w": "El albergue organiza «rutas a pie y en bicicleta todos los fines de semana con un guía»."
+    },
+    {
+     "q": "Es más barato si te quedas muchos días.",
+     "a": 0,
+     "w": "El hostal ofrece «un descuento del 15 % para estancias de más de una semana»."
+    },
+    {
+     "q": "Los niños pequeños no pagan.",
+     "a": 2,
+     "w": "En el hotel, los menores de doce años no pagan si duermen con sus padres."
+    },
+    {
+     "q": "Puedes cocinar tú mismo.",
+     "a": 1,
+     "w": "El albergue tiene «cocina para los huéspedes»."
+    },
+    {
+     "q": "El desayuno no se paga aparte.",
+     "a": 0,
+     "w": "En el hostal «el desayuno está incluido en el precio»."
+    },
+    {
+     "q": "Puedes dejar el coche en el mismo establecimiento, pagando.",
+     "a": 2,
+     "w": "El hotel tiene «aparcamiento privado por 15 euros al día». El hostal no tiene aparcamiento propio."
+    }
+   ]
+  },
+  {
+   "t": 4,
+   "texts": [
+    {
+     "h": "Blog «Mi vida en el campo» — Por qué dejé la ciudad",
+     "b": "Hace tres años vivía en Madrid, trabajaba en un banco y pasaba casi dos horas al día en el metro. Ganaba bastante dinero, pero siempre estaba cansado y casi nunca veía a mis amigos. Un día, mi abuela me llamó por teléfono: estaba enferma y necesitaba ayuda en su casa de un pueblo de Teruel, donde viven solo ochenta personas. Pedí unas vacaciones de un mes para cuidarla. Al principio pensaba que me iba a aburrir muchísimo.\n\nPero no fue así. Por las mañanas trabajaba en el huerto de mi abuela con mi vecino Julián, un señor de setenta años que lo sabe todo sobre tomates y patatas. Por las tardes paseaba por el monte o leía en la plaza. Por primera vez en mucho tiempo dormía ocho horas seguidas. Mi abuela se recuperó pronto y me dijo una frase que nunca voy a olvidar: «Aquí tienes menos cosas, pero más tiempo».\n\nCuando volví a Madrid, no podía dejar de pensar en el pueblo. Seis meses después, dejé el banco. No fue una decisión fácil: mis padres pensaban que estaba loco y yo tenía miedo de no encontrar trabajo. Sin embargo, el pueblo tenía conexión a internet y yo sabía diseñar páginas web, algo que antes hacía solo como afición. Empecé con dos clientes, que eran amigos míos, y poco a poco llegaron más.\n\nHoy vivo con mi abuela, trabajo desde casa cuatro o cinco horas al día y gano menos dinero que antes, pero gasto mucho menos. Tengo un huerto propio y en verano vendo mis verduras en el mercado de la capital de la provincia. Además, he convencido a dos amigos de Madrid para venir a vivir aquí: uno ha abierto una pequeña panadería y el otro da clases de yoga en el antiguo colegio, que estaba cerrado desde hacía diez años.\n\nNo digo que la vida en el campo sea perfecta. En invierno hace mucho frío, el médico solo viene dos días a la semana y para ir al cine hay que conducir una hora. Pero cuando alguien me pregunta si echo de menos la ciudad, siempre respondo lo mismo: solo un poco, y solo los domingos. Mi abuela, por cierto, ahora dice que soy el mejor nieto del mundo."
+    }
+   ],
+   "items": [
+    {
+     "q": "Cuando vivía en Madrid, el autor…",
+     "o": [
+      "tenía poco dinero.",
+      "pasaba mucho tiempo en el transporte.",
+      "veía mucho a sus amigos."
+     ],
+     "a": 1,
+     "w": "Pasaba «casi dos horas al día en el metro». Ganaba bastante y casi nunca veía a sus amigos."
+    },
+    {
+     "q": "El autor fue al pueblo por primera vez para…",
+     "o": [
+      "ayudar a su abuela.",
+      "buscar un trabajo nuevo.",
+      "pasar unas vacaciones con amigos."
+     ],
+     "a": 0,
+     "w": "Su abuela estaba enferma y necesitaba ayuda; pidió vacaciones para cuidarla."
+    },
+    {
+     "q": "Durante su primer mes en el pueblo, el autor…",
+     "o": [
+      "se aburrió mucho.",
+      "durmió mejor que en Madrid.",
+      "trabajó en el huerto con su abuela."
+     ],
+     "a": 1,
+     "w": "«Por primera vez en mucho tiempo dormía ocho horas seguidas». Trabajaba en el huerto con su vecino Julián, no con su abuela."
+    },
+    {
+     "q": "Cuando decidió dejar el banco, sus padres…",
+     "o": [
+      "no estaban de acuerdo.",
+      "le dieron dinero.",
+      "se fueron a vivir con él."
+     ],
+     "a": 0,
+     "w": "«Mis padres pensaban que estaba loco»."
+    },
+    {
+     "q": "Ahora el autor…",
+     "o": [
+      "gana más dinero que antes.",
+      "trabaja como diseñador de páginas web.",
+      "tiene una panadería."
+     ],
+     "a": 1,
+     "w": "Sabía diseñar páginas web y empezó con dos clientes. La panadería es de un amigo."
+    },
+    {
+     "q": "Según el autor, un problema del pueblo es que…",
+     "o": [
+      "no hay internet.",
+      "no hay médico todos los días.",
+      "no hay colegio para los niños."
+     ],
+     "a": 1,
+     "w": "«El médico solo viene dos días a la semana». Sí hay internet; el antiguo colegio ahora se usa para yoga."
+    }
+   ]
+  }
+ ]
+}

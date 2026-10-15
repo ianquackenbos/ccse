@@ -1,0 +1,512 @@
+{
+ "id": "L2",
+ "title": "Salud, trabajo y vecinos",
+ "tasks": [
+  {
+   "t": 1,
+   "items": [
+    {
+     "s": [
+      [
+       "H",
+       "Buenos días. Me duele mucho la garganta desde ayer. ¿Qué me recomienda?"
+      ],
+      [
+       "M",
+       "¿Tiene fiebre?"
+      ],
+      [
+       "H",
+       "No, fiebre no, pero tengo un poco de tos."
+      ],
+      [
+       "M",
+       "Pues tome estas pastillas tres veces al día, después de comer. Si en tres días no está mejor, vaya al médico."
+      ],
+      [
+       "H",
+       "Muchas gracias. ¿Cuánto es?"
+      ],
+      [
+       "M",
+       "Seis euros con cincuenta."
+      ]
+     ],
+     "q": "¿Qué le pasa al hombre?",
+     "o": [
+      "Tiene fiebre.",
+      "Le duele la garganta.",
+      "Le duele el estómago."
+     ],
+     "a": 1,
+     "w": "«Me duele mucho la garganta desde ayer». No tiene fiebre."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "¿Cuánto cuestan estas manzanas?"
+      ],
+      [
+       "H",
+       "Las rojas, dos euros el kilo, y las verdes, dos cincuenta."
+      ],
+      [
+       "M",
+       "Póngame un kilo de las rojas. ¿Y las naranjas?"
+      ],
+      [
+       "H",
+       "Las naranjas están en oferta: tres kilos por cuatro euros."
+      ],
+      [
+       "M",
+       "Uy, qué bien. Entonces, tres kilos de naranjas también."
+      ],
+      [
+       "H",
+       "Son ocho euros en total."
+      ],
+      [
+       "M",
+       "Aquí tiene, gracias."
+      ]
+     ],
+     "q": "¿Qué compra la mujer?",
+     "o": [
+      "Manzanas verdes y naranjas.",
+      "Solo manzanas rojas.",
+      "Manzanas rojas y naranjas."
+     ],
+     "a": 2,
+     "w": "Pide un kilo de manzanas rojas y, por la oferta, tres kilos de naranjas."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "Oye, ¿quedamos el viernes para ir al cine?"
+      ],
+      [
+       "M",
+       "El viernes no puedo, tengo una cena con mis compañeros de trabajo. ¿Y el sábado?"
+      ],
+      [
+       "H",
+       "El sábado por la tarde juego al fútbol, pero por la noche sí puedo."
+      ],
+      [
+       "M",
+       "Vale, pues el sábado por la noche. Hay una sesión a las diez."
+      ],
+      [
+       "H",
+       "Genial. Compro yo las entradas por internet esta tarde."
+      ],
+      [
+       "M",
+       "Vale, y yo te invito a cenar después."
+      ]
+     ],
+     "q": "¿Cuándo van a ir al cine?",
+     "o": [
+      "El viernes por la noche.",
+      "El sábado por la tarde.",
+      "El sábado por la noche."
+     ],
+     "a": 2,
+     "w": "Él juega al fútbol el sábado por la tarde, así que quedan «el sábado por la noche»."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "Hola, quería cambiar estos pantalones. Me quedan pequeños."
+      ],
+      [
+       "H",
+       "¿Quiere la talla cuarenta?"
+      ],
+      [
+       "M",
+       "Sí, por favor. Y si es posible, en negro en vez de en gris."
+      ],
+      [
+       "H",
+       "Lo siento, en negro solo nos queda la treinta y ocho. En gris sí tengo la cuarenta."
+      ],
+      [
+       "M",
+       "Bueno, pues gris, entonces."
+      ],
+      [
+       "H",
+       "Muy bien. Si tiene algún problema, puede volver con el tique."
+      ]
+     ],
+     "q": "¿Qué pantalones se lleva la mujer?",
+     "o": [
+      "Unos negros de la talla 38.",
+      "Unos grises de la talla 40.",
+      "Unos negros de la talla 40."
+     ],
+     "a": 1,
+     "w": "En negro solo queda la 38, que le queda pequeña, así que se lleva los grises de la talla 40."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "Perdone, ¿este autobús va al hospital?"
+      ],
+      [
+       "M",
+       "No, este va al centro. Para el hospital tiene que coger el 12."
+      ],
+      [
+       "H",
+       "¿Y dónde para el 12?"
+      ],
+      [
+       "M",
+       "En la otra parada, cruzando la calle, delante del supermercado."
+      ],
+      [
+       "H",
+       "Muchas gracias. ¿Y sabe si pasa muy a menudo?"
+      ],
+      [
+       "M",
+       "Sí, cada diez minutos más o menos."
+      ]
+     ],
+     "q": "¿Dónde puede coger el hombre el autobús al hospital?",
+     "o": [
+      "En esta misma parada.",
+      "Delante del supermercado.",
+      "En el centro."
+     ],
+     "a": 1,
+     "w": "El 12 para «cruzando la calle, delante del supermercado»."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "¿Dónde has dejado las llaves del coche?"
+      ],
+      [
+       "H",
+       "Creo que en la mesa de la cocina."
+      ],
+      [
+       "M",
+       "No, ahí no están. He mirado también en el bolso."
+      ],
+      [
+       "H",
+       "Ah, ya me acuerdo: en el bolsillo de mi chaqueta, la que está en el armario de la entrada."
+      ],
+      [
+       "M",
+       "¡Menos mal! Vamos, que llegamos tarde a la cena."
+      ]
+     ],
+     "q": "¿Dónde están las llaves?",
+     "o": [
+      "En la cocina.",
+      "En el bolso.",
+      "En una chaqueta."
+     ],
+     "a": 2,
+     "w": "Al final él recuerda: «en el bolsillo de mi chaqueta»."
+    }
+   ]
+  },
+  {
+   "t": 2,
+   "items": [
+    {
+     "s": [
+      [
+       "N",
+       "El Ayuntamiento informa: la campaña de vacunación contra la gripe empieza el próximo lunes en todos los centros de salud de la ciudad. Pueden vacunarse los mayores de sesenta años y las personas con enfermedades crónicas. Es necesario pedir cita. Las personas vacunadas recibirán un certificado."
+      ]
+     ],
+     "q": "Para vacunarse de la gripe…",
+     "o": [
+      "hay que pedir cita.",
+      "solo hay que ir al hospital.",
+      "no hay límite de edad."
+     ],
+     "a": 0,
+     "w": "«Es necesario pedir cita». Es para mayores de sesenta y enfermos crónicos, en los centros de salud."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "¿Buscas trabajo? La feria de empleo de la universidad se celebra este miércoles y jueves en el pabellón de deportes. Más de cien empresas buscan estudiantes y recién graduados. No olvides llevar varias copias de tu currículum. La entrada es gratuita para todos los estudiantes."
+      ]
+     ],
+     "q": "En la feria de empleo…",
+     "o": [
+      "solo participan empresas pequeñas.",
+      "es recomendable llevar el currículum.",
+      "hay que pagar para entrar."
+     ],
+     "a": 1,
+     "w": "«No olvides llevar varias copias de tu currículum»."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Buenas noticias para los amantes de los animales: el refugio municipal organiza este domingo una jornada de puertas abiertas. Las familias podrán conocer a los perros y gatos que buscan un hogar. Habrá actividades para niños de diez a dos. El refugio está en la carretera de la playa, kilómetro tres."
+      ]
+     ],
+     "q": "El domingo en el refugio…",
+     "o": [
+      "se pueden comprar animales.",
+      "se puede conocer a animales para adoptar.",
+      "solo pueden entrar adultos."
+     ],
+     "a": 1,
+     "w": "Las familias podrán conocer a los animales «que buscan un hogar». Hay actividades para niños."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Les informamos de que, por la huelga de controladores aéreos, mañana se han cancelado treinta vuelos en el aeropuerto. Los pasajeros afectados deben consultar la página web de su compañía aérea antes de ir al aeropuerto. Las compañías ofrecerán otros vuelos o la devolución del dinero."
+      ]
+     ],
+     "q": "Los pasajeros afectados deben…",
+     "o": [
+      "ir al aeropuerto lo antes posible.",
+      "informarse en internet.",
+      "llamar al aeropuerto."
+     ],
+     "a": 1,
+     "w": "Deben «consultar la página web de su compañía aérea antes de ir»."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Este sábado, el mercado central celebra su cien aniversario. Habrá degustaciones gratuitas de productos típicos, música en directo y un concurso de cocina para aficionados. El mercado abrirá excepcionalmente hasta las diez de la noche. Además, habrá una exposición de fotos antiguas del mercado."
+      ]
+     ],
+     "q": "El sábado el mercado central…",
+     "o": [
+      "cierra antes de lo normal.",
+      "cumple cien años.",
+      "está cerrado por la fiesta."
+     ],
+     "a": 1,
+     "w": "«Celebra su cien aniversario» y abre hasta más tarde, hasta las diez de la noche."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Consejo de salud del día: los médicos recomiendan beber dos litros de agua al día, sobre todo en verano. También aconsejan no hacer deporte al aire libre en las horas de más calor, entre las doce y las cinco de la tarde. Y no olviden usar crema para el sol."
+      ]
+     ],
+     "q": "Según los médicos, en verano es mejor…",
+     "o": [
+      "hacer deporte a mediodía.",
+      "no hacer deporte fuera con mucho calor.",
+      "beber menos agua."
+     ],
+     "a": 1,
+     "w": "Aconsejan «no hacer deporte al aire libre en las horas de más calor»."
+    }
+   ]
+  },
+  {
+   "t": 3,
+   "names": {
+    "H": "Raúl",
+    "M": "Nuria"
+   },
+   "s": [
+    [
+     "H",
+     "Nuria, ¿tienes un momento? Quería hablar contigo de la reunión de vecinos de mañana."
+    ],
+    [
+     "M",
+     "Claro, Raúl. ¿Qué pasa?"
+    ],
+    [
+     "H",
+     "Es por el ascensor. Lleva estropeado dos semanas y mi madre, que vive conmigo, no puede subir las escaleras. Tiene ochenta años y le duelen las piernas."
+    ],
+    [
+     "M",
+     "Ya, es un problema. Yo vivo en el sexto y subo con la compra a pie todos los días. Pero el presidente dice que la reparación es muy cara."
+    ],
+    [
+     "H",
+     "Sí, unos ocho mil euros. Pero yo he pedido otro presupuesto a otra empresa y es más barato: cinco mil quinientos."
+    ],
+    [
+     "M",
+     "¡Qué bien! Eso hay que decirlo mañana. ¿Vas a ir a la reunión?"
+    ],
+    [
+     "H",
+     "No puedo, tengo turno de noche en el hospital. Por eso te lo cuento a ti. ¿Puedes presentar tú el presupuesto?"
+    ],
+    [
+     "M",
+     "Sí, sin problema. Dámelo y lo llevo. Oye, ¿y no se puede hacer algo con el ruido del bar de abajo? Yo no puedo dormir los fines de semana."
+    ],
+    [
+     "H",
+     "A mí no me molesta mucho, porque mi piso da al patio. Pero sé que muchos vecinos se quejan."
+    ],
+    [
+     "M",
+     "Pues también voy a hablar de eso. Y otra cosa: ¿sabes que van a pintar la fachada en primavera?"
+    ],
+    [
+     "H",
+     "No sabía nada. ¿Y cuánto vamos a pagar cada uno?"
+    ],
+    [
+     "M",
+     "Todavía no se sabe. Lo van a decidir mañana. Te mando un mensaje después de la reunión y te cuento."
+    ],
+    [
+     "H",
+     "Muchas gracias, Nuria. Te debo una. Si quieres, el domingo os invito a ti y a tu marido a comer."
+    ],
+    [
+     "M",
+     "¡Hecho! Pero cocino yo el postre."
+    ]
+   ],
+   "items": [
+    {
+     "q": "Vive con su madre.",
+     "a": 0,
+     "w": "Raúl: «mi madre, que vive conmigo, no puede subir las escaleras»."
+    },
+    {
+     "q": "Sube las escaleras con la compra.",
+     "a": 1,
+     "w": "Nuria: «Yo vivo en el sexto y subo con la compra a pie todos los días»."
+    },
+    {
+     "q": "Ha conseguido un presupuesto más barato.",
+     "a": 0,
+     "w": "Raúl ha pedido otro presupuesto «más barato: cinco mil quinientos»."
+    },
+    {
+     "q": "Trabaja en un bar.",
+     "a": 2,
+     "w": "El bar solo se menciona por el ruido. Raúl trabaja en un hospital y no se dice dónde trabaja Nuria."
+    },
+    {
+     "q": "Tiene problemas por el ruido.",
+     "a": 1,
+     "w": "Nuria: «Yo no puedo dormir los fines de semana». A Raúl no le molesta porque su piso da al patio."
+    },
+    {
+     "q": "Sabe cuánto va a costar pintar la fachada.",
+     "a": 2,
+     "w": "«Todavía no se sabe. Lo van a decidir mañana»: ninguno de los dos lo sabe."
+    }
+   ]
+  },
+  {
+   "t": 4,
+   "opts": [
+    "Tiene que traer un documento.",
+    "La tienda cambia de lugar.",
+    "El servicio está cerrado temporalmente.",
+    "Hay plazas libres en una actividad.",
+    "Un vuelo sale con retraso.",
+    "Debe ir a una sala concreta.",
+    "Le han encontrado algo que había perdido.",
+    "Puede pagar con tarjeta.",
+    "Hay un menú especial.",
+    "Tiene un regalo por su compra."
+   ],
+   "msgs": [
+    {
+     "s": [
+      [
+       "N",
+       "Pasajeros del vuelo 2345 con destino a Roma: les informamos de que su vuelo tiene un retraso de una hora y media. La nueva hora de salida es a las 18:45. Sentimos las molestias. Por favor, permanezcan atentos a las pantallas."
+      ]
+     ],
+     "a": 4,
+     "w": "El vuelo a Roma sale una hora y media más tarde."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Hola, buenas tardes. Le llamamos de la oficina de objetos perdidos de la estación. Tenemos aquí su cartera con su documentación. Puede venir a buscarla de ocho a ocho. Gracias."
+      ]
+     ],
+     "a": 6,
+     "w": "Han encontrado su cartera."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Señora García, por favor, pase a la consulta número cinco, en la segunda planta. Señora García, a la consulta número cinco. El doctor la está esperando."
+      ]
+     ],
+     "a": 5,
+     "w": "Le dicen a qué consulta debe ir."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Hola, soy Pedro, de la academia de idiomas. Te llamo porque todavía quedan tres plazas en el curso de inglés de los martes. Si te interesa, llámame antes del viernes. El curso empieza el próximo martes a las seis."
+      ]
+     ],
+     "a": 3,
+     "w": "Quedan plazas libres en el curso de inglés."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Estimados clientes: desde el lunes, nuestra tienda estará en la calle Alcalá, número 50, a cien metros de la actual. Mantenemos el mismo horario y el mismo teléfono. Les esperamos en nuestra nueva dirección."
+      ]
+     ],
+     "a": 1,
+     "w": "La tienda se traslada a otra dirección."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Buenos días, le recordamos que para su cita de mañana en el banco necesita traer su DNI y la última nómina. Sin esos documentos no podremos abrir la cuenta. Gracias y hasta mañana."
+      ]
+     ],
+     "a": 0,
+     "w": "Debe traer el DNI y la nómina a la cita."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Informamos a nuestros usuarios de que la piscina cubierta permanecerá cerrada hasta el día quince por trabajos de limpieza. Disculpen las molestias. Pueden usar la piscina exterior mientras tanto."
+      ]
+     ],
+     "a": 2,
+     "w": "La piscina está cerrada unos días por limpieza."
+    }
+   ]
+  }
+ ]
+}

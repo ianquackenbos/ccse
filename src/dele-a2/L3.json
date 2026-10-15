@@ -1,0 +1,508 @@
+{
+ "id": "L3",
+ "title": "Viajes y vacaciones",
+ "tasks": [
+  {
+   "t": 1,
+   "items": [
+    {
+     "s": [
+      [
+       "M",
+       "Buenas tardes. Tengo una habitación reservada para tres noches. Me llamo Inés Moreno."
+      ],
+      [
+       "H",
+       "Sí, señora Moreno. Habitación doble, con desayuno. Es la 214, en la segunda planta."
+      ],
+      [
+       "M",
+       "¿A qué hora es el desayuno?"
+      ],
+      [
+       "H",
+       "De siete a diez y media, en el restaurante de la planta baja."
+      ],
+      [
+       "M",
+       "Perfecto. ¿Y hay wifi en la habitación?"
+      ],
+      [
+       "H",
+       "Sí, la contraseña está en la tarjeta de la habitación."
+      ]
+     ],
+     "q": "¿Dónde se sirve el desayuno?",
+     "o": [
+      "En la habitación.",
+      "En la segunda planta.",
+      "En la planta baja."
+     ],
+     "a": 2,
+     "w": "El desayuno es «en el restaurante de la planta baja». La habitación está en la segunda planta."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "¿Qué hacemos mañana? ¿Vamos a la playa?"
+      ],
+      [
+       "M",
+       "Dicen que va a llover todo el día. Mejor vamos al museo de arte moderno."
+      ],
+      [
+       "H",
+       "¿Y por la tarde? Podemos ir de compras."
+      ],
+      [
+       "M",
+       "Vale, pero antes quiero comer en ese restaurante de pescado del puerto."
+      ],
+      [
+       "H",
+       "Muy bien, pues reservo mesa para las dos."
+      ]
+     ],
+     "q": "¿Qué van a hacer primero mañana?",
+     "o": [
+      "Ir a la playa.",
+      "Visitar un museo.",
+      "Ir de compras."
+     ],
+     "a": 1,
+     "w": "Como va a llover, deciden ir «al museo de arte moderno» por la mañana. Las compras son por la tarde."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "Perdone, ¿a qué hora sale el próximo barco a la isla?"
+      ],
+      [
+       "H",
+       "Hay uno a las cuatro, pero ya está lleno. El siguiente sale a las cinco y media."
+      ],
+      [
+       "M",
+       "¿Y cuánto dura el viaje?"
+      ],
+      [
+       "H",
+       "Unos cuarenta minutos. El último barco de vuelta sale de la isla a las nueve."
+      ],
+      [
+       "M",
+       "Entonces quiero un billete de ida y vuelta para el barco de las cinco y media."
+      ]
+     ],
+     "q": "¿A qué hora puede salir la mujer hacia la isla?",
+     "o": [
+      "A las 16:00.",
+      "A las 17:30.",
+      "A las 21:00."
+     ],
+     "a": 1,
+     "w": "El barco de las cuatro está lleno; el siguiente sale «a las cinco y media». Las nueve es el último barco de vuelta."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "¿Qué llevas en la maleta? Pesa muchísimo."
+      ],
+      [
+       "M",
+       "Pues ropa, zapatos, dos libros y el secador de pelo."
+      ],
+      [
+       "H",
+       "El hotel tiene secador, no hace falta llevarlo."
+      ],
+      [
+       "M",
+       "Ah, ¿sí? Entonces lo saco. Pero los libros me los llevo, que en la playa me gusta leer."
+      ],
+      [
+       "H",
+       "Vale, pero cierra ya la maleta, que el taxi llega en diez minutos."
+      ]
+     ],
+     "q": "¿Qué saca la mujer de la maleta?",
+     "o": [
+      "Los zapatos.",
+      "Los libros.",
+      "El secador."
+     ],
+     "a": 2,
+     "w": "Como el hotel tiene secador, dice: «Entonces lo saco». Los libros se los lleva."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "Quería alquilar un coche para el fin de semana."
+      ],
+      [
+       "H",
+       "Tenemos uno pequeño por cuarenta euros al día y uno grande por sesenta y cinco."
+      ],
+      [
+       "M",
+       "Somos cinco personas con maletas."
+      ],
+      [
+       "H",
+       "Entonces necesita el grande. Lo puede recoger mañana a partir de las nueve."
+      ],
+      [
+       "M",
+       "Muy bien. ¿Necesita mi carné de conducir?"
+      ],
+      [
+       "H",
+       "Sí, y una tarjeta de crédito, por favor."
+      ]
+     ],
+     "q": "¿Cuánto cuesta al día el coche que necesita la mujer?",
+     "o": [
+      "40 euros.",
+      "65 euros.",
+      "9 euros."
+     ],
+     "a": 1,
+     "w": "Son cinco personas con maletas y necesitan el grande, que cuesta «sesenta y cinco». El nueve es la hora."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "Mira, esta es la foto de la casa rural que he encontrado para agosto."
+      ],
+      [
+       "M",
+       "Es preciosa. ¿Tiene piscina?"
+      ],
+      [
+       "H",
+       "No, piscina no, pero hay un río muy cerca para bañarse. Y tiene una terraza enorme con barbacoa."
+      ],
+      [
+       "M",
+       "¡Perfecto! Y está en la montaña, ¿no? Así no pasamos tanto calor."
+      ],
+      [
+       "H",
+       "Exacto. Y el pueblo más cercano está a cinco kilómetros. ¿La reservo?"
+      ],
+      [
+       "M",
+       "¡Sí, resérvala ya!"
+      ]
+     ],
+     "q": "¿Qué tiene la casa rural?",
+     "o": [
+      "Una piscina.",
+      "Una terraza con barbacoa.",
+      "Vistas al mar."
+     ],
+     "a": 1,
+     "w": "«Tiene una terraza enorme con barbacoa». No tiene piscina y está en la montaña."
+    }
+   ]
+  },
+  {
+   "t": 2,
+   "items": [
+    {
+     "s": [
+      [
+       "N",
+       "Renfe informa: a partir del próximo mes habrá un nuevo tren de alta velocidad entre Madrid y Granada. El viaje durará menos de tres horas y habrá cinco trenes al día. Los billetes ya se pueden comprar en la web con un veinte por ciento de descuento."
+      ]
+     ],
+     "q": "Los billetes del nuevo tren…",
+     "o": [
+      "todavía no están a la venta.",
+      "tienen un precio especial en internet.",
+      "solo se venden en la estación."
+     ],
+     "a": 1,
+     "w": "«Los billetes ya se pueden comprar en la web con un veinte por ciento de descuento»."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Si este verano vas a viajar fuera de la Unión Europea, recuerda revisar tu pasaporte. Muchos países piden que tenga una validez de al menos seis meses. Si necesitas renovarlo, pide cita en la comisaría con tiempo, porque en verano hay mucha demanda. La renovación cuesta unos treinta euros."
+      ]
+     ],
+     "q": "La noticia recomienda…",
+     "o": [
+      "viajar solo por Europa.",
+      "comprobar la fecha de caducidad del pasaporte.",
+      "ir a la comisaría sin cita."
+     ],
+     "a": 1,
+     "w": "«Recuerda revisar tu pasaporte»: debe tener al menos seis meses de validez."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "El Museo del Prado abre esta semana una exposición sobre los viajes de los pintores españoles por Italia. Se podrán ver más de ochenta obras, algunas nunca expuestas antes. La exposición estará abierta hasta el mes de enero. El precio de la entrada es de quince euros."
+      ]
+     ],
+     "q": "En la nueva exposición…",
+     "o": [
+      "hay obras que nunca se han visto.",
+      "solo hay pintores italianos.",
+      "se puede ver solo esta semana."
+     ],
+     "a": 0,
+     "w": "Hay más de ochenta obras, «algunas nunca expuestas antes». Estará abierta hasta enero."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Las playas de la costa norte tienen este año bandera azul, que garantiza la calidad del agua y los servicios. Este verano, además, habrá socorristas todos los días de junio a septiembre, de once de la mañana a ocho de la tarde. Recuerden que en algunas playas está prohibido llevar perros."
+      ]
+     ],
+     "q": "Este verano, en las playas de la costa norte…",
+     "o": [
+      "habrá socorristas por la noche.",
+      "habrá vigilancia todos los días.",
+      "el agua no es de buena calidad."
+     ],
+     "a": 1,
+     "w": "«Habrá socorristas todos los días de junio a septiembre», de once a ocho."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "¿Te gusta caminar? La asociación Senderos organiza cada domingo una excursión por la sierra. Las rutas son fáciles, de unos diez kilómetros, y están pensadas para familias. Solo tienes que llevar agua, comida y calzado cómodo. La salida es a las nueve desde la estación de autobuses."
+      ]
+     ],
+     "q": "Las excursiones de la asociación Senderos…",
+     "o": [
+      "son para personas con mucha experiencia.",
+      "salen desde la estación de autobuses.",
+      "se hacen los sábados."
+     ],
+     "a": 1,
+     "w": "«La salida es a las nueve desde la estación de autobuses». Son los domingos y las rutas son fáciles."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Último aviso para los viajeros: este fin de semana se espera mucho tráfico en las carreteras por el inicio de las vacaciones. Tráfico recomienda salir temprano por la mañana o por la noche y descansar cada dos horas de viaje. Y, por supuesto, no usen el móvil mientras conducen."
+      ]
+     ],
+     "q": "Tráfico recomienda…",
+     "o": [
+      "no viajar este fin de semana.",
+      "salir a mediodía.",
+      "parar a descansar durante el viaje."
+     ],
+     "a": 2,
+     "w": "Recomienda «descansar cada dos horas de viaje» y salir temprano o por la noche."
+    }
+   ]
+  },
+  {
+   "t": 3,
+   "names": {
+    "H": "Carlos",
+    "M": "Laura"
+   },
+   "s": [
+    [
+     "M",
+     "¡Hola, Carlos! ¿Ya has vuelto de las vacaciones?"
+    ],
+    [
+     "H",
+     "Sí, Laura, llegué anoche. Estoy cansadísimo, pero ha sido un viaje increíble."
+    ],
+    [
+     "M",
+     "¿Al final fuiste a México?"
+    ],
+    [
+     "H",
+     "Sí, tres semanas. Primero estuve en la capital, y luego fui a la playa, a Tulum. Lo que más me gustó fueron las pirámides mayas."
+    ],
+    [
+     "M",
+     "¡Qué envidia! Yo nunca he estado en América. Este año me he quedado aquí, porque estoy ahorrando para comprarme un piso."
+    ],
+    [
+     "H",
+     "Bueno, pero algo habrás hecho, ¿no?"
+    ],
+    [
+     "M",
+     "Sí, fui una semana al pueblo de mis abuelos, en Galicia. Me bañé en el río, comí muchísimo y dormí mucho. Fue muy tranquilo."
+    ],
+    [
+     "H",
+     "Eso también está muy bien. Yo en el viaje casi no dormí: dormíamos poco para ver muchas cosas."
+    ],
+    [
+     "M",
+     "¿Fuiste solo?"
+    ],
+    [
+     "H",
+     "No, con mi hermano. Él habla muy bien español porque vivió allí dos años, así que nos ayudó mucho. Yo todavía tengo que mejorar."
+    ],
+    [
+     "M",
+     "¿Y la comida?"
+    ],
+    [
+     "H",
+     "Buenísima, pero muy picante para mí. El primer día estuve enfermo del estómago."
+    ],
+    [
+     "M",
+     "¡Pobre! A mí me encanta la comida picante. ¿Y tienes fotos?"
+    ],
+    [
+     "H",
+     "Tengo más de mil. Si quieres, el viernes vienes a casa y te las enseño. Además, te he traído un regalo."
+    ],
+    [
+     "M",
+     "¡Ay, qué bien! El viernes trabajo hasta las siete, pero después voy."
+    ],
+    [
+     "H",
+     "Perfecto. Te espero a las ocho y cenamos tacos. ¡Yo cocino!"
+    ]
+   ],
+   "items": [
+    {
+     "q": "Ha estado de vacaciones en otro continente.",
+     "a": 0,
+     "w": "Carlos ha estado tres semanas en México."
+    },
+    {
+     "q": "Está ahorrando dinero para una casa.",
+     "a": 1,
+     "w": "Laura: «estoy ahorrando para comprarme un piso»."
+    },
+    {
+     "q": "Ha descansado mucho en vacaciones.",
+     "a": 1,
+     "w": "Laura, en el pueblo de sus abuelos, comió y «dormí mucho». Carlos casi no durmió."
+    },
+    {
+     "q": "Ha vivido en México.",
+     "a": 2,
+     "w": "Quien vivió dos años allí es el hermano de Carlos, que no está en la conversación. Ni Carlos ni Laura."
+    },
+    {
+     "q": "No le gusta la comida picante.",
+     "a": 0,
+     "w": "Para Carlos la comida era «muy picante para mí» y estuvo enfermo. A Laura le encanta el picante."
+    },
+    {
+     "q": "El viernes trabaja hasta tarde.",
+     "a": 1,
+     "w": "Laura: «El viernes trabajo hasta las siete»."
+    }
+   ]
+  },
+  {
+   "t": 4,
+   "opts": [
+    "El viaje dura más de lo previsto.",
+    "Hay que presentarse en la puerta de embarque.",
+    "La excursión empieza más tarde.",
+    "El hotel ofrece un servicio gratuito.",
+    "Ha cambiado la puerta de embarque.",
+    "Le informan de que han recibido un pago.",
+    "Se recomienda llevar ropa de abrigo.",
+    "Hay que esperar dentro del autobús.",
+    "Han encontrado un niño.",
+    "No se puede comer en este lugar."
+   ],
+   "msgs": [
+    {
+     "s": [
+      [
+       "N",
+       "Última llamada para los pasajeros del vuelo IB 3170 con destino a Londres. Embarquen inmediatamente por la puerta B 22. La puerta se cerrará en cinco minutos. Gracias."
+      ]
+     ],
+     "a": 1,
+     "w": "Es la última llamada: deben ir ya a la puerta de embarque."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Buenos días. Le informamos de que la excursión a los lagos, que estaba prevista a las ocho, saldrá a las nueve y media por un problema con el autobús. El punto de encuentro sigue siendo la recepción del hotel. Sentimos las molestias. Les esperamos en la recepción."
+      ]
+     ],
+     "a": 2,
+     "w": "La excursión sale hora y media más tarde."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Señores clientes, les recordamos que el hotel ofrece un servicio de autobús gratuito al centro de la ciudad cada hora, desde las nueve de la mañana. La parada está delante de la entrada principal. El viaje dura unos quince minutos."
+      ]
+     ],
+     "a": 3,
+     "w": "El autobús al centro es gratuito para los clientes."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Atención, señores pasajeros: debido al mal tiempo, el tren circula a menor velocidad. La llegada a Barcelona está prevista con cuarenta minutos de retraso. Disculpen las molestias. Les mantendremos informados."
+      ]
+     ],
+     "a": 0,
+     "w": "El tren llegará con cuarenta minutos de retraso."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Hola, le llamamos de la agencia Viajes Sol. Le confirmamos que hemos recibido el pago de su viaje a Canarias. En unos días le enviaremos los billetes por correo electrónico. Muchas gracias por confiar en nosotros."
+      ]
+     ],
+     "a": 5,
+     "w": "La agencia confirma que ha recibido el pago."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Para la visita de mañana a la montaña, les recomendamos llevar chaqueta y gorro, porque en la cumbre la temperatura puede bajar hasta cinco grados, aunque estemos en verano. Y no olviden llevar agua."
+      ]
+     ],
+     "a": 6,
+     "w": "Recomiendan llevar ropa de abrigo porque hará frío arriba."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Atención: los pasajeros con destino Málaga deben dirigirse a la puerta C 14. Su vuelo ya no sale por la puerta C 8. Repetimos: puerta C 14. Gracias por su atención."
+      ]
+     ],
+     "a": 4,
+     "w": "El vuelo a Málaga sale por otra puerta."
+    }
+   ]
+  }
+ ]
+}

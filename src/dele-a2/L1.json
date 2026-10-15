@@ -1,0 +1,528 @@
+{
+ "id": "L1",
+ "title": "De compras y por la ciudad",
+ "tasks": [
+  {
+   "t": 1,
+   "items": [
+    {
+     "s": [
+      [
+       "M",
+       "Buenos días. Quería un billete para Valencia, para el tren de las diez y cuarto."
+      ],
+      [
+       "H",
+       "Lo siento, señora, ese tren está completo. Hay otro a las once y media."
+      ],
+      [
+       "M",
+       "¿Y llega muy tarde?"
+      ],
+      [
+       "H",
+       "No, llega a las dos menos cuarto. ¿Ida y vuelta?"
+      ],
+      [
+       "M",
+       "No, solo ida. Vuelvo en coche con mi hijo. Entonces, el de las once y media."
+      ],
+      [
+       "H",
+       "Muy bien. Son treinta y dos euros. ¿Paga con tarjeta?"
+      ],
+      [
+       "M",
+       "Sí, con tarjeta, gracias."
+      ]
+     ],
+     "q": "¿A qué hora sale el tren que compra la mujer?",
+     "o": [
+      "A las 10:15.",
+      "A las 11:30.",
+      "A las 13:45."
+     ],
+     "a": 1,
+     "w": "El tren de las diez y cuarto está completo; compra el de «las once y media». Las 13:45 es la hora de llegada."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "Hola, buenas tardes. ¿Qué te pongo?"
+      ],
+      [
+       "M",
+       "Un café con leche y… ¿tenéis zumo de naranja natural?"
+      ],
+      [
+       "H",
+       "Sí, claro. ¿Grande o pequeño?"
+      ],
+      [
+       "M",
+       "Pequeño. Ah, y en lugar del café con leche, mejor un té, que ya he tomado dos cafés hoy."
+      ],
+      [
+       "H",
+       "Perfecto, un té y un zumo pequeño."
+      ],
+      [
+       "H",
+       "Ahora mismo se lo llevo a la mesa. ¿Algo para comer?"
+      ],
+      [
+       "M",
+       "No, gracias, solo eso."
+      ]
+     ],
+     "q": "¿Qué va a tomar la mujer?",
+     "o": [
+      "Un café con leche y un zumo.",
+      "Un té y un zumo.",
+      "Dos cafés."
+     ],
+     "a": 1,
+     "w": "Cambia el café por un té: «en lugar del café con leche, mejor un té»."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "Perdona, ¿sabes dónde está la farmacia más cercana?"
+      ],
+      [
+       "H",
+       "Sí, mira, sigue todo recto por esta calle hasta el semáforo. Allí giras a la izquierda y la farmacia está al lado de un banco."
+      ],
+      [
+       "M",
+       "¿A la izquierda, en el semáforo?"
+      ],
+      [
+       "H",
+       "Eso es. Está enfrente de la iglesia. Son cinco minutos andando."
+      ],
+      [
+       "M",
+       "Muchas gracias, eres muy amable."
+      ],
+      [
+       "H",
+       "De nada. ¡Que te mejores!"
+      ]
+     ],
+     "q": "¿Dónde está la farmacia?",
+     "o": [
+      "Al lado de un banco.",
+      "Al lado de la iglesia.",
+      "En el semáforo."
+     ],
+     "a": 0,
+     "w": "«La farmacia está al lado de un banco», enfrente de la iglesia."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "¿Qué te parece esta camiseta para el cumpleaños de Pedro?"
+      ],
+      [
+       "M",
+       "Es bonita, pero Pedro nunca lleva camisetas con dibujos. Mejor una lisa."
+      ],
+      [
+       "H",
+       "¿Y esta azul?"
+      ],
+      [
+       "M",
+       "Ya tiene muchas azules. ¿Por qué no le compramos un libro? Le encanta leer."
+      ],
+      [
+       "H",
+       "Tienes razón. Vamos a la librería de enfrente."
+      ],
+      [
+       "M",
+       "Y luego podemos tomar algo en la cafetería de al lado."
+      ]
+     ],
+     "q": "¿Qué van a comprar para Pedro?",
+     "o": [
+      "Una camiseta con dibujos.",
+      "Una camiseta azul.",
+      "Un libro."
+     ],
+     "a": 2,
+     "w": "Al final deciden: «¿Por qué no le compramos un libro?… Vamos a la librería»."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "Buenas noches. Tenemos una reserva a nombre de García, para cuatro personas."
+      ],
+      [
+       "H",
+       "A ver… García, sí. Pero aquí pone que es para las nueve y media, y son las nueve."
+      ],
+      [
+       "M",
+       "Sí, perdone, hemos llegado pronto. ¿Podemos esperar en la barra?"
+      ],
+      [
+       "H",
+       "Claro. Si quieren, les pongo algo de beber mientras tanto."
+      ],
+      [
+       "M",
+       "Sí, por favor, dos cervezas y dos refrescos."
+      ]
+     ],
+     "q": "¿Qué van a hacer las personas?",
+     "o": [
+      "Cenar en otro restaurante.",
+      "Esperar tomando algo.",
+      "Sentarse en la mesa inmediatamente."
+     ],
+     "a": 1,
+     "w": "Han llegado media hora antes y preguntan si pueden esperar en la barra; el camarero les ofrece algo de beber."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "Disculpe, mi maleta no ha salido. Vengo en el vuelo de Londres."
+      ],
+      [
+       "M",
+       "¿Cómo es la maleta?"
+      ],
+      [
+       "H",
+       "Es grande, de color rojo, con ruedas. Tiene una etiqueta con mi nombre."
+      ],
+      [
+       "M",
+       "Rellene este formulario, por favor. Normalmente llegan en el siguiente vuelo y se la llevamos a su hotel mañana."
+      ],
+      [
+       "H",
+       "Muy bien. ¿Tengo que pagar algo?"
+      ],
+      [
+       "M",
+       "No, señor, el servicio es gratuito."
+      ]
+     ],
+     "q": "¿Qué le pasa al hombre?",
+     "o": [
+      "Ha perdido el avión.",
+      "No encuentra su maleta.",
+      "Su hotel está cerrado."
+     ],
+     "a": 1,
+     "w": "«Mi maleta no ha salido»: está en la oficina de equipajes del aeropuerto."
+    }
+   ]
+  },
+  {
+   "t": 2,
+   "items": [
+    {
+     "s": [
+      [
+       "N",
+       "Radio Ciudad informa: este fin de semana se celebra en el parque central la Feria del Libro. Habrá más de cincuenta casetas de librerías y editoriales, y cada día a las seis de la tarde varios escritores firmarán sus libros. La entrada es libre."
+      ]
+     ],
+     "q": "En la Feria del Libro…",
+     "o": [
+      "hay que pagar entrada.",
+      "se puede conocer a escritores.",
+      "hay actividades solo por la mañana."
+     ],
+     "a": 1,
+     "w": "«Varios escritores firmarán sus libros» cada tarde. La entrada es libre."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Atención, información de tráfico. Debido a las obras en la calle Mayor, desde mañana y durante dos semanas los autobuses de las líneas 3 y 7 cambian su recorrido. Las paradas provisionales están señalizadas en la avenida de la Paz. Disculpen las molestias."
+      ]
+     ],
+     "q": "Durante las obras…",
+     "o": [
+      "los autobuses no funcionan.",
+      "algunas líneas tienen paradas diferentes.",
+      "la avenida de la Paz está cerrada."
+     ],
+     "a": 1,
+     "w": "Las líneas 3 y 7 cambian su recorrido y tienen «paradas provisionales» en la avenida de la Paz."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "El tiempo para mañana: en el norte del país, cielos nubosos y lluvias por la mañana. En el centro y en el sur, sol y temperaturas altas, de hasta treinta y cinco grados. En la costa mediterránea habrá viento fuerte por la tarde."
+      ]
+     ],
+     "q": "Según el pronóstico, mañana en el sur…",
+     "o": [
+      "va a llover.",
+      "va a hacer calor.",
+      "va a hacer mucho viento."
+     ],
+     "a": 1,
+     "w": "En el centro y el sur habrá «sol y temperaturas altas, de hasta treinta y cinco grados». El viento es en la costa mediterránea."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "¿Quieres aprender a nadar este verano? El polideportivo municipal abre las inscripciones para los cursos de julio. Hay grupos para niños y para adultos, por la mañana y por la tarde. Las plazas son limitadas, así que inscríbete pronto en la recepción o en la página web. El precio del curso es de cuarenta euros al mes."
+      ]
+     ],
+     "q": "Para los cursos de natación…",
+     "o": [
+      "solo hay grupos de niños.",
+      "conviene inscribirse rápido.",
+      "solo puedes apuntarte por internet."
+     ],
+     "a": 1,
+     "w": "«Las plazas son limitadas, así que inscríbete pronto». Hay grupos de adultos y también se puede ir a recepción."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Supermercados Frescos les recuerda que este jueves, día de fiesta local, nuestras tiendas estarán cerradas. El viernes abriremos con el horario normal, de nueve de la mañana a nueve y media de la noche. Gracias por confiar en nosotros. Pueden consultar nuestras ofertas en la página web."
+      ]
+     ],
+     "q": "El jueves los supermercados…",
+     "o": [
+      "abren hasta las nueve y media.",
+      "no abren.",
+      "abren solo por la mañana."
+     ],
+     "a": 1,
+     "w": "«Este jueves, día de fiesta local, nuestras tiendas estarán cerradas»."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Y ahora, una noticia curiosa: un grupo de estudiantes de Granada ha creado una aplicación para compartir comida que sobra en restaurantes y panaderías. Los usuarios pueden comprarla a mitad de precio antes de que cierren las tiendas. Ya la usan más de diez mil personas."
+      ]
+     ],
+     "q": "La aplicación de los estudiantes sirve para…",
+     "o": [
+      "comprar comida más barata.",
+      "reservar mesa en restaurantes.",
+      "aprender a cocinar."
+     ],
+     "a": 0,
+     "w": "Permite comprar la comida que sobra «a mitad de precio»."
+    }
+   ]
+  },
+  {
+   "t": 3,
+   "names": {
+    "H": "Andrés",
+    "M": "Julia"
+   },
+   "s": [
+    [
+     "M",
+     "¡Andrés! ¡Qué sorpresa! ¿Qué haces por aquí?"
+    ],
+    [
+     "H",
+     "Hola, Julia. Vengo de una entrevista de trabajo en la oficina de enfrente."
+    ],
+    [
+     "M",
+     "¿Ah, sí? ¿Y qué tal ha ido?"
+    ],
+    [
+     "H",
+     "Creo que bien. Es para una empresa de informática. El problema es que está muy lejos de mi casa: tardo casi una hora en llegar en metro."
+    ],
+    [
+     "M",
+     "Bueno, pero puedes leer en el metro. Yo antes tardaba cuarenta minutos en llegar al trabajo y leía un libro a la semana. Ahora trabajo desde casa y casi no leo."
+    ],
+    [
+     "H",
+     "¿Trabajas desde casa? ¡Qué suerte!"
+    ],
+    [
+     "M",
+     "No creas. Echo de menos a mis compañeros. Y a veces trabajo más horas que antes, porque no sé cuándo parar."
+    ],
+    [
+     "H",
+     "Ya, lo entiendo. Oye, ¿sigues haciendo teatro?"
+    ],
+    [
+     "M",
+     "Sí, los martes por la noche. Este año preparamos una comedia para diciembre. ¿Por qué no vienes a vernos?"
+    ],
+    [
+     "H",
+     "Me encantaría. Yo dejé el grupo de música el año pasado, porque no tenía tiempo, pero ahora quiero apuntarme a clases de baile."
+    ],
+    [
+     "M",
+     "¿De baile? ¡No me lo puedo creer! Tú siempre decías que bailabas fatal."
+    ],
+    [
+     "H",
+     "Por eso, para aprender. Mi novia baila salsa muy bien y yo me quedo siempre sentado."
+    ],
+    [
+     "M",
+     "Pues mi hermano da clases en una escuela del centro. Te doy su teléfono, si quieres."
+    ],
+    [
+     "H",
+     "Genial, gracias. Oye, ¿tienes tiempo para un café?"
+    ],
+    [
+     "M",
+     "Hoy no puedo, tengo que recoger a mi hija del colegio a las cinco. ¿Quedamos el sábado?"
+    ],
+    [
+     "H",
+     "El sábado por la mañana trabajo, pero por la tarde estoy libre."
+    ],
+    [
+     "M",
+     "Perfecto, el sábado a las seis en la cafetería de la plaza."
+    ]
+   ],
+   "items": [
+    {
+     "q": "Ha tenido una entrevista de trabajo.",
+     "a": 0,
+     "w": "Andrés dice: «Vengo de una entrevista de trabajo en la oficina de enfrente»."
+    },
+    {
+     "q": "Antes leía mucho en el transporte.",
+     "a": 1,
+     "w": "Julia: «Yo antes tardaba cuarenta minutos en llegar al trabajo y leía un libro a la semana»."
+    },
+    {
+     "q": "Hace teatro.",
+     "a": 1,
+     "w": "Julia hace teatro los martes por la noche y prepara una comedia."
+    },
+    {
+     "q": "Toca en un grupo de música.",
+     "a": 2,
+     "w": "Andrés dejó el grupo de música el año pasado, así que ahora ninguno de los dos toca en un grupo."
+    },
+    {
+     "q": "Quiere aprender a bailar.",
+     "a": 0,
+     "w": "Andrés quiere apuntarse a clases de baile porque su novia baila salsa."
+    },
+    {
+     "q": "No puede tomar un café hoy.",
+     "a": 1,
+     "w": "Julia: «Hoy no puedo, tengo que recoger a mi hija del colegio»."
+    }
+   ]
+  },
+  {
+   "t": 4,
+   "opts": [
+    "Hay que llegar antes de la hora.",
+    "Se ha cancelado una actividad.",
+    "Hay que cambiar de andén.",
+    "Pueden recoger un pedido.",
+    "Hay una oferta en una sección de la tienda.",
+    "Tiene que llamar para confirmar una cita.",
+    "El servicio funciona con un horario diferente.",
+    "Un niño se ha perdido.",
+    "Hay que apagar los teléfonos móviles.",
+    "Le invitan a una fiesta."
+   ],
+   "msgs": [
+    {
+     "s": [
+      [
+       "N",
+       "Hola, señor Ruiz. Le llamamos de la tienda de electrodomésticos Hogar. Su nueva lavadora ya ha llegado. Puede pasar a recogerla cuando quiera, de lunes a sábado. Recuerde traer el tique de compra. Muchas gracias por su compra."
+      ]
+     ],
+     "a": 3,
+     "w": "La lavadora que compró ya ha llegado y puede recogerla."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Atención, señores pasajeros: el tren con destino Sevilla, que tenía su salida por la vía 4, saldrá por la vía 7. Repetimos: el tren con destino Sevilla saldrá por la vía 7. Próxima salida en diez minutos."
+      ]
+     ],
+     "a": 2,
+     "w": "El tren sale por otra vía: hay que cambiar de andén."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Hola, Marta, soy Clara, de la clínica dental. Te llamo para recordarte tu cita de mañana a las diez. Por favor, llámanos esta tarde para decirnos si puedes venir. Gracias. Que tengas un buen día."
+      ]
+     ],
+     "a": 5,
+     "w": "Le piden que llame para decir si puede ir a la cita."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Señores clientes: durante esta semana, en la sección de deportes de la segunda planta, todas las zapatillas tienen un treinta por ciento de descuento. No pierdan esta oportunidad. Gracias por su atención."
+      ]
+     ],
+     "a": 4,
+     "w": "Hay un descuento en la sección de deportes."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Aviso para los padres: hoy la clase de natación de las seis no se va a hacer porque la piscina está cerrada por una avería. Les informaremos por correo electrónico de la nueva fecha. Sentimos las molestias."
+      ]
+     ],
+     "a": 1,
+     "w": "La clase de natación de hoy se ha cancelado por una avería."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Estimado público, la función va a comenzar en cinco minutos. Les rogamos que apaguen sus teléfonos móviles y que no hagan fotografías durante el espectáculo. Gracias. Esperamos que disfruten de la función."
+      ]
+     ],
+     "a": 8,
+     "w": "Piden apagar los móviles antes de la función."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Biblioteca Central informa: durante el mes de agosto, el horario de apertura será de nueve de la mañana a dos de la tarde. A partir de septiembre volveremos al horario habitual. Gracias por su comprensión."
+      ]
+     ],
+     "a": 6,
+     "w": "En agosto la biblioteca tiene un horario distinto."
+    }
+   ]
+  }
+ ]
+}

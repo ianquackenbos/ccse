@@ -1,0 +1,516 @@
+{
+ "id": "L5",
+ "title": "Casa, familia y servicios",
+ "tasks": [
+  {
+   "t": 1,
+   "items": [
+    {
+     "s": [
+      [
+       "M",
+       "Hola, buenos días. Quería enviar este paquete a Francia."
+      ],
+      [
+       "H",
+       "¿Lo quiere urgente o normal?"
+      ],
+      [
+       "M",
+       "¿Cuánto tarda el normal?"
+      ],
+      [
+       "H",
+       "Entre cinco y siete días. El urgente llega en dos días, pero cuesta el doble."
+      ],
+      [
+       "M",
+       "No hay prisa. Normal, por favor."
+      ],
+      [
+       "H",
+       "Muy bien. Son doce euros. Aquí tiene su recibo."
+      ],
+      [
+       "M",
+       "Gracias, adiós."
+      ]
+     ],
+     "q": "¿Cómo envía la mujer el paquete?",
+     "o": [
+      "Urgente, en dos días.",
+      "Normal, en una semana aproximadamente.",
+      "Por correo electrónico."
+     ],
+     "a": 1,
+     "w": "«No hay prisa. Normal», que tarda entre cinco y siete días."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "¿Qué le regalamos a tu madre por su cumpleaños?"
+      ],
+      [
+       "M",
+       "Le encantan las plantas. Podemos comprarle una para el balcón."
+      ],
+      [
+       "H",
+       "¿Y unas flores?"
+      ],
+      [
+       "M",
+       "No, las flores duran muy poco. Mejor una planta, y así se acuerda de nosotros."
+      ],
+      [
+       "H",
+       "Vale. Hay una floristería al lado de casa. Vamos esta tarde."
+      ]
+     ],
+     "q": "¿Qué van a regalar a la madre?",
+     "o": [
+      "Unas flores.",
+      "Una planta.",
+      "Un balcón."
+     ],
+     "a": 1,
+     "w": "Las flores duran poco: «Mejor una planta»."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "Buenas tardes, llamo porque no funciona la calefacción de mi piso."
+      ],
+      [
+       "H",
+       "¿Desde cuándo?"
+      ],
+      [
+       "M",
+       "Desde ayer por la noche. Y tengo un bebé en casa."
+      ],
+      [
+       "H",
+       "De acuerdo. Mañana por la mañana, entre las nueve y las once, va un técnico a su casa."
+      ],
+      [
+       "M",
+       "Muchas gracias. ¿Tengo que estar en casa?"
+      ],
+      [
+       "H",
+       "Sí, o alguien que le pueda abrir la puerta."
+      ]
+     ],
+     "q": "¿Cuándo va a ir el técnico?",
+     "o": [
+      "Hoy por la tarde.",
+      "Mañana por la mañana.",
+      "Mañana por la noche."
+     ],
+     "a": 1,
+     "w": "«Mañana por la mañana, entre las nueve y las once»."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "¿Qué hacemos con los niños el sábado?"
+      ],
+      [
+       "M",
+       "Podemos llevarlos al zoo."
+      ],
+      [
+       "H",
+       "Fuimos el mes pasado. ¿Y si vamos al parque de atracciones?"
+      ],
+      [
+       "M",
+       "Es muy caro. Mejor vamos en bici al río y comemos allí."
+      ],
+      [
+       "H",
+       "Buena idea, así hacemos ejercicio."
+      ],
+      [
+       "M",
+       "Y llevamos bocadillos y fruta para todos."
+      ]
+     ],
+     "q": "¿Qué van a hacer el sábado?",
+     "o": [
+      "Ir al zoo.",
+      "Ir al parque de atracciones.",
+      "Ir en bicicleta al río."
+     ],
+     "a": 2,
+     "w": "Deciden ir «en bici al río y comemos allí»."
+    },
+    {
+     "s": [
+      [
+       "M",
+       "Doctor, mi hijo tiene fiebre desde hace dos días."
+      ],
+      [
+       "H",
+       "A ver… Tiene la garganta un poco roja. No es grave. Que tome este jarabe cada ocho horas y que beba mucha agua."
+      ],
+      [
+       "M",
+       "¿Puede ir al colegio?"
+      ],
+      [
+       "H",
+       "Mejor que se quede en casa hasta que no tenga fiebre."
+      ],
+      [
+       "M",
+       "Muy bien, doctor. Muchas gracias."
+      ],
+      [
+       "H",
+       "De nada. Si mañana sigue igual, vuelva a la consulta."
+      ]
+     ],
+     "q": "¿Qué tiene que hacer el niño?",
+     "o": [
+      "Ir al colegio mañana.",
+      "Quedarse en casa.",
+      "Ir al hospital."
+     ],
+     "a": 1,
+     "w": "«Mejor que se quede en casa hasta que no tenga fiebre»."
+    },
+    {
+     "s": [
+      [
+       "H",
+       "Buenos días. ¿Me puede cortar el pelo?"
+      ],
+      [
+       "M",
+       "Claro. ¿Cómo lo quiere?"
+      ],
+      [
+       "H",
+       "Corto por los lados, pero no mucho por arriba. Y la barba, ¿también la arreglan?"
+      ],
+      [
+       "M",
+       "No, lo siento, barba no hacemos. Solo pelo."
+      ],
+      [
+       "H",
+       "Bueno, no pasa nada. Entonces solo el pelo, por favor."
+      ],
+      [
+       "M",
+       "Siéntese aquí, por favor."
+      ]
+     ],
+     "q": "¿Qué le van a hacer al hombre?",
+     "o": [
+      "Cortarle el pelo.",
+      "Arreglarle la barba.",
+      "Cortarle el pelo y la barba."
+     ],
+     "a": 0,
+     "w": "En la peluquería no arreglan barbas: «Solo pelo»."
+    }
+   ]
+  },
+  {
+   "t": 2,
+   "items": [
+    {
+     "s": [
+      [
+       "N",
+       "Cada vez más familias españolas eligen vivir en pueblos pequeños. Según un estudio reciente, el año pasado más de veinte mil personas se fueron de las grandes ciudades al campo. Las principales razones son el precio de la vivienda y la posibilidad de trabajar desde casa. Muchos de ellos tienen hijos pequeños."
+      ]
+     ],
+     "q": "Según el estudio, muchas personas se van al campo porque…",
+     "o": [
+      "las casas son más baratas.",
+      "hay más trabajo.",
+      "hay mejores colegios."
+     ],
+     "a": 0,
+     "w": "Las razones son «el precio de la vivienda» y el teletrabajo."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Atención, vecinos: el próximo martes, de nueve de la mañana a dos de la tarde, no habrá agua en las calles del barrio de San Pablo por unas obras en las tuberías. Se recomienda guardar agua el día anterior. Disculpen las molestias."
+      ]
+     ],
+     "q": "El martes en el barrio de San Pablo…",
+     "o": [
+      "no habrá luz.",
+      "no habrá agua durante unas horas.",
+      "habrá obras toda la semana."
+     ],
+     "a": 1,
+     "w": "«No habrá agua» de nueve a dos por obras en las tuberías."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Nuevo servicio municipal: a partir de este mes, las personas mayores que viven solas pueden pedir que un voluntario las acompañe al médico o a hacer la compra. El servicio es gratuito. Para solicitarlo, hay que llamar al 010. Los voluntarios reciben una formación especial."
+      ]
+     ],
+     "q": "El nuevo servicio municipal…",
+     "o": [
+      "es solo para personas jóvenes.",
+      "ayuda a las personas mayores.",
+      "cuesta diez euros."
+     ],
+     "a": 1,
+     "w": "Un voluntario acompaña a «las personas mayores que viven solas». Es gratuito; 010 es el teléfono."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Consejos para ahorrar energía en casa: apague las luces cuando salga de una habitación, use la lavadora con agua fría y, en invierno, ponga la calefacción a un máximo de veinte grados. Así puede ahorrar hasta un treinta por ciento en la factura."
+      ]
+     ],
+     "q": "Para ahorrar energía se recomienda…",
+     "o": [
+      "usar la lavadora con agua caliente.",
+      "no poner la calefacción a más de veinte grados.",
+      "dejar las luces encendidas."
+     ],
+     "a": 1,
+     "w": "«Ponga la calefacción a un máximo de veinte grados»."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "El centro comercial Las Torres celebra su décimo aniversario con una gran fiesta este sábado. Habrá actividades para niños, música y regalos para los primeros cien clientes. Además, todas las tiendas tendrán descuentos durante todo el fin de semana. El centro abre de diez de la mañana a diez de la noche."
+      ]
+     ],
+     "q": "Este fin de semana en el centro comercial…",
+     "o": [
+      "todos los clientes recibirán un regalo.",
+      "hay rebajas en las tiendas.",
+      "solo hay actividades para adultos."
+     ],
+     "a": 1,
+     "w": "«Todas las tiendas tendrán descuentos durante todo el fin de semana». Los regalos son solo para los cien primeros."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Una buena noticia para los padres: el Gobierno ha aprobado aumentar el permiso por nacimiento de un hijo. Además, las familias con tres o más hijos tendrán descuentos en el transporte público y en las actividades deportivas municipales. Las nuevas medidas empezarán en enero."
+      ]
+     ],
+     "q": "Las familias numerosas tendrán…",
+     "o": [
+      "transporte público más barato.",
+      "más días de vacaciones.",
+      "una casa gratis."
+     ],
+     "a": 0,
+     "w": "Tendrán «descuentos en el transporte público y en las actividades deportivas»."
+    }
+   ]
+  },
+  {
+   "t": 3,
+   "names": {
+    "H": "Jorge",
+    "M": "Pilar"
+   },
+   "s": [
+    [
+     "M",
+     "Jorge, ¿has visto el piso que te mandé ayer por mensaje?"
+    ],
+    [
+     "H",
+     "Sí, Pilar, lo vi. Es muy bonito, pero está un poco lejos del centro, ¿no?"
+    ],
+    [
+     "M",
+     "A veinte minutos en autobús. Pero tiene tres habitaciones y una terraza grande. Para nosotros y los niños es perfecto."
+    ],
+    [
+     "H",
+     "Ya, pero yo trabajo en el centro y no quiero pasar una hora al día en el autobús."
+    ],
+    [
+     "M",
+     "Puedes ir en bicicleta. Hay un carril bici muy bueno. Yo, en cambio, trabajo desde casa tres días a la semana, así que para mí no es problema."
+    ],
+    [
+     "H",
+     "¿Y el precio?"
+    ],
+    [
+     "M",
+     "Novecientos euros al mes. Es más barato que nuestro piso actual, que es mucho más pequeño."
+    ],
+    [
+     "H",
+     "Bueno, eso está bien. ¿Hay colegio cerca?"
+    ],
+    [
+     "M",
+     "Sí, a cinco minutos andando. Y un parque enfrente. La semana pasada pregunté a una vecina y dice que el barrio es muy tranquilo."
+    ],
+    [
+     "H",
+     "¿Ya has ido a verlo? No me habías dicho nada."
+    ],
+    [
+     "M",
+     "Solo por fuera. Pasé por allí al volver del médico. Para ver el interior hay que llamar a la agencia."
+    ],
+    [
+     "H",
+     "Vale, pues llama tú, que yo esta semana tengo mucho trabajo. ¿Podemos ir el sábado por la mañana?"
+    ],
+    [
+     "M",
+     "El sábado por la mañana los niños tienen natación. Mejor por la tarde."
+    ],
+    [
+     "H",
+     "De acuerdo. Ah, y pregunta si se pueden tener animales, porque el perro viene con nosotros."
+    ],
+    [
+     "M",
+     "Claro, lo primero que voy a preguntar."
+    ]
+   ],
+   "items": [
+    {
+     "q": "Cree que el piso está lejos del centro.",
+     "a": 0,
+     "w": "Jorge: «está un poco lejos del centro, ¿no?»."
+    },
+    {
+     "q": "Trabaja algunos días en casa.",
+     "a": 1,
+     "w": "Pilar: «trabajo desde casa tres días a la semana»."
+    },
+    {
+     "q": "Ha hablado con alguien que vive en el barrio.",
+     "a": 1,
+     "w": "Pilar preguntó a una vecina, que dice que el barrio es tranquilo."
+    },
+    {
+     "q": "Ha visto el interior del piso.",
+     "a": 2,
+     "w": "Pilar solo lo vio por fuera y Jorge no ha ido. Ninguno de los dos."
+    },
+    {
+     "q": "Tiene mucho trabajo esta semana.",
+     "a": 0,
+     "w": "Jorge: «esta semana tengo mucho trabajo»."
+    },
+    {
+     "q": "Va a llamar a la agencia.",
+     "a": 1,
+     "w": "Jorge le pide a Pilar «llama tú», y ella va a preguntar por los animales."
+    }
+   ]
+  },
+  {
+   "t": 4,
+   "opts": [
+    "Tiene que pasar a firmar un documento.",
+    "Han cambiado el día de la recogida de basura.",
+    "Su pedido llega más tarde.",
+    "Puede comprar entradas con descuento.",
+    "La consulta del médico se ha cambiado.",
+    "Se ha encontrado un animal.",
+    "Hay una reunión de vecinos.",
+    "El ascensor no funciona.",
+    "Debe dejar libre el aparcamiento.",
+    "Su coche está listo."
+   ],
+   "msgs": [
+    {
+     "s": [
+      [
+       "N",
+       "Hola, le llamamos del taller Motor Rápido. Su coche ya está reparado. Puede pasar a recogerlo hoy hasta las siete o mañana a partir de las ocho. Gracias por confiar en nosotros."
+      ]
+     ],
+     "a": 9,
+     "w": "El coche ya está reparado y puede recogerlo."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Buenos días, le llamo del centro de salud. Su cita con el doctor Gómez del jueves a las diez se ha pasado al viernes a la misma hora, porque el doctor no estará el jueves. Si no puede venir, llámenos, por favor."
+      ]
+     ],
+     "a": 4,
+     "w": "La cita con el médico cambia del jueves al viernes."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Aviso a todos los vecinos: el próximo lunes a las siete de la tarde, en el portal, habrá una reunión para hablar de las obras del tejado. Es importante que vengan todos. Gracias por su colaboración."
+      ]
+     ],
+     "a": 6,
+     "w": "Convocan a los vecinos a una reunión."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Estimado cliente: su pedido número 4521 tendrá un retraso de dos días por problemas con el transporte. Lo recibirá el jueves en lugar del martes. Disculpe las molestias. Gracias por su paciencia."
+      ]
+     ],
+     "a": 2,
+     "w": "El pedido llega dos días más tarde."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Hola, soy Marta, de la inmobiliaria. Ya tenemos preparado el contrato del piso. ¿Puede venir mañana a la oficina para firmarlo? Traiga su DNI, por favor. Hasta mañana."
+      ]
+     ],
+     "a": 0,
+     "w": "Tiene que ir a firmar el contrato."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Informamos a los vecinos de que, a partir del mes que viene, la recogida de cartón y papel se hará los miércoles y no los lunes. Recuerden doblar bien las cajas de cartón."
+      ]
+     ],
+     "a": 1,
+     "w": "El día de recogida del papel cambia al miércoles."
+    },
+    {
+     "s": [
+      [
+       "N",
+       "Atención: mañana, de ocho a doce, van a pintar las plazas del aparcamiento del edificio. Por favor, saquen sus coches antes de las ocho. Gracias por su colaboración."
+      ]
+     ],
+     "a": 8,
+     "w": "Deben sacar los coches del aparcamiento."
+    }
+   ]
+  }
+ ]
+}

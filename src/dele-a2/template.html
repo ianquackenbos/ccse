@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Repaso DELE A2</title>
+<meta name="description" content="Práctica gratuita de comprensión de lectura y auditiva del DELE A2: 5 exámenes de lectura y 5 de audición con explicaciones.">
+<meta property="og:title" content="Repaso DELE A2">
+<meta property="og:description" content="5 exámenes de lectura y 5 de audición en el formato del DELE A2, con explicaciones y modo examen cronometrado.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: same answer-sheet system as Repaso CCSE; reading column + task stepper; listening uses a play-control strip */
+:root{
+  --paper:#f5f6f8; --sheet:#ffffff; --ink:#18213a; --ink-2:#4a5570; --ink-3:#7c869e;
+  --rule:#dde1ea; --rule-2:#c6ccd9; --tint:#eceff5;
+  --accent:#1d5fa8; --accent-ink:#ffffff; --accent-soft:#e2ecf8;
+  --gold:#c99a17; --gold-soft:#fbf1d3;
+  --ok:#1f7a4d; --ok-soft:#e1f2e8; --bad:#b3261e; --bad-soft:#fbe4e2;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f1424; --sheet:#171d31; --ink:#e7eaf3; --ink-2:#aab2c8; --ink-3:#7a849d;
+  --rule:#273050; --rule-2:#37416a; --tint:#1e2540;
+  --accent:#6ea8ec; --accent-ink:#0b1424; --accent-soft:#1b2c48;
+  --gold:#e3b73f; --gold-soft:#3a3018;
+  --ok:#4cc58a; --ok-soft:#173528; --bad:#f07168; --bad-soft:#3d1c1d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f1424; --sheet:#171d31; --ink:#e7eaf3; --ink-2:#aab2c8; --ink-3:#7a849d;
+  --rule:#273050; --rule-2:#37416a; --tint:#1e2540;
+  --accent:#6ea8ec; --accent-ink:#0b1424; --accent-soft:#1b2c48;
+  --gold:#e3b73f; --gold-soft:#3a3018;
+  --ok:#4cc58a; --ok-soft:#173528; --bad:#f07168; --bad-soft:#3d1c1d; color-scheme:dark}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html,body{background:var(--paper)}
+body{margin:0;color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+button,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+[hidden]{display:none!important}
+.wrap{max-width:900px;margin:0 auto;padding-inline:16px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--rule)}
+.brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px 8px}
+.brand{display:flex;align-items:baseline;gap:10px;min-width:0}
+.brand b{white-space:nowrap;font-family:var(--display);font-stretch:78%;font-weight:800;font-size:22px;letter-spacing:.01em;text-transform:uppercase}
+.brand b i{font-style:normal;color:var(--accent)}
+.brand a{font-family:var(--mono);font-size:11px;color:var(--ink-3);white-space:nowrap;text-decoration:none}
+.brand a:hover{color:var(--ink)}
+.langbtn{border:1px solid var(--rule-2);background:var(--sheet);border-radius:999px;padding:4px 10px;font-size:12px;font-family:var(--mono);cursor:pointer;flex:none}
+nav.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-bottom:-1px}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs button{background:none;border:0;border-bottom:3px solid transparent;padding:8px 12px 9px;font-weight:600;font-size:14px;color:var(--ink-2);cursor:pointer;white-space:nowrap}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+main{padding-block:22px 64px}
+h1,h2,h3{font-family:var(--display);font-stretch:85%;text-wrap:balance;margin:0}
+h1{font-size:30px;font-weight:800;line-height:1.1}
+h2{font-size:21px;font-weight:750}
+h3{font-size:16px;font-weight:700}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.muted{color:var(--ink-2)}
+.stack{display:flex;flex-direction:column;gap:16px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:18px;min-width:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--r);padding:10px 16px;font-weight:650;cursor:pointer;border:1px solid var(--rule-2);background:var(--sheet);min-height:42px}
+.btn:hover{border-color:var(--ink-3)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent;border-color:transparent;color:var(--ink-2)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.chip{border:1px solid var(--rule-2);border-radius:999px;padding:6px 12px;background:var(--sheet);cursor:pointer;font-size:13px;font-weight:600;color:var(--ink-2)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.note{font-size:13px;color:var(--ink-2)}
+/* home */
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:680px){.grid2{grid-template-columns:1fr}}
+.fmt{width:100%;border-collapse:collapse;font-size:14px}
+.fmt td,.fmt th{text-align:left;padding:7px 6px;border-top:1px solid var(--rule);vertical-align:top}
+.fmt th{font-family:var(--mono);font-size:11px;font-weight:400;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;border-top:0}
+.tests{display:flex;flex-direction:column}
+.trow{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 0;border-top:1px solid var(--rule)}
+.trow:first-child{border-top:0}
+.tbadge{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font-family:var(--mono);font-weight:600;font-size:13px}
+.tname{font-weight:650;min-width:0}
+.tname small{display:block;font-weight:400;color:var(--ink-3);font-size:12px}
+.best{font-family:var(--mono);font-size:12px;color:var(--ink-3);text-align:right}
+.best b{display:block;font-size:15px;color:var(--ink)}
+.trow .row{justify-content:flex-end}
+@media (max-width:560px){.trow{grid-template-columns:40px minmax(0,1fr)}.trow .acts{grid-column:1/3}}
+.warn{border:1px solid var(--gold);background:var(--gold-soft);border-radius:var(--r);padding:12px 14px;font-size:14px}
+/* runner */
+.runtop{position:sticky;top:calc(env(safe-area-inset-top,0px) + 92px);z-index:5;background:var(--paper);padding-block:8px;display:flex;flex-direction:column;gap:8px}
+.runbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.timer{font-family:var(--mono);font-size:18px;font-weight:600;padding:3px 10px;border:1.5px solid var(--ink);border-radius:var(--r)}
+.timer.low{border-color:var(--bad);color:var(--bad)}
+.steps{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.steps button{flex:none;border:1px solid var(--rule-2);background:var(--sheet);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:650;cursor:pointer;color:var(--ink-2)}
+.steps button[aria-current="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.steps button .c{font-family:var(--mono);font-weight:400;opacity:.75;margin-left:6px}
+.instr{font-size:14px;color:var(--ink-2);max-width:70ch;margin:0}
+.text{font-size:16px;line-height:1.65;max-width:68ch;white-space:pre-line;text-wrap:pretty}
+.text h3{margin-bottom:8px}
+.shorttext{border-left:3px solid var(--rule-2);padding:4px 0 4px 14px;font-size:15px;line-height:1.6;max-width:68ch}
+.shorttext b{display:block;font-family:var(--display);font-stretch:85%;font-size:15px;margin-bottom:2px}
+.item{padding:16px 0;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:10px;scroll-margin-top:calc(env(safe-area-inset-top,0px) + 190px)}
+.item:first-of-type{border-top:0}
+.qhead{display:flex;align-items:baseline;gap:10px}
+.qn{font-family:var(--mono);font-weight:600;font-size:13px;color:var(--ink-3);flex:none;min-width:24px}
+.qt{font-weight:600;font-size:16px;line-height:1.4}
+.opts{display:flex;flex-direction:column;gap:6px;padding-left:34px}
+.opt{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:center;text-align:left;padding:9px 12px;border:1px solid var(--rule-2);border-radius:var(--r);background:var(--sheet);cursor:pointer;font-size:15px;line-height:1.35}
+.opt:hover:not([disabled]){border-color:var(--ink)}
+.opt .bub{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--ink-2);display:grid;place-items:center;font-family:var(--mono);font-weight:600;font-size:12px;color:var(--ink-2)}
+.opt.sel{border-color:var(--ink)} .opt.sel .bub{background:var(--ink);border-color:var(--ink);color:var(--sheet)}
+.opt.ok{border-color:var(--ok);background:var(--ok-soft)} .opt.ok .bub{background:var(--ok);border-color:var(--ok);color:var(--sheet)}
+.opt.bad{border-color:var(--bad);background:var(--bad-soft)} .opt.bad .bub{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.opt .mark{font-family:var(--mono);font-size:12px;font-weight:700}
+.opt.ok .mark{color:var(--ok)} .opt.bad .mark{color:var(--bad)}
+.opt[disabled]{cursor:default}
+.opts.inline{flex-direction:row;flex-wrap:wrap}
+.opts.inline .opt{grid-template-columns:28px auto auto}
+.sel4{padding-left:34px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sel4 select{padding:8px 10px;border:1px solid var(--rule-2);border-radius:var(--r);background:var(--sheet);min-width:0;max-width:100%}
+.optlist{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px;font-size:14.5px}
+@media (max-width:600px){.optlist{grid-template-columns:1fr}}
+.optlist li{display:flex;gap:8px}
+.optlist b{font-family:var(--mono);color:var(--accent);flex:none;width:18px}
+.optlist li.used{color:var(--ink-3)}
+.fb{padding-left:34px;display:flex;flex-direction:column;gap:6px}
+.fbline{font-weight:650;font-size:14px}
+.fbline.ok{color:var(--ok)} .fbline.bad{color:var(--bad)}
+details.why,details.tr{border:1px solid var(--rule);border-radius:var(--r);background:var(--tint)}
+details summary{cursor:pointer;padding:7px 12px;font-size:13px;font-weight:650;color:var(--ink-2);list-style:none;display:flex;align-items:center;gap:8px}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"";width:0;height:0;border-left:5px solid currentColor;border-top:4px solid transparent;border-bottom:4px solid transparent;transition:transform .15s}
+details[open] summary::before{transform:rotate(90deg)}
+details.why p{margin:0;padding:0 12px 10px 25px;font-size:14px;line-height:1.5;color:var(--ink);max-width:70ch}
+.script{margin:0;padding:0 12px 10px 25px;display:flex;flex-direction:column;gap:4px;font-size:14px;line-height:1.5}
+.script span b{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-right:6px;text-transform:uppercase}
+/* player */
+.player{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 12px;border:1px solid var(--rule-2);border-radius:var(--r);background:var(--accent-soft)}
+.play{display:inline-flex;align-items:center;gap:8px;border:0;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:7px 14px;font-weight:700;cursor:pointer;font-size:14px}
+.play[disabled]{opacity:.45;cursor:not-allowed}
+.play svg{width:12px;height:12px;fill:currentColor}
+.plays{font-family:var(--mono);font-size:12px;color:var(--ink-2)}
+.playing .play{animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.7}}
+@media (prefers-reduced-motion:reduce){.playing .play{animation:none}}
+.speed{display:flex;gap:4px;align-items:center;font-size:12px;color:var(--ink-3)}
+.speed button{border:1px solid var(--rule-2);background:var(--sheet);border-radius:999px;padding:3px 9px;font-size:12px;cursor:pointer;font-family:var(--mono)}
+.speed button[aria-pressed="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.names{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.names span b{font-family:var(--mono);color:var(--accent);margin-right:4px}
+.navrow{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}
+.confirm{border:1px solid var(--gold);background:var(--gold-soft);border-radius:var(--r);padding:12px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+/* results */
+.score{font-family:var(--display);font-stretch:75%;font-weight:800;font-size:56px;line-height:1}
+.score small{font-size:22px;color:var(--ink-3)}
+.breakdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.bd{border:1px solid var(--rule);border-radius:var(--r);padding:10px 4px;text-align:center}
+.bd b{display:block;font-family:var(--mono);font-size:18px}
+.bd span{font-size:11px;color:var(--ink-3)}
+.grid25{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:6px}
+.cell{aspect-ratio:1;max-width:100%;border-radius:50%;border:1.5px solid var(--rule-2);background:var(--sheet);font-family:var(--mono);font-size:12px;display:grid;place-items:center;cursor:pointer;color:var(--sheet)}
+.cell.ok{background:var(--ok);border-color:var(--ok)} .cell.bad{background:var(--bad);border-color:var(--bad)}
+.rv{padding:14px 0;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:6px;scroll-margin-top:calc(env(safe-area-inset-top,0px) + 110px);border-radius:var(--r)}
+.rvh{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.rvn{display:flex;align-items:center;gap:8px}
+.rvn b{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:11px;color:var(--sheet)}
+.rvn b.ok{background:var(--ok)} .rvn b.bad{background:var(--bad)}
+.rq{font-weight:600}
+.ra{font-size:14px;display:flex;flex-direction:column;gap:2px}
+.ra .yours{color:var(--bad)} .ra .right{color:var(--ok)}
+@keyframes flash{from{background:var(--gold-soft)}to{background:transparent}}
+.rv.flash{animation:flash 1.6s ease-out}
+@media (prefers-reduced-motion:reduce){.rv.flash{animation:none;outline:2px solid var(--gold)}}
+.history{width:100%;border-collapse:collapse;font-size:14px}
+.history td,.history th{padding:8px 6px;border-top:1px solid var(--rule);text-align:left}
+.history th{font-family:var(--mono);font-size:11px;font-weight:400;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;border-top:0}
+.foot{font-size:12px;color:var(--ink-3);border-top:1px solid var(--rule);padding-top:14px;margin-top:30px}
+.foot a{color:inherit}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brandrow">
+      <div class="brand"><b>Repaso <i>DELE A2</i></b><a href="../" id="ccselink">← CCSE</a></div>
+      <button class="langbtn" id="langbtn" type="button" aria-label="Language">EN</button>
+    </div>
+    <nav class="tabs" id="tabs" role="tablist"></nav>
+  </div>
+</header>
+<main class="wrap" id="app"></main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+const READ = __READ__;
+const LIST = __LIST__;
+const TESTS = {R:READ, L:LIST};
+const DUR = {R:60*60, L:40*60};
+const INSTR = {
+ R:{1:"Lea el correo y conteste a las preguntas. Seleccione la opción correcta (a, b o c).",
+    2:"Lea los textos y conteste a las preguntas. Seleccione la opción correcta (a, b o c).",
+    3:"Lea los tres textos y relacione cada enunciado con el texto correspondiente (A, B o C).",
+    4:"Lea el texto y conteste a las preguntas. Seleccione la opción correcta (a, b o c)."},
+ L:{1:"Va a escuchar seis conversaciones breves. Escuchará cada conversación dos veces. Seleccione la opción correcta (a, b o c).",
+    2:"Va a escuchar seis mensajes de radio. Escuchará cada mensaje dos veces. Seleccione la opción correcta (a, b o c).",
+    3:"Va a escuchar una conversación entre dos personas. La escuchará dos veces. Indique si cada enunciado se refiere al hombre, a la mujer o a ninguno de los dos.",
+    4:"Va a escuchar siete mensajes. Escuchará cada mensaje dos veces. Relacione cada mensaje con un enunciado (A-J). Hay diez enunciados: tres no corresponden a ningún mensaje."}
+};
+const LET="abc", LET4="ABCDEFGHIJ";
+const I18N={
+ es:{home:"Inicio",R:"Lectura",L:"Audición",exam:"Modo examen",practice:"Modo práctica",examD:"Cronometrado, sin respuestas hasta el final. Cada audio se puede escuchar dos veces.",practiceD:"Sin tiempo. Ves la respuesta correcta y la explicación al momento, y puedes repetir los audios.",
+  best:"Mejor nota",none:"—",start:"Empezar",tarea:"Tarea",q:"Pregunta",submit:"Entregar",next:"Siguiente tarea",prev:"Tarea anterior",quit:"Salir",
+  unans:n=>`Te quedan ${n} sin responder. ¿Entregar igualmente?`,yes:"Sí, entregar",no:"Seguir",answered:n=>`${n}/25 respondidas`,
+  correct:"¡Correcto!",incorrect:"Incorrecto. La respuesta es",why:"¿Por qué?",transcript:"Ver transcripción",yourAns:"Tu respuesta",rightAns:"Correcta",blank:"Sin responder",
+  play:"Escuchar",playing:"Reproduciendo…",stop:"Parar",plays:(n,m)=>m?`${n}/${m}`:`${n}×`,speed:"Velocidad",
+  review:"Revisión",onlyWrong:"Solo errores",all:"Todas",again:"Repetir este examen",back:"Volver a la lista",pdf:"Descargar revisión en PDF",pdfOk:"PDF descargado.",pdfErr:"No se pudo generar el PDF.",
+  h:"Hombre",m:"Mujer",n:"Ninguno",choose:"Elige…",timeUp:"Se acabó el tiempo.",
+  intro:"Practica las dos pruebas de comprensión del DELE A2 con exámenes originales escritos en el formato oficial del Instituto Cervantes.",
+  fmtTitle:"Formato de las pruebas",passTitle:"Cómo se aprueba",
+  passTxt:"El DELE A2 tiene dos grupos de 50 puntos: lectura + expresión escrita, y audición + expresión oral. Necesitas al menos 30 puntos en cada grupo. Cada prueba de comprensión vale 25 puntos; como referencia, 15 aciertos de 25 equivalen al 60 %.",
+  ttsWarn:"Tu navegador no tiene voces en español. Los audios pueden sonar con acento extranjero o no funcionar. En el modo práctica puedes leer la transcripción.",
+  ttsNone:"Tu navegador no puede leer textos en voz alta. Usa el modo práctica para ver las transcripciones, o abre la página en Chrome, Safari o Edge.",
+  ttsNote:"Los audios usan la voz de tu navegador; la calidad depende del dispositivo.",testVoice:"Probar la voz",
+  hist:"Intentos recientes",date:"Fecha",test:"Examen",result:"Resultado",mode:"Modo",noHist:"Aún no has hecho ningún examen.",
+  foot:"Material original de práctica en el formato del DELE A2 (versión 2020). No es material oficial del Instituto Cervantes. Tu progreso se guarda solo en este navegador.",
+  examLbl:"Examen",pracLbl:"Práctica",scoreOf:"aciertos",ref:"Referencia: 15/25 = 60 %"},
+ en:{home:"Home",R:"Reading",L:"Listening",exam:"Exam mode",practice:"Practice mode",examD:"Timed, answers shown at the end. Each audio can be played twice.",practiceD:"No timer. See the correct answer and explanation straight away, and replay audio freely.",
+  best:"Best score",none:"—",start:"Start",tarea:"Task",q:"Question",submit:"Submit",next:"Next task",prev:"Previous task",quit:"Quit",
+  unans:n=>`${n} still unanswered. Submit anyway?`,yes:"Yes, submit",no:"Keep going",answered:n=>`${n}/25 answered`,
+  correct:"Correct!",incorrect:"Wrong. The answer is",why:"Why?",transcript:"Show transcript",yourAns:"Your answer",rightAns:"Correct",blank:"Not answered",
+  play:"Play",playing:"Playing…",stop:"Stop",plays:(n,m)=>m?`${n}/${m}`:`${n}×`,speed:"Speed",
+  review:"Review",onlyWrong:"Mistakes only",all:"All",again:"Retake this test",back:"Back to the list",pdf:"Download review as PDF",pdfOk:"PDF downloaded.",pdfErr:"Couldn't build the PDF.",
+  h:"Man",m:"Woman",n:"Neither",choose:"Choose…",timeUp:"Time's up.",
+  intro:"Practise the two DELE A2 comprehension papers with original tests written in the official Instituto Cervantes format. Tests are in Spanish, like the real exam.",
+  fmtTitle:"Paper format",passTitle:"How you pass",
+  passTxt:"DELE A2 has two groups of 50 points: reading + writing, and listening + speaking. You need at least 30 in each group. Each comprehension paper is worth 25 points; as a guide, 15 of 25 correct is 60%.",
+  ttsWarn:"Your browser has no Spanish voice. Audio may sound foreign or not play. In practice mode you can read the transcript.",
+  ttsNone:"Your browser can't read text aloud. Use practice mode to read transcripts, or open the page in Chrome, Safari or Edge.",
+  ttsNote:"Audio uses your browser's built-in voice; quality depends on your device.",testVoice:"Test the voice",
+  hist:"Recent attempts",date:"Date",test:"Test",result:"Score",mode:"Mode",noHist:"You haven't taken a test yet.",
+  foot:"Original practice material in the DELE A2 format (2020 version). Not official Instituto Cervantes material. Your progress is saved only in this browser.",
+  examLbl:"Exam",pracLbl:"Practice",scoreOf:"correct",ref:"Guide: 15/25 = 60%"}
+};
+/* ---------- state ---------- */
+const LS="dele-a2:v1";
+function load(){try{return JSON.parse(localStorage.getItem(LS))||{}}catch(e){return {}}}
+let S=Object.assign({lang:"es",tab:"home",best:{},hist:[],rate:0.9},load());
+function save(){try{const {run,...rest}=S;localStorage.setItem(LS,JSON.stringify(rest))}catch(e){}}
+const L=()=>I18N[S.lang];
+const $=s=>document.querySelector(s), app=$("#app");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const fmtT=s=>`${String(Math.floor(s/60)).padStart(2,"0")}:${String(s%60).padStart(2,"0")}`;
+const findTest=id=>TESTS[id[0]].find(t=>t.id===id);
+const tk=(test,t)=>test.tasks.find(x=>x.t===t);
+
+/* Flatten a test into its 25 numbered items */
+function itemsOf(test){
+  const out=[];let n=0;
+  test.tasks.forEach(task=>{
+    if(test.id[0]==="L"&&task.t===4){task.msgs.forEach((m,i)=>out.push({n:++n,t:4,i,kind:"match10",key:m.a,why:m.w,script:m.s}));return}
+    task.items.forEach((it,i)=>{
+      if(it.o) out.push({n:++n,t:task.t,i,kind:"mc",key:it.a,why:it.w,q:it.q,o:it.o,script:it.s,x:it.x});
+      else out.push({n:++n,t:task.t,i,kind:test.id[0]==="R"?"abc":"hmn",key:it.a,why:it.w,q:it.q});
+    });
+  });
+  return out;
+}
+
+/* ---------- speech ---------- */
+const TTS={ok:"speechSynthesis" in window,voices:[],cur:null,
+  load(){if(!this.ok)return;this.voices=speechSynthesis.getVoices().filter(v=>/^es/i.test(v.lang));},
+  pick(role){
+    const vs=this.voices;if(!vs.length)return {v:null,p:role==="H"?0.8:role==="M"?1.15:1};
+    const es=vs.filter(v=>/es[-_]ES/i.test(v.lang)),pool=es.length?es:vs;
+    const fem=/m[oó]nica|helena|laura|luc[ií]a|elvira|paulina|marisol|conchita|esperanza|sabina|isabel|carmen|elena|ximena|dalia|female|mujer/i;
+    const mal=/jorge|pablo|diego|[aá]lvaro|juan|carlos|enrique|ra[uú]l|miguel|antonio|alonso|arturo|male|hombre/i;
+    const f=pool.find(v=>fem.test(v.name)),m=pool.find(v=>mal.test(v.name));
+    if(role==="M")return {v:f||pool[0],p:f?1:1.15};
+    if(role==="H")return {v:m||pool[pool.length>1&&!m?1:0]||pool[0],p:m?1:0.8};
+    return {v:pool[0],p:1};
+  },
+  speak(script,onend){
+    if(!this.ok){onend&&onend();return}
+    speechSynthesis.cancel();this.load();
+    const lines=script.slice();let i=0;
+    const next=()=>{
+      if(i>=lines.length){this.cur=null;onend&&onend();return}
+      const [role,txt]=lines[i++],cfg=this.pick(role),u=new SpeechSynthesisUtterance(txt);
+      u.lang=cfg.v?cfg.v.lang:"es-ES";if(cfg.v)u.voice=cfg.v;u.pitch=cfg.p;u.rate=S.rate;
+      u.onend=()=>setTimeout(next,role===lines[i]?.[0]?150:450);u.onerror=()=>{this.cur=null;onend&&onend()};
+      this.cur=u;speechSynthesis.speak(u);
+    };next();
+  },
+  stop(){if(this.ok)speechSynthesis.cancel();this.cur=null}
+};
+if(TTS.ok){TTS.load();speechSynthesis.onvoiceschanged=()=>TTS.load()}
+
+/* ---------- tabs ---------- */
+const TABS=["home","R","L"];
+function renderTabs(){
+  $("#tabs").innerHTML=TABS.map(t=>`<button role="tab" type="button" data-tab="${t}" aria-selected="${S.tab===t&&!S.run}">${L()[t]}</button>`).join("");
+  $("#langbtn").textContent=S.lang==="es"?"EN":"ES";document.documentElement.lang=S.lang;
+}
+$("#tabs").addEventListener("click",e=>{const b=e.target.closest("[data-tab]");if(!b)return;if(S.run&&S.run.mode==="exam"&&!S.run.done)return;TTS.stop();S.run=null;S.tab=b.dataset.tab;save();render();scrollTo({top:0})});
+$("#langbtn").addEventListener("click",()=>{S.lang=S.lang==="es"?"en":"es";save();render()});
+
+/* ---------- home & lists ---------- */
+function bestCell(id){const b=S.best[id];return b?`<b>${b}/25</b>${L().best}`:`<b>${L().none}</b>${L().best}`}
+function testRows(kind){
+  const l=L();
+  return TESTS[kind].map((t,i)=>`<div class="trow"><span class="tbadge">${kind}${i+1}</span>
+    <span class="tname">${esc(t.title)}<small>${kind==="R"?"60 min · 4 tareas · 25 preguntas":"40 min · 4 tareas · 25 preguntas"}</small></span>
+    <span class="row acts"><span class="best">${bestCell(t.id)}</span><button class="btn" type="button" data-go="${t.id}" data-mode="practice">${l.pracLbl}</button><button class="btn primary" type="button" data-go="${t.id}" data-mode="exam">${l.examLbl}</button></span></div>`).join("");
+}
+function ttsBanner(kind){
+  if(kind!=="L")return "";const l=L();
+  if(!TTS.ok)return `<div class="warn">${l.ttsNone}</div>`;
+  return `<div class="row"><span class="note">${l.ttsNote}</span><button class="btn" type="button" id="testvoice">${l.testVoice}</button></div><div class="warn" id="novoice" hidden>${l.ttsWarn}</div>`;
+}
+function renderHome(){
+  const l=L(),h=S.hist.slice(-8).reverse();
+  app.innerHTML=`<div class="stack">
+   <div><div class="eyebrow">DELE A2 · ${S.lang==="es"?"Comprensión":"Comprehension"}</div><h1 style="margin-top:4px">${S.lang==="es"?"Lectura y audición":"Reading and listening"}</h1><p class="muted" style="margin:8px 0 0;max-width:68ch">${l.intro}</p></div>
+   <div class="grid2">
+    <section class="sheet"><h2>${l.fmtTitle}</h2><div style="overflow-x:auto;margin-top:8px"><table class="fmt"><thead><tr><th></th><th>${l.R}</th><th>${l.L}</th></tr></thead><tbody>
+     <tr><td class="num">T1</td><td>Correo · 5</td><td>6 conversaciones · 6</td></tr>
+     <tr><td class="num">T2</td><td>8 anuncios · 8</td><td>6 mensajes de radio · 6</td></tr>
+     <tr><td class="num">T3</td><td>3 textos · relacionar 6</td><td>Conversación · H/M/ninguno 6</td></tr>
+     <tr><td class="num">T4</td><td>Texto largo · 6</td><td>7 mensajes · relacionar 7/10</td></tr>
+     <tr><td></td><td class="num">60 min</td><td class="num">40 min</td></tr></tbody></table></div></section>
+    <section class="sheet"><h2>${l.passTitle}</h2><p style="margin:8px 0 0">${l.passTxt}</p>
+     <div class="stack" style="gap:6px;margin-top:12px"><div class="note"><b>${l.exam}:</b> ${l.examD}</div><div class="note"><b>${l.practice}:</b> ${l.practiceD}</div></div></section>
+   </div>
+   <section class="sheet"><h2>${l.R}</h2><div class="tests" style="margin-top:4px">${testRows("R")}</div></section>
+   <section class="sheet stack" style="gap:8px"><h2>${l.L}</h2>${ttsBanner("L")}<div class="tests">${testRows("L")}</div></section>
+   <section class="sheet"><h2>${l.hist}</h2>${h.length?`<div style="overflow-x:auto;margin-top:8px"><table class="history"><thead><tr><th>${l.date}</th><th>${l.test}</th><th>${l.mode}</th><th>${l.result}</th></tr></thead><tbody>${h.map(x=>`<tr><td class="num">${new Date(x.d).toLocaleDateString(S.lang==="es"?"es-ES":"en-GB",{day:"2-digit",month:"short"})}</td><td>${x.id} · ${esc(findTest(x.id).title)}</td><td>${x.m==="exam"?l.examLbl:l.pracLbl}</td><td class="num">${x.s}/25</td></tr>`).join("")}</tbody></table></div>`:`<p class="muted">${l.noHist}</p>`}</section>
+   ${footer()}</div>`;
+  bindHome();
+}
+function renderList(kind){
+  const l=L();
+  app.innerHTML=`<div class="stack"><div><div class="eyebrow">DELE A2</div><h1 style="margin-top:4px">${l[kind]}</h1><p class="muted" style="margin:8px 0 0;max-width:68ch">${kind==="R"?"60 min · 25 preguntas · 1.325–1.725 palabras":"40 min · 25 preguntas · cada audio dos veces"}</p></div>
+   ${ttsBanner(kind)}
+   <section class="sheet"><div class="tests">${testRows(kind)}</div></section>
+   <div class="stack" style="gap:6px"><div class="note"><b>${l.exam}:</b> ${l.examD}</div><div class="note"><b>${l.practice}:</b> ${l.practiceD}</div></div>
+   ${footer()}</div>`;
+  bindHome();
+}
+function bindHome(){
+  app.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>startRun(b.dataset.go,b.dataset.mode));
+  const tv=$("#testvoice");if(tv)tv.onclick=()=>{TTS.load();$("#novoice").hidden=TTS.voices.length>0;TTS.speak([["M","Hola, buenos días. ¿Me oyes bien?"],["H","Sí, perfectamente. Vamos a empezar."]])};
+}
+function footer(){return `<div class="foot">${L().foot} <a href="../">Repaso CCSE</a></div>`}
+
+/* ---------- run ---------- */
+let tick=null;
+function startRun(id,mode){
+  const test=findTest(id),items=itemsOf(test);
+  S.run={id,mode,start:Date.now(),t:1,ans:{},ord:{},plays:{},done:false,confirm:false,only:false};
+  items.forEach(it=>{if(it.kind==="mc")S.run.ord[it.n]=shuffle([0,1,2])});
+  render();scrollTo({top:0});
+}
+const left=()=>Math.max(0,DUR[S.run.id[0]]-Math.floor((Date.now()-S.run.start)/1000));
+function answeredCount(items){return items.filter(it=>S.run.ans[it.n]!==undefined).length}
+function isRight(it){const a=S.run.ans[it.n];return a!==undefined&&a===it.key}
+
+function optBtns(it,locked){
+  const r=S.run,a=r.ans[it.n],show=locked;
+  return `<div class="opts">${r.ord[it.n].map((oi,pos)=>{let cls="",mark="";
+    if(show){if(oi===it.key){cls="ok";mark="✓"}else if(oi===a){cls="bad";mark="✗"}}else if(a===oi)cls="sel";
+    return `<button class="opt ${cls}" type="button" data-n="${it.n}" data-v="${oi}" ${show?"disabled":""}><span class="bub">${LET[pos]}</span><span>${esc(it.o[oi])}</span><span class="mark">${mark}</span></button>`}).join("")}</div>`;
+}
+function choiceBtns(it,labels,locked){
+  const a=S.run.ans[it.n];
+  return `<div class="opts inline">${labels.map((lab,v)=>{let cls="",mark="";
+    if(locked){if(v===it.key){cls="ok";mark="✓"}else if(v===a){cls="bad";mark="✗"}}else if(a===v)cls="sel";
+    return `<button class="opt ${cls}" type="button" data-n="${it.n}" data-v="${v}" ${locked?"disabled":""}><span class="bub">${lab[0]}</span><span>${esc(lab[1])}</span><span class="mark">${mark}</span></button>`}).join("")}</div>`;
+}
+function whyBox(it){return it.why?`<details class="why"><summary>${L().why}</summary><p>${esc(it.why)}</p></details>`:""}
+function scriptBox(script,names){
+  if(!script)return "";const nm=r=>r==="N"?"":(names&&names[r]?names[r]:(r==="H"?L().h:L().m));
+  return `<details class="tr"><summary>${L().transcript}</summary><div class="script">${script.map(([r,t])=>`<span>${nm(r)?`<b>${esc(nm(r))}</b>`:""}${esc(t)}</span>`).join("")}</div></details>`;
+}
+function feedback(it,opt){
+  const l=L(),ok=isRight(it);let right="";
+  if(it.kind==="mc")right=`${LET[S.run.ord[it.n].indexOf(it.key)]}) ${it.o[it.key]}`;
+  else if(it.kind==="abc")right=LET4[it.key];
+  else if(it.kind==="hmn")right=[l.h,l.m,l.n][it.key];
+  else right=`${LET4[it.key]}. ${opt[it.key]}`;
+  return `<div class="fb"><div class="fbline ${ok?"ok":"bad"}">${ok?l.correct:`${l.incorrect} ${esc(right)}`}</div>${whyBox(it)}</div>`;
+}
+function player(key,script){
+  const r=S.run,n=r.plays[key]||0,max=r.mode==="exam"?2:0,dis=!TTS.ok||(max&&n>=max),l=L();
+  return `<div class="player" data-pl="${key}"><button class="play" type="button" data-play="${key}" ${dis?"disabled":""}><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1l7 4-7 4z"/></svg><span>${l.play}</span></button><span class="plays">${l.plays(n,max)}</span>
+   <span class="speed">${l.speed} ${[0.75,0.9,1].map(v=>`<button type="button" data-rate="${v}" aria-pressed="${S.rate===v}">${v===1?"1":v}</button>`).join("")}</span></div>`;
+}
+function renderRun(){
+  const r=S.run,test=findTest(r.id),kind=r.id[0],items=itemsOf(test),l=L();
+  clearInterval(tick);
+  if(r.done)return renderResult(test,items);
+  if(r.mode==="exam"&&left()<=0){finish(true);return}
+  const task=tk(test,r.t),its=items.filter(it=>it.t===r.t),prac=r.mode==="practice";
+  const lock=it=>prac&&r.ans[it.n]!==undefined;
+  const counts=[1,2,3,4].map(t=>{const x=items.filter(i=>i.t===t);return `${x.filter(i=>r.ans[i.n]!==undefined).length}/${x.length}`});
+  let body="";
+  if(kind==="R"){
+    if(r.t===1||r.t===4){
+      body=`<div class="text"><h3>${esc(task.texts[0].h)}</h3>${esc(task.texts[0].b)}</div>
+       <div>${its.map(it=>`<div class="item" id="it-${it.n}"><div class="qhead"><span class="qn">${it.n}</span><span class="qt">${esc(it.q)}</span></div>${optBtns(it,lock(it))}${lock(it)?feedback(it):""}</div>`).join("")}</div>`;
+    }else if(r.t===2){
+      body=`<div>${its.map(it=>{const tx=task.texts[it.x];return `<div class="item" id="it-${it.n}"><div class="shorttext"><b>${esc(tx.h)}</b>${esc(tx.b)}</div><div class="qhead"><span class="qn">${it.n}</span><span class="qt">${esc(it.q)}</span></div>${optBtns(it,lock(it))}${lock(it)?feedback(it):""}</div>`}).join("")}</div>`;
+    }else{
+      body=`<div class="stack">${task.texts.map(tx=>`<div class="shorttext"><b>${esc(tx.h)}</b>${esc(tx.b)}</div>`).join("")}</div>
+       <div>${its.map(it=>`<div class="item" id="it-${it.n}"><div class="qhead"><span class="qn">${it.n}</span><span class="qt">${esc(it.q)}</span></div>${choiceBtns(it,task.texts.map((tx,v)=>[LET4[v],tx.h.replace(/^[A-C]\.\s*/,"")]),lock(it))}${lock(it)?feedback(it):""}</div>`).join("")}</div>`;
+    }
+  }else{
+    if(r.t===1||r.t===2){
+      body=`<div>${its.map(it=>`<div class="item" id="it-${it.n}"><div class="qhead"><span class="qn">${it.n}</span><span class="qt">${esc(it.q)}</span></div><div style="padding-left:34px">${player("a"+it.n,it.script)}</div>${optBtns(it,lock(it))}${lock(it)?feedback(it)+`<div class="fb">${scriptBox(it.script)}</div>`:""}</div>`).join("")}</div>`;
+    }else if(r.t===3){
+      const nm=task.names,labs=[["H",`${nm.H} (${l.h.toLowerCase()})`],["M",`${nm.M} (${l.m.toLowerCase()})`],["N",l.n]];
+      const allDone=its.every(it=>r.ans[it.n]!==undefined);
+      body=`<div class="stack">${player("t3",task.s)}<div class="names"><span><b>H</b>${esc(nm.H)}</span><span><b>M</b>${esc(nm.M)}</span></div>${prac&&allDone?scriptBox(task.s,nm):""}</div>
+       <div>${its.map(it=>`<div class="item" id="it-${it.n}"><div class="qhead"><span class="qn">${it.n}</span><span class="qt">${esc(it.q)}</span></div>${choiceBtns(it,labs,lock(it))}${lock(it)?feedback(it):""}</div>`).join("")}</div>`;
+    }else{
+      const used=new Set(its.map(it=>r.ans[it.n]).filter(v=>v!==undefined));
+      body=`<ul class="optlist">${task.opts.map((o,v)=>`<li class="${used.has(v)?"used":""}"><b>${LET4[v]}</b><span>${esc(o)}</span></li>`).join("")}</ul>
+       <div>${its.map(it=>{const a=r.ans[it.n];return `<div class="item" id="it-${it.n}"><div class="qhead"><span class="qn">${it.n}</span><span class="qt">${S.lang==="es"?"Mensaje":"Message"} ${it.i+1}</span></div><div style="padding-left:34px">${player("a"+it.n,it.script)}</div>
+        <div class="sel4"><label class="note" for="s-${it.n}">${S.lang==="es"?"Enunciado":"Statement"}</label><select id="s-${it.n}" data-sel="${it.n}" ${lock(it)?"disabled":""}><option value="">${l.choose}</option>${task.opts.map((o,v)=>`<option value="${v}" ${a===v?"selected":""}>${LET4[v]}. ${esc(o)}</option>`).join("")}</select></div>
+        ${lock(it)?feedback(it,task.opts)+`<div class="fb">${scriptBox(it.script)}</div>`:""}</div>`}).join("")}</div>`;
+    }
+  }
+  const n=answeredCount(items);
+  app.innerHTML=`<div class="stack">
+   <div class="runtop"><div class="runbar"><span class="eyebrow">${r.id} · ${esc(test.title)} · ${r.mode==="exam"?l.examLbl:l.pracLbl}</span>
+     <span class="row">${r.mode==="exam"?`<span class="timer ${left()<300?"low":""}" id="timer">${fmtT(left())}</span>`:""}<button class="btn ghost" type="button" id="quit" style="min-height:0;padding:4px 6px">${l.quit}</button></span></div>
+    <div class="steps">${[1,2,3,4].map(t=>`<button type="button" data-step="${t}" aria-current="${t===r.t}">${l.tarea} ${t}<span class="c">${counts[t-1]}</span></button>`).join("")}</div></div>
+   <section class="sheet stack"><div><div class="eyebrow">${l.tarea} ${r.t}</div><p class="instr" style="margin-top:4px">${INSTR[kind][r.t]}</p></div>${body}
+    <div class="navrow"><button class="btn" type="button" id="prevt" ${r.t===1?"disabled":""}>← ${l.prev}</button>${r.t<4?`<button class="btn primary" type="button" id="nextt">${l.next} →</button>`:`<button class="btn primary" type="button" id="sub">${l.submit}</button>`}</div></section>
+   ${r.confirm?`<div class="confirm"><span>${l.unans(25-n)}</span><span class="row"><button class="btn" type="button" id="cno">${l.no}</button><button class="btn primary" type="button" id="cyes">${l.yes}</button></span></div>`:""}
+   <div class="row" style="justify-content:space-between"><span class="eyebrow num">${l.answered(n)}</span>${r.t<4?`<button class="btn" type="button" id="sub2">${l.submit}</button>`:""}</div>
+  </div>`;
+  bindRun(items);
+  if(r.mode==="exam")tick=setInterval(()=>{const s=left(),el=$("#timer");if(s<=0){finish(true);return}if(el){el.textContent=fmtT(s);el.classList.toggle("low",s<300)}},1000);
+}
+function bindRun(items){
+  const r=S.run;
+  app.querySelectorAll(".opt[data-n]").forEach(b=>b.onclick=()=>{const n=+b.dataset.n;if(r.mode==="practice"&&r.ans[n]!==undefined)return;r.ans[n]=+b.dataset.v;r.confirm=false;keepScroll(()=>renderRun())});
+  app.querySelectorAll("select[data-sel]").forEach(s=>s.onchange=()=>{const n=+s.dataset.sel;if(s.value==="")delete r.ans[n];else r.ans[n]=+s.value;keepScroll(()=>renderRun())});
+  app.querySelectorAll("[data-step]").forEach(b=>b.onclick=()=>goStep(+b.dataset.step));
+  app.querySelectorAll("[data-rate]").forEach(b=>b.onclick=()=>{S.rate=+b.dataset.rate;save();keepScroll(()=>renderRun())});
+  app.querySelectorAll("[data-play]").forEach(b=>b.onclick=()=>{
+    const key=b.dataset.play,test=findTest(r.id);
+    const script=key==="t3"?tk(test,3).s:items.find(it=>"a"+it.n===key).script;
+    const max=r.mode==="exam"?2:0;if(max&&(r.plays[key]||0)>=max)return;
+    const pl=b.closest(".player");
+    if(pl.classList.contains("playing")){TTS.stop();pl.classList.remove("playing");b.querySelector("span").textContent=L().play;return}
+    app.querySelectorAll(".player.playing").forEach(p=>{p.classList.remove("playing");p.querySelector(".play span").textContent=L().play});
+    r.plays[key]=(r.plays[key]||0)+1;pl.querySelector(".plays").textContent=L().plays(r.plays[key],max);
+    pl.classList.add("playing");b.querySelector("span").textContent=r.mode==="exam"?L().playing:L().stop;
+    TTS.speak(script,()=>{pl.classList.remove("playing");b.querySelector("span").textContent=L().play;if(max&&r.plays[key]>=max)b.disabled=true});
+  });
+  const q=$("#quit");q.onclick=()=>{TTS.stop();S.run=null;render();scrollTo({top:0})};
+  const p=$("#prevt");if(p)p.onclick=()=>goStep(r.t-1);
+  const nx=$("#nextt");if(nx)nx.onclick=()=>goStep(r.t+1);
+  const trySub=()=>{const n=answeredCount(items);if(n<25&&!r.confirm){r.confirm=true;keepScroll(()=>renderRun())}else finish(false)};
+  [$("#sub"),$("#sub2")].forEach(b=>{if(b)b.onclick=trySub});
+  const cy=$("#cyes");if(cy){cy.onclick=()=>finish(false);$("#cno").onclick=()=>{r.confirm=false;keepScroll(()=>renderRun())}}
+}
+function keepScroll(fn){const y=scrollY;fn();scrollTo({top:y})}
+function goStep(t){TTS.stop();S.run.t=t;S.run.confirm=false;renderRun();scrollTo({top:0})}
+function finish(timeUp){
+  const r=S.run,test=findTest(r.id),items=itemsOf(test);TTS.stop();clearInterval(tick);
+  r.done=true;r.timeUp=timeUp;r.used=Math.min(DUR[r.id[0]],Math.floor((Date.now()-r.start)/1000));
+  r.score=items.filter(isRight).length;
+  S.best[r.id]=Math.max(S.best[r.id]||0,r.score);S.hist.push({d:Date.now(),id:r.id,m:r.mode,s:r.score});save();
+  renderRun();scrollTo({top:0});
+}
+function ansText(it,v,test){
+  const l=L();if(v===undefined)return l.blank;
+  if(it.kind==="mc")return it.o[v];
+  if(it.kind==="abc")return tk(test,3).texts[v].h;
+  if(it.kind==="hmn"){const nm=tk(test,3).names;return [`${nm.H} (${l.h.toLowerCase()})`,`${nm.M} (${l.m.toLowerCase()})`,l.n][v]}
+  return `${LET4[v]}. ${tk(test,4).opts[v]}`;
+}
+function qText(it,test){
+  if(it.kind==="match10")return `${S.lang==="es"?"Mensaje":"Message"} ${it.i+1}`;
+  if(it.kind==="mc"&&test.id[0]==="R"&&it.t===2)return `${tk(test,2).texts[it.x].h}: ${it.q}`;
+  return it.q;
+}
+function renderResult(test,items){
+  const r=S.run,l=L(),per=[1,2,3,4].map(t=>{const x=items.filter(i=>i.t===t);return [x.filter(isRight).length,x.length]});
+  const list=r.only?items.filter(it=>!isRight(it)):items,kind=test.id[0];
+  app.innerHTML=`<div class="stack"><div class="eyebrow">${test.id} · ${esc(test.title)} · ${r.mode==="exam"?l.examLbl:l.pracLbl}</div>
+   <section class="sheet stack">${r.timeUp?`<div class="warn">${l.timeUp}</div>`:""}
+    <div class="row" style="align-items:flex-end;gap:16px"><div class="score num">${r.score}<small> / 25</small></div><div class="note" style="padding-bottom:8px">${l.ref}${r.mode==="exam"?` · ${fmtT(r.used)}`:""}</div></div>
+    <div class="breakdown">${per.map((p,i)=>`<div class="bd"><b>${p[0]}/${p[1]}</b><span>${l.tarea} ${i+1}</span></div>`).join("")}</div>
+    <div class="grid25">${items.map(it=>`<button type="button" class="cell ${isRight(it)?"ok":"bad"}" data-jump="${it.n}" aria-label="${l.q} ${it.n}">${it.n}</button>`).join("")}</div>
+    <div class="row"><button class="btn primary" type="button" id="again">${l.again}</button><button class="btn" type="button" id="backl">${l.back}</button><button class="btn" type="button" id="pdf">${l.pdf}</button></div><div class="note" id="pdfmsg" aria-live="polite"></div></section>
+   <section class="sheet"><div class="row" style="justify-content:space-between"><h2>${l.review}</h2><div class="row"><button class="chip" type="button" id="fall" aria-pressed="${!r.only}">${l.all}</button><button class="chip" type="button" id="fwrong" aria-pressed="${r.only}">${l.onlyWrong}</button></div></div>
+    <div style="margin-top:6px">${list.map(it=>{const ok=isRight(it),v=r.ans[it.n];
+     const scr=kind==="L"?(it.t===3?scriptBox(tk(test,3).s,tk(test,3).names):scriptBox(it.script)):"";
+     return `<div class="rv" id="rv-${it.n}"><div class="rvh"><span class="rvn"><b class="${ok?"ok":"bad"}">${it.n}</b><span class="eyebrow">${l.q} ${it.n} · ${l.tarea} ${it.t}</span></span></div>
+      <div class="rq">${esc(qText(it,test))}</div><div class="ra">${ok?`<span class="right">✓ ${esc(ansText(it,v,test))}</span>`:`<span class="yours">✗ ${l.yourAns}: ${esc(ansText(it,v,test))}</span><span class="right">✓ ${l.rightAns}: ${esc(ansText(it,it.key,test))}</span>`}</div>${whyBox(it)}${scr}</div>`}).join("")}</div></section></div>`;
+  $("#again").onclick=()=>startRun(r.id,r.mode);
+  $("#backl").onclick=()=>{S.tab=kind;S.run=null;render();scrollTo({top:0})};
+  $("#pdf").onclick=()=>exportPdf(test,items);
+  $("#fall").onclick=()=>{r.only=false;keepScroll(()=>renderRun())};$("#fwrong").onclick=()=>{r.only=true;keepScroll(()=>renderRun())};
+  app.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{const n=+b.dataset.jump,it=items[n-1];
+    if(r.only&&isRight(it)){r.only=false;renderRun()}
+    const el=document.getElementById("rv-"+n);if(!el)return;
+    el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
+    el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash");const d=el.querySelector("details.why");if(d)d.open=true;});
+}
+
+/* ---------- pdf ---------- */
+const pdfTxt=s=>String(s).replace(/[…]/g,"...").replace(/[‘’]/g,"'").replace(/[“”]/g,'"').replace(/[–—]/g,"-").replace(/[^\x20-\x7E -ÿ\n]/g,"");
+function exportPdf(test,items){
+  const r=S.run,l=L(),msg=$("#pdfmsg"),say=t=>{if(msg)msg.textContent=t};
+  if(!window.jspdf){say(l.pdfErr);return}
+  try{
+    const {jsPDF}=window.jspdf,doc=new jsPDF({unit:"mm",format:"a4"}),W=210,M=16,CW=W-2*M,BOT=284;let y=M;
+    const ink=[24,33,58],grey=[110,118,140],ok=[31,122,77],bad=[179,38,30],acc=[29,95,168];
+    const need=h=>{if(y+h>BOT){doc.addPage();y=M}};
+    const write=(txt,{size=10,style="normal",color=ink,indent=0,gap=1.2}={})=>{doc.setFont("helvetica",style);doc.setFontSize(size);doc.setTextColor(...color);
+      String(txt).split("\n").forEach(par=>{const lines=doc.splitTextToSize(pdfTxt(par)||" ",CW-indent),lh=size*0.42;lines.forEach(ln=>{need(lh);doc.text(ln,M+indent,y+lh*0.8);y+=lh})});y+=gap};
+    const line=()=>{need(4);doc.setDrawColor(225,229,236);doc.line(M,y,W-M,y);y+=4};
+    const es=S.lang==="es",kind=test.id[0];
+    write("Repaso DELE A2",{size:9,style:"bold",color:acc,gap:0.5});
+    write(`${kind==="R"?(es?"Comprensión de lectura":"Reading"):(es?"Comprensión auditiva":"Listening")} - ${test.id}: ${test.title}`,{size:16,style:"bold",gap:2});
+    write(`${es?"Resultado":"Score"}: ${r.score} / 25   ·   ${r.mode==="exam"?l.examLbl:l.pracLbl}${r.mode==="exam"?"   ·   "+l.time+" "+fmtT(r.used):""}   ·   ${new Date(r.start).toLocaleString(es?"es-ES":"en-GB",{dateStyle:"long",timeStyle:"short"})}`,{size:10,style:"bold",color:r.score>=15?ok:bad,gap:1});
+    write([1,2,3,4].map(t=>{const x=items.filter(i=>i.t===t);return `${l.tarea} ${t}: ${x.filter(isRight).length}/${x.length}`}).join("     "),{size:9.5,color:grey,gap:3});
+    doc.setDrawColor(200,205,218);doc.line(M,y,W-M,y);y+=5;
+    [1,2,3,4].forEach(t=>{
+      const task=tk(test,t);need(14);write(`${l.tarea} ${t}`,{size:13,style:"bold",color:acc,gap:1});write(INSTR[kind][t],{size:9,color:grey,gap:2});
+      if(kind==="R"&&(t===1||t===4)){write(task.texts[0].h,{size:10.5,style:"bold",gap:1});write(task.texts[0].b,{size:9.5,gap:3})}
+      if(kind==="R"&&t===3)task.texts.forEach(tx=>{write(tx.h,{size:10,style:"bold",gap:0.5});write(tx.b,{size:9.3,gap:2})});
+      if(kind==="L"&&t===3){write(es?"Transcripción":"Transcript",{size:10,style:"bold",gap:0.5});write(task.s.map(([ro,tx])=>`${task.names[ro]}: ${tx}`).join("\n"),{size:9.3,gap:2})}
+      if(kind==="L"&&t===4){write(task.opts.map((o,v)=>`${LET4[v]}. ${o}`).join("\n"),{size:9.5,gap:2})}
+      line();
+      items.filter(i=>i.t===t).forEach(it=>{
+        const right=isRight(it),v=r.ans[it.n];need(20);
+        write(`${it.n}.  ${right?(es?"CORRECTA":"CORRECT"):v===undefined?(es?"SIN RESPONDER":"NOT ANSWERED"):(es?"INCORRECTA":"WRONG")}`,{size:8.5,style:"bold",color:right?ok:bad,gap:0.5});
+        if(kind==="R"&&t===2){const tx=task.texts[it.x];write(`${tx.h}: ${tx.b}`,{size:9.3,color:grey,gap:1})}
+        if(kind==="L"&&(t===1||t===2||t===4))write((es?"Audio: ":"Audio: ")+it.script.map(([ro,tx])=>ro==="N"?tx:`${ro==="H"?l.h:l.m}: ${tx}`).join(" / "),{size:9,color:grey,gap:1});
+        write(qText(it,test),{size:10.5,style:"bold",gap:1});
+        if(it.kind==="mc")it.o.forEach((o,i)=>{const isR=i===it.key,isP=i===v;let tag="";if(isR&&isP)tag=es?"   <- tu respuesta (correcta)":"   <- your answer (correct)";else if(isR)tag=es?"   <- respuesta correcta":"   <- correct answer";else if(isP)tag=es?"   <- tu respuesta":"   <- your answer";
+          write(`${LET[i]})  ${o}${tag}`,{size:10,indent:4,style:isR||isP?"bold":"normal",color:isR?ok:isP?bad:ink,gap:0.4})});
+        else{write(`${l.yourAns}: ${ansText(it,v,test)}`,{size:10,indent:4,style:"bold",color:right?ok:bad,gap:0.4});if(!right)write(`${l.rightAns}: ${ansText(it,it.key,test)}`,{size:10,indent:4,style:"bold",color:ok,gap:0.4})}
+        if(it.why){y+=0.8;write(`${l.why} ${it.why}`,{size:9.3,indent:4,color:grey,gap:0})}
+        y+=2;line();
+      });
+    });
+    const n=doc.getNumberOfPages();for(let p=1;p<=n;p++){doc.setPage(p);doc.setFont("helvetica","normal");doc.setFontSize(8);doc.setTextColor(...grey);doc.text(pdfTxt(es?"Material de práctica original en formato DELE A2. No oficial.":"Original DELE A2-format practice material. Not official."),M,292);doc.text(`${p} / ${n}`,W-M,292,{align:"right"})}
+    const blob=doc.output("blob"),u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=`dele-a2-${test.id}-${new Date(r.start).toISOString().slice(0,10)}.pdf`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000);say(l.pdfOk);
+  }catch(e){say(l.pdfErr)}
+}
+I18N.es.time="Tiempo";I18N.en.time="Time";
+
+/* ---------- root ---------- */
+function render(){
+  clearInterval(tick);renderTabs();
+  if(S.run){renderRun();return}
+  if(S.tab==="home")renderHome();else renderList(S.tab);
+}
+window.addEventListener("beforeunload",e=>{if(S.run&&S.run.mode==="exam"&&!S.run.done){e.preventDefault();e.returnValue=""}});
+const h=(location.hash||"").slice(1);if(["home","R","L"].includes(h))S.tab=h;
+render();
+</script>
+</body>
+</html>
