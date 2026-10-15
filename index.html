@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta property="og:title" content="Repaso CCSE 2026">
+<meta property="og:description" content="Las 300 preguntas oficiales del manual CCSE 2026 con explicaciones, práctica por tareas y simulacros de 45 minutos.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="description" content="Prepara la prueba CCSE 2026: las 300 preguntas del manual con explicaciones, práctica por tareas y simulacros cronometrados.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Repaso CCSE 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: an official answer sheet — narrow reading column, ruled cards, a/b/c bubbles as the core motif, one rubber stamp for results */
+:root{
+  --paper:#f5f6f8; --sheet:#ffffff; --ink:#18213a; --ink-2:#4a5570; --ink-3:#7c869e;
+  --rule:#dde1ea; --rule-2:#c6ccd9; --tint:#eceff5;
+  --accent:#a8202d; --accent-ink:#ffffff; --accent-soft:#f7e3e5;
+  --gold:#c99a17; --gold-soft:#fbf1d3;
+  --ok:#1f7a4d; --ok-soft:#e1f2e8; --bad:#b3261e; --bad-soft:#fbe4e2;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f1424; --sheet:#171d31; --ink:#e7eaf3; --ink-2:#aab2c8; --ink-3:#7a849d;
+  --rule:#273050; --rule-2:#37416a; --tint:#1e2540;
+  --accent:#e0566a; --accent-ink:#1a0d10; --accent-soft:#3a1b24;
+  --gold:#e3b73f; --gold-soft:#3a3018;
+  --ok:#4cc58a; --ok-soft:#173528; --bad:#f07168; --bad-soft:#3d1c1d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f1424; --sheet:#171d31; --ink:#e7eaf3; --ink-2:#aab2c8; --ink-3:#7a849d;
+  --rule:#273050; --rule-2:#37416a; --tint:#1e2540;
+  --accent:#e0566a; --accent-ink:#1a0d10; --accent-soft:#3a1b24;
+  --gold:#e3b73f; --gold-soft:#3a3018;
+  --ok:#4cc58a; --ok-soft:#173528; --bad:#f07168; --bad-soft:#3d1c1d; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{background:var(--paper)}
+body{color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding-inline:16px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--rule)}
+.brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px 8px}
+.brand{display:flex;align-items:baseline;gap:10px;min-width:0}
+.brand b{white-space:nowrap;font-family:var(--display);font-stretch:78%;font-weight:800;font-size:22px;letter-spacing:.01em;text-transform:uppercase}
+.brand b i{font-style:normal;color:var(--accent)}
+.brand span{font-family:var(--mono);font-size:11px;color:var(--ink-3);white-space:nowrap}
+@media (max-width:520px){.brand span{display:none}}
+.langbtn{border:1px solid var(--rule-2);background:var(--sheet);border-radius:999px;padding:4px 10px;font-size:12px;font-family:var(--mono);cursor:pointer;flex:none}
+nav.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-bottom:-1px}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs button{background:none;border:0;border-bottom:3px solid transparent;padding:8px 12px 9px;font-weight:600;font-size:14px;color:var(--ink-2);cursor:pointer;white-space:nowrap}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+main{padding-block:22px 64px}
+h1,h2,h3{font-family:var(--display);font-stretch:85%;text-wrap:balance;margin:0}
+h1{font-size:30px;font-weight:800;line-height:1.1}
+h2{font-size:21px;font-weight:750}
+h3{font-size:16px;font-weight:700}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.muted{color:var(--ink-2)}
+.stack{display:flex;flex-direction:column;gap:16px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--r);padding:10px 16px;font-weight:650;cursor:pointer;border:1px solid var(--rule-2);background:var(--sheet);min-height:42px}
+.btn:hover{border-color:var(--ink-3)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{filter:brightness(1.07)}
+.btn.ghost{background:transparent;border-color:transparent;color:var(--ink-2)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.chip{border:1px solid var(--rule-2);border-radius:999px;padding:6px 12px;background:var(--sheet);cursor:pointer;font-size:13px;font-weight:600;color:var(--ink-2)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* home */
+.hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:16px}
+@media (max-width:680px){.hero{grid-template-columns:1fr}}
+.ready{display:flex;align-items:flex-end;gap:14px;margin-top:10px}
+.ready .big{font-family:var(--display);font-stretch:75%;font-weight:800;font-size:64px;line-height:.9}
+.ready .of{color:var(--ink-3);font-size:14px;padding-bottom:6px}
+.format dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:10px 0 0}
+.format dt{font-family:var(--mono);font-size:12px;color:var(--ink-3);padding-top:2px}
+.format dd{margin:0;font-weight:600}
+.tareas{display:flex;flex-direction:column}
+.trow{display:grid;grid-template-columns:28px minmax(0,1fr) 120px 64px;gap:12px;align-items:center;padding:12px 0;border-top:1px solid var(--rule);cursor:pointer;background:none;border-left:0;border-right:0;border-bottom:0;text-align:left;width:100%}
+.trow:first-child{border-top:0}
+.trow:hover .tname{text-decoration:underline;text-decoration-color:var(--rule-2)}
+.tbadge{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font-family:var(--mono);font-weight:600;font-size:13px}
+.tname{font-weight:600;min-width:0}
+.tname small{display:block;font-weight:400;color:var(--ink-3);font-size:12px}
+.bar{height:8px;border-radius:4px;background:var(--tint);display:flex;overflow:hidden}
+.bar i{display:block;height:100%}
+.bar .m{background:var(--ok)}.bar .w{background:var(--gold)}
+.tpct{text-align:right;font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+@media (max-width:520px){.trow{grid-template-columns:28px minmax(0,1fr) 54px}.trow .bar{grid-column:2/4;grid-row:2}}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-3)}
+.legend span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+.actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:600px){.actions{grid-template-columns:1fr}}
+.action{text-align:left;display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid var(--rule);background:var(--sheet);border-radius:var(--r);cursor:pointer}
+.action:hover{border-color:var(--ink-3)}
+.action b{font-family:var(--display);font-stretch:85%;font-size:17px}
+.action span{font-size:13px;color:var(--ink-2)}
+.action.main{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.action.main span{color:inherit;opacity:.75}
+.history{width:100%;border-collapse:collapse;font-size:14px}
+.history td,.history th{padding:8px 6px;border-top:1px solid var(--rule);text-align:left}
+.history th{font-family:var(--mono);font-size:11px;font-weight:400;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;border-top:0}
+.pill{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;letter-spacing:.04em}
+.pill.ok{background:var(--ok-soft);color:var(--ok)}.pill.bad{background:var(--bad-soft);color:var(--bad)}
+
+/* study */
+.tsel{display:flex;gap:6px;flex-wrap:wrap}
+.factsec{border-top:1px solid var(--rule);padding-top:14px}
+.factsec:first-child{border-top:0;padding-top:0}
+.facts{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.facts li{padding-left:18px;position:relative;max-width:68ch}
+.facts li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:50%;border:1.5px solid var(--accent)}
+.facts strong{font-weight:700}
+
+/* question */
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.progress{height:4px;background:var(--tint);border-radius:2px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.qtext{font-size:20px;font-weight:600;line-height:1.35;margin:6px 0 4px;max-width:60ch;text-wrap:pretty}
+.opts{display:flex;flex-direction:column;gap:8px;margin-top:14px}
+.opt{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;padding:12px 14px;border:1px solid var(--rule-2);border-radius:var(--r);background:var(--sheet);cursor:pointer;font-size:16px;line-height:1.35}
+.opt:hover:not([disabled]){border-color:var(--ink)}
+.opt .bub{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--ink-2);display:grid;place-items:center;font-family:var(--mono);font-weight:600;font-size:14px;color:var(--ink-2)}
+.opt .mark{font-family:var(--mono);font-size:12px;font-weight:600}
+.opt.sel .bub{background:var(--ink);border-color:var(--ink);color:var(--sheet)}
+.opt.sel{border-color:var(--ink)}
+.opt.ok{border-color:var(--ok);background:var(--ok-soft)}
+.opt.ok .bub{background:var(--ok);border-color:var(--ok);color:var(--sheet)}
+.opt.ok .mark{color:var(--ok)}
+.opt.bad{border-color:var(--bad);background:var(--bad-soft)}
+.opt.bad .bub{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.opt.bad .mark{color:var(--bad)}
+.opt[disabled]{cursor:default}
+.feedback{margin-top:14px;padding:12px 14px;border-radius:var(--r);font-weight:600;display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.feedback.ok{background:var(--ok-soft);color:var(--ok)}
+.feedback.bad{background:var(--bad-soft);color:var(--bad)}
+.kbd{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+@media (hover:none){.kbd{display:none}}
+.setup label.lab{display:block;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);margin-bottom:8px}
+.toggle{display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px}
+.toggle input{width:18px;height:18px;accent-color:var(--accent)}
+
+/* exam */
+.examtop{position:sticky;top:calc(env(safe-area-inset-top,0px) + 92px);z-index:5;background:var(--paper);padding-block:8px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.timer{font-family:var(--mono);font-size:20px;font-weight:600;padding:4px 12px;border:1.5px solid var(--ink);border-radius:var(--r)}
+.timer.low{border-color:var(--accent);color:var(--accent)}
+.grid25{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:6px}
+.cell{aspect-ratio:1;max-width:100%;border-radius:50%;border:1.5px solid var(--rule-2);background:var(--sheet);font-family:var(--mono);font-size:12px;cursor:pointer;display:grid;place-items:center;color:var(--ink-2)}
+.cell.ans{background:var(--ink);border-color:var(--ink);color:var(--sheet)}
+.cell.cur{outline:2px solid var(--accent);outline-offset:2px}
+.cell.ok{background:var(--ok);border-color:var(--ok);color:var(--sheet)}
+.cell.bad{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.confirm{border:1px solid var(--gold);background:var(--gold-soft);border-radius:var(--r);padding:12px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.stampwrap{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.stamp{font-family:var(--display);font-stretch:75%;font-weight:800;font-size:44px;letter-spacing:.06em;padding:4px 18px;border:4px double currentColor;border-radius:8px;transform:rotate(-6deg);text-transform:uppercase;line-height:1.1}
+.stamp.ok{color:var(--ok)}.stamp.bad{color:var(--bad)}
+@media (prefers-reduced-motion:no-preference){.stamp{animation:thud .35s cubic-bezier(.2,1.6,.4,1) both}@keyframes thud{from{transform:rotate(-6deg) scale(1.8);opacity:0}to{transform:rotate(-6deg) scale(1);opacity:1}}}
+.score{font-family:var(--display);font-stretch:75%;font-weight:800;font-size:56px;line-height:1}
+.score small{font-size:22px;color:var(--ink-3)}
+.breakdown{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+@media (max-width:520px){.breakdown{gap:5px}.bd{padding:8px 2px}.bd b{font-size:15px}}
+.bd{border:1px solid var(--rule);border-radius:var(--r);padding:10px;text-align:center}
+.bd b{display:block;font-family:var(--mono);font-size:18px}
+.bd span{font-size:11px;color:var(--ink-3)}
+.review{display:flex;flex-direction:column;gap:0}
+.rv{padding:12px 0;border-top:1px solid var(--rule)}
+.rv .rq{font-weight:600}
+.rv{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 110px);border-radius:var(--r)}
+.rvn{display:flex;align-items:center;gap:8px}
+.rvn b{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:11px;color:var(--sheet)}
+.rvn b.ok{background:var(--ok)}.rvn b.bad{background:var(--bad)}
+@keyframes flash{from{background:var(--gold-soft)}to{background:transparent}}
+.rv.flash{animation:flash 1.6s ease-out}
+@media (prefers-reduced-motion:reduce){.rv.flash{animation:none;outline:2px solid var(--gold)}}
+button.cell.ok,button.cell.bad{cursor:pointer}
+.rv .ra{font-size:14px;margin-top:4px;display:flex;flex-direction:column;gap:2px}
+.rv .yours{color:var(--bad)} .rv .right{color:var(--ok)}
+
+/* bank */
+.search{width:100%;padding:11px 14px;border:1px solid var(--rule-2);border-radius:var(--r);background:var(--sheet);font:inherit;color:var(--ink)}
+.bank{display:flex;flex-direction:column}
+.bq{padding:14px 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:54px minmax(0,1fr);gap:10px}
+.bq .id{font-family:var(--mono);font-size:12px;color:var(--ink-3);padding-top:3px;display:flex;flex-direction:column;gap:6px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--rule-2)}
+.dot.m{background:var(--ok)}.dot.w{background:var(--gold)}
+.bq ol{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:3px;font-size:14px;color:var(--ink-2)}
+.bq li.c{color:var(--ok);font-weight:650}
+.bq li.c.hide{color:var(--ink-2);font-weight:400}
+.bq li b{font-family:var(--mono);font-weight:600;margin-right:6px}
+.reveal{background:none;border:0;padding:0;color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;margin-top:6px}
+.empty{padding:30px 0;text-align:center;color:var(--ink-3)}
+.foot{font-size:12px;color:var(--ink-3);border-top:1px solid var(--rule);padding-top:14px;margin-top:30px}
+.foot a{color:inherit}
+.danger{color:var(--bad)}
+details.why{margin-top:8px;border:1px solid var(--rule);border-radius:var(--r);background:var(--tint)}
+details.why summary{cursor:pointer;padding:7px 12px;font-size:13px;font-weight:650;color:var(--ink-2);list-style:none;display:flex;align-items:center;gap:8px}
+details.why summary::-webkit-details-marker{display:none}
+details.why summary::before{content:"";width:0;height:0;border-left:5px solid currentColor;border-top:4px solid transparent;border-bottom:4px solid transparent;transition:transform .15s}
+details.why[open] summary::before{transform:rotate(90deg)}
+details.why p{margin:0;padding:0 12px 10px 25px;font-size:14px;line-height:1.5;color:var(--ink);max-width:70ch}
+.feedback+details.why{background:var(--sheet)}
+.note{font-size:13px;color:var(--ink-2)}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brandrow">
+      <div class="brand"><b>Repaso <i>CCSE</i></b><span>Manual 2026 · 300 preguntas</span></div>
+      <button class="langbtn" id="langbtn" type="button" aria-label="Language">EN</button>
+    </div>
+    <nav class="tabs" id="tabs" role="tablist"></nav>
+  </div>
+</header>
+<main class="wrap" id="app"></main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+const EXPL = {
+1001:"La Constitución define la forma política del Estado español como monarquía parlamentaria: el rey es jefe del Estado, pero el poder político reside en el Parlamento elegido. España no es una república ni un Estado federal.",
+1002:"La Constitución de 1978 es la ley fundamental o «ley de leyes»: todo el ordenamiento jurídico se basa en ella y ninguna ley puede contradecirla.",
+1003:"La Constitución dice que la soberanía nacional reside en el pueblo español, del que emanan todos los poderes del Estado. Gobierno y Congreso ejercen poderes que derivan del pueblo.",
+1004:"El Instituto de las Mujeres es un organismo español que depende de un ministerio (hoy el de Igualdad). No es europeo ni una ONG.",
+1005:"Las sedes electrónicas están abiertas las 24 horas, todos los días: esa es su ventaja frente a las oficinas presenciales.",
+1006:"El castellano es la lengua oficial del Estado en todo el territorio. Donde hay lengua cooficial, ambas son oficiales. Portugal y Andorra no forman parte de España.",
+1007:"La Policía Foral de Navarra pertenece a la Comunidad Foral de Navarra (ámbito autonómico). La Guardia Civil es estatal y la Policía local es municipal.",
+1008:"El Cuerpo Nacional de Policía es estatal y actúa en toda España. La Policía Foral (Navarra) y los Mossos d'Esquadra (Cataluña) son autonómicos.",
+1009:"La separación de poderes clásica es ejecutivo (Gobierno), legislativo (Cortes Generales) y judicial (jueces y tribunales).",
+1010:"La bandera de España debe ondear en todos los edificios públicos, y las comunidades autónomas usan la suya junto a ella.",
+1011:"El rey es el jefe del Estado y su máxima representación. El presidente del Gobierno dirige el poder ejecutivo, pero no es jefe del Estado.",
+1012:"La sanidad es una de las competencias transferidas a las comunidades autónomas. El Estado coordina a través del Ministerio de Sanidad.",
+1013:"Adolfo Suárez (UCD) lideró la Transición, ganó las primeras elecciones democráticas en 1977 y fue el primer presidente de la democracia. Zapatero y Rajoy llegaron décadas después.",
+1014:"El Tribunal Constitucional interpreta la Constitución y es independiente de los demás poderes. El CGPJ es el órgano de gobierno de los jueces y el «Poder Constitucional» no existe.",
+1015:"Una función del rey es arbitrar y moderar el funcionamiento regular de las instituciones y actuar como mediador.",
+1016:"El Senado es la cámara de representación territorial, y parte de los senadores los designan las comunidades autónomas. El Congreso representa al conjunto del pueblo.",
+1017:"Para hacer trámites por internet hace falta una identidad digital que funciona como firma electrónica (DNI electrónico, certificado digital o Cl@ve). Tiene el mismo valor legal que la firma en papel.",
+1018:"Los españoles aprobaron la Constitución en referéndum el 6 de diciembre de 1978, con un 88 % de votos a favor.",
+1019:"El Estatuto de Autonomía es la norma institucional básica de cada comunidad: fija su nombre, su territorio, sus instituciones y sus competencias.",
+1020:"Las actividades e instalaciones culturales y deportivas públicas son competencia de los ayuntamientos, junto con el urbanismo, el agua o el alumbrado.",
+1021:"El Gobierno dirige la Administración civil y militar y la defensa del Estado. El rey tiene el mando supremo simbólico, pero la dirección es del Gobierno, a través del Ministerio de Defensa.",
+1022:"En Baleares el gobierno de cada isla corresponde a los consejos insulares. En Canarias son los cabildos.",
+1023:"Barcelona es la segunda ciudad más poblada de España, después de Madrid. Sevilla es la cuarta y Zaragoza la quinta.",
+1024:"Las Cortes Generales representan al pueblo español, que las elige en las elecciones generales.",
+1025:"Congreso y Senado forman las Cortes Generales, que son el poder legislativo: elaboran y aprueban las leyes.",
+1026:"La iniciativa legislativa popular permite presentar una proposición de ley si se reúnen al menos 500 000 firmas.",
+1027:"España tiene 17 comunidades autónomas, más 2 ciudades autónomas (Ceuta y Melilla).",
+1028:"La bandera de España tiene tres franjas horizontales: roja, amarilla y roja.",
+1029:"El Gobierno tiene su sede en Madrid, la capital, y su presidente reside en el Palacio de la Moncloa.",
+1030:"La bandera azul con 12 estrellas amarillas en círculo es la de la Unión Europea, a la que España pertenece desde 1986.",
+1031:"En las elecciones municipales se elige a los concejales del ayuntamiento, y entre ellos sale el alcalde. Diputados y senadores se eligen en las generales.",
+1032:"En el País Vasco el euskera (vasco) es cooficial con el castellano. El bable se habla en Asturias y el aragonés en Aragón, pero no son lenguas cooficiales.",
+1033:"La Constitución establece que todos los españoles tienen el deber de conocer el castellano, la lengua oficial del Estado, y el derecho a usarlo.",
+1034:"El aranés es cooficial en Cataluña y se habla en el Valle de Arán (Lérida).",
+1035:"Las instituciones autonómicas son la asamblea legislativa (parlamento autonómico), el consejo de gobierno y el presidente. El delegado del Gobierno representa al Estado, no a la comunidad.",
+1036:"El gallego es cooficial en Galicia. El aragonés y el murciano no son lenguas cooficiales en ninguna comunidad.",
+1037:"El Instituto Cervantes promueve la enseñanza del español y difunde la cultura en español en el mundo. El INE hace estadísticas y el INAP forma a funcionarios.",
+1038:"La Real Academia Española (RAE) se encarga de la normalización (normas) del castellano. El Instituto Cervantes y el Institut Ramon Llull se dedican a la difusión, no a la normalización.",
+1039:"La residencia oficial del presidente del Gobierno es el Palacio de la Moncloa. El rey vive en la Zarzuela, y el Palacio Real es su residencia oficial para actos.",
+1040:"Las Fuerzas Armadas son el Ejército de Tierra, el Ejército del Aire y la Armada. La Guardia Civil es un cuerpo de seguridad y la Policía Foral es autonómica.",
+1041:"El Gobierno lo forman el presidente, los vicepresidentes y los ministros. Alcaldes y concejales forman los ayuntamientos.",
+1042:"Según la Constitución, España es un Estado social y democrático de Derecho, con la forma política de monarquía parlamentaria.",
+1043:"PP es el Partido Popular. PIB es el producto interior bruto (un indicador económico) y UE es la Unión Europea.",
+1044:"La heredera de la Corona lleva el título de Princesa de Asturias. Hoy es la princesa Leonor, hija de Felipe VI.",
+1045:"Juan Carlos I, rey desde 1975, apoyó e impulsó el paso de la dictadura de Franco a la democracia.",
+1046:"La Constitución se aprobó en referéndum el 6 de diciembre de 1978, fecha que hoy es fiesta nacional.",
+1047:"Todas las comunidades autónomas tienen su propia bandera y deben usarla junto a la de España en sus edificios y actos oficiales.",
+1048:"El Defensor del Pueblo recibe las quejas de los ciudadanos sobre el mal funcionamiento de las administraciones públicas. Su intervención es gratuita.",
+1049:"Para una proposición de ley de iniciativa popular hacen falta como mínimo 500 000 firmas.",
+1050:"España es miembro del FMI, además de la ONU, la UE, la OTAN, el Consejo de Europa y el Banco Mundial. La CEI y la Unión Euroasiática agrupan a países de la antigua URSS.",
+1051:"Los tres niveles de la Administración son el central (Estado), el autonómico (comunidades) y el local (provincias y municipios).",
+1052:"El poder legislativo lo ejercen las Cortes Generales, es decir, los diputados (Congreso) y los senadores (Senado).",
+1053:"El rey vive en el Palacio de la Zarzuela. La Moncloa es del presidente del Gobierno, y La Moneda es el palacio presidencial de Chile.",
+1054:"Cortes Generales es el nombre oficial del Parlamento español. Congreso y Senado son sus dos cámaras.",
+1055:"ICEX, el Instituto de las Mujeres y la DGT dependen de ministerios del Gobierno de España.",
+1056:"En España pueden reinar tanto hombres como mujeres. La Corona es hereditaria y la próxima en reinar es una mujer, la princesa Leonor.",
+1057:"El Tribunal de Cuentas, como el Defensor del Pueblo, depende de las Cortes Generales. Así puede controlar las cuentas públicas con independencia del Gobierno.",
+1058:"El presidente del Congreso de los Diputados es la tercera autoridad del Estado, por delante del presidente del Senado.",
+1059:"En las Islas Baleares la lengua cooficial es el catalán.",
+1060:"Los valores superiores de la Constitución son libertad, justicia, igualdad y pluralismo político.",
+1061:"Una ley aprobada se desarrolla después con reglamentos y órdenes ministeriales que concretan cómo se aplica.",
+1062:"España tiene algo más de 49 millones de habitantes (dato de 2025) y es el cuarto país más poblado de la UE.",
+1063:"El Consejo de Estado es un órgano consultivo del Gobierno, igual que el Consejo Económico y Social. El Tribunal Constitucional es un órgano jurisdiccional, no consultivo.",
+1064:"El Gobierno dirige la política interior y exterior, la Administración civil y militar y la defensa del Estado.",
+1065:"El Defensor del Pueblo depende de las Cortes Generales: lo eligen el Congreso y el Senado para un mandato de cinco años.",
+1066:"El Instituto Vasco Etxepare difunde el euskera y la cultura vasca en el exterior.",
+1067:"Málaga es la sexta ciudad más poblada. El top 10 es Madrid, Barcelona, Valencia, Sevilla, Zaragoza, Málaga, Murcia, Palma, Las Palmas y Alicante.",
+1068:"Cualquier ciudadano con identidad digital (DNIe, certificado digital o Cl@ve) puede hacer trámites en línea.",
+1069:"Felipe VI es rey de España desde el 19 de junio de 2014. Juan Carlos I es su padre, que abdicó.",
+1070:"El Consejo General del Poder Judicial (CGPJ) es el órgano de gobierno de jueces y magistrados y garantiza su independencia.",
+1071:"Las Cortes Generales debaten y aprueban los Presupuestos Generales del Estado. El Gobierno los elabora y presenta, pero no los aprueba.",
+1072:"La Constitución es la ley fundamental de España, la norma de mayor rango.",
+1073:"Las Cortes Generales son dos cámaras: el Congreso de los Diputados y el Senado.",
+1074:"El poder legislativo (las Cortes Generales) elabora, debate y aprueba las leyes.",
+1075:"Las Fuerzas Armadas defienden la soberanía, la independencia y la integridad territorial de España. Las policías se ocupan de la seguridad ciudadana.",
+1076:"Las Fuerzas Armadas españolas participan en misiones de paz de la ONU desde 1989.",
+1077:"La Guardia Civil vigila puertos, aeropuertos, fronteras y costas, además del tráfico interurbano.",
+1078:"La Policía Nacional controla la entrada y salida del territorio de españoles y extranjeros, y también expide el pasaporte.",
+1079:"José María Aznar (PP) fue presidente del Gobierno de 1996 a 2004. Manuel Fraga fundó Alianza Popular y Yolanda Díaz ha sido vicepresidenta, pero ninguno fue presidente.",
+1080:"Los Mossos d'Esquadra son la policía autonómica de Cataluña. La Ertzaintza es la del País Vasco.",
+1081:"La Ertzaintza es la policía autonómica del País Vasco.",
+1082:"Felipe VI fue proclamado rey el 19 de junio de 2014, tras la abdicación de Juan Carlos I.",
+1083:"La Policía local regula el tráfico dentro de pueblos y ciudades. La Guardia Civil vigila el tráfico en las carreteras interurbanas.",
+1084:"Cualquier ciudadano, español o extranjero, puede acudir al Defensor del Pueblo, y es gratis.",
+1085:"Votar es un derecho, no una obligación: en España el voto no es obligatorio.",
+1086:"La Guardia Civil vigila el tráfico en las vías públicas interurbanas (carreteras).",
+1087:"La Agencia Tributaria (AEAT), que depende del Ministerio de Hacienda, recauda los impuestos. El Tribunal de Cuentas controla el gasto, pero no recauda.",
+1088:"Las leyes nacionales se publican en el Boletín Oficial del Estado (BOE). Las comunidades tienen sus propios boletines.",
+1089:"Los cabildos son el gobierno de cada isla en Canarias. Los consejos insulares son de Baleares.",
+1090:"En la sede electrónica se pueden pagar impuestos, presentar documentos o consultar expedientes. El DNI y el pasaporte se tramitan en persona en comisaría.",
+1091:"El 060 es el teléfono de información de la Administración General del Estado. El 091 es la Policía Nacional y el 010 suele ser información municipal.",
+1092:"Desde la Constitución de 1978 España se organiza en comunidades autónomas, provincias y municipios. No es un Estado federal.",
+1093:"España tiene un sistema pluripartidista: hay muchos partidos políticos a nivel nacional, autonómico y local.",
+1094:"La investidura del presidente del Gobierno es en el Congreso de los Diputados, que lo vota a propuesta del rey.",
+1095:"El rey tiene el mando supremo de las Fuerzas Armadas. La dirección efectiva corresponde al Gobierno, a través del Ministerio de Defensa.",
+1096:"El delegado del Gobierno representa al Estado en cada comunidad autónoma y coordina la Administración estatal en ella.",
+1097:"España tiene 50 provincias, más las ciudades autónomas de Ceuta y Melilla.",
+1098:"La enseñanza de las lenguas cooficiales es competencia de cada comunidad autónoma.",
+1099:"El poder ejecutivo corresponde al Gobierno. Congreso y Senado son el legislativo, y jueces y magistrados el judicial.",
+1100:"El Parlamento español (Cortes Generales) tiene dos cámaras: Congreso y Senado. Es un sistema bicameral.",
+1101:"El suministro de agua y el alumbrado público son competencias del ayuntamiento.",
+1102:"Nacionalidad, inmigración, emigración y extranjería son competencias exclusivas del Estado.",
+1103:"Ninguna mujer ha sido presidenta del Gobierno de España. Los 7 presidentes desde 1979 han sido hombres.",
+1104:"Las relaciones internacionales son competencia exclusiva del Estado.",
+1105:"El ayuntamiento está formado por el alcalde y los concejales, elegidos en las elecciones municipales.",
+1106:"El gobierno autonómico (consejo de gobierno) lo forman el presidente de la comunidad y los consejeros. Los ministros son del Gobierno de España.",
+1107:"El ayuntamiento es el órgano de gobierno del municipio. La diputación gobierna la provincia y el cabildo cada isla canaria.",
+1108:"Las provincias las gobiernan las diputaciones, excepto en Canarias (cabildos), Baleares (consejos insulares) y las comunidades de una sola provincia.",
+1109:"El Gobierno es el órgano superior del poder ejecutivo.",
+1110:"El español también se llama castellano. La Constitución usa la palabra «castellano».",
+1111:"En las elecciones europeas, cada cinco años, se elige a los eurodiputados del Parlamento Europeo.",
+1112:"Los españoles votan a partir de los 18 años, la mayoría de edad.",
+1113:"En las elecciones municipales pueden votar los residentes de la UE y de algunos países con acuerdos con España.",
+1114:"El Tribunal de Cuentas controla las finanzas y el presupuesto de las administraciones, y también la contabilidad de los partidos.",
+1115:"En las elecciones generales se elige a los diputados del Congreso y a los senadores.",
+1116:"El Congreso de los Diputados tiene 350 diputados, elegidos por provincias.",
+1117:"Provincias y municipios forman la Administración local.",
+1118:"Andalucía es la comunidad más poblada, con unos 8,6 millones de habitantes, seguida de Cataluña y Madrid.",
+1119:"Los sindicatos defienden y promueven los intereses de los trabajadores (artículos 7 y 28 de la Constitución).",
+1120:"El Congreso de los Diputados elige al presidente del Gobierno en la investidura. El rey propone el candidato, pero no lo elige.",
+2001:"Falso. España es un Estado aconfesional: la Constitución garantiza la libertad religiosa y nadie está obligado a practicar ninguna religión.",
+2002:"Falso. Quien obtiene la nacionalidad es español con plenos derechos y puede votar desde ese momento, sin esperar.",
+2003:"Verdadero. El artículo 15 reconoce el derecho a la vida y a la integridad física y moral, prohíbe la tortura y suprime la pena de muerte.",
+2004:"Verdadero. El artículo 6 exige que la estructura y el funcionamiento de los partidos políticos sean democráticos.",
+2005:"Falso. El artículo 16 dice que nadie puede ser obligado a declarar su ideología, religión o creencias.",
+2006:"Falso. El artículo 19 reconoce el derecho a entrar y salir libremente de España, y no puede limitarse por motivos políticos o ideológicos.",
+2007:"Verdadero. La enseñanza básica es obligatoria y gratuita, y su primera etapa es la Educación Primaria, de 6 a 12 años (artículo 27).",
+2008:"Verdadero. El artículo 47 reconoce el derecho a disfrutar de una vivienda digna y adecuada.",
+2009:"Falso. El domicilio es inviolable (artículo 18): la policía solo entra con autorización judicial, con permiso del titular o si se está cometiendo un delito.",
+2010:"Verdadero. El artículo 18 garantiza el secreto de las comunicaciones, salvo resolución judicial.",
+2011:"Verdadero. El artículo 22 reconoce el derecho de asociación. Solo se prohíben las asociaciones con fines ilegales.",
+2012:"Verdadero. El artículo 20 protege la libertad de cátedra: los profesores enseñan con libertad, respetando los demás derechos constitucionales.",
+2013:"Falso. La Constitución recoge derechos de los españoles y también de los residentes extranjeros.",
+2014:"Verdadero. El artículo 118 obliga a cumplir las sentencias y a colaborar con jueces y tribunales cuando lo pidan.",
+2015:"Verdadero. El artículo 18 limita el uso de la informática y el acceso de terceros a los datos personales, para proteger el honor y la intimidad.",
+2016:"Verdadero. El artículo 20 dice que el límite de estas libertades, incluida la de prensa, es el respeto al honor, la intimidad y la propia imagen.",
+2017:"Verdadero. El artículo 32 dice que la ley regula el matrimonio y las causas de separación y divorcio.",
+2018:"Falso. La sanidad pública es gratuita para todos con tarjeta sanitaria, no solo para los mayores de 65. Recuerda: «solo» suele indicar una afirmación falsa.",
+2019:"Verdadero. El artículo 14 establece la igualdad ante la ley sin discriminación por sexo.",
+2020:"Verdadero. La enseñanza básica tiene dos etapas: Primaria (6-12 años) y ESO (12-16 años).",
+2021:"Falso. Ninguna confesión tiene carácter estatal: España es aconfesional (artículo 16), aunque tiene una fuerte tradición católica.",
+2022:"Verdadero. La atención sanitaria pública es gratuita en el momento de usarla, con la tarjeta sanitaria.",
+2023:"Falso. La enseñanza básica es un derecho y una obligación para todos los niños de 6 a 16 años, españoles y extranjeros.",
+2024:"Verdadero. El artículo 22 reconoce el derecho de asociación.",
+2025:"Verdadero. Los sindicatos más representativos negocian con los empresarios y con el Gobierno y participan en el Consejo Económico y Social.",
+2026:"Verdadero. El artículo 28 reconoce el derecho a la huelga, manteniendo los servicios mínimos.",
+2027:"Falso. La libertad ideológica (artículo 16) está garantizada en todo el territorio. Afirmaciones con «solo» suelen ser falsas.",
+2028:"Falso. Es al revés: el artículo 41 garantiza la Seguridad Social pública especialmente para quien no tiene trabajo.",
+2029:"Verdadero. Es casi literal el artículo 45: derecho a un medio ambiente adecuado y deber de conservarlo.",
+2030:"Verdadero. El artículo 43 obliga a los poderes públicos a proteger la salud y fomentar la educación física y el deporte.",
+2031:"Verdadero. El artículo 27 dice que la enseñanza básica es obligatoria y gratuita.",
+2032:"Verdadero. El artículo 14 prohíbe la discriminación por nacimiento, raza, sexo, religión o cualquier otra condición o circunstancia personal o social.",
+2033:"Verdadero. El artículo 19 permite circular libremente por todo el territorio español.",
+2034:"Falso. Los jueces son independientes (artículo 117) y solo están sometidos a la ley, no a las indicaciones del Gobierno.",
+2035:"Verdadero. El artículo 30 obliga a ayudar en casos de grave riesgo, catástrofe o calamidad pública.",
+2036:"Verdadero. El artículo 19 reconoce el derecho a elegir libremente la residencia.",
+3001:"Cáceres y Badajoz son las dos provincias de Extremadura, cuya capital es Mérida.",
+3002:"La capital de la Comunidad Valenciana es Valencia. Alicante y Castellón son capitales de provincia.",
+3003:"Las Islas Baleares están en el mar Mediterráneo. Canarias está en el océano Atlántico.",
+3004:"La Meseta es la gran llanura del centro de la península, a más de 600 m de altura media, y el Sistema Central la divide en dos.",
+3005:"El Parque Nacional de Ordesa y Monte Perdido está en Aragón, en el Pirineo de Huesca.",
+3006:"Guadalajara y Cuenca son provincias de Castilla-La Mancha, junto con Albacete, Ciudad Real y Toledo.",
+3007:"Santiago de Compostela es la capital de Galicia.",
+3008:"Almería es una de las ocho provincias de Andalucía.",
+3009:"La capital de Galicia es Santiago de Compostela. A Coruña es capital de provincia y Vigo es la ciudad más poblada, pero ninguna es la capital autonómica.",
+3010:"El Júcar desemboca en el Mediterráneo, igual que el Ebro, el Segura y el Turia. El Tajo y el Duero van al Atlántico.",
+3011:"El Aneto está en los Pirineos y es el tercer pico más alto de España, después del Teide y el Mulhacén.",
+3012:"El País Vasco no tiene capital declarada, pero sus instituciones tienen la sede en Vitoria.",
+3013:"España se divide en 17 comunidades autónomas y 2 ciudades autónomas (Ceuta y Melilla).",
+3014:"El Parque Nacional de Aigüestortes i Estany de Sant Maurici está en Cataluña, en el Pirineo de Lérida.",
+3015:"Ceuta y Melilla son las dos ciudades autónomas en la costa norte de África.",
+3016:"Madrid tiene clima continental, el del centro peninsular: inviernos fríos y veranos muy calurosos. Canarias es subtropical y Valencia mediterránea.",
+3017:"El Guadalquivir desemboca en el Atlántico (golfo de Cádiz). El Júcar va al Mediterráneo y el Manzanares es un afluente que pasa por Madrid.",
+3018:"Burgos es una provincia de Castilla y León. Huesca es de Aragón y Guadalajara de Castilla-La Mancha.",
+3019:"Huesca es una de las tres provincias de Aragón, con Teruel y Zaragoza.",
+3020:"Canarias tiene clima subtropical: temperaturas suaves todo el año, con una media de 22 ºC.",
+3021:"El Ebro es el principal río que desemboca en el Mediterráneo. El Duero y el Tajo van al Atlántico.",
+3022:"España es uno de los países más montañosos de Europa, con una altitud media de 650 m.",
+3023:"El Parque Nacional de Monfragüe está en Cáceres (Extremadura).",
+3024:"Mérida es la capital de Extremadura. Cáceres y Badajoz son las capitales de sus dos provincias.",
+4001:"Don Quijote y su escudero Sancho Panza protagonizan la novela de Cervantes. Don Juan y Doña Inés son de otra tradición (el mito de Don Juan).",
+4002:"Margarita Salas fue una bioquímica española destacada por sus investigaciones en biología molecular. Almudena Grandes fue escritora y Montserrat Caballé soprano.",
+4003:"Federico García Lorca, figura central de la Generación del 27, escribió La casa de Bernarda Alba (1936).",
+4004:"Carmen Laforet escribió Nada, una novela sobre la posguerra. Ana María Matute escribió Los hijos muertos y María Dueñas El tiempo entre costuras.",
+4005:"Manuel de Falla compuso El amor brujo. Joaquín Rodrigo es el autor del Concierto de Aranjuez.",
+4006:"La noche del 23 al 24 de junio se encienden hogueras y se salta sobre ellas. Las uvas son de Nochevieja y los libros de Sant Jordi.",
+4007:"La guitarra es el instrumento típico del flamenco (Paco de Lucía). La gaita es típica de Galicia y Asturias.",
+4008:"Isabel Coixet es una directora de cine, una de las voces más singulares del cine europeo.",
+4009:"Rosalía es una de las cantantes españolas más famosas hoy, con gran proyección internacional. Lola Flores fue una cantaora de otra época.",
+4010:"La Mezquita de Córdoba (siglos VIII-XIII) es Patrimonio de la Humanidad desde 1984.",
+4011:"La Alhambra y el Generalife están en Granada. Son Patrimonio de la Humanidad desde 1984.",
+4012:"La directora Pilar Miró destacó por su mirada crítica y por modernizar el cine nacional. Sara Baras es bailaora y Penélope Cruz actriz.",
+4013:"Irene Vallejo escribió El infinito en un junco, un ensayo sobre la historia del libro. El tiempo entre costuras es de María Dueñas y El camino de Delibes.",
+4014:"El CSIC es la mayor institución pública de investigación de España y la cuarta de Europa. La RAE se ocupa de la lengua y la SGAE de los derechos de autor.",
+4015:"Paco de Lucía fue un compositor y guitarrista de flamenco de fama mundial.",
+4016:"El 24 de diciembre es Nochebuena: se cena en familia.",
+4017:"Juan Mari Arzak es un famoso cocinero vasco.",
+4018:"Clara Campoamor, de la Generación de 1914, defendió los derechos de la mujer y el voto femenino.",
+4019:"En Navidad se cantan villancicos.",
+4020:"La Liga y la Copa del Rey son las grandes competiciones de fútbol (y también de baloncesto).",
+4021:"Vicente Aleixandre, de la Generación del 27, ganó el Nobel de Literatura en 1977.",
+4022:"Los sanfermines empiezan en julio en Pamplona. El 7 de julio es el día de San Fermín, con los encierros de toros.",
+4023:"Teresa Perales (natación) y Daniel Molina (triatlón) son campeones paralímpicos. Destacaron en París 2024.",
+4024:"En Nochevieja se toman las 12 uvas, una con cada campanada de medianoche.",
+4025:"Maruja Mallo pintó La verbena, que está en el Museo Reina Sofía. Carmen Maura y Clara Lago son actrices.",
+4026:"El Guernica de Picasso está en el Museo Reina Sofía de Madrid, no en el Prado.",
+4027:"Mercè Rodoreda escribió en catalán (La plaça del Diamant). Almudena Grandes y Ana María Matute escribieron en castellano.",
+4028:"En la España medieval convivieron la cultura cristiana, la judía y la musulmana. Toledo es la «ciudad de las tres culturas».",
+4029:"El 6 de diciembre es el Día de la Constitución, aniversario del referéndum de 1978.",
+4030:"Córdoba fue el gran centro cultural y científico de Al-Ándalus, donde se estudiaba medicina, filosofía, matemáticas y astronomía.",
+4031:"El Museo Guggenheim está en Bilbao (País Vasco).",
+4032:"El Premio Cervantes reconoce la obra completa de un escritor en español. Es el «Nobel de las letras hispanas».",
+4033:"Los Premios Goya, de la Academia de Cine, premian a los mejores profesionales y películas del cine español.",
+4034:"Los Premios Princesa de Asturias promueven los valores científicos, culturales y humanísticos a nivel internacional.",
+4035:"El fútbol es muy popular en España, con la Liga y la Copa del Rey.",
+4036:"Carlos Alcaraz es tenista, como Rafael Nadal. Pau Gasol juega al baloncesto y Carlos Sainz es piloto de automovilismo.",
+5001:"Los extranjeros necesitan la Tarjeta de Identidad de Extranjero (TIE) para residir legalmente. El DNI es solo para españoles.",
+5002:"El certificado de empadronamiento demuestra dónde reside una persona y lo expide el ayuntamiento.",
+5003:"Desde el 1 de mayo de 2021 el registro electrónico individual sustituye progresivamente al libro de familia en papel.",
+5004:"El carné de conducir coches se obtiene desde los 18 años.",
+5005:"La Dirección General de Tráfico (DGT) examina a los aspirantes y expide el carné de conducir.",
+5006:"Hay que aprobar un examen teórico y otro práctico, y presentar un informe de aptitud psicofísica.",
+5007:"El libro de familia se tramitaba en el Registro Civil, que depende del Ministerio de Justicia.",
+5008:"Canal Sur es la televisión pública autonómica de Andalucía. Telecinco (Mediaset) y Nova (Atresmedia) son privadas.",
+5009:"El permiso por nacimiento o adopción es de 19 semanas para la madre y 19 para el padre.",
+5010:"El límite general de alcohol para conductores es 0,5 g/l en sangre.",
+5011:"Lo más habitual es vivir en un piso dentro de un edificio de viviendas.",
+5012:"Andalucía (junto con Castilla-La Mancha) es famosa por la denominación de origen de su aceite de oliva.",
+5013:"La ITV (Inspección Técnica de Vehículos) es la revisión obligatoria de los coches. El IBI es un impuesto sobre inmuebles y la ITE es para edificios.",
+5014:"La tapa es el pequeño aperitivo que se toma con la bebida. También existen el pincho, la banderilla y la ración.",
+5015:"La tarjeta sanitaria se tramita en el centro de salud que corresponde al domicilio.",
+5016:"Una familia numerosa tiene tres hijos o más.",
+5017:"En España se permite el matrimonio entre personas del mismo sexo y de diferente sexo.",
+5018:"Los perros se inscriben en el registro o censo municipal de animales del ayuntamiento, con su microchip.",
+5019:"La tortilla española lleva huevos, patatas y, a menudo, cebolla.",
+5020:"El gazpacho (sopa fría de tomate, pepino, pimiento y ajo) es un plato español conocido internacionalmente. La pizza y la pasta son italianas.",
+5021:"La 1 es un canal público de RTVE. Telecinco y Antena 3 son privados.",
+5022:"Una norma de la comunidad de vecinos es no molestar con ruidos, sobre todo desde las 22:00. Las otras opciones no son normas de convivencia.",
+5023:"El arroz es el ingrediente principal de la paella, con azafrán, verduras y pollo o marisco.",
+5024:"La sidra es típica de Asturias, que tiene denominación de origen propia.",
+5025:"Normalmente el primero es el del padre, pero los padres pueden elegir que el primero sea el de la madre.",
+5026:"La Fiesta Nacional de España es el 12 de octubre. El 6 de diciembre es el Día de la Constitución y el 15 de agosto la Asunción.",
+5027:"La mayoría de las tiendas cierran los domingos. Los sábados abren por la mañana.",
+5028:"El pasaporte, igual que el DNI y la TIE, se tramita en persona en una comisaría de policía.",
+5029:"El Ministerio de Igualdad lucha contra la discriminación y la violencia de género.",
+5030:"Cataluña es conocida por sus cavas, el vino espumoso con denominación de origen.",
+5031:"Para recibir atención médica en la sanidad pública hace falta la tarjeta sanitaria.",
+5032:"Canarias tiene una hora menos que la península: cuando son las 12:00 en Madrid, son las 11:00 en Canarias.",
+5033:"Para entrar en la universidad con el Bachillerato se aprueba la Prueba de Acceso a la Universidad (PAU). Selectividad era su nombre antiguo.",
+5034:"España importa petróleo y sus derivados. Aceite de oliva y medicamentos los exporta.",
+5035:"Se pagan impuestos directos (como el IRPF, sobre la renta) e indirectos (como el IVA, sobre el consumo).",
+5036:"Los mayores de 25 años sin Bachillerato pueden hacer una prueba de acceso especial a la universidad, por ejemplo en los CEPA.",
+5037:"«No pisar el césped, ni arrancar flores» es una norma de parques, jardines y zonas de recreo.",
+5038:"El Bachillerato dura dos cursos (de los 16 a los 18 años) y no es obligatorio.",
+5039:"El IVA es un impuesto indirecto porque grava el consumo.",
+5040:"Al empezar a trabajar se recibe el número de la Seguridad Social, que da la Tesorería General.",
+5041:"Los colegios públicos son gratuitos (salvo libros y material) y laicos. Tienen plazas limitadas por normativa, no por decisión propia.",
+5042:"Algeciras es uno de los principales puertos de España, con Barcelona, Las Palmas, Bilbao, Valencia y Vigo.",
+5043:"Un colegio concertado es privado pero recibe subvenciones de la Administración pública.",
+5044:"España exporta sobre todo a la Unión Europea: coches, frutas, vino, aceite, calzado y medicamentos.",
+5045:"Las bibliotecas públicas son de acceso gratuito para todos.",
+5046:"El calzado está entre los productos que España exporta. Gas y ropa los importa.",
+5047:"Los Centros de Educación de Personas Adultas (CEPA) permiten a los mayores de 18 años obtener el título de ESO.",
+5048:"La FP puede ser Básica, de Grado Medio o de Grado Superior. No es obligatoria ni solo para mayores de 25.",
+5049:"El médico de familia y el pediatra atienden en el centro de salud (atención primaria). El hospital es para atención especializada y urgencias.",
+5050:"La tarjeta sanitaria europea vale dos años.",
+5051:"Normalmente se cena entre las 21:00 y las 22:00.",
+5052:"El 112 es el número gratuito para cualquier emergencia (sanitaria, incendio, rescate, seguridad) en toda la UE.",
+5053:"El País es un periódico nacional. El Diario Vasco y La Voz de Galicia son regionales.",
+5054:"En el estanco se venden tabaco y sellos. El quiosco vende prensa y la farmacia medicinas.",
+5055:"El 016, para víctimas de violencia de género, funciona las 24 horas, los 365 días del año.",
+5056:"La ONCE (Organización Nacional de Ciegos Españoles) trabaja por la integración de las personas con discapacidad visual.",
+5057:"El Camino de Santiago, ruta de peregrinación hacia Santiago de Compostela, es Patrimonio de la Humanidad.",
+5058:"El Canal 24 horas de RTVE emite noticias de forma continua. Teledeporte es de deportes y La 1 es generalista.",
+5059:"El 016 es el teléfono gratuito para víctimas de violencia de género, y no deja rastro en la factura. El 112 es para emergencias.",
+5060:"La red de trenes tiene Cercanías, Media Distancia y Larga Distancia.",
+5061:"No se puede fumar en la puerta de colegios ni de hospitales.",
+5062:"Al terminar un ciclo de Grado Medio de FP se obtiene el título de Técnico. El de Grado Superior da el de Técnico Superior.",
+5063:"Tras presentar la tesis doctoral se obtiene el título de Doctor.",
+5064:"Las medicinas, con o sin receta, se compran en la farmacia.",
+5065:"«No pisar el césped» es una norma de parques. Las otras dos son normas del transporte público.",
+5066:"El seguro del coche es obligatorio, junto con la matrícula, la ITV y los impuestos.",
+5067:"El aeropuerto Adolfo Suárez Madrid-Barajas está en Madrid. El de Barcelona se llama Josep Tarradellas Barcelona-El Prat.",
+5068:"El cinturón de seguridad es obligatorio para todos los ocupantes del coche, en todos los asientos.",
+5069:"El límite en autopista y autovía es 120 km/h. En carretera convencional es 90 km/h.",
+5070:"Ceder el asiento a personas mayores, con movilidad reducida o embarazadas es una norma del transporte público.",
+5071:"El taxi está libre cuando lleva la luz verde encendida o el cartel de «Libre».",
+5072:"Los perros deben llevar microchip, estar vacunados y tener seguro de responsabilidad civil, y hay que recoger sus excrementos.",
+5073:"China está fuera de la UE y del espacio Schengen, así que hace falta pasaporte. Para Italia y Alemania basta el DNI.",
+5074:"La edad mínima para trabajar en España es 16 años.",
+5075:"El sector servicios (terciario) es el de mayor peso, seguido de industria y construcción, y por último agricultura.",
+5076:"España destaca en innovación en energías renovables, biotecnología y farmacia.",
+5077:"El Estatuto de los Trabajadores es la ley laboral más importante. La Constitución es la ley fundamental, pero no es una ley laboral.",
+5078:"Las farmacias tienen un servicio de guardia para atender las 24 horas del día.",
+5079:"La educación infantil tiene dos ciclos (0-3 y 3-6 años) y no es obligatoria.",
+5080:"El curso escolar empieza en septiembre y termina en junio.",
+5081:"Las Escuelas Oficiales de Idiomas son públicas y se puede estudiar en ellas desde los 16 años.",
+5082:"El informe de vida laboral recoge los años cotizados a la Seguridad Social y las empresas en las que se ha trabajado.",
+5083:"Los convenios colectivos son acuerdos entre la empresa y los representantes de los trabajadores sobre las condiciones laborales.",
+5084:"España destaca en el turismo: 93,8 millones de turistas internacionales en 2023 y uno de los países más visitados del mundo."
+};
+
+const FACTS = {
+1: [
+ {h:"La Constitución y el Estado", i:[
+  "Aprobada en **referéndum el 6 de diciembre de 1978** (88 % a favor). Es la «ley de leyes» o ley fundamental.",
+  "España es un **Estado social y democrático de Derecho**; forma política: **monarquía parlamentaria**.",
+  "Valores superiores: **libertad, justicia, igualdad y pluralismo político**.",
+  "La **soberanía nacional reside en el pueblo español**, del que emanan todos los poderes.",
+  "Patria común e indivisible; reconoce la autonomía de nacionalidades y regiones y la solidaridad entre ellas.",
+  "Bandera: tres franjas **roja, amarilla y roja**. Cada comunidad usa la suya **junto a la española** en edificios públicos y actos oficiales.",
+  "Capital: **Madrid desde mediados del siglo XVI**; antes lo fueron **Valladolid y Toledo**."]},
+ {h:"Lenguas", i:[
+  "El **castellano** es oficial en toda España: todos tienen el **derecho de usarlo y el deber de conocerlo**.",
+  "Cooficiales: **gallego** (Galicia), **vasco o euskera** (País Vasco y Navarra), **catalán y aranés** (Cataluña), **catalán** (Baleares), **valenciano** (C. Valenciana).",
+  "La enseñanza de las lenguas cooficiales es competencia de las **comunidades autónomas**.",
+  "Normalización: **RAE** (castellano), **Institut d'Estudis Catalans**, **Acadèmia Valenciana de la Llengua**, **Real Academia Galega**, **Euskaltzaindia**.",
+  "Difusión: **Instituto Cervantes** (español), **Institut Ramon Llull** (catalán), **Instituto Vasco Etxepare** (euskera)."]},
+ {h:"La Corona", i:[
+  "El **rey es el jefe del Estado**: máxima representación, **arbitra y modera** el funcionamiento de las instituciones.",
+  "Sanciona y ordena publicar las leyes, nombra a los miembros del Gobierno (a propuesta del presidente), **convoca elecciones** y tiene el **mando supremo de las Fuerzas Armadas**.",
+  "Corona **hereditaria**; pueden reinar hombres y mujeres. El heredero es **Príncipe o Princesa de Asturias**.",
+  "Residencia oficial: **Palacio Real**; vive en el **Palacio de la Zarzuela**.",
+  "**Juan Carlos I** reinó del 22-11-1975 al 18-6-2014 e impulsó la democracia. **Felipe VI** fue proclamado el **19 de junio de 2014**."]},
+ {h:"España en el mundo", i:[
+  "Entró en la **CEE (hoy UE) el 1 de enero de 1986**. Presidió el Consejo de la UE en **1989, 1995, 2002, 2010 y 2023**.",
+  "Bandera de la UE: **azul con 12 estrellas amarillas** en círculo.",
+  "Miembro de **ONU, Consejo de Europa, OTAN, FMI y Banco Mundial**.",
+  "**Comunidad Iberoamericana**: 22 países (19 de América Latina + España, Portugal y Andorra). Organismo: **Secretaría General Iberoamericana**."]},
+ {h:"Los tres poderes", i:[
+  "**Ejecutivo — Gobierno**: presidente, vicepresidentes y ministros. Dirige la política interior y exterior y la defensa. Sede en Madrid; el presidente vive en el **Palacio de la Moncloa**. Juran ante la Constitución en presencia del rey.",
+  "**Legislativo — Cortes Generales**: **Congreso** (350 diputados, elegidos por provincias) y **Senado** (hoy 265 senadores; **cámara de representación territorial**). Aprueban leyes y **Presupuestos** y controlan al Gobierno.",
+  "En el Congreso se hace la **investidura**, la **cuestión de confianza** y la **moción de censura**. El **presidente del Congreso es la tercera autoridad** del Estado.",
+  "**Judicial**: jueces y magistrados; principio de **unidad jurisdiccional**. El **CGPJ** es el órgano de gobierno de los jueces. El **Tribunal Constitucional** interpreta la Constitución."]},
+ {h:"Tipos de leyes", i:[
+  "**Ley orgánica**: derechos fundamentales, estatutos de autonomía.",
+  "**Decreto ley**: la dicta el Gobierno en casos de **urgencia**.",
+  "**Ley ordinaria**: se aprueba por **mayoría simple**.",
+  "**Proyecto de ley** si la propone el Gobierno; **proposición de ley** si la proponen Congreso, Senado, una comunidad autónoma o **500 000 ciudadanos**.",
+  "Las leyes se desarrollan con **reglamentos y órdenes ministeriales** y se publican en el **BOE**."]},
+ {h:"Religión, Fuerzas Armadas y seguridad", i:[
+  "Estado **aconfesional**: ninguna religión oficial, libertad religiosa, fuerte tradición católica.",
+  "**Fuerzas Armadas** (Ejército de Tierra, Ejército del Aire y Armada): defienden la soberanía, la independencia, la **integridad territorial** y el orden constitucional. Máxima autoridad el rey; dirección del **Ministerio de Defensa**. En misiones de paz de la **ONU desde 1989**.",
+  "**Policía Nacional**: DNI, pasaporte, extranjería (TIE, permisos), control de entradas y salidas.",
+  "**Guardia Civil**: tráfico interurbano, puertos, aeropuertos, fronteras y costas. Ambas dependen del **ministro del Interior**.",
+  "Autonómicas: **Ertzaintza** (País Vasco), **Mossos d'Esquadra** (Cataluña), **Policía Foral de Navarra**, **Policía Canaria**.",
+  "**Policía local**: tráfico urbano, protección de autoridades locales, auxilio en accidentes."]},
+ {h:"Organismos", i:[
+  "Órganos consultivos del Gobierno: **Consejo de Estado** y **Consejo Económico y Social**.",
+  "Dependen de ministerios: AEMET, Agencia Tributaria, DGT, ICEX, Banco de España, Instituto Cervantes, **Instituto de las Mujeres**, INE, Patrimonio Nacional, Turespaña.",
+  "**Defensor del Pueblo**: elegido por Congreso y Senado para **5 años**; independiente; su intervención es **gratuita**; puede acudir **cualquier ciudadano, español o extranjero**.",
+  "**Tribunal de Cuentas**: controla las cuentas de las administraciones y de los **partidos políticos**. Él y el Defensor del Pueblo dependen de las **Cortes Generales**.",
+  "**Agencia Tributaria** (Ministerio de Hacienda): recauda los impuestos."]},
+ {h:"Organización territorial", i:[
+  "Tres niveles: **central, autonómica y local** (provincias y municipios).",
+  "Competencias exclusivas del Estado: **nacionalidad, extranjería, inmigración, relaciones internacionales y justicia**.",
+  "**17 comunidades y 2 ciudades autónomas** (Ceuta y Melilla). Su ley básica es el **Estatuto de Autonomía**. **Sanidad y educación** son competencias transferidas.",
+  "Instituciones autonómicas: **asamblea legislativa**, **consejo de gobierno** y **presidente**. El Estado está representado por el **delegado del Gobierno**.",
+  "**50 provincias**. Gobierno provincial: **Diputación**; en Canarias **cabildos**, en Baleares **consejos insulares**; las uniprovinciales no tienen diputación.",
+  "**8132 municipios**. El **ayuntamiento** (alcalde y concejales) gestiona patrimonio histórico, medio ambiente, urbanismo, **agua y alumbrado**, instalaciones **culturales y deportivas**."]},
+ {h:"Administración electrónica", i:[
+  "Teléfono **060** de información y **Portal de la Administración Electrónica (PAe)**.",
+  "Cada organismo tiene su **sede electrónica**. Los trámites en línea están disponibles **a cualquier hora**.",
+  "Hace falta identidad digital: **DNI electrónico, certificado digital o Cl@ve**. La **firma electrónica** vale lo mismo que la firma en papel."]},
+ {h:"Población", i:[
+  "**Cuarto** país más poblado de la UE (tras Alemania, Francia e Italia): **más de 49 millones** (2025).",
+  "**Segundo** más extenso de la UE: **505 944 km²**; 96 hab./km².",
+  "Ciudades más pobladas: **Madrid, Barcelona, Valencia, Sevilla, Zaragoza, Málaga, Murcia, Palma, Las Palmas de Gran Canaria y Alicante**.",
+  "Comunidad más poblada: **Andalucía** (8,6 M), después Cataluña y Madrid. La menos: **La Rioja**."]},
+ {h:"Participación ciudadana", i:[
+  "Sufragio **universal, libre, igual, directo y secreto**; votan los españoles **mayores de 18 años**.",
+  "En las **municipales** también votan residentes de la **UE** y de países con acuerdo.",
+  "El **rey convoca** las elecciones. Generales, autonómicas y municipales: **cada 4 años**. Europeas: **cada 5 años**.",
+  "Sistema **pluripartidista**.",
+  "Presidentes: **Adolfo Suárez** (UCD, el primero en democracia), Leopoldo Calvo-Sotelo (UCD), **Felipe González** (PSOE, 1982-1996), José María Aznar (PP), José Luis Rodríguez Zapatero (PSOE), Mariano Rajoy (PP), **Pedro Sánchez** (PSOE, desde 2018).",
+  "Art. 22: derecho de **asociación** (inscripción en un registro). Partidos (art. 6), **sindicatos** (arts. 7 y 28), consumidores (art. 51), organizaciones profesionales (art. 52)."]}
+],
+2: [
+ {h:"Artículos clave de la Constitución", i:[
+  "**Art. 6** — Partidos políticos: expresan el pluralismo; creación libre; estructura **democrática**.",
+  "**Art. 10** — Los derechos se interpretan según la **Declaración Universal de los Derechos Humanos**.",
+  "**Art. 12** — Mayoría de edad a los **18 años**.",
+  "**Art. 14** — Igualdad ante la ley, sin discriminación por nacimiento, raza, sexo, religión u otra condición.",
+  "**Art. 15** — Derecho a la vida y a la integridad. **Abolida la pena de muerte**, prohibida la tortura.",
+  "**Art. 16** — Libertad ideológica y religiosa; **nadie está obligado a declarar** su ideología o religión; Estado aconfesional.",
+  "**Art. 18** — Honor e intimidad. **Domicilio inviolable**: la policía solo entra con **orden judicial** o en caso de delito flagrante. Secreto de las comunicaciones salvo resolución judicial.",
+  "**Art. 19** — Libertad para elegir residencia y circular, entrar y salir de España.",
+  "**Art. 20** — Libertad de expresión, creación, cátedra e información veraz. **Sin censura previa**; límite: honor, intimidad, propia imagen y protección de la infancia.",
+  "**Art. 22** — Derecho de asociación; prohibidas las asociaciones con fines ilegales.",
+  "**Art. 23** — Participar en asuntos públicos; votan los **mayores de 18** no privados del derecho por sentencia.",
+  "**Art. 25** — Solo hay condena por acciones u omisiones que eran delito en ese momento. Las penas de cárcel buscan la **reeducación y reinserción**.",
+  "**Art. 27** — Derecho a la educación. Enseñanza básica **obligatoria y gratuita**: Primaria (6-12) y ESO (12-16).",
+  "**Art. 28** — Libertad sindical y **derecho a huelga**, con **servicios mínimos**.",
+  "**Art. 30** — Derecho y deber de **defender España**; deber de ayudar en catástrofes.",
+  "**Art. 31** — Todos pagan impuestos **según su capacidad económica**.",
+  "**Art. 32** — Matrimonio regulado por ley; edad mínima **16 años**.",
+  "**Art. 37** — **Negociación colectiva** y cumplimiento de los convenios.",
+  "**Art. 41** — **Seguridad Social pública** para todos, especialmente en desempleo.",
+  "**Art. 43** — Protección de la **salud**, educación sanitaria y deporte.",
+  "**Art. 45** — Derecho a un **medio ambiente** adecuado y **deber de conservarlo**.",
+  "**Art. 47** — Derecho a una **vivienda digna**.",
+  "**Art. 48** — Participación de los **jóvenes**.",
+  "**Art. 51** — Protección de **consumidores y usuarios**.",
+  "**Art. 54** — **Defensor del Pueblo**, alto comisionado de las Cortes.",
+  "**Art. 117** — La justicia emana del pueblo; la administran jueces **independientes**.",
+  "**Art. 118** — Obligación de **cumplir las sentencias** y colaborar con jueces y tribunales.",
+  "**Art. 119** — Justicia **gratuita** para quien no tenga recursos."]},
+ {h:"Pista para Verdadero / Falso", i:[
+  "Las afirmaciones con «solo», «nunca» o «únicamente» suelen ser **falsas** (p. ej. sanidad gratuita «solo para mayores de 65»).",
+  "Los derechos se aplican a españoles **y a residentes extranjeros** dentro y fuera de España."]}
+],
+3: [
+ {h:"Situación y extensión", i:[
+  "Sur de Europa. Fronteras con **Andorra, Francia, Portugal y Marruecos**.",
+  "Cuarto país más grande de Europa: **505 944 km²**. Altitud media de **650 m**: uno de los más montañosos.",
+  "Formada por la mayor parte de la península ibérica, **Baleares** (Mediterráneo), **Canarias** (Atlántico) y **Ceuta y Melilla** (norte de África)."]},
+ {h:"Ríos y relieve", i:[
+  "Al **Atlántico**: **Miño, Duero, Tajo, Guadiana y Guadalquivir**.",
+  "Al **Mediterráneo**: **Ebro, Júcar, Segura y Turia**.",
+  "**Meseta** central (más de 600 m), dividida por el **Sistema Central**.",
+  "Picos: **Teide** (Tenerife, volcán, el más alto), **Mulhacén** (Sierra Nevada, 2.º), **Aneto** (Pirineos, 3.º)."]},
+ {h:"Parques nacionales", i:[
+  "Primera **Ley de Parques Nacionales en 1916**. Hay **16 parques nacionales** (Red de Parques Nacionales).",
+  "Galicia: Islas Atlánticas · Asturias/Cantabria/Castilla y León: **Picos de Europa** · Aragón: **Ordesa y Monte Perdido** · Cataluña: Aigüestortes · Extremadura: **Monfragüe** · Madrid: Sierra de Guadarrama · Castilla-La Mancha: Cabañeros, **Tablas de Daimiel** · Andalucía: **Doñana**, Sierra Nevada, Sierra de las Nieves · Baleares: Cabrera · Canarias: Caldera de Taburiente, **Teide**, **Timanfaya**, Garajonay."]},
+ {h:"Clima", i:[
+  "Más de **3000 horas de sol** al año.",
+  "**Oceánico** (norte, Cantábrico): suave y muy lluvioso.",
+  "**Mediterráneo** (costa este y sur): inviernos suaves, veranos calurosos, poca lluvia.",
+  "**Continental** (centro): extremos, inviernos fríos, veranos muy calurosos.",
+  "**Subtropical** (Canarias): suave todo el año, media de **22 ºC**."]},
+ {h:"Capitales de las comunidades autónomas", i:[
+  "Andalucía: **Sevilla** · Aragón: **Zaragoza** · Asturias: **Oviedo** · Baleares: **Palma** · Cantabria: **Santander** · Castilla-La Mancha: **Toledo** · Cataluña: **Barcelona**.",
+  "Canarias: capitalidad **compartida** entre Las Palmas de Gran Canaria y Santa Cruz de Tenerife.",
+  "Castilla y León: **sin capital oficial**; las instituciones están en **Valladolid**.",
+  "C. Valenciana: **Valencia** · Extremadura: **Mérida** · Galicia: **Santiago de Compostela** · La Rioja: **Logroño** · Madrid · Murcia · Navarra: **Pamplona**.",
+  "País Vasco: **sin capital declarada**; sede de las instituciones en **Vitoria**.",
+  "Provincias de Galicia: A Coruña, Lugo, Ourense, Pontevedra. País Vasco: Álava, Guipúzcoa, Vizcaya. Andalucía tiene **8 provincias**."]}
+],
+4: [
+ {h:"Literatura", i:[
+  "Dos grandes épocas: **Siglo de Oro** (s. XVI-XVII) y **Edad de Plata** (primera mitad del s. XX).",
+  "**Miguel de Cervantes** (1547-1616), de **Alcalá de Henares**: *Don Quijote de la Mancha*, la primera novela moderna (Quijote y Sancho Panza).",
+  "*Cantar de Mio Cid* (s. XIII): **Rodrigo Díaz de Vivar**. **Don Juan** aparece en *El burlador de Sevilla* de **Tirso de Molina** (1630).",
+  "Teatro: **Lope de Vega** (*Fuenteovejuna*), **Calderón de la Barca** (*La vida es sueño*). Picaresca: *Lazarillo de Tormes*. Mística: Santa Teresa de Jesús, San Juan de la Cruz. Poesía: Garcilaso, Góngora, Quevedo.",
+  "Generación del 98: **Machado, Valle-Inclán, Unamuno**. Del 14: **Ortega y Gasset**, **Clara Campoamor**. Del 27: **Federico García Lorca** (*La casa de Bernarda Alba*), Alberti, Miguel Hernández, Aleixandre.",
+  "Posguerra: **Cela** (*La colmena*), **Carmen Laforet** (*Nada*), Ana María Matute, **Delibes** (*El camino*, *Los santos inocentes*).",
+  "Otras lenguas: **Rosalía de Castro** (*Follas novas*, gallego), **Bernardo Atxaga** (*Obabakoak*, euskera), **Mercè Rodoreda** (*La plaça del Diamant*, catalán).",
+  "Actual: Eduardo Mendoza, Muñoz Molina, Javier Marías, **Ruiz Zafón** (*La sombra del viento*), María Dueñas (*El tiempo entre costuras*), Almudena Grandes, **Javier Cercas** (*Soldados de Salamina*), **Fernando Aramburu** (*Patria*, sobre ETA), **Irene Vallejo** (*El infinito en un junco*), Sara Mesa."]},
+ {h:"Música, cine y escena", i:[
+  "**Manuel de Falla** (*El amor brujo*), **Joaquín Rodrigo** (*Concierto de Aranjuez*).",
+  "Líricos: Montserrat Caballé, Ainhoa Arteta, Alfredo Kraus, Josep Carreras. Canción: Serrat, Alejandro Sanz, Rosalía, Sabina (movida madrileña).",
+  "Flamenco: **Lola Flores**, **Camarón**, **Paco de Lucía** (guitarra), Carmen Amaya y **Sara Baras** (baile).",
+  "Cine: **Luis Buñuel** (surrealismo), Saura, **José Luis Garci** (primer Óscar, *Volver a empezar*, 1983), Berlanga, **Almodóvar**, Amenábar, Isabel Coixet, Carla Simón (*Alcarràs*).",
+  "Óscar de interpretación: **Javier Bardem** y **Penélope Cruz**.",
+  "**Teatro de la Zarzuela** (ópera y danza), Teatro María Guerrero (Centro Dramático Nacional), Teatro de la Comedia (Teatro Clásico)."]},
+ {h:"Patrimonio y arte", i:[
+  "**49 bienes** Patrimonio de la Humanidad: **tercer país** del mundo, tras Italia y China.",
+  "Primeros (1984): **Alhambra** (Granada), **Catedral de Burgos**, **Mezquita de Córdoba**, **El Escorial**, obras de **Gaudí** (Parque Güell).",
+  "Después: Altamira, **Acueducto de Segovia**, Mérida, Sagrada Familia, **Camino de Santiago**.",
+  "**Patrimonio Nacional** cuida los bienes del Estado. Museos: **Prado**, **Reina Sofía**, Thyssen (Madrid), Picasso (Barcelona), **Guggenheim** (Bilbao).",
+  "Prado: **Las meninas** (Velázquez), **Los fusilamientos del 3 de mayo** y **La maja desnuda** (Goya), Zurbarán. Reina Sofía: **Guernica** (Picasso), Dalí, Maruja Mallo, Antonio López. Sorolla, Miró."]},
+ {h:"Ciencia", i:[
+  "**Al-Ándalus**: Córdoba, **Averroes** y **Maimónides**. **Escuela de Traductores de Toledo**.",
+  "**CSIC**: la mayor institución pública de investigación de España.",
+  "Observatorios del **Teide** y **Calar Alto** (Almería); Villafranca del Castillo (ESA)."]},
+ {h:"Historia", i:[
+  "**1252** Alfonso X: Toledo, ciudad de las **tres culturas** (judía, musulmana, cristiana).",
+  "**1492** Colón llega a América; los Reyes Católicos toman Granada; primera **gramática castellana**.",
+  "**1519** Magallanes y **Elcano**: primera vuelta al mundo.",
+  "S. XVI-XVII: **Carlos I** (primer rey de España) y **Felipe II** (mayor imperio).",
+  "**1705-1715** Guerra de Sucesión: llegan los **Borbones** con **Felipe V**.",
+  "**1808-1814** Guerra de Independencia contra Napoleón (José Bonaparte); vuelve Fernando VII.",
+  "**1898** «Desastre del 98»: se pierden **Cuba, Puerto Rico, Filipinas y Guam**.",
+  "**1931** II República · **1936-1939** Guerra Civil · **1939-1975** Franquismo.",
+  "**1975-1982** Transición (Adolfo Suárez, UCD). Primeras elecciones: **15 de junio de 1977**. 1982: gana el PSOE.",
+  "**1978** Constitución · **1986** entrada en la CEE · **1992** Olimpiadas de Barcelona, Expo de Sevilla, primer **AVE** · **2014** Felipe VI."]},
+ {h:"Fiestas y folclore", i:[
+  "Bailes: **jota** (casi toda España), **flamenco** (Andalucía; Patrimonio Inmaterial en 2010), **sardana** (Cataluña), **muñeira** (Galicia), **sevillanas**.",
+  "Instrumentos: guitarra, castañuelas, **gaita**, dulzaina, acordeón, **txistu**, tamboril.",
+  "**Navidad** (24 dic-6 ene): Nochebuena (24), **12 uvas en Nochevieja** (31), **Reyes Magos** (5-6 ene); turrón, mazapán, polvorones, villancicos.",
+  "**Carnaval** (febrero): Tenerife y **Cádiz** (chirigotas).",
+  "**Fallas** de Valencia: marzo, San José (19 de marzo); ninots, se queman las fallas.",
+  "**Semana Santa** (marzo/abril): procesiones, pasos, nazarenos, torrijas, saetas; la más famosa en Andalucía.",
+  "**Sant Jordi** (23 de abril, Cataluña): se regala una **rosa y un libro**.",
+  "**El Rocío** (Almonte, Huelva): romería en carros. **San Juan** (23-24 junio): hogueras.",
+  "**Sanfermines** (julio, **Pamplona**): encierros, pañuelo rojo. **Tomatina** (Buñol, último miércoles de agosto)."]},
+ {h:"Premios, eventos y deporte", i:[
+  "**Premios Princesa de Asturias**. **Premio Cervantes**: el «Nobel» de las letras hispanas (primero: Jorge Guillén, 1976). Premio Nacional de las Letras.",
+  "**Día del Libro, 23 de abril** (mueren Cervantes, Shakespeare e Inca Garcilaso). El editorial es la principal industria cultural.",
+  "**Premios Goya** (cine). Festivales: **San Sebastián**, Sitges, Málaga, Valladolid. Teatro clásico: **Almagro**, **Mérida**, Grec. **ARCO** (arte, Madrid, desde 1981).",
+  "Nobel: Echegaray (1904), **Ramón y Cajal** (1906, Medicina), Benavente, **Juan Ramón Jiménez**, **Severo Ochoa** (1959, Medicina), Aleixandre, **Cela** (1989), **Vargas Llosa** (2010).",
+  "Deportistas: **Nadal** y **Alcaraz** (tenis), los Gasol (baloncesto), Carlos Sainz, Marc Márquez, **Induráin** (ciclismo), Carolina Marín (bádminton), Mireia Belmonte, **Teresa Perales** (natación paralímpica)."]}
+],
+5: [
+ {h:"Identidad y documentos", i:[
+  "Nombre (simple o compuesto) y **dos apellidos**; normalmente primero el del padre, pero se puede invertir.",
+  "**DNI**: obligatorio desde los **14 años**; su número con letra sirve de **NIF**.",
+  "**Pasaporte**: para viajar fuera de la UE / Schengen.",
+  "**Libro de familia** y **certificado de nacimiento**: en el **Registro Civil** (Ministerio de Justicia). Desde 2021 hay registro electrónico individual.",
+  "Nº de la **Seguridad Social**: en la Tesorería General. **Informe de vida laboral**: recoge los años cotizados.",
+  "**Tarjeta sanitaria**: en el **centro de salud**. **Carné de conducir**: desde los 18, lo expide la **DGT**.",
+  "**Certificado de empadronamiento**: acredita la residencia; lo expide el **ayuntamiento**.",
+  "Extranjeros: **TIE** para residir; **NIE** como número de identidad."]},
+ {h:"Nacionalidad", i:[
+  "Residencia exigida: **10 años** (general), **5** (refugiados), **2** (iberoamericanos, Andorra, Filipinas, Guinea Ecuatorial, Portugal, sefardíes), **1** (nacido en España, casado o viudo de español, tutelado por español).",
+  "Trámites: **Registro Civil** (nacimiento, matrimonio, nacionalidad), **comisaría** (DNI, TIE, pasaporte), **centro de salud** (tarjeta sanitaria)."]},
+ {h:"Familia", i:[
+  "Matrimonio **civil o religioso**; se permite entre personas del **mismo sexo**; existe la **pareja de hecho**. Divorcio permitido.",
+  "**Monoparental**: un solo progenitor. **Numerosa**: **tres hijos o más**.",
+  "Permiso por nacimiento: **19 semanas** para cada progenitor; lactancia; reducción de jornada con hijos **menores de 12**."]},
+ {h:"Vivienda, vecinos y animales", i:[
+  "~**75 %** vivienda en propiedad, ~25 % alquiler. Contrato mínimo **5 años** (7 si el propietario es empresa). **Fianza**: normalmente **una mensualidad**.",
+  "**Viviendas de protección oficial**: precio limitado y subvencionado.",
+  "Vecinos: pagar la comunidad, **no hacer ruido desde las 22:00**, reciclar.",
+  "Mascotas: **microchip**, vacunas, **seguro de responsabilidad civil para perros**, recoger excrementos, correa y bozal."]},
+ {h:"Comida y horarios", i:[
+  "Platos: **paella**, **tortilla de patatas**, churros, **gazpacho**, sangría. Cocineros: Ferran Adrià, Arzak, José Andrés.",
+  "D. O.: **Rioja, Ribera del Duero, Jerez** (vino), **Asturias** (sidra), **Cataluña** (cava), Andalucía y Castilla-La Mancha (aceite), Extremadura (ibéricos).",
+  "Aperitivo: **tapa**, pincho, banderilla, ración. **Menú del día**: dos platos, pan, bebida y postre.",
+  "Horarios: desayuno 7:30-8:30, **comida 14:00-15:30**, **cena 21:00-22:00**.",
+  "Tiendas: **10:00-14:00 y 17:00-20:00**; sábado por la mañana; domingo cerrado. Grandes superficies 10:00-22:00."]},
+ {h:"Calendario", i:[
+  "Curso escolar: de **septiembre a junio**. Calendario laboral: **14 festivos**.",
+  "Fiestas nacionales: 1 ene, **6 ene (Reyes)**, Viernes Santo, **1 may (Trabajo)**, 15 ago, **12 oct (Fiesta Nacional)**, 1 nov, **6 dic (Constitución)**, 8 dic, 25 dic.",
+  "Sustituibles por la comunidad: 19 mar, Jueves Santo, 25 jul. Cada localidad añade **2 fiestas locales**.",
+  "Hora: **UTC+1** en invierno y +2 en verano; **Canarias, una hora menos**."]},
+ {h:"Educación", i:[
+  "Obligatoria y gratuita **de 6 a 16 años**. Ley actual: **LOMLOE** (2020).",
+  "**Infantil**: no obligatoria, **dos ciclos** (0-3 y 3-6; el segundo es gratuito).",
+  "**Primaria** 6-12 (6 cursos) · **ESO** 12-16 (4 cursos) · **Bachillerato** 16-18 (2 cursos).",
+  "**FP**: Básica, Grado Medio (título de Técnico), Grado Superior (Técnico Superior).",
+  "Universidad: **PAU**; **Grado** (240 créditos, ~4 años), **Máster** (60-120), **Doctorado**.",
+  "**EOI** (Escuelas Oficiales de Idiomas): desde los **16 años**. **CEPA**: adultos mayores de 18; acceso a la universidad para **mayores de 25**.",
+  "Centros: **públicos** (laicos, **gratuitos**), **concertados** (privados con subvención, mayoría religiosos), **privados**.",
+  "La **Universidad de Salamanca** (1252) fue la primera europea con título de Universidad."]},
+ {h:"Salud y servicios sociales", i:[
+  "Sanidad gestionada sobre todo por las **comunidades autónomas**; el Ministerio de Sanidad coordina.",
+  "**Centro de salud** (atención primaria, médico de familia, cita previa), centro de especialidades, **hospital** (cirugía, urgencias).",
+  "**Tarjeta sanitaria europea**: válida **2 años**. España es **líder mundial en donación de órganos** (ONT).",
+  "**IMSERSO** (mayores), **Ingreso Mínimo Vital**. ONG: **Cáritas, Cruz Roja, AECC**. **ONCE**: personas ciegas.",
+  "**112**: emergencias, gratuito, en toda la UE. **016**: violencia de género, 24 h, **no deja rastro** en la factura."]},
+ {h:"Medios de comunicación", i:[
+  "**RTVE**: La 1, **La 2** (cultural), **Clan** (infantil), **24 horas** (noticias), Teledeporte.",
+  "Privados: **Atresmedia** (Antena 3, laSexta) y **Mediaset** (Telecinco, Cuatro). Autonómicas: Canal Sur, ETB, Telemadrid, TV3, TVG.",
+  "Prensa: ABC, El Mundo, **El País**, La Razón, La Vanguardia. Deportiva: **As, Marca**, Mundo Deportivo. Económica: Cinco Días, **Expansión**.",
+  "Radio: **Radio Nacional** (pública), **Cadena SER**, COPE, Onda Cero."]},
+ {h:"Consumo, servicios y espacios públicos", i:[
+  "**Sistema Internacional de Unidades**: metro, kilogramo, segundo; hectárea = 10 000 m²; litro; «cuarto de kilo» = 250 g.",
+  "**Garantía de 3 años** para productos nuevos. Marcas blancas = marca del distribuidor.",
+  "**Farmacias** con servicio de **guardia 24 h**; **Correos** para envíos; **quiosco** para prensa; **mercados municipales** de productos frescos.",
+  "Parques: respetar horarios, **no pisar el césped**, no fumar frente a hospitales o colegios."]},
+ {h:"Transporte", i:[
+  "Límites: **120 km/h** autopista/autovía, **90** carretera, **20, 30 o 50** en ciudad. Alcohol: **0,5 g/l** en sangre. Cinturón obligatorio para todos.",
+  "Obligaciones: matrícula, **seguro**, **ITV**, impuestos, carné con puntos.",
+  "**Taxi**: libre con **luz verde** o cartel «Libre».",
+  "Trenes: **Renfe** (pública: Cercanías, AVE), **OUIGO** e **Iryo** (privadas de alta velocidad). Alta velocidad: **AVE, ALVIA y ALARIS**.",
+  "Normas: dejar salir antes de entrar, no hablar con el conductor, **ceder el asiento** a mayores, embarazadas y personas con movilidad reducida; dinero justo en el autobús.",
+  "**48 aeropuertos** públicos (Madrid-Barajas Adolfo Suárez, Barcelona-El Prat). Metro: Madrid, Barcelona, Valencia, Bilbao. Puertos: **Algeciras**, Barcelona, Valencia."]},
+ {h:"Economía y trabajo", i:[
+  "**5.ª economía de la UE** y 14.ª del mundo. **Euro desde 2002** (antes, peseta).",
+  "Sectores: **servicios** > industria y construcción > agricultura y pesca. Destaca en **turismo**, infraestructuras, telecomunicaciones, ferrocarril, finanzas y textil.",
+  "**93,8 millones de turistas** en 2023. Exporta coches, frutas, vino, aceite, calzado y medicamentos, sobre todo a la UE.",
+  "Instituciones: **Banco de España**, Bolsa (**IBEX 35**), ICEX, CES, Seguridad Social.",
+  "Edad mínima para trabajar: **16 años**. Ocupados, parados, inactivos y jubilados. Funcionarios o personal laboral.",
+  "Ley laboral básica: **Estatuto de los Trabajadores**. **Convenios colectivos** = acuerdos sobre **condiciones laborales**.",
+  "Impuestos **directos**: **IRPF**, Sociedades (declaración de la renta anual). **Indirectos**: **IVA** (consumo), alcohol, tabaco, hidrocarburos."]}
+]
+};
+
+const RAW = [[1001,"España es…",["una monarquía parlamentaria.","una república federal.","una monarquía federal."],0],[1002,"La ley fundamental de España se llama…",["Constitución.","Ley básica.","Ordenamiento esencial."],0],[1003,"Según la Constitución española, la soberanía nacional reside en…",["el pueblo español.","el Gobierno del Estado.","el Congreso de los Diputados."],0],[1004,"El Instituto de las Mujeres es…",["una institución europea.","un organismo español.","una ONG."],1],[1005,"¿Cuándo puedo hacer los trámites en la sede electrónica?",["En cualquier horario.","Únicamente por la mañana.","De lunes a viernes."],0],[1006,"El castellano o español es lengua oficial…",["en toda España.","solo donde no hay otras lenguas.","en toda la península ibérica."],0],[1007,"¿Cuál de estas fuerzas de seguridad es de ámbito autonómico?",["Policía local.","Guardia Civil.","Policía Foral de Navarra."],2],[1008,"¿Qué fuerza de seguridad está en toda España?",["La Policía Foral de Navarra.","El Cuerpo Nacional de Policía.","Los Mossos d’Esquadra."],1],[1009,"En la Constitución se establece la separación de poderes: el poder ejecutivo, el legislativo y el…",["judicial.","informativo.","político."],0],[1010,"La bandera de España debe utilizarse…",["solo los días de fiesta oficial.","en todos los edificios públicos.","solo en actos del Gobierno español."],1],[1011,"¿Quién es el jefe del Estado en España?",["El presidente del Gobierno.","El rey.","El ministro de Economía."],1],[1012,"La gestión de la sanidad es competencia de…",["el Estado.","las comunidades autónomas.","los ayuntamientos."],1],[1013,"¿Quién fue el primer presidente del Gobierno de España en democracia?",["Mariano Rajoy.","Adolfo Suárez.","José Luis Rodríguez Zapatero."],1],[1014,"¿Cuál de estos organismos se encarga de interpretar la Constitución?",["El Poder Constitucional.","El Tribunal Constitucional.","El Consejo General del Poder Judicial."],1],[1015,"¿Quién modera el funcionamiento de las instituciones españolas?",["El presidente del Gobierno.","El rey.","El director de la Real Academia Española."],1],[1016,"¿Cómo se llama la cámara de representación territorial en España?",["Senado.","Diputación permanente.","Congreso de los Diputados."],0],[1017,"¿Qué se necesita para hacer trámites por internet con la Administración?",["Un pasaporte válido.","Una firma electrónica.","Una firma en papel."],1],[1018,"¿Cómo se aprobó la Constitución?",["Por imposición legal.","Por referéndum.","Por el Tribunal Constitucional."],1],[1019,"¿Cómo se llama la ley más importante de cada comunidad autónoma?",["Estatuto de Autonomía.","Normativa autonómica.","Ley de la comunidad."],0],[1020,"Las instalaciones culturales y deportivas públicas son competencia del…",["Ayuntamiento.","Ministerio de Educación, Formación Profesional y Deportes.","Ministerio de Igualdad."],0],[1021,"¿Quién dirige la administración militar de España?",["Los ayuntamientos.","El Gobierno.","Las Cortes Generales."],1],[1022,"¿Qué hay en las Islas Baleares, en vez de diputaciones?",["Cabildos.","Consejos insulares.","Centros de diputados."],1],[1023,"¿Qué ciudad tiene más habitantes?",["Sevilla.","Barcelona.","Zaragoza."],1],[1024,"Las Cortes Generales representan…",["al pueblo español.","a los partidos políticos.","a los ministros."],0],[1025,"El Congreso de los Diputados y el Senado constituyen el poder…",["ejecutivo.","legislativo.","judicial."],1],[1026,"¿Cómo pueden los ciudadanos proponer nuevas leyes al Congreso?",["Reuniendo 500 000 firmas.","Solicitándolo al rey.","Creando una asociación."],0],[1027,"¿Cuántas comunidades autónomas hay en España?",["8.","17.","25."],1],[1028,"Los colores de la bandera española son…",["blanco y rojo.","rojo y amarillo.","amarillo y blanco."],1],[1029,"¿Dónde está la sede del Gobierno de España?",["En Madrid.","En Barcelona.","En Sevilla."],0],[1030,"La bandera azul con 12 estrellas amarillas en círculo es la bandera de…",["la Unión Europea.","el Parlamento Europeo.","la Comisión de Europa."],0],[1031,"En las elecciones municiales se vota a…",["alcaldes y concejales","ministros y ministras.","diputados y senadores."],0],[1032,"¿Qué lengua es oficial en el País Vasco?",["El bable.","El aragonés.","El euskera."],2],[1033,"Todos los españoles tienen el deber de conocer la lengua…",["autonómica del Estado.","oficial del Estado.","local del Estado."],1],[1034,"El aranés es una lengua cooficial que se habla en un pequeño territorio de…",["Cataluña.","La Rioja.","Aragón."],0],[1035,"Las instituciones de una comunidad autónoma son: el consejo de gobierno, el presidente y…",["el ayuntamiento.","la asamblea legislativa.","la delegación de gobierno."],1],[1036,"¿Cuál de estas opciones es una lengua cooficial en alguna comunidad autónoma?",["El gallego.","El aragonés.","El murciano."],0],[1037,"¿Qué institución tiene como fin la promoción de la enseñanza de la lengua española y la difusión de la cultura en español?",["El Instituto Nacional de Administración Pública.","El Instituto Nacional de Estadística.","El Instituto Cervantes."],2],[1038,"¿Cuál de los siguientes organismos trabaja para conseguir la normalización lingüística?",["El Institut Ramon Llull.","El Instituto Cervantes.","La Real Academia Española."],2],[1039,"¿Dónde vive el presidente del Gobierno?",["En el Palacio Real.","En el Palacio de la Zarzuela.","En el Palacio de la Moncloa."],2],[1040,"¿Cuál de los siguientes cuerpos forma parte de las Fuerzas Armadas de España?",["La Policía Foral.","La Guardia Civil.","El Ejército del Aire."],2],[1041,"¿Quiénes forman parte del Gobierno?",["Los ministros.","Los concejales.","Los alcaldes."],0],[1042,"España es un…",["estado social y democrático de Derecho.","estado libre asociado.","estado confederado."],0],[1043,"¿Cuál de las siguientes siglas corresponde a un partido político?",["PP.","PIB.","UE."],0],[1044,"¿Qué título tiene la futura reina, hija del rey?",["Princesa de Asturias.","Princesa de Aragón.","Duquesa de Alba."],0],[1045,"¿Con qué rey se restaura la democracia en España después del régimen de Franco?",["Con Carlos III.","Con Alfonso XIII.","Con Juan Carlos I."],2],[1046,"¿En qué año se aprobó la Constitución española?",["En 1957.","En 1978.","En 2001."],1],[1047,"¿Cuántas comunidades autónomas tienen su propia bandera?",["Ninguna.","Todas.","Las que tienen una lengua cooficial."],1],[1048,"¿Qué organismo oficial atiende las quejas de los ciudadanos por el mal funcionamiento de las administraciones?",["La Oficina de Atención al Consumidor.","La Policía Nacional.","El Defensor del Pueblo."],2],[1049,"¿Cuántas firmas, como mínimo, deben recoger los ciudadanos para poder presentar una proposición de ley?",["250 000.","100 000.","500 000."],2],[1050,"¿A cuál de las siguientes organizaciones internacionales pertenece España?",["Comunidad de Estados Independientes (CEI).","Fondo Monetario Internacional (FMI).","Unión Económica Euroasiática (UEE)."],1],[1051,"En la organización de la Administración se distinguen tres niveles: central, autonómica y…",["estatal.","regional.","local."],2],[1052,"El poder legislativo corresponde...",["al presidente y los ministros.","a los jueces y magistrados.","a los diputados y senadores."],2],[1053,"¿Dónde vive el rey?",["En el Palacio de la Moneda.","En el Palacio de la Zarzuela.","En el Palacio de la Moncloa."],1],[1054,"El nombre oficial del parlamento español es…",["Cortes Generales.","Congreso de los Diputados.","Senado."],0],[1055,"El Instituto de Comercio Exterior de España, el Instituto de las Mujeres y la Dirección General de Tráfico…",["son organismos autónomos.","dependen de ministerios.","son organismos internacionales."],1],[1056,"¿Quién puede reinar en España?",["Solo los hombres.","Solo las mujeres.","Tanto los hombres como las mujeres."],2],[1057,"El Tribunal de Cuentas depende de…",["la Presidencia del Gobierno.","las Cortes Generales.","el Ministerio de Hacienda."],1],[1058,"¿Quién es la tercera autoridad del Estado, después del rey y el presidente del Gobierno?",["El presidente del Senado.","El ministro de Economía.","El presidente del Congreso de los Diputados."],2],[1059,"¿Qué lengua cooficial se habla en las Islas Baleares?",["Gallego.","Catalán.","Euskera."],1],[1060,"La Constitución defiende valores tales como la libertad, la igualdad, el pluralismo político y…",["la justicia.","la solidaridad.","la fraternidad."],0],[1061,"Cuando una ley ya está aprobada, ¿qué necesita para poder aplicarse?",["Nada.","Normas que la desarrollen.","Ser revisada por el Parlamento."],1],[1062,"¿Cuántos habitantes hay en España?",["95 millones.","49 millones.","67 millones."],1],[1063,"¿Cuál de estos es un órgano consultivo del Gobierno de España?",["El Parlamento Europeo.","El Consejo de Estado.","El Tribunal Constitucional."],1],[1064,"¿Quién dirige la política interior y exterior de España?",["El rey.","El Gobierno.","El Congreso de los Diputados."],1],[1065,"El Defensor del Pueblo depende de…",["el Consejo de Ministros.","el Tribunal de Cuentas.","las Cortes Generales."],2],[1066,"El Instituto Etxepare tiene como misión la difusión del…",["euskera y la cultura vasca.","bable y la cultura cántabra.","gallego y la cultura galaica."],0],[1067,"¿Cuál de estas ciudades se encuentra entre las 10 más pobladas de España?",["Cádiz.","Málaga.","Albacete."],1],[1068,"¿Quién puede realizar trámites en línea ante la Administración Pública?",["Jueces y magistrados.","Cualquier ciudadano.","Abogados colegiados."],1],[1069,"¿Cómo se llama el rey de España?",["Juan Carlos I.","Felipe VI.","Alfonso XIII."],1],[1070,"¿Cómo se llama el órgano de gobierno de los jueces y magistrados?",["Tribunal Supremo.","Consejo General del Poder Judicial.","Consejo de Estado."],1],[1071,"¿Quién aprueba los presupuestos generales del Estado?",["Las Cortes Generales.","El Tribunal de Cuentas.","El Gobierno de España."],0],[1072,"La Constitución española es…",["la ley fundamental.","parte de otra ley.","una ley secundaria."],0],[1073,"Las Cortes Generales están compuestas por el Senado y…",["el Congreso de los Diputados.","el Tribunal Supremo.","el Consejo de Estado."],0],[1074,"¿Quién elabora las leyes?",["El poder ejecutivo.","El poder legislativo.","El poder judicial."],1],[1075,"La defensa de la integridad territorial de España corresponde a…",["la Policía Nacional y la Guardia Civil.","las Fuerzas Armadas.","la Policía Nacional y las policías autonómicas."],1],[1076,"El Ejército español participa desde 1989 en misiones de paz de la…",["Organización de Estados Iberoamericanos (OEI).","Unión Europea Occidental (UEO).","Organización de las Naciones Unidas (ONU)."],2],[1077,"¿Quién vigila puertos y aeropuertos, fronteras y costas?",["La Guardia Civil.","La Policía local.","La Policía Nacional."],0],[1078,"¿Quién hace el control de pasaportes en las fronteras de España?",["La Guardia Civil.","La Policía local.","La Policía Nacional."],2],[1079,"¿Cuál de los siguientes políticos ha sido presidente del Gobierno en España?",["Manuel Fraga.","José María Aznar.","Yolanda Díaz."],1],[1080,"¿Cómo se llama la policía autonómica de Cataluña?",["Guardia Civil.","Ertzaintza.","Mossos d'Esquadra."],2],[1081,"¿Cómo se llama la policía autonómica del País Vasco?",["Ertzaintza.","Guardia Civil.","Mossos d'Esquadra."],0],[1082,"¿Desde qué año es rey Felipe VI?",["Desde 1975.","Desde 2014.","Desde 2020."],1],[1083,"¿Quién regula el tráfico en los pueblos y ciudades?",["La Guardia Civil.","Protección Civil.","La Policía Local."],2],[1084,"¿Quién puede presentar una queja al Defensor del Pueblo?",["Solo los ciudadanos legalmente residentes.","Solo los españoles mayores de 18 años.","Todos los ciudadanos, españoles o extranjeros."],2],[1085,"En España el voto en las elecciones es…",["un derecho.","un deber.","una obligación."],0],[1086,"¿Quién vigila el tráfico en las carreteras?",["La Guardia Civil.","La Policía Nacional.","El Ejército de Tierra."],0],[1087,"¿Qué organismo se encarga de recaudar los impuestos?",["El Tribunal de Cuentas.","La Agencia Tributaria.","El Consejo Económico y Social."],1],[1088,"¿Dónde se publican las leyes nacionales?",["En el boletín del Instituto Nacional de Estadística (INE).","En el Portal de la Administración Electrónica (PAe).","En el Boletín Oficial del Estado (BOE)."],2],[1089,"¿Cómo se llaman los órganos de gobierno que solo existen en Canarias?",["Cabildos.","Consejos insulares.","Diputaciones."],0],[1090,"¿Cuál de estos trámites administrativos puede realizarse en la sede electrónica?",["Tramitar el DNI.","Renovar el pasaporte.","Pagar los impuestos."],2],[1091,"¿Cuál es el número de teléfono de información de la Administración General del Estado?",["010.","060.","091."],1],[1092,"España está organizada en…",["cantones.","comunidades autónomas.","estados federales."],1],[1093,"¿Cuántos partidos políticos hay en España?",["Ninguno.","Uno.","Muchos."],2],[1094,"¿Dónde tiene lugar la investidura del presidente del Gobierno?",["En el Palacio de la Moncloa.","En el Congreso de los Diputados.","En el Senado."],1],[1095,"¿Quién tiene el mando supremo de las Fuerzas Armadas?",["El rey.","El presidente del Gobierno.","El ministro de Defensa."],0],[1096,"¿Quién es el representante del Estado en una comunidad autónoma?",["El presidente de la comunidad autónoma.","El delegado del Gobierno.","El presidente de la Asamblea autonómica."],1],[1097,"¿Cuántas provincias hay en España?",["45.","50.","55."],1],[1098,"La enseñanza de las lenguas cooficiales es competencia…",["del Estado.","de la comunidad autónoma.","de la provincia."],1],[1099,"El poder ejecutivo corresponde…",["al Gobierno del Estado.","al Congreso y al Senado.","a los jueces y magistrados."],0],[1100,"¿Cuántas cámaras hay en el Parlamento español?",["Una.","Dos.","Tres."],1],[1101,"El suministro de agua y el alumbrado de las ciudades es competencia de…",["el ayuntamiento.","el Gobierno autonómico.","el Ministerio de Obras Públicas y Urbanismo."],0],[1102,"En materias como nacionalidad, inmigración, emigración o extranjería solo tiene competencia…",["el Estado.","las comunidades autónomas.","los ayuntamientos."],0],[1103,"¿Cuántas mujeres han sido presidentas de Gobierno en España?",["Ninguna.","Una.","Dos."],0],[1104,"Las relaciones internacionales son competencia de…",["el Estado.","las comunidades autónomas.","los ayuntamientos."],0],[1105,"El Ayuntamiento está formado por el alcalde y…",["los concejales.","los diputados.","los senadores."],0],[1106,"¿Quiénes forman el gobierno de las comunidades autónomas?",["El presidente y los ministros.","El alcalde y los concejales.","El presidente y los consejeros."],2],[1107,"¿Cuál es el órgano de gobierno en los municipios?",["El ayuntamiento.","La diputación.","El cabildo."],0],[1108,"¿Cómo se llaman los órganos de gobierno de las provincias españolas?",["Cabildos.","Consejos insulares.","Diputaciones."],2],[1109,"¿Cuál es el órgano superior del poder ejecutivo?",["El Gobierno.","Las Fuerzas Armadas.","Las Cortes Generales."],0],[1110,"El idioma español también se llama…",["aragonés.","castellano.","leonés."],1],[1111,"¿A quiénes se elige en las elecciones al Parlamento Europeo?",["A los ministros europeos.","A los consejeros delegados.","A los eurodiputados."],2],[1112,"Los españoles pueden votar a partir de los…",["16 años.","18 años.","21 años."],1],[1113,"Algunos ciudadanos extranjeros pueden votar en las elecciones…",["municipales.","autonómicas.","generales."],0],[1114,"¿Quién controla la gestión financiera del Estado?",["El Banco de España.","La Agencia Tributaria.","El Tribunal de Cuentas."],2],[1115,"¿A quiénes se elige en las elecciones generales?",["A los senadores y diputados.","A los eurodiputados.","A los concejales."],0],[1116,"¿Cuántos miembros tiene el Congreso de los Diputados?",["300.","350.","400."],1],[1117,"Los municipios y provincias forman parte de la Administración…",["autonómica.","local.","central."],1],[1118,"La comunidad autónoma más poblada de España es…",["Andalucía.","Cataluña.","Castilla y León."],0],[1119,"¿Cómo se llama la organización que defiende los intereses de los trabajadores?",["Asociación.","Partido.","Sindicato."],2],[1120,"¿Quién elige al presidente del Gobierno?",["El Congreso de los Diputados.","El rey.","El Tribunal Supremo."],0],[2001,"En España, la Constitución obliga a todos los ciudadanos a practicar una religión.",["Verdadero.","Falso."],1],[2002,"Los españoles que obtienen la nacionalidad por residencia deben esperar tres años para poder votar en las elecciones.",["Verdadero.","Falso."],1],[2003,"En España, la Constitución prohíbe la tortura y la pena de muerte.",["Verdadero.","Falso."],0],[2004,"El funcionamiento de los partidos políticos tiene que ser democrático.",["Verdadero.","Falso."],0],[2005,"Se puede obligar a alguien a decir cuáles son sus ideas políticas o religiosas.",["Verdadero.","Falso."],1],[2006,"Se puede limitar a una persona el derecho a entrar y salir libremente de España por motivos ideológicos.",["Verdadero.","Falso."],1],[2007,"La Educación Primaria (de 6 a 12 años) es gratuita y obligatoria.",["Verdadero.","Falso."],0],[2008,"La Constitución garantiza el derecho de los españoles a una vivienda digna.",["Verdadero.","Falso."],0],[2009,"En España la policía puede entrar en cualquier casa sin resolución judicial en cualquier momento.",["Verdadero.","Falso."],1],[2010,"Se garantiza el secreto de las comunicaciones de los españoles, salvo resolución judicial.",["Verdadero.","Falso."],0],[2011,"La Constitución reconoce el derecho de los ciudadanos a asociarse libremente.",["Verdadero.","Falso."],0],[2012,"Los profesores pueden enseñar con libertad, dentro de los límites de la Constitución.",["Verdadero.","Falso."],0],[2013,"La Constitución reconoce únicamente los derechos fundamentales de los españoles.",["Verdadero.","Falso."],1],[2014,"Los ciudadanos deben colaborar con los jueces si se lo piden.",["Verdadero.","Falso."],0],[2015,"La ley limita el acceso de terceras personas a datos de carácter personal.",["Verdadero.","Falso."],0],[2016,"La libertad de prensa está limitada por el respeto al honor de las personas.",["Verdadero.","Falso."],0],[2017,"En España las causas de separación y divorcio están reguladas por la ley.",["Verdadero.","Falso"],0],[2018,"La atención sanitaria gratuita es solo para personas mayores de 65 años.",["Verdadero.","Falso."],1],[2019,"En España los hombres y las mujeres tienen los mismos derechos.",["Verdadero","Falso."],0],[2020,"La enseñanza obligatoria consta de dos etapas: Educación Primaria y Educación Secundaria Obligatoria.",["Verdadero","Falso"],0],[2021,"En España hay una religión oficial.",["Verdadero.","Falso."],1],[2022,"La atención sanitaria pública es gratuita.",["Verdadero.","Falso."],0],[2023,"La enseñanza básica en España es solo para los extranjeros.",["Verdadero.","Falso."],1],[2024,"En España está reconocido el derecho de asociación.",["Verdadero.","Falso."],0],[2025,"Los sindicatos pueden participar en negociaciones con empresarios y con el Gobierno.",["Verdadero.","Falso."],0],[2026,"Los trabajadores tienen derecho a hacer huelga.",["Verdadero.","Falso."],0],[2027,"La libertad ideológica está garantizada solo en parte del territorio nacional.",["Verdadero.","Falso."],1],[2028,"Todos los ciudadanos tienen acceso al sistema de Seguridad Social público, excepto si están desempleados.",["Verdadero.","Falso."],1],[2029,"Todos tienen derecho a disfrutar de un medio ambiente adecuado para el desarrollo de la persona, así como el deber de conservarlo.",["Verdadero.","Falso."],0],[2030,"En España, los poderes públicos deben proteger la salud y promover el deporte.",["Verdadero.","Falso."],0],[2031,"La enseñanza básica en España es obligatoria y gratuita.",["Verdadero.","Falso."],0],[2032,"La ley prohíbe la discriminación por cualquier circunstancia personal o social.",["Verdadero.","Falso."],0],[2033,"En España, los ciudadanos pueden desplazarse libremente por todo el territorio nacional.",["Verdadero.","Falso."],0],[2034,"Los jueces administran la justicia en España según las indicaciones del Gobierno.",["Verdadero.","Falso."],1],[2035,"Los españoles deben ayudar en los casos de catástrofe o calamidad pública.",["Verdadero.","Falso."],0],[2036,"En España los ciudadanos pueden elegir en qué ciudad quieren vivir.",["Verdadero.","Falso."],0],[3001,"¿Dónde están Cáceres y Badajoz?",["En el Principado de Asturias.","En Andalucía.","En Extremadura."],2],[3002,"¿Cuál es la capital la Comunidad Valenciana?",["Alicante.","Castellón.","Valencia."],2],[3003,"¿Dónde están las islas Baleares?",["En el mar Cantábrico.","En el mar Mediterráneo.","En el océano Atlántico."],1],[3004,"¿Cómo se llama la extensa llanura situada en el centro de la península ibérica?",["Marisma.","Cordillera.","Meseta."],2],[3005,"El parque nacional de Ordesa está en...",["Aragón.","Navarra.","Castilla-La Mancha."],0],[3006,"¿En qué comunidad autónoma están Guadalajara y Cuenca?",["En Castilla y León.","En Castilla-La Mancha.","En Cantabria."],1],[3007,"¿Qué comunidad autónoma tiene como capital Santiago de Compostela?",["Galicia.","Asturias.","Cantabria."],0],[3008,"¿Dónde está Almería?",["En Andalucía.","En Canarias.","En Aragón."],0],[3009,"La capital de la comunidad autónoma de Galicia es…",["A Coruña.","Vigo.","Santiago de Compostela."],2],[3010,"¿Cuál de estos ríos desemboca en el mar Mediterráneo?",["El Tajo.","El Júcar.","El Duero."],1],[3011,"¿Dónde está el monte Aneto?",["En los Pirineos.","En el Sistema Central.","En Sierra Nevada."],0],[3012,"La ciudad de Vitoria es la sede administrativa de…",["Navarra.","País Vasco.","La Rioja."],1],[3013,"España se divide en…",["departamentos y regiones.","comunidades y ciudades autónomas.","regiones autónomas y distritos."],1],[3014,"El parque nacional de Aigüestortes está en...",["Cataluña.","Aragón","Castilla y León."],0],[3015,"En el norte de África están Ceuta y…",["Almería.","Melilla.","Cádiz."],1],[3016,"¿En qué lugar de España hay un clima que se caracteriza por inviernos fríos y veranos muy calurosos?",["Canarias.","Comunidad Valenciana.","Madrid."],2],[3017,"¿Cuál de estos ríos desemboca en el océano Atlántico?",["El Guadalquivir.","El Manzanares.","El Júcar."],0],[3018,"¿Cuál de estas provincias forma parte de la Comunidad de Castilla y León?",["Burgos.","Huesca.","Guadalajara."],0],[3019,"¿En qué comunidad autónoma está la ciudad de Huesca?",["Castilla-La Mancha.","Aragón.","Extremadura."],1],[3020,"Canarias tiene un clima…",["mediterráneo.","oceánico.","subtropical."],2],[3021,"El principal río que desemboca en el mar Mediterráneo es el…",["Ebro.","Duero.","Tajo."],0],[3022,"España está entre los países de Europa más…",["lluviosos.","montañosos.","fríos."],1],[3023,"¿En qué provincia está el parque nacional de Monfragüe?",["En Cáceres.","En Murcia.","En Ciudad Real."],0],[3024,"¿Cuál es la capital de la comunidad autónoma de Extremadura?",["Cáceres.","Badajoz.","Mérida."],2],[4001,"Los personajes principales de la novela el Quijote son don Quijote y…",["Don Juan.","Sancho Panza.","Doña Inés."],1],[4002,"¿Qué científica española es reconocida por sus investigaciones?",["Almudena Grandes.","Montserrat Caballé.","Margarita Salas."],2],[4003,"¿Quién escribió La casa de Bernarda Alba?",["Federico García Lorca.","Miguel de Cervantes.","Antonio Machado."],0],[4004,"¿Quién escribió Nada, una novela sobre la posguerra española?",["Carmen Laforet.","Ana María Matute.","María Dueñas."],0],[4005,"¿Qué músico compuso El amor brujo?",["Manuel de Falla.","Isaac Albéniz.","Joaquín Rodrigo."],0],[4006,"¿Qué es típico en la Noche de San Juan?",["Comer uvas.","Encender hogueras.","Regalar libros."],1],[4007,"¿Cuál es el instrumento más característico de la música flamenca?",["La gaita.","La guitarra.","El piano."],1],[4008,"Isabel Coixet es una…",["cantante pop.","bailarina clásica.","directora de cine."],2],[4009,"Una de las cantantes españolas más famosas actualmente es...",["Rosalía.","Marisol.","Lola Flores."],0],[4010,"¿En qué ciudad de España hay una mezquita que es Patrimonio de la Humanidad?",["Santiago de Compostela.","Madrid.","Córdoba."],2],[4011,"¿En qué ciudad de España se encuentra La Alhambra, que es Patrimonio de la Humanidad?",["En Sevilla.","En Córdoba.","En Granada."],2],[4012,"¿Cuál es el nombre de la directora española que ha destacado por su mirada crítica y por modernizar el cine nacional?",["Pilar Miró.","Sara Baras.","Penélope Cruz."],0],[4013,"¿Qué novela de éxito ha escrito Irene Vallejo?",["El infinito en un junco.","El tiempo entre costuras.","El camino."],0],[4014,"¿Cómo se llama la mayor institución pública dedicada a la investigación en España?",["Real Academia Española (RAE).","Consejo Superior de investigaciones Científicas (CSIC).","La sociedad General de Autores (SGAE)."],1],[4015,"Paco de Lucía fue un famoso….",["científico.","guitarrista.","pintor."],1],[4016,"¿Qué celebramos el 24 de diciembre?",["Carnaval.","Nochebuena.","San Juan."],1],[4017,"Juan Mari Arzak es un famoso....",["escritor.","músico","cocinero."],2],[4018,"¿Quién fue Clara Campoamor?",["Una defensora de los derechos de la mujer.","Una cantante lírica.","Una directora de cine."],0],[4019,"¿Qué canciones típicas se cantan en Navidad?",["Flamenco.","Villancicos.","Jotas."],1],[4020,"La Liga y la Copa del Rey son competiciones de…",["natación.","atletismo.","fútbol."],2],[4021,"¿Quién ha recibido el premio Nobel de Literatura?",["María Zambrano.","Pablo Picasso.","Vicente Aleixandre."],2],[4022,"¿Qué fiesta se celebra en Pamplona el 7 de julio?",["Los sanfermines.","Las Fallas.","La Feria de Abril."],0],[4023,"Teresa Perales y Daniel Molina son...",["campeones paraolímpicos.","músicos famosos.","artistas de cine."],0],[4024,"¿Qué toman los españoles la noche del 31 de diciembre para celebrar el cambio de año?",["Lentejas.","Uvas.","Aceitunas."],1],[4025,"¿Qué mujer es autora del cuadro La verbena?",["Maruja Mallo.","Carmen Maura.","Clara Lago."],0],[4026,"¿En qué museo español puedes ver el cuadro Guernica de Picasso?",["Museo del Prado.","Museo Reina Sofía.","Museo Thyssen-Bornemisza."],1],[4027,"¿Qué escritora española escribe en otra lengua oficial de España?",["Mercè Rodoreda.","Almudena Grandes.","Ana María Matute."],0],[4028,"¿Qué tres culturas convivieron en la España medieval?",["La cristiana, la judía y la musulmana.","La fenicia, la judía y la musulmana.","La griega, la cristiana y la judía."],0],[4029,"El 6 de diciembre se celebra en España…",["el Día de la Constitución.","la llegada de Colón a América.","el Día del Libro."],0],[4030,"¿Qué ciudad fue un centro científico en Al-Ándalus, donde se estudiaba medicina y astronomía?",["Barcelona.","Madrid.","Córdoba."],2],[4031,"¿En qué ciudad española está el Museo Guggenheim?",["Bilbao.","Madrid.","Valencia."],0],[4032,"El Premio Cervantes se da a…",["actores.","escritores.","pintores."],1],[4033,"¿Qué premio reconoce a los mejores actores y películas?",["Premio Goya.","Premio Nobel.","Premio Cervantes."],0],[4034,"¿Qué premios promueven en España valores científicos, culturales y humanísticos?",["Los Premios Cervantes.","Los Premios Princesa de Asturias.","Los Premios Goya."],1],[4035,"¿Cuál de estos deportes es muy popular en España?",["El fútbol.","El esquí","El golf."],0],[4036,"¿Cuál de estos deportistas juega al tenis?",["Pau Gasol.","Carlos Sainz.","Carlos Alcaraz."],2],[5001,"¿Qué documento deben solicitar los extranjeros para residir legalmente en España?",["El Documento Nacional de Identidad (DNI).","La Tarjeta de Identidad de Extranjero (TIE).","El certificado de empadronamiento."],1],[5002,"¿Cuál es el documento que certifica el lugar de residencia del titular?",["El certificado de empadronamiento.","La partida de nacimiento.","El carné de conducir."],0],[5003,"¿A qué sustituye el registro electrónico individual?",["Al DNI.","Al permiso de conducir.","Al libro de familia."],2],[5004,"¿Cuál es la edad mínima para conducir un coche en España?",["16 años.","18 años.","20 años."],1],[5005,"El carné de conducir se hace en…",["la Dirección General de Tráfico (DGT).","la Policía Nacional.","el Registro Civil."],0],[5006,"Para sacar el carné de conducir hay que aprobar…",["un examen teórico.","un examen práctico.","un examen teórico y otro práctico."],2],[5007,"¿Dónde se tramita el libro de familia?",["En el Registro Civil.","En la Seguridad Social.","En las comisarías de policía."],0],[5008,"¿Cuál de estos canales de televisión es autonómico?",["Telecinco.","Nova.","Canal Sur."],2],[5009,"¿Cuánto dura el permiso de maternidad o paternidad?",["12 semanas.","19 semanas.","22 semanas."],1],[5010,"¿Cuál es la tasa máxima de alcohol en sangre permitida a los conductores, en gramos por litro (g/l)?",["0,5.","0,7.","0,9."],0],[5011,"¿Cuál es el tipo de residencia más habitual en España?",["Casa rural.","Piso en un edificio de viviendas.","Chalé independiente."],1],[5012,"¿Qué comunidad autónoma es conocida por la calidad de su aceite de oliva?",["Cantabria.","Andalucía.","La Rioja."],1],[5013,"¿Cómo se llama la revisión que deben pasar obligatoriamente los coches?",["IBI (Impuesto sobre Bienes Inmuebles).","ITV (Inspección Técnica de Vehículos).","ITE (Inspección Técnica de Edificios)."],1],[5014,"El aperitivo que acompaña a la bebida en bares y restaurantes se llama...",["bocadillo.","tapa.","primer plato."],1],[5015,"¿Dónde se tramita la tarjeta sanitaria?",["En la comisaría de policía.","En el centro de salud.","En el Ministerio de Sanidad."],1],[5016,"¿Con cuántos hijos una familia es numerosa?",["Con 1 hijo.","Con 2 hijos.","Con 3 hijos."],2],[5017,"En España está permitido el matrimonio…",["solo entre personas del mismo sexo.","entre personas del mismo y diferente sexo.","solo entre personas de diferente sexo."],1],[5018,"Los propietarios de perros deben registrarlos en…",["el Ministerio de Justicia.","la comisaría de policía.","el Ayuntamiento."],2],[5019,"Los principales ingredientes de la tortilla española son huevos y…",["pimientos.","patatas.","tomates."],1],[5020,"¿Cuál es uno de los platos más conocidos internacionalmente de la gastronomía española?",["Gazpacho.","Pizza.","Pasta."],0],[5021,"¿Cuál de estos canales de televisión es público?",["Tele 5.","La 1.","Antena 3."],1],[5022,"En una comunidad de vecinos, una de las normas es…",["abrir la puerta al cartero.","no molestar con ruido.","limpiar los espacios comunes."],1],[5023,"¿Cuál de estos es el principal ingrediente de la paella valenciana?",["Arroz.","Chorizo.","Garbanzos."],0],[5024,"La sidra es una bebida típica de…",["Asturias.","Valencia.","Canarias."],0],[5025,"Los españoles tienen dos apellidos, el primero es…",["obligatoriamente el de la madre.","obligatoriamente el del padre.","puede ser el de la madre o el del padre."],2],[5026,"La Fiesta Nacional de España es el…",["6 de diciembre.","15 de agosto.","12 de octubre."],2],[5027,"¿Qué días suelen cerrar la mayoría de las tiendas o el pequeño comercio?",["Los lunes.","Los domingos.","Los sábados por la tarde."],1],[5028,"¿Dónde se hace el pasaporte?",["En el registro civil.","En una comisaría de policía.","En el Ayuntamiento."],1],[5029,"El Ministerio de Igualdad es el encargado de luchar contra la violencia de género y la…",["separación.","discriminación.","solidaridad."],1],[5030,"¿Qué comunidad autónoma es conocida por la calidad de sus cavas?",["Galicia.","Cataluña.","Castilla-La Mancha."],1],[5031,"¿Qué documento se necesita para recibir atención médica en la sanidad pública?",["El pasaporte.","La tarjeta sanitaria.","El certificado de nacimiento."],1],[5032,"El horario de Canarias, con respecto a la Península, es de…",["dos horas menos.","una hora menos.","una hora más."],1],[5033,"Para acceder a la Universidad se debe superar una prueba de evaluación llamada…",["Selectividad.","Examen preuniversitario.","Prueba de Acceso a la Universidad."],2],[5034,"¿Cuál de estos productos necesita importar España de otros países?",["Petróleo.","Aceite de oliva.","Medicamentos."],0],[5035,"¿Qué tipo de impuestos tienen que pagar los ciudadanos en España?",["Impuestos directos como el IRPF.","Impuestos indirectos como el IVA.","Impuestos directos e indirectos."],2],[5036,"Los adultos sin Bachillerato pueden estudiar en la Universidad haciendo una prueba especial a partir de los…",["18 años.","23 años.","25 años."],2],[5037,"¿Dónde puede encontrarse la siguiente norma «No pisar el césped, ni arrancar flores»?",["En zonas de recreo.","En los teatros.","En los estadios de fútbol."],0],[5038,"El Bachillerato en España…",["es obligatorio.","se compone de dos cursos académicos.","es la enseñanza a alumnos de 14 a 16 años."],1],[5039,"El Impuesto sobre el Valor Añadido (IVA) forma parte de los…",["Impuestos indirectos.","Impuestos sobre la renta.","Impuestos sobre sociedades."],0],[5040,"¿Qué número reciben los trabajadores al comenzar su primer empleo?",["El de la Seguridad Social.","El del pasaporte.","El número de servicio."],0],[5041,"Los colegios públicos…",["pueden decidir su número de plazas.","pueden contratar a los profesores que quieran.","son gratuitos."],2],[5042,"¿Cuál de estos puertos es uno de los principales de España?",["Tenerife.","Alicante.","Algeciras."],2],[5043,"Un colegio concertado es un colegio privado que…",["recibe dinero de la Administración.","financian los padres de los alumnos.","recibe dinero de los bancos."],0],[5044,"España exporta productos principalmente a países…",["de Hispanoamérica.","de la Unión Europea.","del norte de África."],1],[5045,"Las bibliotecas públicas son gratuitas para…",["todos.","los parados.","los niños."],0],[5046,"¿Cuál de estos productos exporta España más que importa?",["Gas.","Ropa.","Calzado."],2],[5047,"Una persona mayor de 18 años puede obtener el título de Graduado en Educación Secundaria Obligatoria en…",["un Centro de Educación de Personas Adultas.","un centro de enseñanza primaria.","una universidad."],0],[5048,"La formación profesional…",["es para mayores de 25 años.","puede ser de grado medio o superior.","es obligatoria."],1],[5049,"¿Adónde vamos para ver al médico de familia o al pediatra?",["Al hospital.","Al centro de salud.","A la farmacia."],1],[5050,"¿Para cuántos años vale la tarjeta sanitaria europea?",["Para un año.","Para dos años.","Para 10 años."],1],[5051,"¿A qué hora se cena normalmente en España?",["A las 18 h.","A las 23 h.","A las 21 o 22 h."],2],[5052,"¿Cuál es el número de teléfono único para cualquier emergencia?",["060.","112.","911."],1],[5053,"¿Cuál de estos periódicos se publica a nivel nacional?",["El Diario Vasco.","El País.","La Voz de Galicia."],1],[5054,"¿Dónde se venden sellos y tabaco?",["En el quiosco.","En la farmacia.","En el estanco."],2],[5055,"¿Cuándo se puede llamar al número de teléfono para atención a víctimas de violencia de género?",["Las 24 horas del día.","En horario de mañana.","De lunes a viernes."],0],[5056,"La organización que trabaja para conseguir la integración de las personas con discapacidad visual es…",["la ONCE.","Unicef.","Cáritas."],0],[5057,"El Camino de Santiago es…",["Patrimonio de la Humanidad.","una vía de ferrocarril.","una ruta para excursionistas."],0],[5058,"¿Cuál es el canal de televisión estatal que transmite noticias de actualidad nacional e internacional continuamente?",["Teledeporte.","La 1.","Canal 24 horas."],2],[5059,"El teléfono gratuito para las víctimas de violencia de género es el…",["091.","112.","016."],2],[5060,"En España, la red de trenes puede ser de larga distancia, de media distancia y…",["de cercanías.","rural.","transnacional."],0],[5061,"¿Qué está prohibido en la puerta de un colegio?",["Fumar un cigarrillo.","Conducir un coche.","Vender refrescos."],0],[5062,"¿Qué título se obtiene al finalizar un ciclo de grado medio de Formación Profesional?",["Bachiller.","Técnico.","Graduado en ESO."],1],[5063,"¿Qué título se obtiene tras realizar una tesis doctoral en España?",["Máster.","Graduado.","Doctor."],2],[5064,"¿Dónde se compran las medicinas con receta?",["En el hospital","En el centro de salud.","En la farmacia."],2],[5065,"¿Cuál de estas tres recomendaciones podemos encontrar en un parque?",["No pisar el césped.","Se recomienda pagar el billete con el dinero justo.","Respetar las normas sobre equipaje."],0],[5066,"¿Cuál de las siguientes cosas es obligatoria para el propietario de un coche en España?",["El garaje","El seguro.","La alarma."],1],[5067,"El aeropuerto Adolfo Suárez está en…",["Barcelona.","Madrid","Bilbao."],1],[5068,"En un coche es obligatorio el uso del cinturón de seguridad...",["solo en el asiento del conductor.","en los asientos delanteros.","en todos los asientos."],2],[5069,"¿Cuál es el límite de velocidad en autopista?",["90 km/h.","120 km/h.","150 km/h."],1],[5070,"Ceder el asiento a las personas con movilidad reducida es una norma que encontramos indicada en…",["el transporte público.","las bibliotecas.","los museos."],0],[5071,"¿Cuál es el medio de transporte público que tiene una luz verde encendida si está libre?",["El autobús.","El taxi.","El tranvía."],1],[5072,"¿Qué debes hacer si tienes un perro?",["Pasearlo sin correa.","Ponerle un microchip y vacunarlo","No recoger sus excrementos."],1],[5073,"Los españoles necesitan el pasaporte para viajar a…",["Italia.","China.","Alemania."],1],[5074,"¿Cuál es la edad mínima para trabajar en España?",["16 años.","18 años.","21 años."],0],[5075,"¿Cuál es el sector de mayor peso en la economía española?",["Agricultura.","Servicios.","Construcción."],1],[5076,"España es innovadora en el sector de…",["la ingeniería aeroespacial.","las energías renovables.","la energía nuclear."],1],[5077,"¿Cómo se llama la ley laboral más importante de España?",["La Constitución.","El Estatuto de los Trabajadores.","El Servicio Público de Empleo Estatal."],1],[5078,"¿Cuál de estos establecimientos está abierto 24 horas si es necesario?",["Farmacia.","Pescadería.","Librería."],0],[5079,"La educación infantil en España…",["es obligatoria.","tiene dos ciclos.","empieza a los 4 años."],1],[5080,"¿Cuándo empieza el calendario escolar?",["En agosto.","En septiembre.","En octubre."],1],[5081,"Las Escuelas Oficiales de Idiomas…",["son centros de enseñanza privada.","son para mayores de 16 años.","dependen del Instituto Cervantes."],1],[5082,"¿Cuál es el documento que recoge los años de cotización a la Seguridad Social?",["Informe de vida laboral.","Recibo de finiquito.","Certificado de profesionalidad."],0],[5083,"Los convenios colectivos de una empresa son los que se firman con los representantes de los trabajadores sobre…",["las condiciones laborales.","el futuro de la empresa.","la relación con los clientes."],0],[5084,"¿En cuál de estos sectores destaca España?",["En el turismo.","En la industria automovilística.","En tecnología digital."],0]];
+const TAREAS = {
+  1:{es:"Gobierno, legislación y participación ciudadana",en:"Government, legislation and civic participation",exam:10},
+  2:{es:"Derechos y deberes fundamentales",en:"Fundamental rights and duties",exam:3},
+  3:{es:"Organización territorial. Geografía física y política",en:"Territorial organisation and geography",exam:2},
+  4:{es:"Cultura e historia de España",en:"Spanish culture and history",exam:3},
+  5:{es:"Sociedad española",en:"Spanish society",exam:7}
+};
+const Q = RAW.map(([id,q,o,a])=>({id,q,o,a,t:Math.floor(id/1000)}));
+const QBY = Object.fromEntries(Q.map(x=>[x.id,x]));
+const EXAM_SECONDS = 45*60, PASS = 15;
+
+const I18N = {
+ es:{home:"Inicio",study:"Estudiar",practice:"Practicar",exam:"Simulacro",bank:"Preguntas",
+  readiness:"Preguntas dominadas",of:"de 300",mastered:"Dominada",weak:"Por repasar",unseen:"Sin ver",
+  format:"El examen real",fq:"Preguntas",fq2:"25 de opción múltiple o verdadero/falso",ft:"Tiempo",ft2:"45 minutos",fp:"Para aprobar",fp2:"15 aciertos (60 %)",fd:"Reparto",
+  byTarea:"Progreso por tarea",cont:"Seguir practicando",contD:"Preguntas que aún no has visto",errs:"Repasar errores",errsD:n=>`${n} preguntas falladas la última vez`,errsNone:"Aún no hay errores",
+  sim:"Hacer un simulacro",simD:"25 preguntas, 45 minutos, como el examen",hist:"Simulacros anteriores",date:"Fecha",result:"Resultado",time:"Tiempo",
+  noHist:"Todavía no has hecho ningún simulacro.",pass:"APTO",fail:"NO APTO",
+  studyIntro:"Datos clave del manual, resumidos por tarea. Repásalos y después practica.",practiceTarea:"Practicar esta tarea",
+  setup:"Configura la práctica",which:"Tareas",source:"Preguntas",all:"Todas",new:"Sin ver",wrong:"Falladas",notm:"No dominadas",
+  howmany:"Cuántas",shuffle:"Mezclar el orden de las respuestas",start:"Empezar",avail:n=>`${n} disponibles`,none:"No hay preguntas con estos filtros.",
+  q:"Pregunta",correct:"¡Correcto!",incorrect:"Incorrecto. La respuesta es",next:"Siguiente",finish:"Ver resultado",quit:"Salir",
+  done:"Práctica terminada",again:"Repetir las falladas",newSet:"Nueva práctica",missed:"Falladas en esta ronda",perfect:"Sin fallos. Muy bien.",
+  examIntro:"Mismo formato que la prueba del Instituto Cervantes: 25 preguntas elegidas al azar del manual, en la proporción oficial por tarea. Puedes moverte entre preguntas y cambiar respuestas hasta entregar.",
+  begin:"Empezar el simulacro",resume:"Continuar el simulacro",prev:"Anterior",submit:"Entregar",unans:n=>`Te quedan ${n} sin responder. ¿Entregar igualmente?`,yes:"Sí, entregar",no:"Seguir",
+  answered:n=>`${n}/25 respondidas`,timeUp:"Se acabó el tiempo",yourAns:"Tu respuesta",rightAns:"Correcta",blank:"Sin responder",reviewAll:"Revisión",onlyWrong:"Solo errores",showAll:"Todas",
+  newExam:"Otro simulacro",need:n=>`Necesitas ${PASS}. Te faltaron ${n}.`,passed:n=>`${n} por encima del mínimo.`,
+  search:"Buscar en las 300 preguntas…",showAns:"Mostrar respuestas",reveal:"Ver respuesta",results:n=>`${n} preguntas`,
+  reset:"Borrar mi progreso",resetQ:"Se borrará todo tu progreso y el historial de simulacros.",resetYes:"Borrar",resetNo:"Cancelar",
+  foot:"Preguntas y respuestas del «Manual de preparación de la prueba CCSE 2026» del Instituto Cervantes. Los resúmenes de estudio son un extracto. Tu progreso se guarda solo en este navegador.",
+  keys:"Teclas: 1-3 o A-C para responder, Intro para seguir",tf:"V/F",why:"¿Por qué?",pdf:"Descargar revisión en PDF",pdfBusy:"Generando PDF…",pdfOk:"PDF listo.",pdfNo:"La descarga no está disponible en esta vista. Abre la página en claude.ai.",pdfDecl:"Descarga cancelada.",pdfErr:"No se pudo generar el PDF. Inténtalo de nuevo."},
+ en:{home:"Home",study:"Study",practice:"Practice",exam:"Mock exam",bank:"Questions",
+  readiness:"Questions mastered",of:"of 300",mastered:"Mastered",weak:"Needs review",unseen:"Not seen",
+  format:"The real exam",fq:"Questions",fq2:"25 multiple choice or true/false",ft:"Time",ft2:"45 minutes",fp:"To pass",fp2:"15 correct (60%)",fd:"Split",
+  byTarea:"Progress by section",cont:"Keep practising",contD:"Questions you haven't seen yet",errs:"Review mistakes",errsD:n=>`${n} questions you got wrong last time`,errsNone:"No mistakes yet",
+  sim:"Take a mock exam",simD:"25 questions, 45 minutes, like the real test",hist:"Past mock exams",date:"Date",result:"Result",time:"Time",
+  noHist:"You haven't taken a mock exam yet.",pass:"PASS",fail:"FAIL",
+  studyIntro:"Key facts from the manual, summarised by section (in Spanish, like the exam). Review them, then practise.",practiceTarea:"Practise this section",
+  setup:"Set up practice",which:"Sections",source:"Questions",all:"All",new:"Not seen",wrong:"Got wrong",notm:"Not mastered",
+  howmany:"How many",shuffle:"Shuffle answer order",start:"Start",avail:n=>`${n} available`,none:"No questions match these filters.",
+  q:"Question",correct:"Correct!",incorrect:"Wrong. The answer is",next:"Next",finish:"See results",quit:"Quit",
+  done:"Practice complete",again:"Retry the missed ones",newSet:"New practice",missed:"Missed this round",perfect:"No mistakes. Well done.",
+  examIntro:"Same format as the Instituto Cervantes test: 25 questions drawn at random from the manual in the official proportion per section. You can move between questions and change answers until you submit.",
+  begin:"Start mock exam",resume:"Resume mock exam",prev:"Previous",submit:"Submit",unans:n=>`${n} still unanswered. Submit anyway?`,yes:"Yes, submit",no:"Keep going",
+  answered:n=>`${n}/25 answered`,timeUp:"Time's up",yourAns:"Your answer",rightAns:"Correct",blank:"Not answered",reviewAll:"Review",onlyWrong:"Mistakes only",showAll:"All",
+  newExam:"Another mock exam",need:n=>`You need ${PASS}. You were ${n} short.`,passed:n=>`${n} above the minimum.`,
+  search:"Search all 300 questions…",showAns:"Show answers",reveal:"Show answer",results:n=>`${n} questions`,
+  reset:"Clear my progress",resetQ:"This deletes all your progress and mock exam history.",resetYes:"Clear",resetNo:"Cancel",
+  foot:"Questions and answers from the Instituto Cervantes “Manual de preparación de la prueba CCSE 2026”. Study summaries are condensed. Your progress is saved only in this browser.",
+  keys:"Keys: 1-3 or A-C to answer, Enter to continue",tf:"T/F",why:"Why?",pdf:"Download review as PDF",pdfBusy:"Building PDF…",pdfOk:"PDF ready.",pdfNo:"Downloads aren't available in this view. Open the page on claude.ai.",pdfDecl:"Download cancelled.",pdfErr:"Couldn't build the PDF. Try again."}
+};
+
+/* ---------- storage ---------- */
+const LS="ccse2026:v1";
+function load(){try{return JSON.parse(localStorage.getItem(LS))||{}}catch(e){return {}}}
+let S=Object.assign({lang:"es",shuffle:true,prog:{},hist:[],exam:null,tab:"home",studyT:1},load());
+function save(){try{localStorage.setItem(LS,JSON.stringify(S))}catch(e){}}
+const L=()=>I18N[S.lang];
+const tn=t=>TAREAS[t][S.lang];
+
+function status(id){const p=S.prog[id];if(!p)return"u";if(p.s>=2)return"m";if(p.l===false)return"w";return p.s>=1?"s":"w"}
+function record(id,ok){const p=S.prog[id]||{n:0,c:0,s:0};p.n++;if(ok){p.c++;p.s++;}else{p.s=0;}p.l=ok;S.prog[id]=p;}
+
+/* ---------- helpers ---------- */
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const md=s=>esc(s).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>");
+const why=id=>EXPL[id]?`<details class="why"><summary>${L().why}</summary><p>${esc(EXPL[id])}</p></details>`:"";
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const isTF=q=>q.o.length===2;
+function order(q){return (S.shuffle&&!isTF(q))?shuffle(q.o.map((_,i)=>i)):q.o.map((_,i)=>i)}
+const LET="abc";
+const fmtT=s=>`${String(Math.floor(s/60)).padStart(2,"0")}:${String(s%60).padStart(2,"0")}`;
+const $=s=>document.querySelector(s);
+const app=$("#app");
+
+/* ---------- tabs ---------- */
+const TABS=["home","study","practice","exam","bank"];
+function renderTabs(){
+  $("#tabs").innerHTML=TABS.map(t=>`<button role="tab" type="button" data-tab="${t}" aria-selected="${S.tab===t}">${L()[t]}</button>`).join("");
+  $("#langbtn").textContent=S.lang==="es"?"EN":"ES";
+  document.documentElement.lang=S.lang;
+}
+$("#tabs").addEventListener("click",e=>{const b=e.target.closest("[data-tab]");if(b)go(b.dataset.tab)});
+$("#langbtn").addEventListener("click",()=>{S.lang=S.lang==="es"?"en":"es";save();render()});
+function go(tab){S.tab=tab;save();render();window.scrollTo({top:0})}
+
+/* ---------- home ---------- */
+function counts(t){const qs=Q.filter(q=>!t||q.t===t);let m=0,w=0,u=0;qs.forEach(q=>{const s=status(q.id);if(s==="m")m++;else if(s==="u")u++;else w++});return{m,w,u,n:qs.length}}
+function renderHome(){
+  const l=L(),all=counts(),wrongN=Q.filter(q=>S.prog[q.id]&&S.prog[q.id].l===false).length;
+  const rows=[1,2,3,4,5].map(t=>{const c=counts(t);return `<button class="trow" type="button" data-study="${t}">
+    <span class="tbadge">${t}</span><span class="tname">${esc(tn(t))}<small>${c.n} ${S.lang==="es"?"preguntas":"questions"} · ${TAREAS[t].exam} ${S.lang==="es"?"en el examen":"in the exam"}</small></span>
+    <span class="bar"><i class="m" style="width:${c.m/c.n*100}%"></i><i class="w" style="width:${c.w/c.n*100}%"></i></span>
+    <span class="tpct">${Math.round(c.m/c.n*100)} %</span></button>`}).join("");
+  const hist=S.hist.slice(-8).reverse();
+  app.innerHTML=`<div class="stack">
+   <div class="hero">
+    <section class="sheet"><div class="eyebrow">${l.readiness}</div>
+      <div class="ready"><span class="big num">${all.m}</span><span class="of">${l.of}</span></div>
+      <div class="bar" style="margin-top:14px;height:10px"><i class="m" style="width:${all.m/3}%"></i><i class="w" style="width:${all.w/3}%"></i></div>
+      <div class="legend" style="margin-top:10px"><span style="--c:var(--ok)">${l.mastered} · ${all.m}</span><span style="--c:var(--gold)">${l.weak} · ${all.w}</span><span style="--c:var(--tint)">${l.unseen} · ${all.u}</span></div>
+    </section>
+    <section class="sheet format"><div class="eyebrow">${l.format}</div>
+      <dl><dt>${l.fq}</dt><dd>${l.fq2}</dd><dt>${l.ft}</dt><dd>${l.ft2}</dd><dt>${l.fp}</dt><dd>${l.fp2}</dd>
+      <dt>${l.fd}</dt><dd class="num" style="font-weight:500;font-size:13px">T1·10 T2·3 T3·2 T4·3 T5·7</dd></dl>
+    </section>
+   </div>
+   <div class="actions">
+    <button class="action main" type="button" data-act="exam"><b>${l.sim}</b><span>${l.simD}</span></button>
+    <button class="action" type="button" data-act="new"><b>${l.cont}</b><span>${l.contD} (${all.u})</span></button>
+    <button class="action" type="button" data-act="wrong" ${wrongN?"":"disabled"}><b>${l.errs}</b><span>${wrongN?l.errsD(wrongN):l.errsNone}</span></button>
+   </div>
+   <section class="sheet"><h2>${l.byTarea}</h2><div class="tareas" style="margin-top:6px">${rows}</div></section>
+   <section class="sheet"><h2>${l.hist}</h2>${hist.length?`<div style="overflow-x:auto;margin-top:8px"><table class="history"><thead><tr><th>${l.date}</th><th>${l.result}</th><th></th><th>${l.time}</th></tr></thead><tbody>${hist.map(h=>`<tr><td class="num">${new Date(h.d).toLocaleDateString(S.lang==="es"?"es-ES":"en-GB",{day:"2-digit",month:"short"})}</td><td class="num">${h.s}/25</td><td><span class="pill ${h.s>=PASS?"ok":"bad"}">${h.s>=PASS?l.pass:l.fail}</span></td><td class="num">${fmtT(h.t)}</td></tr>`).join("")}</tbody></table></div>`:`<p class="muted">${l.noHist}</p>`}</section>
+   ${footer()}
+  </div>`;
+}
+app.addEventListener("click",e=>{
+  const s=e.target.closest("[data-study]");if(s){S.studyT=+s.dataset.study;go("study");return}
+  const a=e.target.closest("[data-act]");if(!a)return;
+  const act=a.dataset.act;
+  if(act==="exam"){if(S.exam&&S.exam.res)S.exam=null;go("exam");}
+  if(act==="new"){P.setup={ts:[1,2,3,4,5],src:"new",n:20};startPractice();}
+  if(act==="wrong"){P.setup={ts:[1,2,3,4,5],src:"wrong",n:0};startPractice();}
+  if(act==="reset"){R.ask=true;render()}
+  if(act==="resetNo"){R.ask=false;render()}
+  if(act==="resetYes"){S.prog={};S.hist=[];S.exam=null;R.ask=false;save();render()}
+});
+const R={ask:false};
+function footer(){const l=L();return `<div class="foot stack" style="gap:10px"><div>${l.foot}</div>
+ ${R.ask?`<div class="confirm"><span>${l.resetQ}</span><span class="row"><button class="btn" type="button" data-act="resetNo">${l.resetNo}</button><button class="btn primary" type="button" data-act="resetYes">${l.resetYes}</button></span></div>`:`<div><button class="btn ghost danger" type="button" data-act="reset" style="padding-inline:0">${l.reset}</button></div>`}</div>`}
+
+/* ---------- study ---------- */
+function renderStudy(){
+  const l=L(),t=S.studyT,c=counts(t);
+  app.innerHTML=`<div class="stack">
+   <div><div class="eyebrow">${l.study}</div><h1 style="margin-top:4px">Tarea ${t}. ${esc(TAREAS[t].es)}</h1><p class="muted" style="margin:8px 0 0">${l.studyIntro}</p></div>
+   <div class="tsel">${[1,2,3,4,5].map(x=>`<button class="chip" type="button" aria-pressed="${x===t}" data-st="${x}">Tarea ${x}</button>`).join("")}</div>
+   <section class="sheet stack">${FACTS[t].map(sec=>`<div class="factsec"><h3>${esc(sec.h)}</h3><ul class="facts">${sec.i.map(i=>`<li>${md(i)}</li>`).join("")}</ul></div>`).join("")}</section>
+   <div class="row"><button class="btn primary" type="button" data-pt="${t}">${l.practiceTarea} · ${c.n}</button><span class="muted" style="font-size:13px">${l.mastered}: ${c.m} · ${l.weak}: ${c.w} · ${l.unseen}: ${c.u}</span></div>
+  </div>`;
+  app.querySelectorAll("[data-st]").forEach(b=>b.onclick=()=>{S.studyT=+b.dataset.st;save();renderStudy();window.scrollTo({top:0})});
+  app.querySelector("[data-pt]").onclick=()=>{P.setup={ts:[t],src:"notm",n:20};startPractice()};
+}
+
+/* ---------- practice ---------- */
+const P={setup:{ts:[1,2,3,4,5],src:"all",n:20},run:null};
+function pool(st){return Q.filter(q=>st.ts.includes(q.t)&&(
+  st.src==="all"||(st.src==="new"&&!S.prog[q.id])||(st.src==="wrong"&&S.prog[q.id]&&S.prog[q.id].l===false)||(st.src==="notm"&&status(q.id)!=="m")))}
+function startPractice(ids){
+  let list=ids?ids.map(i=>QBY[i]):shuffle(pool(P.setup));
+  if(!ids&&P.setup.n)list=list.slice(0,P.setup.n);
+  if(!list.length){P.run=null;S.tab="practice";render();return}
+  P.run={list:list.map(q=>({id:q.id,ord:order(q),pick:null})),i:0,done:false};
+  S.tab="practice";save();render();window.scrollTo({top:0});
+}
+function renderPractice(){
+  const l=L();
+  if(!P.run){
+    const st=P.setup,n=pool(st).length;
+    app.innerHTML=`<div class="stack"><div><div class="eyebrow">${l.practice}</div><h1 style="margin-top:4px">${l.setup}</h1></div>
+     <section class="sheet setup stack">
+      <div><label class="lab">${l.which}</label><div class="row">${[1,2,3,4,5].map(t=>`<button class="chip" type="button" data-t="${t}" aria-pressed="${st.ts.includes(t)}" title="${esc(tn(t))}">Tarea ${t}</button>`).join("")}</div></div>
+      <div><label class="lab">${l.source}</label><div class="row">${["all","new","notm","wrong"].map(s=>`<button class="chip" type="button" data-src="${s}" aria-pressed="${st.src===s}">${l[s]}</button>`).join("")}</div></div>
+      <div><label class="lab">${l.howmany}</label><div class="row">${[10,20,50,0].map(k=>`<button class="chip" type="button" data-n="${k}" aria-pressed="${st.n===k}">${k||l.all}</button>`).join("")}</div></div>
+      <label class="toggle"><input type="checkbox" id="shuf" ${S.shuffle?"checked":""}> ${l.shuffle}</label>
+      <div class="row"><button class="btn primary" type="button" id="go" ${n?"":"disabled"}>${l.start}</button><span class="muted num" style="font-size:13px">${n?l.avail(n):l.none}</span></div>
+     </section>${footer()}</div>`;
+    app.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>{const t=+b.dataset.t;st.ts=st.ts.includes(t)?st.ts.filter(x=>x!==t):[...st.ts,t].sort();if(!st.ts.length)st.ts=[t];renderPractice()});
+    app.querySelectorAll("[data-src]").forEach(b=>b.onclick=()=>{st.src=b.dataset.src;renderPractice()});
+    app.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{st.n=+b.dataset.n;renderPractice()});
+    $("#shuf").onchange=e=>{S.shuffle=e.target.checked;save()};
+    $("#go").onclick=()=>startPractice();
+    return;
+  }
+  const r=P.run;
+  if(r.done){
+    const ok=r.list.filter(x=>x.pick===QBY[x.id].a).length,miss=r.list.filter(x=>x.pick!==QBY[x.id].a);
+    app.innerHTML=`<div class="stack"><div class="eyebrow">${l.practice}</div>
+     <section class="sheet stack"><h1>${l.done}</h1><div class="score num">${ok}<small> / ${r.list.length}</small></div>
+      <div class="row">${miss.length?`<button class="btn primary" type="button" id="again">${l.again} · ${miss.length}</button>`:""}<button class="btn" type="button" id="newset">${l.newSet}</button><button class="btn" type="button" id="pdfp">${l.pdf}</button></div><div class="note" id="pdfmsg" aria-live="polite"></div></section>
+     <section class="sheet"><h2>${l.reviewAll}</h2>${miss.length?"":`<p class="muted">${l.perfect}</p>`}<div class="review" style="margin-top:6px">${r.list.map((x,k)=>reviewItem(x,k)).join("")}</div></section></div>`;
+    if(miss.length)$("#again").onclick=()=>startPractice(miss.map(x=>x.id));
+    $("#newset").onclick=()=>{P.run=null;renderPractice()};
+    $("#pdfp").onclick=()=>exportPdf({kind:"practice",items:r.list,score:ok,total:r.list.length});
+    return;
+  }
+  const it=r.list[r.i],q=QBY[it.id],answered=it.pick!==null;
+  app.innerHTML=`<div class="stack">
+   <div class="qhead"><span class="eyebrow">${l.q} ${r.i+1} / ${r.list.length}</span><button class="btn ghost" type="button" id="quit" style="min-height:0;padding:4px 0">${l.quit}</button></div>
+   <div class="progress"><i style="width:${(r.i+(answered?1:0))/r.list.length*100}%"></i></div>
+   <section class="sheet">${qBlock(q,it,answered,true)}
+    ${answered?`<div class="feedback ${it.pick===q.a?"ok":"bad"}"><span>${it.pick===q.a?l.correct:`${l.incorrect} ${LET[it.ord.indexOf(q.a)]}. ${esc(q.o[q.a])}`}</span>
+      <button class="btn primary" type="button" id="next">${r.i+1<r.list.length?l.next:l.finish}</button></div>${why(q.id)}`:""}
+   </section>
+   <div class="kbd">${l.keys}</div></div>`;
+  bindOpts(idx=>{if(it.pick!==null)return;it.pick=idx;record(q.id,idx===q.a);save();renderPractice();const n=$("#next");n&&n.focus({preventScroll:true})});
+  $("#quit").onclick=()=>{P.run=null;renderPractice()};
+  const nx=$("#next");if(nx)nx.onclick=nextQ;
+}
+function nextQ(){const r=P.run;if(r.i+1<r.list.length)r.i++;else r.done=true;renderPractice();window.scrollTo({top:0})}
+function qBlock(q,it,locked,reveal){
+  return `<div class="row" style="justify-content:space-between"><span class="eyebrow">Tarea ${q.t} · ${esc(tn(q.t))}</span><span class="num" style="font-size:12px;color:var(--ink-3)">Nº ${q.id}</span></div>
+   <div class="qtext">${esc(q.q)}</div>
+   <div class="opts">${it.ord.map((oi,pos)=>{
+     let cls="",mark="";
+     if(reveal&&locked){if(oi===q.a){cls="ok";mark="✓"}else if(oi===it.pick){cls="bad";mark="✗"}}
+     else if(it.pick===oi)cls="sel";
+     return `<button class="opt ${cls}" type="button" data-o="${oi}" ${reveal&&locked?"disabled":""}><span class="bub">${LET[pos]}</span><span>${esc(q.o[oi])}</span><span class="mark">${mark}</span></button>`}).join("")}</div>`;
+}
+let optHandler=null;
+function bindOpts(fn){optHandler=fn;app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>fn(+b.dataset.o))}
+document.addEventListener("keydown",e=>{
+  if(e.target.matches("input,textarea")||e.metaKey||e.ctrlKey||e.altKey)return;
+  const opts=[...app.querySelectorAll(".opt:not([disabled])")];
+  const k=e.key.toLowerCase(),map={"1":0,"2":1,"3":2,a:0,b:1,c:2};
+  if(k in map&&opts[map[k]]&&optHandler){e.preventDefault();optHandler(+opts[map[k]].dataset.o);return}
+  if(S.tab==="practice"&&P.run&&!P.run.done&&(e.key==="Enter"||e.key==="ArrowRight")){const it=P.run.list[P.run.i];if(it.pick!==null&&document.activeElement?.id!=="next"){e.preventDefault();nextQ()}}
+  if(S.tab==="exam"&&S.exam&&!S.exam.res){if(e.key==="ArrowRight"){E.move(1)}if(e.key==="ArrowLeft"){E.move(-1)}}
+});
+function reviewItem(x,k){
+  const q=QBY[x.id],l=L(),ok=x.pick===q.a;
+  return `<div class="rv" id="rv-${k}"><div class="row" style="justify-content:space-between"><span class="rvn"><b class="${ok?"ok":"bad"}">${k+1}</b><span class="eyebrow">${l.q} ${k+1} · Tarea ${q.t}</span></span><span class="num" style="font-size:12px;color:var(--ink-3)">Nº ${q.id}</span></div>
+   <div class="rq">${esc(q.q)}</div><div class="ra">
+   ${ok?`<span class="right">✓ ${esc(q.o[q.a])}</span>`:`<span class="yours">✗ ${l.yourAns}: ${x.pick===null?l.blank:esc(q.o[x.pick])}</span><span class="right">✓ ${l.rightAns}: ${esc(q.o[q.a])}</span>`}</div>${why(q.id)}</div>`;
+}
+
+/* ---------- exam ---------- */
+let tick=null;
+const E={
+  start(){
+    const picks=[];[1,2,3,4,5].forEach(t=>{shuffle(Q.filter(q=>q.t===t)).slice(0,TAREAS[t].exam).forEach(q=>picks.push(q))});
+    S.exam={start:Date.now(),i:0,list:picks.map(q=>({id:q.id,ord:order(q),pick:null})),res:null,confirm:false};save();renderExam();
+  },
+  left(){return Math.max(0,EXAM_SECONDS-Math.floor((Date.now()-S.exam.start)/1000))},
+  move(d){const x=S.exam;x.i=Math.min(24,Math.max(0,x.i+d));x.confirm=false;save();renderExam()},
+  submit(){
+    const x=S.exam;if(x.res)return;
+    const used=Math.min(EXAM_SECONDS,Math.floor((Date.now()-x.start)/1000));
+    let s=0;const per={};x.list.forEach(it=>{const q=QBY[it.id],ok=it.pick===q.a;if(ok)s++;per[q.t]=per[q.t]||[0,0];per[q.t][1]++;if(ok)per[q.t][0]++;record(q.id,ok)});
+    x.res={s,per,t:used,only:false};S.hist.push({d:Date.now(),s,t:used});save();clearInterval(tick);renderExam();window.scrollTo({top:0});
+  }
+};
+function renderExam(){
+  const l=L(),x=S.exam;clearInterval(tick);
+  if(!x){
+    app.innerHTML=`<div class="stack"><div><div class="eyebrow">${l.exam}</div><h1 style="margin-top:4px">${l.sim}</h1></div>
+     <section class="sheet stack"><p style="margin:0;max-width:62ch">${l.examIntro}</p>
+      <div class="breakdown">${[1,2,3,4,5].map(t=>`<div class="bd"><b>${TAREAS[t].exam}</b><span>Tarea ${t}</span></div>`).join("")}</div>
+      <div class="row"><button class="btn primary" type="button" id="begin">${l.begin}</button><span class="muted num">45:00 · ${PASS}/25</span></div></section>${footer()}</div>`;
+    $("#begin").onclick=()=>E.start();return;
+  }
+  if(!x.res&&E.left()<=0){E.submit();return}
+  if(x.res){
+    const r=x.res,passed=r.s>=PASS,items=r.only?x.list.filter(it=>it.pick!==QBY[it.id].a):x.list;
+    app.innerHTML=`<div class="stack"><div class="eyebrow">${l.exam}</div>
+     <section class="sheet stack"><div class="stampwrap"><div class="score num">${r.s}<small> / 25</small></div><div class="stamp ${passed?"ok":"bad"}">${passed?l.pass:l.fail}</div></div>
+      <p class="muted" style="margin:0">${passed?l.passed(r.s-PASS):l.need(PASS-r.s)} · ${l.time} ${fmtT(r.t)}</p>
+      <div class="breakdown">${[1,2,3,4,5].map(t=>`<div class="bd"><b>${r.per[t][0]}/${r.per[t][1]}</b><span>Tarea ${t}</span></div>`).join("")}</div>
+      <div class="grid25">${x.list.map((it,k)=>`<button type="button" class="cell ${it.pick===QBY[it.id].a?"ok":"bad"}" data-jump="${k}" aria-label="${l.q} ${k+1}">${k+1}</button>`).join("")}</div>
+      <div class="row"><button class="btn primary" type="button" id="again">${l.newExam}</button>${x.list.some(it=>it.pick!==QBY[it.id].a)?`<button class="btn" type="button" id="drill">${l.again}</button>`:""}<button class="btn" type="button" id="pdfe">${l.pdf}</button></div><div class="note" id="pdfmsg" aria-live="polite"></div></section>
+     <section class="sheet"><div class="row" style="justify-content:space-between"><h2>${l.reviewAll}</h2><div class="row"><button class="chip" type="button" id="fall" aria-pressed="${!r.only}">${l.showAll}</button><button class="chip" type="button" id="fwrong" aria-pressed="${r.only}">${l.onlyWrong}</button></div></div>
+      <div class="review" style="margin-top:6px">${items.map(it=>reviewItem(it,x.list.indexOf(it))).join("")}</div></section></div>`;
+    $("#again").onclick=()=>E.start();
+    const d=$("#drill");if(d)d.onclick=()=>{const ids=x.list.filter(it=>it.pick!==QBY[it.id].a).map(it=>it.id);startPractice(ids)};
+    $("#pdfe").onclick=()=>exportPdf({kind:"exam",items:x.list,score:r.s,total:25,per:r.per,time:r.t,date:x.start});
+    app.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{
+      const k=+b.dataset.jump,it=x.list[k];
+      if(r.only&&it.pick===QBY[it.id].a){r.only=false;save();renderExam()}
+      const el=document.getElementById("rv-"+k);if(!el)return;
+      el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
+      el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash");
+      const d=el.querySelector("details.why");if(d)d.open=true;});
+    $("#fall").onclick=()=>{r.only=false;save();renderExam()};$("#fwrong").onclick=()=>{r.only=true;save();renderExam()};
+    return;
+  }
+  const it=x.list[x.i],q=QBY[it.id],n=x.list.filter(z=>z.pick!==null).length,left=E.left();
+  app.innerHTML=`<div class="stack">
+   <div class="examtop"><span class="eyebrow num">${l.answered(n)}</span><span class="timer ${left<300?"low":""}" id="timer" aria-live="off">${fmtT(left)}</span></div>
+   <section class="sheet">${qBlock(q,it,false,false)}
+    <div class="row" style="justify-content:space-between;margin-top:16px"><button class="btn" type="button" id="prev" ${x.i===0?"disabled":""}>← ${l.prev}</button>
+     ${x.i<24?`<button class="btn primary" type="button" id="nxt">${l.next} →</button>`:`<button class="btn primary" type="button" id="sub">${l.submit}</button>`}</div>
+   </section>
+   ${x.confirm?`<div class="confirm"><span>${l.unans(25-n)}</span><span class="row"><button class="btn" type="button" id="cno">${l.no}</button><button class="btn primary" type="button" id="cyes">${l.yes}</button></span></div>`:""}
+   <section class="sheet"><div class="grid25">${x.list.map((z,k)=>`<button type="button" class="cell ${z.pick!==null?"ans":""} ${k===x.i?"cur":""}" data-go="${k}" aria-label="${l.q} ${k+1}">${k+1}</button>`).join("")}</div>
+    <div class="row" style="margin-top:14px;justify-content:space-between"><span class="kbd">${l.keys}</span><button class="btn" type="button" id="sub2">${l.submit}</button></div></section>
+  </div>`;
+  bindOpts(idx=>{it.pick=idx;save();if(x.i<24){x.i++;}renderExam()});
+  $("#prev").onclick=()=>E.move(-1);
+  const nx=$("#nxt");if(nx)nx.onclick=()=>E.move(1);
+  const trySub=()=>{if(n<25&&!x.confirm){x.confirm=true;renderExam()}else E.submit()};
+  const sb=$("#sub");if(sb)sb.onclick=trySub;$("#sub2").onclick=trySub;
+  const cy=$("#cyes");if(cy){cy.onclick=()=>E.submit();$("#cno").onclick=()=>{x.confirm=false;renderExam()}}
+  app.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{x.i=+b.dataset.go;x.confirm=false;save();renderExam()});
+  tick=setInterval(()=>{const s=E.left(),el=$("#timer");if(s<=0){E.submit();return}if(el){el.textContent=fmtT(s);el.classList.toggle("low",s<300)}},1000);
+}
+
+/* ---------- bank ---------- */
+const B={q:"",t:0,show:false,open:new Set()};
+const norm=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+function renderBank(){
+  const l=L();
+  app.innerHTML=`<div class="stack"><div><div class="eyebrow">${l.bank}</div><h1 style="margin-top:4px">${S.lang==="es"?"Banco de preguntas":"Question bank"}</h1></div>
+   <input class="search" id="bs" type="search" placeholder="${l.search}" value="${esc(B.q)}" autocomplete="off">
+   <div class="row" style="justify-content:space-between"><div class="row">${[0,1,2,3,4,5].map(t=>`<button class="chip" type="button" data-bt="${t}" aria-pressed="${B.t===t}">${t?"T"+t:l.all}</button>`).join("")}</div>
+    <label class="toggle"><input type="checkbox" id="bshow" ${B.show?"checked":""}> ${l.showAns}</label></div>
+   <div class="muted num" id="bcount" style="font-size:13px"></div>
+   <section class="sheet" style="padding-block:4px"><div class="bank" id="blist"></div></section>${footer()}</div>`;
+  const draw=()=>{
+    const term=norm(B.q.trim());
+    const list=Q.filter(q=>(!B.t||q.t===B.t)&&(!term||norm(q.q+" "+q.o.join(" ")+" "+q.id).includes(term)));
+    $("#bcount").textContent=l.results(list.length);
+    $("#blist").innerHTML=list.length?list.map(q=>{const st=status(q.id),vis=B.show||B.open.has(q.id);
+      return `<div class="bq"><div class="id"><span>${q.id}</span><span class="dot ${st==="m"?"m":st==="u"?"":"w"}" title="${st==="m"?l.mastered:st==="u"?l.unseen:l.weak}"></span></div>
+      <div style="min-width:0"><div style="font-weight:600">${esc(q.q)}</div><ol>${q.o.map((o,i)=>`<li class="${i===q.a?"c"+(vis?"":" hide"):""}"><b>${LET[i]}</b>${esc(o)}${i===q.a&&vis?" ✓":""}</li>`).join("")}</ol>
+      ${vis?why(q.id):`<button class="reveal" type="button" data-rv="${q.id}">${l.reveal}</button>`}</div></div>`}).join(""):`<div class="empty">${l.none}</div>`;
+  };
+  draw();
+  $("#bs").oninput=e=>{B.q=e.target.value;draw()};
+  $("#bshow").onchange=e=>{B.show=e.target.checked;draw()};
+  app.querySelectorAll("[data-bt]").forEach(b=>b.onclick=()=>{B.t=+b.dataset.bt;renderBank()});
+  $("#blist").addEventListener("click",e=>{const r=e.target.closest("[data-rv]");if(r){B.open.add(+r.dataset.rv);draw()}});
+}
+
+/* ---------- pdf export ---------- */
+const pdfTxt=s=>String(s).replace(/[…]/g,"...").replace(/[‘’]/g,"'").replace(/[“”]/g,'"').replace(/[–—]/g,"-").replace(/[^\x20-\x7E -ÿ\n]/g,"");
+async function exportPdf(o){
+  const l=L(),msg=$("#pdfmsg"),say=t=>{if(msg)msg.textContent=t};
+  if(!window.jspdf){say(l.pdfErr);return}
+  say(l.pdfBusy);
+  let blob;
+  try{
+    const {jsPDF}=window.jspdf,doc=new jsPDF({unit:"mm",format:"a4"}),W=210,M=16,CW=W-2*M,BOT=284;
+    let y=M;
+    const ink=[24,33,58],grey=[110,118,140],ok=[31,122,77],bad=[179,38,30],red=[168,32,45];
+    const need=h=>{if(y+h>BOT){doc.addPage();y=M}};
+    const write=(txt,{size=10,style="normal",color=ink,indent=0,gap=1.2}={})=>{
+      doc.setFont("helvetica",style);doc.setFontSize(size);doc.setTextColor(...color);
+      const lines=doc.splitTextToSize(pdfTxt(txt),CW-indent),lh=size*0.42;
+      lines.forEach(ln=>{need(lh);doc.text(ln,M+indent,y+lh*0.8);y+=lh});y+=gap;};
+    const es=S.lang==="es";
+    write(es?"Repaso CCSE 2026":"CCSE 2026 review",{size:9,color:red,style:"bold",gap:0.5});
+    write(o.kind==="exam"?(es?"Revisión del simulacro":"Mock exam review"):(es?"Revisión de la práctica":"Practice review"),{size:18,style:"bold",gap:2});
+    const d=new Date(o.date||Date.now()).toLocaleString(es?"es-ES":"en-GB",{dateStyle:"long",timeStyle:"short"});
+    const passed=o.kind==="exam"?o.score>=PASS:null;
+    write(`${es?"Resultado":"Score"}: ${o.score} / ${o.total}${passed===null?"":"  -  "+(passed?l.pass:l.fail)}${o.time!=null?"   ·   "+l.time+" "+fmtT(o.time):""}   ·   ${d}`,{size:10.5,style:"bold",color:passed===false?bad:passed?ok:ink,gap:1});
+    if(o.per)write([1,2,3,4,5].map(t=>`Tarea ${t}: ${o.per[t][0]}/${o.per[t][1]}`).join("    "),{size:9.5,color:grey,gap:1});
+    if(o.kind==="exam")write(es?`Para aprobar hacen falta ${PASS} aciertos de 25.`:`You need ${PASS} of 25 to pass.`,{size:9,color:grey,gap:3});
+    doc.setDrawColor(200,205,218);doc.line(M,y,W-M,y);y+=5;
+    o.items.forEach((it,k)=>{
+      const q=QBY[it.id],right=it.pick===q.a;
+      need(26);
+      write(`${k+1}.  Tarea ${q.t}  ·  Nº ${q.id}   ${right?(es?"CORRECTA":"CORRECT"):it.pick===null?(es?"SIN RESPONDER":"NOT ANSWERED"):(es?"INCORRECTA":"WRONG")}`,{size:8.5,style:"bold",color:right?ok:bad,gap:0.6});
+      write(q.q,{size:11,style:"bold",gap:1.2});
+      q.o.forEach((opt,i)=>{
+        const isR=i===q.a,isP=i===it.pick;
+        let tag="";if(isR&&isP)tag=es?"   <- tu respuesta (correcta)":"   <- your answer (correct)";else if(isR)tag=es?"   <- respuesta correcta":"   <- correct answer";else if(isP)tag=es?"   <- tu respuesta":"   <- your answer";
+        write(`${LET[i]})  ${opt}${tag}`,{size:10,indent:4,style:isR||isP?"bold":"normal",color:isR?ok:isP?bad:ink,gap:0.4});
+      });
+      if(EXPL[q.id]){y+=0.8;write(`${l.why} ${EXPL[q.id]}`,{size:9.3,indent:4,color:grey,gap:0});}
+      y+=3;need(4);doc.setDrawColor(225,229,236);doc.line(M,y,W-M,y);y+=4;
+    });
+    const n=doc.getNumberOfPages();
+    for(let p=1;p<=n;p++){doc.setPage(p);doc.setFont("helvetica","normal");doc.setFontSize(8);doc.setTextColor(...grey);doc.text(pdfTxt(es?"Preguntas del Manual CCSE 2026 del Instituto Cervantes":"Questions from the Instituto Cervantes CCSE 2026 manual"),M,292);doc.text(`${p} / ${n}`,W-M,292,{align:"right"});}
+    blob=doc.output("blob");
+  }catch(e){say(l.pdfErr);return}
+  const stamp=new Date(o.date||Date.now()).toISOString().slice(0,10);
+  const filename=`ccse-${o.kind==="exam"?(S.lang==="es"?"simulacro":"mock-exam"):(S.lang==="es"?"practica":"practice")}-${stamp}.pdf`;
+  const dl=window.claude&&window.claude.use?await window.claude.use("downloads").catch(()=>null):null;
+  if(!dl){
+    if(window.claude){say(l.pdfNo);return}
+    try{const u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000);say(l.pdfOk)}catch(e){say(l.pdfErr)}
+    return}
+  try{await dl.save({filename,data:blob});say(l.pdfOk)}
+  catch(e){say(e&&e.code==="declined"?l.pdfDecl:e&&e.code==="rate_limited"?l.pdfBusy:l.pdfErr)}
+}
+
+/* ---------- root ---------- */
+function render(){
+  clearInterval(tick);optHandler=null;renderTabs();
+  ({home:renderHome,study:renderStudy,practice:renderPractice,exam:renderExam,bank:renderBank})[S.tab]();
+}
+const h=(location.hash||"").slice(1);if(TABS.includes(h))S.tab=h;
+render();
+</script>
+
+</body>
+</html>
