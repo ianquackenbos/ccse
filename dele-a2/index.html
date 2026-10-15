@@ -153,6 +153,8 @@ details.why p{margin:0;padding:0 12px 10px 25px;font-size:14px;line-height:1.5;c
 .speed{display:flex;gap:4px;align-items:center;font-size:12px;color:var(--ink-3)}
 .speed button{border:1px solid var(--rule-2);background:var(--sheet);border-radius:999px;padding:3px 9px;font-size:12px;cursor:pointer;font-family:var(--mono)}
 .speed button[aria-pressed="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.who{font-size:13px;font-weight:650;color:var(--accent)}
+.voicepick select{padding:7px 10px;border:1px solid var(--rule-2);border-radius:var(--r);background:var(--sheet);max-width:100%;min-width:0}
 .names{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
 .names span b{font-family:var(--mono);color:var(--accent);margin-right:4px}
 .navrow{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}
@@ -226,7 +228,7 @@ const I18N={
   passTxt:"El DELE A2 tiene dos grupos de 50 puntos: lectura + expresión escrita, y audición + expresión oral. Necesitas al menos 30 puntos en cada grupo. Cada prueba de comprensión vale 25 puntos; como referencia, 15 aciertos de 25 equivalen al 60 %.",
   ttsWarn:"Tu navegador no tiene voces en español. Los audios pueden sonar con acento extranjero o no funcionar. En el modo práctica puedes leer la transcripción.",
   ttsNone:"Tu navegador no puede leer textos en voz alta. Usa el modo práctica para ver las transcripciones, o abre la página en Chrome, Safari o Edge.",
-  ttsNote:"Los audios usan la voz de tu navegador; la calidad depende del dispositivo.",testVoice:"Probar la voz",
+  ttsNote:"Los audios usan las voces de tu navegador. En el examen real las grabaciones son de personas nativas. Si una voz suena mal, elige otra.",testVoice:"Probar la voz",voiceW:"Voz de mujer",voiceM:"Voz de hombre",sameVoice:"(la misma voz)",speaking:"Habla",oneVoice:"Tu dispositivo solo tiene una voz natural en español, así que todos los personajes usan la misma voz. Mientras suena, se indica quién habla.",
   hist:"Intentos recientes",date:"Fecha",test:"Examen",result:"Resultado",mode:"Modo",noHist:"Aún no has hecho ningún examen.",
   foot:"Material original de práctica en el formato del DELE A2 (versión 2020). No es material oficial del Instituto Cervantes. Tu progreso se guarda solo en este navegador.",
   examLbl:"Examen",pracLbl:"Práctica",scoreOf:"aciertos",ref:"Referencia: 15/25 = 60 %"},
@@ -242,7 +244,7 @@ const I18N={
   passTxt:"DELE A2 has two groups of 50 points: reading + writing, and listening + speaking. You need at least 30 in each group. Each comprehension paper is worth 25 points; as a guide, 15 of 25 correct is 60%.",
   ttsWarn:"Your browser has no Spanish voice. Audio may sound foreign or not play. In practice mode you can read the transcript.",
   ttsNone:"Your browser can't read text aloud. Use practice mode to read transcripts, or open the page in Chrome, Safari or Edge.",
-  ttsNote:"Audio uses your browser's built-in voice; quality depends on your device.",testVoice:"Test the voice",
+  ttsNote:"Audio uses your browser's voices. The real exam uses recordings of native speakers. If a voice sounds bad, pick another.",testVoice:"Test the voice",voiceW:"Woman's voice",voiceM:"Man's voice",sameVoice:"(same voice)",speaking:"Speaking",oneVoice:"Your device has only one natural Spanish voice, so every speaker uses it. While audio plays, the page shows who is talking.",
   hist:"Recent attempts",date:"Date",test:"Test",result:"Score",mode:"Mode",noHist:"You haven't taken a test yet.",
   foot:"Original practice material in the DELE A2 format (2020 version). Not official Instituto Cervantes material. Your progress is saved only in this browser.",
   examLbl:"Exam",pracLbl:"Practice",scoreOf:"correct",ref:"Guide: 15/25 = 60%"}
@@ -274,33 +276,38 @@ function itemsOf(test){
 }
 
 /* ---------- speech ---------- */
+/* Natural pitch only (no pitch shifting). Prefer real male/female Spanish voices; if the device has
+   only one natural voice, every speaker uses it and the player shows who is talking. */
+const FEM=/m[oó]nica|helena|laura|luc[ií]a|elvira|paulina|marisol|conchita|esperanza|sabina|isabel|carmen|elena|ximena|dalia|marta|ana\b|paloma|irene|abril|estrella|triana|vera|lola|female|mujer/i;
+const MAL=/jorge|pablo|diego|[aá]lvaro|juan|carlos|enrique|ra[uú]l|miguel|antonio|alonso|arturo|gerardo|jorge|dario|dar[ií]o|tom[aá]s|emilio|teo|male|hombre/i;
+const QUAL=/natural|neural|premium|enhanced|mejorad|online|google/i;
 const TTS={ok:"speechSynthesis" in window,voices:[],cur:null,
   load(){if(!this.ok)return;this.voices=speechSynthesis.getVoices().filter(v=>/^es/i.test(v.lang));},
-  pick(role){
-    const vs=this.voices;if(!vs.length)return {v:null,p:role==="H"?0.8:role==="M"?1.15:1};
-    const es=vs.filter(v=>/es[-_]ES/i.test(v.lang)),pool=es.length?es:vs;
-    const fem=/m[oó]nica|helena|laura|luc[ií]a|elvira|paulina|marisol|conchita|esperanza|sabina|isabel|carmen|elena|ximena|dalia|female|mujer/i;
-    const mal=/jorge|pablo|diego|[aá]lvaro|juan|carlos|enrique|ra[uú]l|miguel|antonio|alonso|arturo|male|hombre/i;
-    const f=pool.find(v=>fem.test(v.name)),m=pool.find(v=>mal.test(v.name));
-    if(role==="M")return {v:f||pool[0],p:f?1:1.15};
-    if(role==="H")return {v:m||pool[pool.length>1&&!m?1:0]||pool[0],p:m?1:0.8};
-    return {v:pool[0],p:1};
+  rank(v){return (/es[-_]ES/i.test(v.lang)?4:0)+(QUAL.test(v.name)?2:0)+(v.localService===false?1:0)},
+  best(re){const c=this.voices.filter(v=>re.test(v.name));c.sort((a,b)=>this.rank(b)-this.rank(a));return c[0]||null},
+  byName(n){return n?this.voices.find(v=>v.name===n)||null:null},
+  cast(){
+    const all=this.voices.slice().sort((a,b)=>this.rank(b)-this.rank(a));
+    const f=this.byName(S.voiceM)||this.best(FEM)||all.find(v=>!MAL.test(v.name))||all[0]||null;
+    const m=this.byName(S.voiceH)||this.best(MAL)||null;
+    return {M:f,H:m||f,N:f||m,distinct:!!(m&&f&&m!==f)};
   },
-  speak(script,onend){
+  speak(script,onend,online){
     if(!this.ok){onend&&onend();return}
     speechSynthesis.cancel();this.load();
-    const lines=script.slice();let i=0;
+    const c=this.cast();let i=0;
     const next=()=>{
-      if(i>=lines.length){this.cur=null;onend&&onend();return}
-      const [role,txt]=lines[i++],cfg=this.pick(role),u=new SpeechSynthesisUtterance(txt);
-      u.lang=cfg.v?cfg.v.lang:"es-ES";if(cfg.v)u.voice=cfg.v;u.pitch=cfg.p;u.rate=S.rate;
-      u.onend=()=>setTimeout(next,role===lines[i]?.[0]?150:450);u.onerror=()=>{this.cur=null;onend&&onend()};
+      if(i>=script.length){this.cur=null;online&&online(null,c);onend&&onend();return}
+      const [role,txt]=script[i++],v=c[role]||c.N,u=new SpeechSynthesisUtterance(txt);
+      u.lang=v?v.lang:"es-ES";if(v)u.voice=v;u.pitch=1;u.rate=S.rate;
+      u.onstart=()=>online&&online(role,c);
+      u.onend=()=>setTimeout(next,script[i]&&script[i][0]===role?150:450);u.onerror=()=>{this.cur=null;onend&&onend()};
       this.cur=u;speechSynthesis.speak(u);
     };next();
   },
   stop(){if(this.ok)speechSynthesis.cancel();this.cur=null}
 };
-if(TTS.ok){TTS.load();speechSynthesis.onvoiceschanged=()=>TTS.load()}
+if(TTS.ok){TTS.load();speechSynthesis.onvoiceschanged=()=>{TTS.load();const vp=document.getElementById("voicepick");if(vp&&!vp.dataset.filled)renderVoicePick()}}
 
 /* ---------- tabs ---------- */
 const TABS=["home","R","L"];
@@ -322,7 +329,7 @@ function testRows(kind){
 function ttsBanner(kind){
   if(kind!=="L")return "";const l=L();
   if(!TTS.ok)return `<div class="warn">${l.ttsNone}</div>`;
-  return `<div class="row"><span class="note">${l.ttsNote}</span><button class="btn" type="button" id="testvoice">${l.testVoice}</button></div><div class="warn" id="novoice" hidden>${l.ttsWarn}</div>`;
+  return `<div class="stack" style="gap:8px"><span class="note">${l.ttsNote}</span><div id="voicepick" class="voicepick"></div><div class="warn" id="novoice" hidden>${l.ttsWarn}</div><div class="note" id="onevoice" hidden>${l.oneVoice}</div></div>`;
 }
 function renderHome(){
   const l=L(),h=S.hist.slice(-8).reverse();
@@ -355,7 +362,21 @@ function renderList(kind){
 }
 function bindHome(){
   app.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>startRun(b.dataset.go,b.dataset.mode));
-  const tv=$("#testvoice");if(tv)tv.onclick=()=>{TTS.load();$("#novoice").hidden=TTS.voices.length>0;TTS.speak([["M","Hola, buenos días. ¿Me oyes bien?"],["H","Sí, perfectamente. Vamos a empezar."]])};
+  renderVoicePick();
+}
+function renderVoicePick(){
+  const box=document.getElementById("voicepick");if(!box||!TTS.ok)return;TTS.load();const l=L(),vs=TTS.voices,c=TTS.cast();
+  if(vs.length)box.dataset.filled="1";
+  const opts=sel=>vs.map(v=>`<option value="${esc(v.name)}" ${sel&&v.name===sel.name?"selected":""}>${esc(v.name)} · ${esc(v.lang)}</option>`).join("");
+  box.innerHTML=vs.length?`<div class="row"><label class="note" for="vm">${l.voiceW}</label><select id="vm">${opts(c.M)}</select>
+    <label class="note" for="vh">${l.voiceM}</label><select id="vh"><option value="">${l.sameVoice}</option>${opts(c.distinct?c.H:null)}</select>
+    <button class="btn" type="button" id="testvoice">${l.testVoice}</button></div>`:`<button class="btn" type="button" id="testvoice">${l.testVoice}</button>`;
+  const nv=document.getElementById("novoice"),ov=document.getElementById("onevoice");
+  if(nv)nv.hidden=vs.length>0;if(ov)ov.hidden=!vs.length||c.distinct;
+  const vm=document.getElementById("vm"),vh=document.getElementById("vh");
+  if(vm)vm.onchange=()=>{S.voiceM=vm.value;save();renderVoicePick()};
+  if(vh)vh.onchange=()=>{S.voiceH=vh.value;save();renderVoicePick()};
+  document.getElementById("testvoice").onclick=()=>{TTS.load();if(nv)nv.hidden=TTS.voices.length>0;TTS.speak([["M","Hola, buenos días. ¿Me oyes bien?"],["H","Sí, perfectamente. Vamos a empezar."]])};
 }
 function footer(){return `<div class="foot">${L().foot} <a href="../">Repaso CCSE</a></div>`}
 
@@ -398,7 +419,7 @@ function feedback(it,opt){
 }
 function player(key,script){
   const r=S.run,n=r.plays[key]||0,max=r.mode==="exam"?2:0,dis=!TTS.ok||(max&&n>=max),l=L();
-  return `<div class="player" data-pl="${key}"><button class="play" type="button" data-play="${key}" ${dis?"disabled":""}><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1l7 4-7 4z"/></svg><span>${l.play}</span></button><span class="plays">${l.plays(n,max)}</span>
+  return `<div class="player" data-pl="${key}"><button class="play" type="button" data-play="${key}" ${dis?"disabled":""}><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1l7 4-7 4z"/></svg><span>${l.play}</span></button><span class="plays">${l.plays(n,max)}</span><span class="who" aria-live="polite"></span>
    <span class="speed">${l.speed} ${[0.75,0.9,1].map(v=>`<button type="button" data-rate="${v}" aria-pressed="${S.rate===v}">${v===1?"1":v}</button>`).join("")}</span></div>`;
 }
 function renderRun(){
@@ -464,7 +485,10 @@ function bindRun(items){
     app.querySelectorAll(".player.playing").forEach(p=>{p.classList.remove("playing");p.querySelector(".play span").textContent=L().play});
     r.plays[key]=(r.plays[key]||0)+1;pl.querySelector(".plays").textContent=L().plays(r.plays[key],max);
     pl.classList.add("playing");b.querySelector("span").textContent=r.mode==="exam"?L().playing:L().stop;
-    TTS.speak(script,()=>{pl.classList.remove("playing");b.querySelector("span").textContent=L().play;if(max&&r.plays[key]>=max)b.disabled=true});
+    const who=pl.querySelector(".who"),names=key==="t3"?tk(test,3).names:null;
+    TTS.speak(script,()=>{pl.classList.remove("playing");b.querySelector("span").textContent=L().play;if(max&&r.plays[key]>=max)b.disabled=true},
+      (role,c)=>{if(!who)return;if(!role||c.distinct||role==="N"){who.textContent="";return}
+        who.textContent=`${L().speaking}: ${names?names[role]:(role==="H"?L().h:L().m)}`});
   });
   const q=$("#quit");q.onclick=()=>{TTS.stop();S.run=null;render();scrollTo({top:0})};
   const p=$("#prevt");if(p)p.onclick=()=>goStep(r.t-1);
